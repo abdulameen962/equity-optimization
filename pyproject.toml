@@ -1,0 +1,23 @@
+[project]
+name = "equity-optimization"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "cvxpy>=1.9.2",
+    "matplotlib>=3.11.1",
+    "numpy>=2.5.2",
+    "openpyxl>=3.1.5",
+    "pandas>=3.0.5",
+    "pypdf>=6.16.1",
+    "pyxlsb>=1.0.10",
+    "reportlab>=5.0.0",
+    "scikit-learn>=1.9.0",
+    "scipy>=1.18.0",
+    "seaborn>=0.13.2",
+    "statsmodels>=0.14.6",
+    "ta>=0.11.0",
+    "xgboost>=3.4.1",
+    "xlrd>=2.0.2",
+]
