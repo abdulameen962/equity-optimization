@@ -21,7 +21,7 @@ def tune_hyperparameters_time_series(master_feat, feature_cols, train_end_date='
     Performs TimeSeriesSplit (5-fold) cross-validation on initial training data (2010-2020)
     to tune Random Forest and XGBoost hyperparameters chronologically without temporal leakage.
     """
-    print("Performing TimeSeriesSplit (5-Fold) Hyperparameter Tuning on initial training set (2010–2020)...")
+    print("Performing TimeSeriesSplit (5-Fold) Hyperparameter Tuning on initial training set (2010-2020)...")
     
     # Pool training samples across assets up to train_end_date
     X_list, y_list = [], []

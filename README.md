@@ -4,7 +4,7 @@
 [![Managed with uv](https://img.shields.io/badge/managed_with-uv-purple.svg)](https://github.com/astral-sh/uv)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-An end-to-end empirical quantitative finance pipeline implementing Machine Learning (Random Forest & XGBoost) return forecasting under **Expanding Rolling Window Walk-Forward Validation** and **Convex Tail-Risk (Mean-CVaR at $\alpha=0.95$)** portfolio optimization across 28 liquid equities on the Nigerian Exchange Group (NGX) spanning 15 years of weekly data (2010–2025).
+An end-to-end empirical quantitative finance pipeline implementing Machine Learning (Random Forest & XGBoost) return forecasting under **Expanding Rolling Window Walk-Forward Validation** and **Convex Tail-Risk (Mean-CVaR at $\alpha=0.95$)** portfolio optimization across 28 liquid equities on the Nigerian Exchange Group (NGX) spanning 15 years of weekly data (2010-2025).
 
 ---
 
@@ -28,9 +28,9 @@ This master entry point automatically executes all 6 sequential stages:
 
 ## 📌 Methodological Hardening & Purity Standards
 
-1. **Zero Data Leakage**: Feature scaling (`MinMaxScaler`) is fit strictly inside the expanding training window loop in `src/ml_models.py`, preventing future test bounds (2021–2025) from leaking into feature normalization.
+1. **Zero Data Leakage**: Feature scaling (`MinMaxScaler`) is fit strictly inside the expanding training window loop in `src/ml_models.py`, preventing future test bounds (2021-2025) from leaking into feature normalization.
 2. **Wilder's Parabolic SAR Iterative Algorithm**: Implemented Welles Wilder's true iterative SAR algorithm incorporating acceleration factors ($AF \in [0.02, 0.20]$) and trend flip logic instead of EMA approximations.
-3. **Chronological Hyperparameter Tuning**: Evaluated 5-fold `TimeSeriesSplit` cross-validation on initial 2010–2020 training data to tune tree depth and ensemble size without temporal shuffling.
+3. **Chronological Hyperparameter Tuning**: Evaluated 5-fold `TimeSeriesSplit` cross-validation on initial 2010-2020 training data to tune tree depth and ensemble size without temporal shuffling.
 4. **ReportLab Math Markup**: All mathematical expressions in generated PDF chapters use native ReportLab HTML formatting (`CVaR<sub>0.95</sub>`), eliminating raw LaTeX syntax bugs.
 
 ---
@@ -43,7 +43,7 @@ A total of **38 NGX Pension Index constituent equities** were audited. To mainta
 
 ---
 
-## 📊 Out-of-Sample Portfolio Performance Sensitivity (2021–2025)
+## 📊 Out-of-Sample Portfolio Performance Sensitivity (2021-2025)
 
 ### Table 4.4: Performance with 0.75% Retail Transaction Fees
 

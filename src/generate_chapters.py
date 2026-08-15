@@ -134,8 +134,8 @@ def generate_chapters_pdf(pdf_filename='output/pdf/Chapters_4_and_5.pdf'):
     story.append(Paragraph(
         "To establish a robust quantitative asset allocation model free from temporal distortion and survivorship bias, "
         "the constituent equities of the NGX Pension Index were evaluated for sample inclusion. A total of 38 equities were audited. "
-        "To guarantee a complete 15-year historical dataset (835 weekly observations from 2010 to 2025) required for training machine learning algorithms (2010–2020) "
-        "and backtesting out-of-sample portfolio performance (2021–2025), 28 equities with continuous price history were selected. "
+        "To guarantee a complete 15-year historical dataset (835 weekly observations from 2010 to 2025) required for training machine learning algorithms (2010-2020) "
+        "and backtesting out-of-sample portfolio performance (2021-2025), 28 equities with continuous price history were selected. "
         "Conversely, 10 post-2010 listed equities were excluded to prevent artificial data imputation or look-ahead bias. Table 4.0 provides the comprehensive universe breakdown.",
         body_style
     ))
@@ -151,34 +151,34 @@ def generate_chapters_pdf(pdf_filename='output/pdf/Chapters_4_and_5.pdf'):
     ]]
     
     universe_records = [
-        ("CONOIL", "Conoil Plc", "Oil & Gas", "Included", "Complete 15-yr history (2010–2025)"),
-        ("CUSTODIAN", "Custodian Investment Plc", "Financial Services", "Included", "Complete 15-yr history (2010–2025)"),
-        ("DANGCEM", "Dangote Cement Plc", "Industrial Goods", "Included", "Complete 15-yr history (2010–2025)"),
-        ("DANGSUGAR", "Dangote Sugar Refinery Plc", "Consumer Goods", "Included", "Complete 15-yr history (2010–2025)"),
-        ("ETI", "Ecobank Transnational Inc.", "Financial Services", "Included", "Complete 15-yr history (2010–2025)"),
-        ("FCMB", "FCMB Group Plc", "Financial Services", "Included", "Complete 15-yr history (2010–2025)"),
-        ("FIDELITYBK", "Fidelity Bank Plc", "Financial Services", "Included", "Complete 15-yr history (2010–2025)"),
-        ("FIDSON", "Fidson Healthcare Plc", "Healthcare", "Included", "Complete 15-yr history (2010–2025)"),
-        ("FBNH", "First HoldCo Plc", "Financial Services", "Included", "Complete 15-yr history (2010–2025)"),
-        ("GTCO", "Guaranty Trust Holding Co", "Financial Services", "Included", "Complete 15-yr history (2010–2025)"),
-        ("GUINNESS", "Guinness Nigeria Plc", "Consumer Goods", "Included", "Complete 15-yr history (2010–2025)"),
-        ("JBERGER", "Julius Berger Nigeria Plc", "Construction", "Included", "Complete 15-yr history (2010–2025)"),
-        ("WAPCO", "Lafarge Africa Plc", "Industrial Goods", "Included", "Complete 15-yr history (2010–2025)"),
-        ("MANSARD", "AXA Mansard Insurance Plc", "Financial Services", "Included", "Complete 15-yr history (2010–2025)"),
-        ("NAHCO", "Nigerian Aviation Handling", "Services", "Included", "Complete 15-yr history (2010–2025)"),
-        ("NASCON", "Nascon Allied Industries", "Consumer Goods", "Included", "Complete 15-yr history (2010–2025)"),
-        ("NESTLE", "Nestle Nigeria Plc", "Consumer Goods", "Included", "Complete 15-yr history (2010–2025)"),
-        ("NB", "Nigerian Breweries Plc", "Consumer Goods", "Included", "Complete 15-yr history (2010–2025)"),
-        ("OKOMUOIL", "Okomu Oil Palm Plc", "Agriculture", "Included", "Complete 15-yr history (2010–2025)"),
-        ("PRESCO", "Presco Plc", "Agriculture", "Included", "Complete 15-yr history (2010–2025)"),
-        ("STANBIC", "Stanbic IBTC Holdings", "Financial Services", "Included", "Complete 15-yr history (2010–2025)"),
-        ("STERLINGNG", "Sterling Financial Holdings", "Financial Services", "Included", "Complete 15-yr history (2010–2025)"),
-        ("TRANSCORP", "Transnational Corp Plc", "Conglomerates", "Included", "Complete 15-yr history (2010–2025)"),
-        ("UACN", "UAC of Nigeria Plc", "Conglomerates", "Included", "Complete 15-yr history (2010–2025)"),
-        ("UBA", "United Bank for Africa Plc", "Financial Services", "Included", "Complete 15-yr history (2010–2025)"),
-        ("UNILEVER", "Unilever Nigeria Plc", "Consumer Goods", "Included", "Complete 15-yr history (2010–2025)"),
-        ("WEMABANK", "Wema Bank Plc", "Financial Services", "Included", "Complete 15-yr history (2010–2025)"),
-        ("ZENITHBANK", "Zenith Bank Plc", "Financial Services", "Included", "Complete 15-yr history (2010–2025)"),
+        ("CONOIL", "Conoil Plc", "Oil & Gas", "Included", "Complete 15-yr history (2010-2025)"),
+        ("CUSTODIAN", "Custodian Investment Plc", "Financial Services", "Included", "Complete 15-yr history (2010-2025)"),
+        ("DANGCEM", "Dangote Cement Plc", "Industrial Goods", "Included", "Complete 15-yr history (2010-2025)"),
+        ("DANGSUGAR", "Dangote Sugar Refinery Plc", "Consumer Goods", "Included", "Complete 15-yr history (2010-2025)"),
+        ("ETI", "Ecobank Transnational Inc.", "Financial Services", "Included", "Complete 15-yr history (2010-2025)"),
+        ("FCMB", "FCMB Group Plc", "Financial Services", "Included", "Complete 15-yr history (2010-2025)"),
+        ("FIDELITYBK", "Fidelity Bank Plc", "Financial Services", "Included", "Complete 15-yr history (2010-2025)"),
+        ("FIDSON", "Fidson Healthcare Plc", "Healthcare", "Included", "Complete 15-yr history (2010-2025)"),
+        ("FBNH", "First HoldCo Plc", "Financial Services", "Included", "Complete 15-yr history (2010-2025)"),
+        ("GTCO", "Guaranty Trust Holding Co", "Financial Services", "Included", "Complete 15-yr history (2010-2025)"),
+        ("GUINNESS", "Guinness Nigeria Plc", "Consumer Goods", "Included", "Complete 15-yr history (2010-2025)"),
+        ("JBERGER", "Julius Berger Nigeria Plc", "Construction", "Included", "Complete 15-yr history (2010-2025)"),
+        ("WAPCO", "Lafarge Africa Plc", "Industrial Goods", "Included", "Complete 15-yr history (2010-2025)"),
+        ("MANSARD", "AXA Mansard Insurance Plc", "Financial Services", "Included", "Complete 15-yr history (2010-2025)"),
+        ("NAHCO", "Nigerian Aviation Handling", "Services", "Included", "Complete 15-yr history (2010-2025)"),
+        ("NASCON", "Nascon Allied Industries", "Consumer Goods", "Included", "Complete 15-yr history (2010-2025)"),
+        ("NESTLE", "Nestle Nigeria Plc", "Consumer Goods", "Included", "Complete 15-yr history (2010-2025)"),
+        ("NB", "Nigerian Breweries Plc", "Consumer Goods", "Included", "Complete 15-yr history (2010-2025)"),
+        ("OKOMUOIL", "Okomu Oil Palm Plc", "Agriculture", "Included", "Complete 15-yr history (2010-2025)"),
+        ("PRESCO", "Presco Plc", "Agriculture", "Included", "Complete 15-yr history (2010-2025)"),
+        ("STANBIC", "Stanbic IBTC Holdings", "Financial Services", "Included", "Complete 15-yr history (2010-2025)"),
+        ("STERLINGNG", "Sterling Financial Holdings", "Financial Services", "Included", "Complete 15-yr history (2010-2025)"),
+        ("TRANSCORP", "Transnational Corp Plc", "Conglomerates", "Included", "Complete 15-yr history (2010-2025)"),
+        ("UACN", "UAC of Nigeria Plc", "Conglomerates", "Included", "Complete 15-yr history (2010-2025)"),
+        ("UBA", "United Bank for Africa Plc", "Financial Services", "Included", "Complete 15-yr history (2010-2025)"),
+        ("UNILEVER", "Unilever Nigeria Plc", "Consumer Goods", "Included", "Complete 15-yr history (2010-2025)"),
+        ("WEMABANK", "Wema Bank Plc", "Financial Services", "Included", "Complete 15-yr history (2010-2025)"),
+        ("ZENITHBANK", "Zenith Bank Plc", "Financial Services", "Included", "Complete 15-yr history (2010-2025)"),
         ("ACCESSCORP", "Access Holdings Plc", "Financial Services", "Excluded", "Post-2010 listing restructuring (short history)"),
         ("AIRTELAFRI", "Airtel Africa Plc", "Telecoms", "Excluded", "Listed June 2019 (< 15-yr history)"),
         ("ARADEL", "Aradel Holdings Plc", "Oil & Gas", "Excluded", "Listed October 2024 (< 15-yr history)"),
@@ -225,7 +225,7 @@ def generate_chapters_pdf(pdf_filename='output/pdf/Chapters_4_and_5.pdf'):
     ))
     
     # Table 4.1: Descriptive Statistics (ALL 28 EQUITIES)
-    story.append(Paragraph("Table 4.1: Descriptive Statistics of 28 NGX Equity Log Returns (2010–2025)", subsection_title_style))
+    story.append(Paragraph("Table 4.1: Descriptive Statistics of 28 NGX Equity Log Returns (2010-2025)", subsection_title_style))
     t1_data = [[
         Paragraph("Ticker", table_header_style),
         Paragraph("Mean (%)", table_header_style),
@@ -324,7 +324,7 @@ def generate_chapters_pdf(pdf_filename='output/pdf/Chapters_4_and_5.pdf'):
     
     if os.path.exists('output/figures/correlation_heatmap.png'):
         story.append(Image('output/figures/correlation_heatmap.png', width=6.2*inch, height=4.2*inch))
-        story.append(Paragraph("Figure 4.1: NGX 28 Equity Log Return Pairwise Correlation Matrix (2010–2025)", caption_style))
+        story.append(Paragraph("Figure 4.1: NGX 28 Equity Log Return Pairwise Correlation Matrix (2010-2025)", caption_style))
         
     story.append(PageBreak())
     
@@ -333,13 +333,13 @@ def generate_chapters_pdf(pdf_filename='output/pdf/Chapters_4_and_5.pdf'):
     story.append(Paragraph(
         "Machine learning models (Random Forest and XGBoost Regressors) were evaluated under a rigorous Expanding Rolling Window Walk-Forward Validation protocol. "
         "To guarantee zero temporal data leakage, feature Min-Max scaling was fit strictly on expanding training windows, and model hyperparameters were optimized "
-        "using 5-fold TimeSeriesSplit cross-validation on the initial 2010–2020 training period. Out-of-sample forecasting was conducted across 2021–2025 (~260 weekly steps) "
+        "using 5-fold TimeSeriesSplit cross-validation on the initial 2010-2020 training period. Out-of-sample forecasting was conducted across 2021-2025 (~260 weekly steps) "
         "with quarterly model refitting. Table 4.3 presents the predictive performance comparison across all 28 equities against the Historical Mean baseline.",
         body_style
     ))
     
     # Table 4.3: ML Performance (ALL 28 EQUITIES)
-    story.append(Paragraph("Table 4.3: Out-of-Sample Predictive Performance Metrics across All 28 NGX Equities (2021–2025 Walk-Forward)", subsection_title_style))
+    story.append(Paragraph("Table 4.3: Out-of-Sample Predictive Performance Metrics across All 28 NGX Equities (2021-2025 Walk-Forward)", subsection_title_style))
     t3_data = [[
         Paragraph("Ticker", table_header_style),
         Paragraph("Base RMSE", table_header_style),
@@ -384,11 +384,22 @@ def generate_chapters_pdf(pdf_filename='output/pdf/Chapters_4_and_5.pdf'):
     story.append(Paragraph("Source: Author's computation (2026). DA (%) denotes Directional Accuracy across all 28 assets.", caption_style))
     story.append(Spacer(1, 10))
     
+    story.append(Paragraph("<b>Econometric Evaluation of Forecasting Performance:</b>", subsection_title_style))
+    story.append(Paragraph(
+        "As reported in Table 4.3, the out-of-sample Root Mean Squared Error (RMSE) across all 28 NGX equities averages 0.0602 for the Historical Mean baseline, "
+        "0.0608 for XGBoost, and 0.0627 for Random Forest, while binary directional accuracy hovers around ~37.8%--38.1%. Econometrically, standalone point forecasting "
+        "in weekly financial returns exhibits an extremely low signal-to-noise ratio. The flat historical baseline minimizes squared error during quiescent market periods "
+        "by predicting near-zero returns. However, non-linear tree-based models capture magnitude and cross-sectional tail signals during volatile periods. "
+        "Consequently, while ML models do not beat the baseline in raw RMSE, their value lies in providing dynamic expected return vectors into the portfolio optimizer.",
+        body_style
+    ))
+    story.append(Spacer(1, 10))
+    
     # 4.6 Feature Importance
     story.append(Paragraph("4.6 Feature Importance and Predictive Driver Analysis", section_title_style))
     story.append(Paragraph(
         "Figure 4.2 illustrates the relative feature importances derived from Mean Decrease Impurity (MDI) across all trained tree models. "
-        "Short-term price momentum features—specifically the Percentage Price Oscillator (PPO) and Relative Strength Index (RSI)—alongside On-Balance Volume (OBV) "
+        "Short-term price momentum features, specifically the Percentage Price Oscillator (PPO) and Relative Strength Index (RSI), alongside On-Balance Volume (OBV) "
         "emerged as the primary drivers of return predictability. Lagged return features (Lag 1 to Lag 4) provided supplementary predictive weight.",
         body_style
     ))
@@ -402,9 +413,9 @@ def generate_chapters_pdf(pdf_filename='output/pdf/Chapters_4_and_5.pdf'):
     # 4.7 Out-of-Sample Portfolio Optimization Backtest & Sensitivity Analysis
     story.append(Paragraph("4.7 Out-of-Sample Portfolio Optimization Backtest and Sensitivity Analysis", section_title_style))
     story.append(Paragraph(
-        "Six portfolio strategies were backtested out-of-sample over the 2021–2025 period: RF-CVaR, XGB-CVaR, Historical-CVaR, Markowitz Mean-Variance Optimization (MVO), "
-        "1/N Equal Weighting, and NGX Index Buy-and-Hold. Backtests were evaluated under two distinct transaction fee regimes: (i) a realistic retail transaction cost model of 0.75% per trade, "
-        "and (ii) a zero-transaction-cost environment to assess gross alpha generation. All strategies incorporated the weekly CBN 91-day T-Bill risk-free rate (0.319% / 18.00% annualized).",
+        "Six portfolio strategies were backtested out-of-sample over the 2021-2025 period: RF-CVaR, XGB-CVaR, Historical-CVaR, Markowitz Mean-Variance Optimization (MVO), "
+        "1/N Equal Weighting, and NGX Index Buy-and-Hold. Backtests were evaluated under two distinct transaction fee regimes: (i) a realistic retail transaction cost model of 0.75% per trade (75 bps), "
+        "and (ii) a zero-transaction-cost environment (0.00%) to assess gross alpha generation. All strategies incorporated the weekly CBN 91-day T-Bill risk-free rate (0.319% / 18.00% annualized).",
         body_style
     ))
     
@@ -449,8 +460,8 @@ def generate_chapters_pdf(pdf_filename='output/pdf/Chapters_4_and_5.pdf'):
     story.append(Paragraph("Source: Author's computation (2026). Backtested with 0.75% transaction fee and 0.319% weekly Rf rate.", caption_style))
     story.append(Spacer(1, 10))
     
-    # Table 4.5: Portfolio Summary Table (Zero Cost)
-    story.append(Paragraph("Table 4.5: Gross Out-of-Sample Portfolio Performance (Zero Transaction Costs)", subsection_title_style))
+    # Table 4.5: Zero Cost Table
+    story.append(Paragraph("Table 4.5: Out-of-Sample Portfolio Performance under Zero Transaction Fees (Gross Alpha)", subsection_title_style))
     t5_data = [[
         Paragraph("Strategy", table_header_style),
         Paragraph("Ann. Ret (%)", table_header_style),
@@ -487,21 +498,24 @@ def generate_chapters_pdf(pdf_filename='output/pdf/Chapters_4_and_5.pdf'):
     story.append(Paragraph("Source: Author's computation (2026). Gross performance under zero transaction fee friction.", caption_style))
     story.append(Spacer(1, 10))
     
-    story.append(Paragraph("<b>Comparative Analysis of Gross Alpha vs Net Friction:</b>", subsection_title_style))
+    story.append(Paragraph("<b>Comparative Analysis of Gross Alpha vs Net Execution Friction:</b>", subsection_title_style))
     story.append(Paragraph(
-        "1. <b>Gross Alpha of Machine Learning Models:</b> As demonstrated in Table 4.5, when transaction cost friction is zero, XGBoost + Mean-CVaR (XGB-CVaR) delivers the single highest gross annualized return (42.78%), "
-        "the highest gross Sharpe Ratio (1.57), the highest Sortino Ratio (3.16), and the lowest maximum drawdown (-21.58%) among all evaluated strategies. This confirms that Machine Learning forecasting generates genuine predictive alpha.<br/><br/>"
-        "2. <b>Impact of Transaction Cost Friction:</b> Comparing Table 4.4 and Table 4.5 reveals the impact of execution friction. ML forecasting updates weekly based on shifting technical indicators, incurring ~11.5% to 12.5% weekly turnover. "
-        "Under high retail transaction fees (0.75%), cumulative fee drag reduces net return for XGB-CVaR from 42.78% to 38.00%. In contrast, Historical-CVaR relies on 10-year rolling historical averages, resulting in extremely low turnover (0.38%), incurring zero fee drag.<br/><br/>"
-        "3. <b>Institutional Implication:</b> Institutional investors (such as Pension Fund Administrators) operating with institutional block-trading fees (< 0.10%) or monthly rebalancing schedules capture the full gross alpha of XGB-CVaR (Sharpe 1.57), "
-        "validating the practical utility of integrating Machine Learning forecasting with Mean-CVaR optimization.",
+        "1. <b>Gross Alpha Generation (Table 4.5):</b> Under zero fee friction, XGBoost + Mean-CVaR (XGB-CVaR) achieves the highest gross Sharpe ratio (1.52) and Sortino ratio (3.06) "
+        "with an annualized return of 42.00% and maximum drawdown of -22.09%. RF-CVaR achieves 41.29% return and 1.45 Sharpe, demonstrating that ML return signals generate positive gross alpha over standard benchmarks.<br/><br/>"
+        "2. <b>Execution Friction and Turnover Drag (Table 4.4):</b> Under 0.75% retail transaction fees, Historical-CVaR achieves the highest net Sharpe ratio (1.49), Sortino ratio (3.02), and annualized return (42.12%) "
+        "with a maximum drawdown of -21.96%. Active ML strategies update weekly, incurring 7.59% (RF) to 11.00% (XGB) weekly turnover, creating a ~3.6% annual fee drag that reduces net Sharpe from 1.52 to 1.24 for XGB-CVaR. "
+        "In contrast, Historical-CVaR experiences low weekly turnover (0.38%), incurring zero execution drag.<br/><br/>"
+        "3. <b>Empirical Market Implication:</b> For retail investors facing high 0.75% execution fees, passive low-turnover Historical-CVaR provides the optimal net allocation. "
+        "However, for institutional investors (PFAs) with block-trading costs (< 0.10%), ML-CVaR retains its gross Sharpe advantage (1.52 vs 1.07 Equal Weight).<br/><br/>"
+        "4. <b>Pathology of Markowitz MVO:</b> Unconstrained MVO failed severely under both fee structures, exhibiting extreme volatility (53.87%) and catastrophic maximum drawdowns (-71.07% net fee / -53.51% gross), "
+        "proving its vulnerability to asset weight concentration in non-normal emerging equity markets.",
         body_style
     ))
     story.append(Spacer(1, 10))
     
     if os.path.exists('output/figures/portfolio_equity_curves.png'):
         story.append(Image('output/figures/portfolio_equity_curves.png', width=6.2*inch, height=3.5*inch))
-        story.append(Paragraph("Figure 4.3: Out-of-Sample Cumulative Wealth Growth Curves (2021–2025)", caption_style))
+        story.append(Paragraph("Figure 4.3: Out-of-Sample Cumulative Wealth Growth Curves (2021-2025)", caption_style))
         
     story.append(PageBreak())
     
@@ -514,17 +528,18 @@ def generate_chapters_pdf(pdf_filename='output/pdf/Chapters_4_and_5.pdf'):
     story.append(Paragraph("5.1 Summary of the Study", subsection_title_style))
     story.append(Paragraph(
         "This study investigated equity return forecasting and tail-risk-aware portfolio optimization across 28 liquid equities on the Nigerian Exchange Group (NGX) "
-        "spanning a 15-year period (2010–2025). The research evaluated non-normality diagnostics, Machine Learning return forecasting (Random Forest and XGBoost) "
+        "spanning a 15-year period (2010-2025). The research evaluated non-normality diagnostics, Machine Learning return forecasting (Random Forest and XGBoost) "
         "under Expanding Rolling Window Walk-Forward Validation, and convex Mean-CVaR asset allocation backtesting.",
         body_style
     ))
     
-    story.append(Paragraph("5.2 Summary of Empirical Findings", subsection_title_style))
+    story.append(Paragraph("5.2 Summary of Empirical Findings and Research Hypotheses", subsection_title_style))
     story.append(Paragraph(
         "1. <b>Non-Normality of NGX Equities:</b> Formal Jarque-Bera and Shapiro-Wilk tests rejected Gaussian normality across 100% of NGX equities (p < 0.001), exhibiting severe negative skewness and excess kurtosis up to 14.46.<br/>"
-        "2. <b>Invalidity of Mean-Variance Optimization:</b> Markowitz MVO generated extreme downside volatility (65.93%) and severe drawdowns (-58.41%), proving its inadequacy for fat-tailed emerging equity markets.<br/>"
-        "3. <b>Tail-Risk Efficiency of Mean-CVaR:</b> Mean-CVaR asset allocation successfully constrained weekly 95% CVaR tail risk to -2.74%–-2.78%, delivering robust annualized returns (~38.0%) and Sharpe ratios of 1.22–1.24.<br/>"
-        "4. <b>Turnover vs Fee Trade-off:</b> Machine learning return forecasting dynamically responds to market momentum reversals, but requires low execution fee structures (< 0.10%) to maximize net alpha over static historical baselines.",
+        "2. <b>Failure of Markowitz MVO:</b> Markowitz MVO generated severe downside volatility (53.87%) and maximum drawdown (-71.07%), confirming its empirical inadequacy for fat-tailed emerging equity markets.<br/>"
+        "3. <b>Tail-Risk Efficiency of Mean-CVaR:</b> Mean-CVaR asset allocation successfully constrained weekly 95% CVaR tail risk to -2.74%--2.78%, delivering robust annualized returns (37.71%--42.12%) and Sharpe ratios of 1.24--1.49.<br/>"
+        "4. <b>Standalone RMSE vs Portfolio Value:</b> While ML models did not beat the flat historical baseline in standalone point-forecast RMSE (0.0608 vs 0.0602), integrating ML vectors into Mean-CVaR generated superior gross alpha (Sharpe 1.52).<br/>"
+        "5. <b>Retail Fee Drag vs Institutional Execution:</b> Under 0.75% retail fees, active ML turnover (11.0%) creates fee drag that favors low-turnover Historical-CVaR (Sharpe 1.49). For institutional PFAs with fees < 0.10%, ML-CVaR captures gross alpha.",
         body_style
     ))
     
@@ -532,7 +547,7 @@ def generate_chapters_pdf(pdf_filename='output/pdf/Chapters_4_and_5.pdf'):
     story.append(Paragraph(
         "Based on the empirical findings, the following policy recommendations are formulated for institutional regulators, fund managers, and market participants:<br/><br/>"
         "1. <b>For Pension Fund Administrators (PFAs) & PENCOM:</b> The National Pension Commission (PENCOM) should update its Investment Guidelines for Fund I, Fund II, and Fund III equity portfolios "
-        "to mandate downside tail-risk metrics—specifically Conditional Value-at-Risk (CVaR<sub>0.95</sub>)—alongside traditional variance. PFAs should adopt CVaR-constrained allocation models to protect pension assets during extreme macroeconomic shocks.<br/><br/>"
+        "to mandate downside tail-risk metrics, specifically Conditional Value-at-Risk (CVaR<sub>0.95</sub>), alongside traditional variance. PFAs should adopt CVaR-constrained allocation models to protect pension assets during extreme macroeconomic shocks.<br/><br/>"
         "2. <b>For Securities & Exchange Commission (SEC) & NGX Regulation:</b> Financial market regulators should establish open-access, low-latency API data infrastructure for market participants "
         "to support quantitative risk management. Furthermore, SEC should require asset management firms to publish quarterly CVaR metrics in fund factsheets to enhance retail investor risk transparency.<br/><br/>"
         "3. <b>For Retail & Corporate Investors:</b> Investors should refrain from concentrated single-stock speculation and implement multi-asset sector diversification. Utilizing technical momentum indicators (PPO, RSI) "
@@ -543,7 +558,7 @@ def generate_chapters_pdf(pdf_filename='output/pdf/Chapters_4_and_5.pdf'):
     story.append(Paragraph("5.4 Contribution to Knowledge", subsection_title_style))
     story.append(Paragraph(
         "This research contributes to quantitative finance literature by providing the first comprehensive empirical evaluation of Machine Learning integrated with convex Mean-CVaR optimization "
-        "on the Nigerian Exchange Group using a 15-year clean weekly dataset (2010–2025). It establishes the empirical limitations of Markowitz MVO under non-normal market conditions and provides a actionable tail-risk framework for emerging market asset allocation.",
+        "on the Nigerian Exchange Group using a 15-year clean weekly dataset (2010-2025). It establishes the empirical limitations of Markowitz MVO under non-normal market conditions and provides a actionable tail-risk framework for emerging market asset allocation.",
         body_style
     ))
     
@@ -552,6 +567,17 @@ def generate_chapters_pdf(pdf_filename='output/pdf/Chapters_4_and_5.pdf'):
         "1. <b>Macroeconomic Feature Integration:</b> Future research should incorporate macroeconomic factors (such as USD/NGN exchange rate volatility, inflation rates, and Brent crude oil prices) into the ML feature matrix.<br/>"
         "2. <b>Deep Learning & High-Frequency Architectures:</b> Extending forecasting models to Transformer-based temporal models and Long Short-Term Memory (LSTM) networks on daily or intraday NGX trading data.<br/>"
         "3. <b>Multi-Period Transaction Cost Optimization:</b> Incorporating transaction cost penalties directly into the CVaR objective function to minimize turnover during high-volatility regimes.",
+        body_style
+    ))
+    story.append(Spacer(1, 10))
+    
+    story.append(Paragraph("5.6 Data and Code Availability Statement", subsection_title_style))
+    story.append(Paragraph(
+        "To guarantee complete computational reproducibility and scientific transparency, the entire quantitative finance pipeline, encompassing "
+        "data cleaning scripts, non-normality diagnostic tests, technical feature extraction (with Welles Wilder's Parabolic SAR), expanding walk-forward machine learning models "
+        "(Random Forest and XGBoost with TimeSeriesSplit cross-validation tuning), convex Mean-CVaR linear programming portfolio optimization backtests, and ReportLab PDF synthesis, is "
+        "open-source and publicly hosted on GitHub at:<br/><br/>"
+        "<b>Repository URL:</b> <font color='#1A5276'><u>https://github.com/abdulameen962/equity-optimization</u></font>",
         body_style
     ))
     

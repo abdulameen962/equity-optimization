@@ -8,7 +8,7 @@ Executes the full end-to-end quantitative pipeline:
 3. ML Forecasting (TimeSeriesSplit CV tuning & train-only scaling walk-forward)
 4. Mean-CVaR Portfolio Optimization & Sensitivity Backtesting
 5. Academic Thesis PDF Chapters 4 & 5 Generation
-6. Consolidated Thesis Document Compilation (Chapters 1–5 PDF)
+6. Consolidated Thesis Document Compilation (Chapters 1-5 PDF)
 """
 
 import sys
