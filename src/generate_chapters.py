@@ -498,10 +498,10 @@ def generate_chapters_pdf(pdf_filename='output/pdf/Chapters_4_and_5.pdf'):
     story.append(Paragraph("Source: Author's computation (2026). Gross performance under zero transaction fee friction.", caption_style))
     story.append(Spacer(1, 10))
     
-    story.append(Paragraph("<b>Comparative Analysis of Gross Alpha vs Net Execution Friction:</b>", subsection_title_style))
+    story.append(Paragraph("<b>Comparative Analysis of Gross Portfolio Performance vs Net Execution Friction:</b>", subsection_title_style))
     story.append(Paragraph(
-        "1. <b>Gross Alpha Generation (Table 4.5):</b> Under zero fee friction, XGBoost + Mean-CVaR (XGB-CVaR) achieves the highest gross Sharpe ratio (1.52) and Sortino ratio (3.06) "
-        "with an annualized return of 42.00% and maximum drawdown of -22.09%. RF-CVaR achieves 41.29% return and 1.45 Sharpe, demonstrating that ML return signals generate positive gross alpha over standard benchmarks.<br/><br/>"
+        "1. <b>Gross Portfolio Performance (Table 4.5):</b> Under zero fee friction, XGBoost + Mean-CVaR (XGB-CVaR) achieves the highest gross Sharpe ratio (1.52) and Sortino ratio (3.06) "
+        "with an annualized return of 42.00% and maximum drawdown of -22.09%. RF-CVaR achieves 41.29% return and 1.45 Sharpe. This suggests that dynamic ML return signals carry economic value within the Mean-CVaR allocation framework, even though they do not minimize standalone point-forecast error.<br/><br/>"
         "2. <b>Execution Friction and Turnover Drag (Table 4.4):</b> Under 0.75% retail transaction fees, Historical-CVaR achieves the highest net Sharpe ratio (1.49), Sortino ratio (3.02), and annualized return (42.12%) "
         "with a maximum drawdown of -21.96%. Active ML strategies update weekly, incurring 7.59% (RF) to 11.00% (XGB) weekly turnover, creating a ~3.6% annual fee drag that reduces net Sharpe from 1.52 to 1.24 for XGB-CVaR. "
         "In contrast, Historical-CVaR experiences low weekly turnover (0.38%), incurring zero execution drag.<br/><br/>"
@@ -538,8 +538,8 @@ def generate_chapters_pdf(pdf_filename='output/pdf/Chapters_4_and_5.pdf'):
         "1. <b>Non-Normality of NGX Equities:</b> Formal Jarque-Bera and Shapiro-Wilk tests rejected Gaussian normality across 100% of NGX equities (p < 0.001), exhibiting severe negative skewness and excess kurtosis up to 14.46.<br/>"
         "2. <b>Failure of Markowitz MVO:</b> Markowitz MVO generated severe downside volatility (53.87%) and maximum drawdown (-71.07%), confirming its empirical inadequacy for fat-tailed emerging equity markets.<br/>"
         "3. <b>Tail-Risk Efficiency of Mean-CVaR:</b> Mean-CVaR asset allocation successfully constrained weekly 95% CVaR tail risk to -2.74%--2.78%, delivering robust annualized returns (37.71%--42.12%) and Sharpe ratios of 1.24--1.49.<br/>"
-        "4. <b>Standalone RMSE vs Portfolio Value:</b> While ML models did not beat the flat historical baseline in standalone point-forecast RMSE (0.0608 vs 0.0602), integrating ML vectors into Mean-CVaR generated superior gross alpha (Sharpe 1.52).<br/>"
-        "5. <b>Retail Fee Drag vs Institutional Execution:</b> Under 0.75% retail fees, active ML turnover (11.0%) creates fee drag that favors low-turnover Historical-CVaR (Sharpe 1.49). For institutional PFAs with fees < 0.10%, ML-CVaR captures gross alpha.",
+        "4. <b>Standalone RMSE vs Portfolio Value:</b> While ML models did not beat the flat historical baseline in standalone point-forecast RMSE (0.0608 vs 0.0602), integrating ML vectors into Mean-CVaR generated superior gross risk-adjusted returns (Sharpe 1.52 vs 1.07 Equal Weight).<br/>"
+        "5. <b>Retail Fee Drag vs Institutional Execution:</b> Under 0.75% retail fees, active ML turnover (11.0%) creates fee drag that favors low-turnover Historical-CVaR (Sharpe 1.49). For institutional PFAs with fees < 0.10%, ML-CVaR retains superior gross portfolio performance.",
         body_style
     ))
     
