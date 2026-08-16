@@ -644,10 +644,13 @@ def generate_chapters_pdf(pdf_filename='output/pdf/Chapters_4_and_5.pdf'):
 
     story.append(Paragraph("<b>3. Real-World Naira Wealth Multiplier and Downside Protection:</b>", subsection_title_style))
     story.append(Paragraph(
-        "Translating performance into absolute financial growth, an initial capital allocation of <b>N10,000,000 (10 Million Naira)</b> invested at the start of out-of-sample backtesting (2021) evolves as follows over 5 years:<br/>"
-        "&bull; <b>Historical-CVaR:</b> Grows to <b>N57.77 Million</b> (5.78x capital multiplier), generating <b>N47.77 Million in net profit</b>.<br/>"
-        "&bull; <b>NGX Index Buy-Hold:</b> Grows to <b>N46.33 Million</b> (4.63x capital multiplier), generating <b>N36.33 Million in net profit</b>.<br/>"
-        "&bull; <b>Economic Surplus:</b> Active CVaR risk management delivers an additional <b>+N11.44 Million in net profit per N10M invested</b> over 5 years. Crucially, this extra wealth was generated while experiencing smaller maximum peak-to-trough losses (-21.96% vs -26.66%), demonstrating true downside capital protection during market drawdowns.",
+        "Translating performance into absolute financial growth, the reported <b>42.12% Annualized Return</b> represents the <b>Compound Annual Growth Rate (CAGR)</b> averaged over the 5-year out-of-sample period (2021–2025, 260 weekly periods). "
+        "An initial capital allocation of <b>N10,000,000 (10 Million Naira)</b> evolves as follows:<br/>"
+        "&bull; <b>Average Annual Performance (CAGR):</b> A 42.12% annualized compound return represents an average portfolio growth rate of 42.12% per year. In a single baseline year, this rate yields <b>+N4.21 Million in net annual profit</b> (expanding capital to N14.21 Million).<br/>"
+        "&bull; <b>5-Year Out-of-Sample Horizon (Cumulative Compound Growth, 2021–2025):</b> Compounding this 42.12% annualized CAGR over the full 5-year backtest window (<i>W<sub>5</sub> = W<sub>0</sub> &times; (1 + CAGR)<sup>5</sup></i>):<br/>"
+        "&nbsp;&nbsp;&nbsp;&nbsp;&ndash; <b>Historical-CVaR:</b> Compounds to <b>N57.77 Million</b> (5.78x capital multiplier), generating <b>+N47.77 Million in total cumulative net profit</b>.<br/>"
+        "&nbsp;&nbsp;&nbsp;&nbsp;&ndash; <b>NGX Index Buy-Hold:</b> Compounds to <b>N46.33 Million</b> (4.63x capital multiplier at 35.88% CAGR), generating <b>+N36.33 Million in total cumulative net profit</b>.<br/>"
+        "&nbsp;&nbsp;&nbsp;&nbsp;&ndash; <b>Economic Surplus:</b> Active CVaR risk management delivers an additional <b>+N11.44 Million in cumulative net profit per N10M invested</b> over 5 years. Crucially, this extra wealth was generated while experiencing smaller maximum peak-to-trough losses (-21.96% vs -26.66%), demonstrating true downside capital protection during market drawdowns.",
         body_style
     ))
     story.append(Spacer(1, 10))

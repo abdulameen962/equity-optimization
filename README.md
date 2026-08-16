@@ -95,7 +95,10 @@ $$\text{CER} = \mu_p - \frac{\gamma}{2} \sigma_p^2$$
 ### 🔑 Key Econometric Conclusions:
 1. **Historical-CVaR Statistically Outperforms Passive Buy-and-Hold**: Ledoit-Wolf circular block bootstrap confirms statistically significant Sharpe outperformance ($p = 0.022 < 0.05$) and Sortino outperformance ($p = 0.033 < 0.05$).
 2. **Economic Welfare Gains ($\Delta CER = +819 \text{ bps}$)**: Transitioning from passive NGX Index Buy-and-Hold to Historical-CVaR yields an annual certainty-equivalent welfare gain of **+8.19% (819 bps)**. An investor would be willing to pay up to 8.19% annually in management fees before becoming economically indifferent to active tail-risk management.
-3. **Naira Wealth Multiplier**: An initial investment of **₦10 Million** grows to **₦57.77 Million** under Historical-CVaR vs **₦46.33 Million** under passive NGX Buy-and-Hold, delivering **+₦11.44 Million in net economic surplus per ₦10M invested** while reducing maximum drawdown from -26.66% to -21.96%.
+3. **Naira Wealth Multiplier (Annualized CAGR vs 5-Year Compounding)**:
+   - **42.12% Annualized Return (CAGR)**: Represents the **Compound Annual Growth Rate (CAGR)** averaged over the 5-year out-of-sample test period (2021–2025). On average, the portfolio grew at 42.12% per year.
+   - **1-Year Baseline Gain**: A 42.12% annualized return on **₦10 Million** yields **+₦4.21 Million in net annual profit** (expanding capital to ₦14.21 Million in 1 year).
+   - **5-Year Cumulative Compounding**: Over the full 5-year backtest horizon (260 weeks, $W_5 = W_0 \times (1 + \text{CAGR})^5$), **₦10 Million** compounds to **₦57.77 Million** (5.78x multiplier, +₦47.77M cumulative profit) under Historical-CVaR vs **₦46.33 Million** under passive NGX Buy-and-Hold (35.88% CAGR), delivering **+₦11.44 Million in net economic surplus per ₦10M invested** while reducing maximum drawdown from -26.66% to -21.96%.
 4. **Statistical Failure of Gaussian Markowitz MVO**: Unconstrained Mean-Variance Optimization statistically underperforms naively diversified 1/N Equal Weight ($p = 0.025$ Ledoit-Wolf Sharpe, $p = 0.008$ Wilcoxon test), resulting in a catastrophic welfare loss ($\text{CER} = -25.29\%$).
 
 ---
