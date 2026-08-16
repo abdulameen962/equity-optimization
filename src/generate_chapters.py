@@ -517,6 +517,62 @@ def generate_chapters_pdf(pdf_filename='output/pdf/Chapters_4_and_5.pdf'):
         story.append(Image('output/figures/portfolio_equity_curves.png', width=6.2*inch, height=3.5*inch))
         story.append(Paragraph("Figure 4.3: Out-of-Sample Cumulative Wealth Growth Curves (2021-2025)", caption_style))
         
+    story.append(Spacer(1, 10))
+    
+    # 4.7.1 Statistical Significance of Portfolio Outperformance
+    story.append(Paragraph("4.7.1 Statistical Significance of Portfolio Outperformance and Hypothesis Testing", subsection_title_style))
+    story.append(Paragraph(
+        "To evaluate whether the risk-adjusted outperformance of active Mean-CVaR portfolio strategies over passive benchmarks is statistically significant, "
+        "inferential hypothesis testing was conducted. Table 4.6 presents the p-values from Jobson-Korkie (Memmel 2007 correction) asymptotic Z-tests, "
+        "Ledoit-Wolf (2008) circular block bootstrap Sharpe tests, Ledoit-Wolf (2011) downside block bootstrap Sortino tests, and non-parametric Wilcoxon signed-rank tests.",
+        body_style
+    ))
+    
+    sig_df = pd.read_csv('output/tables/portfolio_significance_tests.csv')
+    story.append(Paragraph("Table 4.6: Pairwise Hypothesis Testing of Sharpe & Sortino Ratio Equality across Strategies", subsection_title_style))
+    t6_data = [[
+        Paragraph("Strategy", table_header_style),
+        Paragraph("Benchmark", table_header_style),
+        Paragraph("Sharpe Diff", table_header_style),
+        Paragraph("Jobson-Korkie p-val", table_header_style),
+        Paragraph("Ledoit-Wolf Sharpe p-val", table_header_style),
+        Paragraph("Ledoit-Wolf Sortino p-val", table_header_style),
+        Paragraph("Wilcoxon p-val", table_header_style)
+    ]]
+    for _, row in sig_df.iterrows():
+        t6_data.append([
+            Paragraph(str(row['Strategy']), table_text_style),
+            Paragraph(str(row['Benchmark']), table_text_style),
+            Paragraph(f"{row['Sharpe Diff']:+.2f}", table_text_style),
+            Paragraph(f"{row['Jobson-Korkie p-val']:.3f}", table_text_style),
+            Paragraph(f"<b>{row['Ledoit-Wolf Sharpe p-val']:.3f}</b>" if row['Ledoit-Wolf Sharpe p-val'] < 0.05 else f"{row['Ledoit-Wolf Sharpe p-val']:.3f}", table_text_style),
+            Paragraph(f"<b>{row['Ledoit-Wolf Sortino p-val']:.3f}</b>" if row['Ledoit-Wolf Sortino p-val'] < 0.05 else f"{row['Ledoit-Wolf Sortino p-val']:.3f}", table_text_style),
+            Paragraph(f"{row['Wilcoxon p-val']:.3f}", table_text_style)
+        ])
+    t6 = Table(t6_data, colWidths=[1.1*inch, 1.1*inch, 0.8*inch, 1.0*inch, 1.1*inch, 1.1*inch, 0.8*inch])
+    t6.setStyle(TableStyle([
+        ('BACKGROUND', (0,0), (-1,0), colors.HexColor('#F2F2F2')),
+        ('LINEABOVE', (0,0), (-1,0), 1.0, colors.black),
+        ('LINEBELOW', (0,0), (-1,0), 1.0, colors.black),
+        ('LINEBELOW', (0,-1), (-1,-1), 1.0, colors.black),
+        ('ALIGN', (0,0), (-1,-1), 'CENTER'),
+        ('VALIGN', (0,0), (-1,-1), 'MIDDLE'),
+        ('BOTTOMPADDING', (0,0), (-1,-1), 4),
+        ('TOPPADDING', (0,0), (-1,-1), 4)
+    ]))
+    story.append(t6)
+    story.append(Paragraph("Source: Author's computation (2026). Bold p-values indicate statistical significance at alpha = 0.05.", caption_style))
+    story.append(Spacer(1, 10))
+
+    story.append(Paragraph(
+        "<b>Key Statistical Significance Findings:</b><br/>"
+        "1. <b>Historical-CVaR Statistically Outperforms Passive Buy-and-Hold:</b> The Ledoit-Wolf circular block bootstrap test confirms that Historical-CVaR delivers statistically significant Sharpe ratio outperformance over NGX Index Buy-Hold (p = 0.022 &lt; 0.05) and downside Sortino outperformance (p = 0.033 &lt; 0.05).<br/>"
+        "2. <b>Statistical Breakdown of Gaussian Markowitz MVO:</b> Unconstrained Mean-Variance Optimization statistically underperforms naively diversified 1/N Equal Weight (Ledoit-Wolf p = 0.025, Wilcoxon p = 0.008), rejecting classical Mean-Variance asset allocation in non-normal emerging markets.<br/>"
+        "3. <b>Active ML-CVaR Performance:</b> While RF-CVaR and XGB-CVaR generate positive Sharpe differentials (+0.375 and +0.357) against Buy-and-Hold, retail execution fees (0.75%) introduce weekly turnover noise, resulting in bootstrap p-values of 0.165 and 0.181.",
+        body_style
+    ))
+    story.append(Spacer(1, 10))
+    
     story.append(PageBreak())
     
     # =========================================================================

@@ -104,6 +104,132 @@ def solve_mean_variance(expected_returns, cov_matrix, risk_aversion=3.0):
         
     return init_w
 
+# =========================================================================
+# STATISTICAL SIGNIFICANCE TESTING ENGINE
+# =========================================================================
+
+def jobson_korkie_memmel_test(ret_a, ret_b, rf_weekly=RF_WEEKLY):
+    """
+    Jobson & Korkie (1981) test with Memmel (2007) correction for Sharpe Ratio equality.
+    ret_a, ret_b: Weekly return vectors of two strategies.
+    Returns: (z_stat, p_value, sharpe_a, sharpe_b)
+    """
+    from scipy.stats import norm
+    
+    ex_a = ret_a - rf_weekly
+    ex_b = ret_b - rf_weekly
+    
+    T = len(ret_a)
+    mu_a = np.mean(ex_a) * 52
+    mu_b = np.mean(ex_b) * 52
+    
+    sig_a = np.std(ret_a, ddof=1) * np.sqrt(52)
+    sig_b = np.std(ret_b, ddof=1) * np.sqrt(52)
+    
+    sharpe_a = (mu_a) / (sig_a + 1e-10)
+    sharpe_b = (mu_b) / (sig_b + 1e-10)
+    
+    rho = np.corrcoef(ret_a, ret_b)[0, 1] if np.std(ret_a) > 0 and np.std(ret_b) > 0 else 0.0
+    
+    # Memmel (2007) asymptotic variance formula
+    var_diff = (1.0 / (T / 52.0)) * (2.0 * (1.0 - rho) + 0.5 * (sharpe_a**2 + sharpe_b**2 - 2.0 * sharpe_a * sharpe_b * (rho**2)))
+    
+    se = np.sqrt(np.maximum(1e-10, var_diff))
+    z_stat = (sharpe_a - sharpe_b) / se
+    p_val = 2.0 * (1.0 - norm.cdf(np.abs(z_stat)))
+    
+    return z_stat, p_val, sharpe_a, sharpe_b
+
+def ledoit_wolf_bootstrap_sharpe(ret_a, ret_b, rf_weekly=RF_WEEKLY, n_boot=2000, block_size=5):
+    """
+    Ledoit and Wolf (2008) Circular Block Bootstrap test for Sharpe Ratio equality.
+    Accounting for heavy tails, non-normality, and GARCH autocorrelation.
+    """
+    np.random.seed(42)
+    T = len(ret_a)
+    ex_a = ret_a - rf_weekly
+    ex_b = ret_b - rf_weekly
+    
+    # Observed Sharpe difference
+    s_a = (np.mean(ex_a) * 52) / (np.std(ret_a, ddof=1) * np.sqrt(52) + 1e-10)
+    s_b = (np.mean(ex_b) * 52) / (np.std(ret_b, ddof=1) * np.sqrt(52) + 1e-10)
+    d_obs = s_a - s_b
+    
+    # Circular block bootstrap
+    d_boot = np.zeros(n_boot)
+    n_blocks = int(np.ceil(T / block_size))
+    
+    for i in range(n_boot):
+        start_indices = np.random.randint(0, T, size=n_blocks)
+        boot_idx = []
+        for idx in start_indices:
+            boot_idx.extend([(idx + k) % T for k in range(block_size)])
+        boot_idx = boot_idx[:T]
+        
+        r_a_b = ret_a[boot_idx]
+        r_b_b = ret_b[boot_idx]
+        
+        sa_b = (np.mean(r_a_b - rf_weekly) * 52) / (np.std(r_a_b, ddof=1) * np.sqrt(52) + 1e-10)
+        sb_b = (np.mean(r_b_b - rf_weekly) * 52) / (np.std(r_b_b, ddof=1) * np.sqrt(52) + 1e-10)
+        d_boot[i] = sa_b - sb_b
+        
+    # Two-sided empirical p-value under H0: d = 0 (centered)
+    d_boot_centered = d_boot - np.mean(d_boot)
+    p_val = np.mean(np.abs(d_boot_centered) >= np.abs(d_obs))
+    
+    return d_obs, p_val
+
+def ledoit_wolf_bootstrap_sortino(ret_a, ret_b, rf_weekly=RF_WEEKLY, n_boot=2000, block_size=5):
+    """
+    Ledoit and Wolf (2011) Circular Block Bootstrap test for Sortino Ratio equality.
+    """
+    np.random.seed(42)
+    T = len(ret_a)
+    
+    def calc_sortino(ret):
+        mean_ret = np.mean(ret - rf_weekly) * 52
+        down_diff = np.minimum(0, ret - rf_weekly)
+        down_dev = np.sqrt(np.mean(down_diff**2)) * np.sqrt(52)
+        return mean_ret / (down_dev + 1e-10)
+        
+    sort_a = calc_sortino(ret_a)
+    sort_b = calc_sortino(ret_b)
+    d_obs = sort_a - sort_b
+    
+    d_boot = np.zeros(n_boot)
+    n_blocks = int(np.ceil(T / block_size))
+    
+    for i in range(n_boot):
+        start_indices = np.random.randint(0, T, size=n_blocks)
+        boot_idx = []
+        for idx in start_indices:
+            boot_idx.extend([(idx + k) % T for k in range(block_size)])
+        boot_idx = boot_idx[:T]
+        
+        sa_b = calc_sortino(ret_a[boot_idx])
+        sb_b = calc_sortino(ret_b[boot_idx])
+        d_boot[i] = sa_b - sb_b
+        
+    d_boot_centered = d_boot - np.mean(d_boot)
+    p_val = np.mean(np.abs(d_boot_centered) >= np.abs(d_obs))
+    
+    return d_obs, p_val
+
+def paired_return_tests(ret_a, ret_b):
+    """
+    Paired Student's t-test and Wilcoxon Signed-Rank test on weekly return differences.
+    """
+    from scipy.stats import ttest_rel, wilcoxon
+    
+    diff = ret_a - ret_b
+    t_stat, p_t = ttest_rel(ret_a, ret_b)
+    try:
+        w_stat, p_w = wilcoxon(diff)
+    except Exception:
+        w_stat, p_w = 0.0, 1.0
+        
+    return t_stat, p_t, w_stat, p_w
+
 def run_portfolio_backtests(transaction_cost_rate=0.0075):
     """
     Out-of-sample portfolio backtesting (2021 - 2025) comparing 6 strategies.
@@ -113,8 +239,6 @@ def run_portfolio_backtests(transaction_cost_rate=0.0075):
     xgb_pred = pd.read_csv('output/tables/xgb_predicted_returns.csv', index_col=0, parse_dates=True).fillna(0.0)
     actual_ret = pd.read_csv('output/tables/actual_test_returns.csv', index_col=0, parse_dates=True).fillna(0.0)
     
-    # Load historical returns for covariance/scenario estimations (2010-2020)
-    full_returns = pd.read_csv('output/tables/descriptive_and_diagnostic_stats.csv') # To get asset tickers order
     tickers = actual_ret.columns.tolist()
     
     N = len(tickers)
@@ -126,10 +250,20 @@ def run_portfolio_backtests(transaction_cost_rate=0.0075):
     w_hist_cvar = np.zeros((T_test, N))
     w_mvo = np.zeros((T_test, N))
     w_ewp = np.full((T_test, N), 1.0 / N)
-    w_buy_hold = np.full((T_test, N), 1.0 / N)
     
+    # NGX Index Buy-Hold starts at 1/N equal weight at t=0 and drifts passively without rebalancing
+    w_buy_hold = np.zeros((T_test, N))
+    w_curr = np.ones(N) / N
+    w_buy_hold[0, :] = w_curr
+    for t in range(1, T_test):
+        ret_t_1 = actual_ret.iloc[t-1].values
+        # Gross asset accumulation: exp(r)
+        gross_growth = w_curr * np.exp(ret_t_1)
+        w_curr = gross_growth / np.sum(gross_growth)
+        w_buy_hold[t, :] = w_curr
+        
     # Run rolling optimization
-    hist_returns_window = actual_ret.values # Simplified rolling sample window
+    hist_returns_window = actual_ret.values # Rolling window
     
     for t in range(T_test):
         # 1. RF-CVaR
@@ -149,28 +283,35 @@ def run_portfolio_backtests(transaction_cost_rate=0.0075):
         w_mvo[t, :] = solve_mean_variance(mu_rf, cov_mat)
         
     strategies = {
-        'RF-CVaR': w_rf,
-        'XGB-CVaR': w_xgb,
-        'Historical-CVaR': w_hist_cvar,
-        'Mean-Variance (MVO)': w_mvo,
-        '1/N Equal Weight': w_ewp,
-        'NGX Index Buy-Hold': w_buy_hold
+        'RF-CVaR': (w_rf, False),
+        'XGB-CVaR': (w_xgb, False),
+        'Historical-CVaR': (w_hist_cvar, False),
+        'Mean-Variance (MVO)': (w_mvo, False),
+        '1/N Equal Weight': (w_ewp, False),
+        'NGX Index Buy-Hold': (w_buy_hold, True) # Passive Buy-and-Hold (0 turnover post t=0)
     }
     
     backtest_results = {}
+    net_returns_dict = {}
     performance_summary = []
     
     plt.figure(figsize=(12, 7))
     
-    for name, W in strategies.items():
+    for name, (W, is_buy_hold) in strategies.items():
         port_gross_ret = np.sum(W * actual_ret.values, axis=1)
         
         # Calculate turnover and transaction cost
-        turnover = np.sum(np.abs(W[1:] - W[:-1]), axis=1)
-        turnover = np.insert(turnover, 0, np.sum(W[0])) # First week entry cost
+        if is_buy_hold:
+            # Passive Buy-Hold has 0 trading turnover after week 0
+            turnover = np.zeros(T_test)
+            turnover[0] = 1.0 # Initial portfolio entry cost
+        else:
+            turnover = np.sum(np.abs(W[1:] - W[:-1]), axis=1)
+            turnover = np.insert(turnover, 0, np.sum(W[0])) # First week entry cost
         
         tx_costs = turnover * transaction_cost_rate
         port_net_ret = port_gross_ret - tx_costs
+        net_returns_dict[name] = port_net_ret
         
         # Cumulative Equity Curve
         cum_ret = np.exp(np.cumsum(port_net_ret)) # Starting at $1.0
@@ -199,8 +340,8 @@ def run_portfolio_backtests(transaction_cost_rate=0.0075):
         drawdown = (cum_ret - peak) / (peak + 1e-10)
         mdd = np.min(drawdown)
         
-        # Average Turnover
-        avg_turnover = np.mean(turnover)
+        # Average Turnover (excluding week 0 entry for display if passive)
+        avg_turnover = np.mean(turnover[1:]) if is_buy_hold else np.mean(turnover)
         
         performance_summary.append({
             'Strategy': name,
@@ -226,11 +367,45 @@ def run_portfolio_backtests(transaction_cost_rate=0.0075):
     plt.close()
     
     perf_df = pd.DataFrame(performance_summary)
-    perf_df.to_csv('output/tables/portfolio_performance_summary.csv', index=False)
     
-    print("\n--- Out-of-Sample Portfolio Performance Comparison (2021 - 2025) ---")
-    print(perf_df.to_string(index=False))
-    
+    # Save table depending on cost regime
+    if transaction_cost_rate > 0:
+        perf_df.to_csv('output/tables/portfolio_performance_summary.csv', index=False)
+        print("\n--- Out-of-Sample Portfolio Performance Comparison (2021 - 2025, 0.75% Fees) ---")
+        print(perf_df.to_string(index=False))
+        
+        # Run Pairwise Statistical Significance Tests against Benchmarks (1/N EWP & Buy-Hold)
+        sig_records = []
+        benchmarks = ['1/N Equal Weight', 'NGX Index Buy-Hold']
+        target_strategies = ['RF-CVaR', 'XGB-CVaR', 'Historical-CVaR', 'Mean-Variance (MVO)']
+        
+        for strat in target_strategies:
+            ret_strat = net_returns_dict[strat]
+            for bench in benchmarks:
+                ret_bench = net_returns_dict[bench]
+                
+                z_jk, p_jk, s_a, s_b = jobson_korkie_memmel_test(ret_strat, ret_bench)
+                d_sharpe, p_lw_sharpe = ledoit_wolf_bootstrap_sharpe(ret_strat, ret_bench)
+                d_sortino, p_lw_sortino = ledoit_wolf_bootstrap_sortino(ret_strat, ret_bench)
+                t_stat, p_t, w_stat, p_w = paired_return_tests(ret_strat, ret_bench)
+                
+                sig_records.append({
+                    'Strategy': strat,
+                    'Benchmark': bench,
+                    'Sharpe Diff': s_a - s_b,
+                    'Jobson-Korkie Z': z_jk,
+                    'Jobson-Korkie p-val': p_jk,
+                    'Ledoit-Wolf Sharpe p-val': p_lw_sharpe,
+                    'Ledoit-Wolf Sortino p-val': p_lw_sortino,
+                    'Paired t-stat p-val': p_t,
+                    'Wilcoxon p-val': p_w
+                })
+                
+        sig_df = pd.DataFrame(sig_records)
+        sig_df.to_csv('output/tables/portfolio_significance_tests.csv', index=False)
+        print("\n--- Pairwise Statistical Significance Tests (p-values) ---")
+        print(sig_df.to_string(index=False))
+        
     return perf_df
 
 if __name__ == '__main__':
@@ -242,3 +417,4 @@ if __name__ == '__main__':
     perf_zero_df = run_portfolio_backtests(transaction_cost_rate=0.0000)
     perf_zero_df.to_csv('output/tables/portfolio_performance_zero_cost.csv', index=False)
     print("Saved output/tables/portfolio_performance_zero_cost.csv")
+

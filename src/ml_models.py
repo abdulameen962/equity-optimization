@@ -196,7 +196,39 @@ def train_and_evaluate_ml_models_walk_forward(train_initial_end_date='2020-12-31
         })
         
     perf_df = pd.DataFrame(performance_metrics)
+    perf_df.to_csv('output/tables/ml_forecasting_significance.csv', index=False)
     perf_df.to_csv('output/tables/ml_forecasting_performance.csv', index=False)
+    
+    # Diebold-Mariano Test function
+    def diebold_mariano_test(y_true, y_pred1, y_pred2, h=1):
+        from scipy.stats import norm
+        e1 = (y_true - y_pred1)**2
+        e2 = (y_true - y_pred2)**2
+        d = e1 - e2
+        mean_d = np.mean(d)
+        var_d = np.var(d, ddof=1)
+        dm_stat = mean_d / np.sqrt(np.maximum(1e-10, var_d / len(d)))
+        p_val = 2.0 * (1.0 - norm.cdf(np.abs(dm_stat)))
+        return dm_stat, p_val
+
+    dm_records = []
+    for ticker in master_feat.keys():
+        y_t = actual_returns[ticker].values
+        p_rf = rf_predictions[ticker].values
+        p_xgb = xgb_predictions[ticker].values
+        p_b = baseline_predictions[ticker].values
+        
+        dm_rf_stat, dm_rf_p = diebold_mariano_test(y_t, p_rf, p_b)
+        dm_xgb_stat, dm_xgb_p = diebold_mariano_test(y_t, p_xgb, p_b)
+        
+        dm_records.append({
+            'Ticker': ticker,
+            'RF DM Stat': dm_rf_stat,
+            'RF DM p-val': dm_rf_p,
+            'XGB DM Stat': dm_xgb_stat,
+            'XGB DM p-val': dm_xgb_p
+        })
+    pd.DataFrame(dm_records).to_csv('output/tables/ml_forecasting_significance.csv', index=False)
     
     # Save predicted return matrices for walk-forward test period (2021-2025)
     rf_pred_df = pd.DataFrame(rf_predictions)
@@ -261,4 +293,5 @@ def train_and_evaluate_ml_models_walk_forward(train_initial_end_date='2020-12-31
 
 if __name__ == '__main__':
     train_and_evaluate_ml_models_walk_forward()
+
 
