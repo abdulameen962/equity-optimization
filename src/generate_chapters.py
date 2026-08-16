@@ -573,6 +573,85 @@ def generate_chapters_pdf(pdf_filename='output/pdf/Chapters_4_and_5.pdf'):
     ))
     story.append(Spacer(1, 10))
     
+    # 4.7.2 Economic Interpretation of Results and Investor Welfare Analysis
+    story.append(Paragraph("4.7.2 Economic Interpretation of Results and Investor Welfare Analysis", subsection_title_style))
+    story.append(Paragraph(
+        "While empirical portfolio performance is commonly presented in statistical terms (Sharpe ratios, p-values, standard deviations), "
+        "it is essential for institutional pension trustees, retail investors, and policy regulators to translate these statistical metrics into direct economic terms and welfare gains. "
+        "This section evaluates the practical financial implications of the empirical findings through (i) economic risk-reward interpretation, "
+        "(ii) Certainty Equivalent Return (CER) welfare utility analysis, and (iii) real-world Naira wealth accumulation.",
+        body_style
+    ))
+    
+    story.append(Paragraph("<b>1. Economic Translation of Risk-Adjusted Ratios (Sharpe & Sortino):</b>", subsection_title_style))
+    story.append(Paragraph(
+        "Under the annualized Central Bank of Nigeria (CBN) 91-day T-Bill risk-free rate of 18.00% (0.319% weekly), "
+        "a net Sharpe ratio of 1.49 (Historical-CVaR) means that for every 1.0% of annualized return volatility assumed, "
+        "the investor earns 1.49% of excess return above risk-free sovereign debt. Compared to the passive NGX Index Buy-and-Hold strategy "
+        "(Sharpe ratio of 0.90, excess return of 17.88% / 19.77% volatility), Historical-CVaR delivers a <b>65.6% increase in risk-efficiency</b>. "
+        "Furthermore, the Sortino ratio of 3.02 confirms that investors receive 3.02 units of excess return per unit of downside crash risk, "
+        "proving that high nominal returns (42.12%) were achieved without taking on catastrophic downside tail risk.",
+        body_style
+    ))
+    
+    story.append(Paragraph("<b>2. Investor Welfare Utility & Certainty Equivalent Return (CER) Gains:</b>", subsection_title_style))
+    story.append(Paragraph(
+        "In economic portfolio theory (Campbell & Viceira, 2002; Fleming et al., 2001), investor welfare is formalized via the Certainty Equivalent Return (CER), "
+        "representing the risk-free rate of return that a risk-averse investor would accept as economically equivalent to holding the risky portfolio. "
+        "Assuming a standard quadratic utility function with a risk-aversion coefficient gamma = 3 (representative of Nigerian Pension Fund Administrators):",
+        body_style
+    ))
+    
+    story.append(Paragraph(
+        "<i>CER = mu<sub>p</sub> - (&gamma; / 2) &sigma;<sub>p</sub><sup>2</sup></i>",
+        caption_style
+    ))
+    
+    story.append(Paragraph("Table 4.7: Investor Economic Welfare Utility and Certainty Equivalent Return (CER) Analysis (gamma = 3)", subsection_title_style))
+    
+    welfare_data = [
+        [Paragraph("Strategy", table_header_style), Paragraph("Ann. Return (mu)", table_header_style), Paragraph("Ann. Vol (sigma)", table_header_style), Paragraph("Variance Penalty", table_header_style), Paragraph("Certainty Equivalent Return (CER)", table_header_style), Paragraph("Welfare Gain vs Index (Delta CER)", table_header_style)],
+        [Paragraph("Historical-CVaR (Net)", table_text_style), Paragraph("42.12%", table_text_style), Paragraph("16.15%", table_text_style), Paragraph("3.91%", table_text_style), Paragraph("<b>38.21%</b>", table_text_style), Paragraph("<b>+8.19% (+819 bps)</b>", table_text_style)],
+        [Paragraph("RF-CVaR (Net)", table_text_style), Paragraph("38.33%", table_text_style), Paragraph("16.09%", table_text_style), Paragraph("3.88%", table_text_style), Paragraph("34.45%", table_text_style), Paragraph("+4.43% (+443 bps)", table_text_style)],
+        [Paragraph("XGB-CVaR (Net)", table_text_style), Paragraph("37.71%", table_text_style), Paragraph("15.85%", table_text_style), Paragraph("3.77%", table_text_style), Paragraph("33.94%", table_text_style), Paragraph("+3.92% (+392 bps)", table_text_style)],
+        [Paragraph("1/N Equal Weight", table_text_style), Paragraph("37.42%", table_text_style), Paragraph("18.29%", table_text_style), Paragraph("5.02%", table_text_style), Paragraph("32.40%", table_text_style), Paragraph("+2.38% (+238 bps)", table_text_style)],
+        [Paragraph("NGX Index Buy-Hold", table_text_style), Paragraph("35.88%", table_text_style), Paragraph("19.77%", table_text_style), Paragraph("5.86%", table_text_style), Paragraph("30.02%", table_text_style), Paragraph("Baseline (0 bps)", table_text_style)],
+        [Paragraph("Markowitz (MVO)", table_text_style), Paragraph("18.24%", table_text_style), Paragraph("53.87%", table_text_style), Paragraph("43.53%", table_text_style), Paragraph("-25.29%", table_text_style), Paragraph("-55.31% (-5531 bps)", table_text_style)]
+    ]
+    t7 = Table(welfare_data, colWidths=[1.3*inch, 1.0*inch, 1.0*inch, 1.0*inch, 1.4*inch, 1.4*inch])
+    t7.setStyle(TableStyle([
+        ('BACKGROUND', (0,0), (-1,0), colors.HexColor('#F2F2F2')),
+        ('LINEABOVE', (0,0), (-1,0), 1.0, colors.black),
+        ('LINEBELOW', (0,0), (-1,0), 1.0, colors.black),
+        ('LINEBELOW', (0,-1), (-1,-1), 1.0, colors.black),
+        ('ALIGN', (0,0), (-1,-1), 'CENTER'),
+        ('VALIGN', (0,0), (-1,-1), 'MIDDLE'),
+        ('BOTTOMPADDING', (0,0), (-1,-1), 4),
+        ('TOPPADDING', (0,0), (-1,-1), 4)
+    ]))
+    story.append(t7)
+    story.append(Paragraph("Source: Author's computation (2026). Risk-aversion coefficient gamma = 3. Delta CER represents annual economic welfare gain.", caption_style))
+    story.append(Spacer(1, 10))
+
+    story.append(Paragraph(
+        "<b>Economic Interpretation of Welfare Gains:</b><br/>"
+        "As documented in Table 4.7, transitioning from passive NGX Index Buy-and-Hold (CER = 30.02%) to active Historical-CVaR (CER = 38.21%) generates an annual <b>economic welfare gain of +8.19% (+819 basis points)</b>. "
+        "In economic terms, an institutional investor would be willing to pay an annual management fee of up to <b>8.19% (819 bps)</b> before becoming indifferent between holding passive NGX index shares and adopting active Historical-CVaR risk management. "
+        "Conversely, Markowitz Mean-Variance Optimization results in a severe negative CER (-25.29%), representing a massive economic welfare destruction (-5,531 bps) caused by unconstrained weight concentration.",
+        body_style
+    ))
+    story.append(Spacer(1, 10))
+
+    story.append(Paragraph("<b>3. Real-World Naira Wealth Multiplier and Downside Protection:</b>", subsection_title_style))
+    story.append(Paragraph(
+        "Translating performance into absolute financial growth, an initial capital allocation of <b>N10,000,000 (10 Million Naira)</b> invested at the start of out-of-sample backtesting (2021) evolves as follows over 5 years:<br/>"
+        "&bull; <b>Historical-CVaR:</b> Grows to <b>N57.77 Million</b> (5.78x capital multiplier), generating <b>N47.77 Million in net profit</b>.<br/>"
+        "&bull; <b>NGX Index Buy-Hold:</b> Grows to <b>N46.33 Million</b> (4.63x capital multiplier), generating <b>N36.33 Million in net profit</b>.<br/>"
+        "&bull; <b>Economic Surplus:</b> Active CVaR risk management delivers an additional <b>+N11.44 Million in net profit per N10M invested</b> over 5 years. Crucially, this extra wealth was generated while experiencing smaller maximum peak-to-trough losses (-21.96% vs -26.66%), demonstrating true downside capital protection during market drawdowns.",
+        body_style
+    ))
+    story.append(Spacer(1, 10))
+    
     story.append(PageBreak())
     
     # =========================================================================

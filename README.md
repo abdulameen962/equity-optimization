@@ -77,10 +77,26 @@ This master entry point automatically executes all 6 sequential stages:
 
 *\* Bold values denote statistical significance at $\alpha = 0.05$.*
 
+---
+
+### Table 4.7: Investor Economic Welfare Utility and Certainty Equivalent Return (CER) Analysis ($\gamma = 3$)
+
+$$\text{CER} = \mu_p - \frac{\gamma}{2} \sigma_p^2$$
+
+| Strategy | Annualized Return ($\mu_p$) | Annualized Volatility ($\sigma_p$) | Variance Penalty | Certainty Equivalent Return (CER) | Economic Welfare Gain vs Index ($\Delta\text{CER}$) |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| **Historical-CVaR (Net)** | **42.12%** | **16.15%** | **3.91%** | **38.21%** | **+8.19% (+819 bps)** |
+| **RF-CVaR (Net)** | 38.33% | 16.09% | 3.88% | 34.45% | +4.43% (+443 bps) |
+| **XGB-CVaR (Net)** | 37.71% | 15.85% | 3.77% | 33.94% | +3.92% (+392 bps) |
+| **1/N Equal Weight** | 37.42% | 18.29% | 5.02% | 32.40% | +2.38% (+238 bps) |
+| **NGX Index Buy-Hold** | 35.88% | 19.77% | 5.86% | 30.02% | Baseline (0 bps) |
+| **Markowitz (MVO)** | 18.24% | 53.87% | 43.53% | -25.29% | -55.31% (-5531 bps) |
+
 ### 🔑 Key Econometric Conclusions:
 1. **Historical-CVaR Statistically Outperforms Passive Buy-and-Hold**: Ledoit-Wolf circular block bootstrap confirms statistically significant Sharpe outperformance ($p = 0.022 < 0.05$) and Sortino outperformance ($p = 0.033 < 0.05$).
-2. **Statistical Failure of Gaussian Markowitz MVO**: Unconstrained Mean-Variance Optimization statistically underperforms naively diversified 1/N Equal Weight ($p = 0.025$ Ledoit-Wolf Sharpe, $p = 0.008$ Wilcoxon test), confirming the empirical breakdown of mean-variance models under non-normal stock returns on the NGX.
-3. **Retail Fee Drag**: High 0.75% retail trading friction reduces net active ML Sharpe ratios, favoring low-turnover Historical-CVaR for retail execution while ML-CVaR retains gross alpha superiority for institutional PFAs (< 0.10% fees).
+2. **Economic Welfare Gains ($\Delta CER = +819 \text{ bps}$)**: Transitioning from passive NGX Index Buy-and-Hold to Historical-CVaR yields an annual certainty-equivalent welfare gain of **+8.19% (819 bps)**. An investor would be willing to pay up to 8.19% annually in management fees before becoming economically indifferent to active tail-risk management.
+3. **Naira Wealth Multiplier**: An initial investment of **₦10 Million** grows to **₦57.77 Million** under Historical-CVaR vs **₦46.33 Million** under passive NGX Buy-and-Hold, delivering **+₦11.44 Million in net economic surplus per ₦10M invested** while reducing maximum drawdown from -26.66% to -21.96%.
+4. **Statistical Failure of Gaussian Markowitz MVO**: Unconstrained Mean-Variance Optimization statistically underperforms naively diversified 1/N Equal Weight ($p = 0.025$ Ledoit-Wolf Sharpe, $p = 0.008$ Wilcoxon test), resulting in a catastrophic welfare loss ($\text{CER} = -25.29\%$).
 
 ---
 
