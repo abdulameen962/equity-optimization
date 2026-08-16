@@ -367,54 +367,80 @@ def run_portfolio_backtests(transaction_cost_rate=0.0075):
     plt.close()
     
     perf_df = pd.DataFrame(performance_summary)
-    
-    # Save table depending on cost regime
-    if transaction_cost_rate > 0:
-        perf_df.to_csv('output/tables/portfolio_performance_summary.csv', index=False)
-        print("\n--- Out-of-Sample Portfolio Performance Comparison (2021 - 2025, 0.75% Fees) ---")
-        print(perf_df.to_string(index=False))
-        
-        # Run Pairwise Statistical Significance Tests against Benchmarks (1/N EWP & Buy-Hold)
-        sig_records = []
-        benchmarks = ['1/N Equal Weight', 'NGX Index Buy-Hold']
-        target_strategies = ['RF-CVaR', 'XGB-CVaR', 'Historical-CVaR', 'Mean-Variance (MVO)']
-        
-        for strat in target_strategies:
-            ret_strat = net_returns_dict[strat]
-            for bench in benchmarks:
-                ret_bench = net_returns_dict[bench]
-                
-                z_jk, p_jk, s_a, s_b = jobson_korkie_memmel_test(ret_strat, ret_bench)
-                d_sharpe, p_lw_sharpe = ledoit_wolf_bootstrap_sharpe(ret_strat, ret_bench)
-                d_sortino, p_lw_sortino = ledoit_wolf_bootstrap_sortino(ret_strat, ret_bench)
-                t_stat, p_t, w_stat, p_w = paired_return_tests(ret_strat, ret_bench)
-                
-                sig_records.append({
-                    'Strategy': strat,
-                    'Benchmark': bench,
-                    'Sharpe Diff': s_a - s_b,
-                    'Jobson-Korkie Z': z_jk,
-                    'Jobson-Korkie p-val': p_jk,
-                    'Ledoit-Wolf Sharpe p-val': p_lw_sharpe,
-                    'Ledoit-Wolf Sortino p-val': p_lw_sortino,
-                    'Paired t-stat p-val': p_t,
-                    'Wilcoxon p-val': p_w
-                })
-                
-        sig_df = pd.DataFrame(sig_records)
-        sig_df.to_csv('output/tables/portfolio_significance_tests.csv', index=False)
-        print("\n--- Pairwise Statistical Significance Tests (p-values) ---")
-        print(sig_df.to_string(index=False))
-        
-    return perf_df
+    return perf_df, net_returns_dict
 
-if __name__ == '__main__':
-    print("Executing Mean-CVaR Portfolio Optimization & Backtesting...")
-    print("\n--- Running Backtest 1: With 0.75% Transaction Fees & Slippage ---")
-    perf_fee_df = run_portfolio_backtests(transaction_cost_rate=0.0075)
+def run_all_fee_regimes_and_significance():
+    """
+    Executes backtests across 3 transaction fee regimes:
+    - 1.50% Retail Brokerage Fees & Market Slippage
+    - 0.75% Institutional PFA Brokerage Fees & Execution Friction
+    - 0.00% Zero-Cost Gross Performance
     
-    print("\n--- Running Backtest 2: Zero Transaction Costs (Gross Performance) ---")
-    perf_zero_df = run_portfolio_backtests(transaction_cost_rate=0.0000)
+    Computes pairwise statistical significance tests across all 3 regimes.
+    """
+    print("Executing Mean-CVaR Portfolio Optimization & Multi-Tier Backtesting...")
+    
+    print("\n--- Regime 1: Retail Scenario (1.50% Fees & Slippage) ---")
+    perf_retail_df, ret_retail = run_portfolio_backtests(transaction_cost_rate=0.0150)
+    perf_retail_df.to_csv('output/tables/portfolio_performance_summary.csv', index=False)
+    print("Saved output/tables/portfolio_performance_summary.csv")
+    
+    print("\n--- Regime 2: Institutional PFA Scenario (0.75% Fees) ---")
+    perf_inst_df, ret_inst = run_portfolio_backtests(transaction_cost_rate=0.0075)
+    perf_inst_df.to_csv('output/tables/portfolio_performance_institutional.csv', index=False)
+    print("Saved output/tables/portfolio_performance_institutional.csv")
+    
+    print("\n--- Regime 3: Zero-Cost Scenario (0.00% Gross Performance) ---")
+    perf_zero_df, ret_zero = run_portfolio_backtests(transaction_cost_rate=0.0000)
     perf_zero_df.to_csv('output/tables/portfolio_performance_zero_cost.csv', index=False)
     print("Saved output/tables/portfolio_performance_zero_cost.csv")
+    
+    # Compute Multi-Tier Pairwise Statistical Significance Tests
+    regimes = {
+        'Gross (0.00%)': ret_zero,
+        'Institutional (0.75%)': ret_inst,
+        'Retail (1.50%)': ret_retail
+    }
+    
+    pairwise_pairs = [
+        ('XGB-CVaR', 'NGX Index Buy-Hold'),
+        ('RF-CVaR', 'NGX Index Buy-Hold'),
+        ('Historical-CVaR', 'NGX Index Buy-Hold'),
+        ('Historical-CVaR', '1/N Equal Weight'),
+        ('XGB-CVaR', 'Historical-CVaR'),
+        ('Mean-Variance (MVO)', '1/N Equal Weight')
+    ]
+    
+    sig_records = []
+    
+    for fee_label, ret_dict in regimes.items():
+        for strat, bench in pairwise_pairs:
+            ret_strat = ret_dict[strat]
+            ret_bench = ret_dict[bench]
+            
+            z_jk, p_jk, s_a, s_b = jobson_korkie_memmel_test(ret_strat, ret_bench)
+            d_sharpe, p_lw_sharpe = ledoit_wolf_bootstrap_sharpe(ret_strat, ret_bench)
+            d_sortino, p_lw_sortino = ledoit_wolf_bootstrap_sortino(ret_strat, ret_bench)
+            t_stat, p_t, w_stat, p_w = paired_return_tests(ret_strat, ret_bench)
+            
+            sig_records.append({
+                'Fee Regime': fee_label,
+                'Strategy': strat,
+                'Benchmark': bench,
+                'Sharpe Diff': s_a - s_b,
+                'Jobson-Korkie Z': z_jk,
+                'Jobson-Korkie p-val': p_jk,
+                'Ledoit-Wolf Sharpe p-val': p_lw_sharpe,
+                'Ledoit-Wolf Sortino p-val': p_lw_sortino,
+                'Paired t-stat p-val': p_t,
+                'Wilcoxon p-val': p_w
+            })
+            
+    sig_df = pd.DataFrame(sig_records)
+    sig_df.to_csv('output/tables/portfolio_significance_tests.csv', index=False)
+    print("\n--- Multi-Tier Pairwise Statistical Significance Tests (Saved to output/tables/portfolio_significance_tests.csv) ---")
+    print(sig_df.to_string(index=False))
+
+if __name__ == '__main__':
+    run_all_fee_regimes_and_significance()
 
