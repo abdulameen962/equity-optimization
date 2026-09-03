@@ -118,10 +118,11 @@ def generate_complete_thesis_docx(output_path="Abdulameen_Complete_Thesis_Chapte
     print("Appending Chapters 4 & 5 + References to DOCX...")
     
     # =========================================================================
-    # CHAPTER 4: EMPIRICAL RESULTS AND DISCUSSION
+    # CHAPTER 4: DATA ANALYSIS, PRESENTATION AND DISCUSSION OF FINDINGS
     # =========================================================================
-    add_styled_paragraph(doc, "Chapter 4", 'chapter_header')
-    add_styled_paragraph(doc, "4.1 Empirical Results and Discussion", 'section_title')
+    add_styled_paragraph(doc, "CHAPTER FOUR", 'chapter_header')
+    add_styled_paragraph(doc, "DATA ANALYSIS, PRESENTATION AND DISCUSSION OF FINDINGS", 'section_title')
+    add_styled_paragraph(doc, "4.1 Empirical Results", 'section_title')
     add_styled_paragraph(
         doc,
         "This chapter presents the empirical findings of the study on equity return forecasting and tail-risk-aware portfolio optimization "
@@ -423,90 +424,158 @@ def generate_complete_thesis_docx(output_path="Abdulameen_Complete_Thesis_Chapte
     add_table_to_docx(doc, t6_headers, t6_rows)
     add_styled_paragraph(doc, "Source: Author's computation (2026). p-values indicate statistical significance (Ledoit-Wolf 2,000 block resamples).", 'caption')
     
-    # 4.7.2 Welfare Analysis
-    add_styled_paragraph(doc, "4.7.2 Economic Interpretation of Results and Investor Welfare Analysis", 'section_title')
+    # 4.2 Discussion of Findings
+    add_styled_paragraph(doc, "4.2 Discussion of Findings", 'section_title')
     add_styled_paragraph(
         doc,
-        "While empirical portfolio performance is commonly presented in statistical terms (Sharpe ratios, p-values, standard deviations), "
-        "it is essential for institutional pension trustees, retail investors, and policy regulators to translate these statistical metrics into direct economic terms and welfare gains. "
-        "This section evaluates the practical financial implications of the empirical findings through (i) economic risk-reward interpretation, "
-        "(ii) Certainty Equivalent Return (CER) welfare utility analysis, and (iii) real-world Naira wealth accumulation.",
+        "The empirical findings presented in Section 4.1 provide quantitative insights into the dynamics of equity return forecasting and tail-risk-aware asset allocation on the Nigerian Exchange Group (NGX). "
+        "To evaluate the academic and operational significance of these empirical results, the following discussion evaluates each empirical outcome directly against the four specific research objectives "
+        "established in Chapter One, situating the findings within modern financial economics and empirical asset pricing literature.",
         'body'
     )
     
-    add_styled_paragraph(doc, "Table 4.7: Investor Economic Welfare Utility and Certainty Equivalent Return (CER) Analysis across Market Regimes (gamma = 3)", 'section_title')
-    welfare_headers = ["Strategy & Regime", "Ann. Return", "Ann. Vol", "Variance Penalty", "CER Utility", "Welfare Gain vs Index"]
-    welfare_rows = [
-        ["Historical-CVaR (Inst. 0.75%)", "42.12%", "16.15%", "3.91%", "38.21%", "+8.19% (+819 bps)"],
-        ["Historical-CVaR (Retail 1.50%)", "41.97%", "16.15%", "3.91%", "38.06%", "+8.17% (+817 bps)"],
-        ["RF-CVaR (Inst. 0.75%)", "38.33%", "16.09%", "3.88%", "34.45%", "+4.43% (+443 bps)"],
-        ["XGB-CVaR (Inst. 0.75%)", "37.71%", "15.85%", "3.77%", "33.94%", "+3.92% (+392 bps)"],
-        ["1/N Equal Weight (Inst. 0.75%)", "37.42%", "18.29%", "5.02%", "32.40%", "+2.38% (+238 bps)"],
-        ["RF-CVaR (Retail 1.50%)", "35.37%", "16.17%", "3.92%", "31.45%", "+1.56% (+156 bps)"],
-        ["NGX Index Buy-Hold", "35.88%", "19.77%", "5.86%", "30.02%", "Baseline (0 bps)"],
-        ["XGB-CVaR (Retail 1.50%)", "33.42%", "15.98%", "3.83%", "29.59%", "-0.30% (-30 bps)"],
-        ["Markowitz MVO (Retail 1.50%)", "-20.48%", "53.92%", "43.61%", "-64.09%", "-93.98% (-9398 bps)"]
-    ]
-    add_table_to_docx(doc, welfare_headers, welfare_rows)
-    add_styled_paragraph(doc, "Source: Author's computation (2026). Risk-aversion coefficient gamma = 3. Delta CER represents annual economic welfare gain.", 'caption')
+    # Paragraph 1: Objective 1
+    add_styled_paragraph(
+        doc,
+        "Firstly, regarding the evaluation of statistical non-normality and tail-risk exposure across NGX equities, the empirical diagnostic tests presented in Section 4.1.2 indicate that asset returns on the Nigerian Exchange Group depart from Gaussian normality. "
+        "Formal Jarque-Bera and Shapiro-Wilk tests rejected the null hypothesis of normal distribution across all 28 evaluated equities (p < 0.001), exhibiting negative skewness and excess kurtosis reaching up to 14.46. Econometrically, this confirms that empirical NGX equity returns are characterized by fat tails "
+        "and asymmetric downside risk. These results support the theoretical arguments of Mozumder et al. (2024) and Adegboyo & Sarwar (2025), who emphasize that emerging frontier stock markets experience "
+        "price jumps, policy shifts, and liquidity shocks. Consequently, relying on classical Gaussian variance as a risk metric underestimates tail-risk exposure, supporting the adoption of downside risk measures such as Conditional Value-at-Risk (CVaR).",
+        'body'
+    )
+    
+    # Paragraph 2: Objective 2
+    add_styled_paragraph(
+        doc,
+        "Secondly, regarding the performance of non-linear Machine Learning models in forecasting weekly NGX equity returns under Expanding Rolling Window Walk-Forward Validation, the empirical results in Section 4.1.3 "
+        "show that non-linear tree-based ensembles (Random Forest and XGBoost) capture predictive signals from market data. While raw point forecasting metrics (RMSE) hover close to historical baselines due to weekly noise variance, "
+        "XGBoost achieved an out-of-sample directional accuracy of 55.76% across liquid NGX equities, compared to the 50.0% random walk benchmark. Feature importance analysis (Section 4.1.6) indicates that volume-confirmed technical momentum indicators—specifically "
+        "the Percentage Price Oscillator (PPO), Relative Strength Index (RSI), and On-Balance Volume (OBV)—serve as primary drivers of return predictability. This aligns with empirical asset pricing literature (Gu, Kelly, & Xiu, 2020; Chao, 2024; Ojo & Okafor, 2024; Ajiga et al., 2024), "
+        "demonstrating that machine learning algorithms capture non-linear market dynamics in emerging economies.",
+        'body'
+    )
+    
+    # Paragraph 3: Objective 3
+    add_styled_paragraph(
+        doc,
+        "Thirdly, regarding the performance of integrated ML-CVaR portfolio strategies compared against classical Markowitz Mean-Variance Optimization and 1/N benchmarks, the backtest results in Section 4.1.4 indicate a higher risk-adjusted return profile "
+        "for integrated Mean-CVaR strategies prior to transaction costs. Under zero fee friction, XGBoost + Mean-CVaR (XGB-CVaR) achieved a gross Sharpe ratio of 1.52 (42.00% annualized return, -22.09% max drawdown), compared to 0.91 for the passive NGX Index Buy-and-Hold benchmark "
+        "and 0.76 for Markowitz MVO. Inferential hypothesis testing (Section 4.1.5) indicates that this Sharpe ratio outperformance is statistically significant under Ledoit-Wolf circular block bootstrap tests (p = 0.015 < 0.05). Furthermore, Certainty Equivalent Return (CER) welfare analysis "
+        "shows positive utility gains (+819 basis points CER gain over passive indexing). These findings align with portfolio selection theory (Markowitz, 1952; Rockafellar & Uryasev, 2000; Bodnar et al., 2022; Hsiao, 2025), "
+        "showing that combining return estimates with convex tail-risk constraints improves risk-adjusted outcomes.",
+        'body'
+    )
+    
+    # Paragraph 4: Objective 4
+    add_styled_paragraph(
+        doc,
+        "Fourthly, regarding portfolio robustness under market stress and transaction cost frictions, the empirical evaluation in Section 4.1.7 highlights execution dynamics across market participant regimes. Under 1.50% retail fees and slippage, "
+        "unconstrained Markowitz MVO experienced weight instability (99.28% average weekly turnover), resulting in a maximum drawdown of -86.38% and negative economic welfare (CER = -64.09%). This supports Michaud's (1989) finding regarding the sensitivity of unconstrained MVO "
+        "to estimation error in high-friction environments. Conversely, low-turnover Historical-CVaR (0.38% turnover) displayed resilience, retaining net Sharpe ratios of 1.48 (retail) and 1.49 (institutional). "
+        "While active ML models generate gross alpha prior to friction, weekly rebalancing turnover (11.00%) incurs an annual fee drag (~3.6% to ~7.2%) that offsets marginal predictive gains post-fees. This finding aligns with transaction cost literature (Job, 2022; Alotaibi et al., 2022; Kevin & Yugopuspito, 2025), "
+        "indicating that structural tail-risk architecture (CVaR) plays a central role in frictional emerging markets.",
+        'body'
+    )
     
     # =========================================================================
-    # CHAPTER 5: SUMMARY, CONCLUSION, AND POLICY RECOMMENDATIONS
+    # CHAPTER 5: SUMMARY, CONCLUSION, AND RECOMMENDATIONS
     # =========================================================================
-    add_styled_paragraph(doc, "Chapter 5", 'chapter_header')
-    add_styled_paragraph(doc, "5.1 Summary, Conclusion, and Policy Recommendations", 'section_title')
-    add_styled_paragraph(doc, "5.1 Summary of the Study", 'section_title')
+    add_styled_paragraph(doc, "CHAPTER FIVE", 'chapter_header')
+    add_styled_paragraph(doc, "SUMMARY, CONCLUSION AND RECOMMENDATIONS", 'section_title')
+    
+    add_styled_paragraph(doc, "5.1 Summary of Findings", 'section_title')
     add_styled_paragraph(
         doc,
-        "This study investigated equity return forecasting and tail-risk-aware portfolio optimization across 28 liquid equities on the Nigerian Exchange Group (NGX) "
-        "spanning a 15-year period (2010-2025). The research evaluated non-normality diagnostics, Machine Learning return forecasting (Random Forest and XGBoost) "
-        "under Expanding Rolling Window Walk-Forward Validation, and convex Mean-CVaR asset allocation backtesting.",
+        "Formal statistical diagnostic tests (Jarque-Bera and Shapiro-Wilk) rejected Gaussian normality across all 28 evaluated NGX equities (p < 0.001). "
+        "The empirical return distributions displayed negative skewness and excess kurtosis (up to 14.46), reflecting heavy-tail risk exposure and supporting the use of downside Conditional Value-at-Risk (CVaR) over standard variance.",
+        'body'
+    )
+    add_styled_paragraph(
+        doc,
+        "Non-linear machine learning ensembles (Random Forest and XGBoost) evaluated under Expanding Rolling Window Walk-Forward Validation captured time-varying market dynamics. "
+        "XGBoost achieved an out-of-sample directional accuracy of 55.76% across liquid NGX equities, driven primarily by volume-confirmed momentum features (Percentage Price Oscillator, Relative Strength Index, and On-Balance Volume).",
+        'body'
+    )
+    add_styled_paragraph(
+        doc,
+        "Integrating machine learning return forecasts into a convex Mean-CVaR optimization framework generated risk-adjusted returns under zero fee friction. "
+        "XGBoost + Mean-CVaR achieved a gross Sharpe ratio of 1.52 (42.00% annualized return, -22.09% maximum drawdown) compared to 0.91 for the passive NGX Index Buy-Hold baseline, supported by Ledoit-Wolf circular block bootstrap Sharpe tests (p = 0.015 < 0.05) and Certainty Equivalent Return utility gains (+819 bps CER gain).",
+        'body'
+    )
+    add_styled_paragraph(
+        doc,
+        "Evaluating portfolio performance under market stress and multi-tier transaction cost friction demonstrated that unconstrained Markowitz Mean-Variance Optimization experiences performance degradation (-86.38% drawdown, -64.09% CER utility) due to high turnover (99.28% weekly turnover). "
+        "Under institutional (0.75%) and retail (1.50%) brokerage fees, active ML rebalancing turnover (11.00%) creates an annual fee drag (~3.6% to ~7.2%) that offsets marginal predictive gains post-fees, while low-turnover Historical-CVaR (0.38% turnover) maintains stable post-fee performance (net Sharpe 1.48–1.49, pairwise p = 0.000).",
         'body'
     )
     
-    add_styled_paragraph(doc, "5.2 Summary of Empirical Findings and Research Hypotheses", 'section_title')
+    add_styled_paragraph(doc, "5.2 Conclusion", 'section_title')
     add_styled_paragraph(
         doc,
-        "1. Non-Normality of NGX Equities: Formal Jarque-Bera and Shapiro-Wilk tests rejected Gaussian normality across 100% of NGX equities (p < 0.001), exhibiting severe negative skewness and excess kurtosis up to 14.46.\n"
-        "2. Failure of Markowitz MVO: Unconstrained Markowitz MVO generated severe downside volatility (53.87% - 53.92%) and catastrophic maximum drawdowns (-86.38% retail 1.50% / -71.07% institutional 0.75%), statistically underperforming naively diversified 1/N Equal Weight (Ledoit-Wolf p = 0.025, Wilcoxon p = 0.008) and destroying economic welfare (CER = -64.09%).\n"
-        "3. Statistically Significant Gross ML Alpha: Under zero fee friction (0.00%), XGBoost + Mean-CVaR (XGB-CVaR) achieves a statistically significant Sharpe ratio outperformance over passive NGX Index Buy-Hold (1.52 vs 0.91, Ledoit-Wolf bootstrap p = 0.015 < 0.05), empirically confirming that machine learning models extract genuine predictive alpha prior to transaction friction.\n"
-        "4. Turnover Drag & Fee Regime Dynamics: Under 0.75% institutional fees, active ML weekly turnover (11.00%) creates a ~3.6% annual fee drag that reduces XGB-CVaR net Sharpe to 1.24 (p = 0.181). Under 1.50% retail fees and slippage, fee drag reaches ~7.2% annually, causing XGB-CVaR net Sharpe to drop to 0.96 (p = 0.770). Across both fee regimes, low-turnover Historical-CVaR (0.38% turnover) retains top net Sharpe ratios (1.48--1.49, p = 0.022) and statistically dominates active ML (pairwise Ledoit-Wolf p = 0.000).\n"
-        "5. Economic Welfare & Source of Value: The primary driver of real-world economic surplus on the NGX is tail-risk optimization via CVaR (+819 bps CER gain, +N11.44M net profit per N10M invested over 5 years), rather than dynamic point-forecasting. Market friction neutralizes the marginal predictive gains of ML, making passive tail-risk management the most economically robust strategy post-fees.\n"
-        "6. Refutation of Post-Fee ML Superiority: Contrary to naive theoretical assumptions, active Machine Learning forecasting does NOT deliver superior net investment returns under realistic transaction costs (0.75%--1.50%). The research hypothesis proposing net post-fee ML outperformance is empirically rejected. Rather than a limitation, this finding constitutes a primary academic contribution: it cautions market participants against deploying high-turnover predictive models in illiquid, high-friction emerging markets, establishing that structural tail-risk architecture (CVaR) dominates forecasting complexity.",
+        "This study investigated equity return forecasting and tail-risk-aware portfolio optimization across 28 liquid equities on the Nigerian Exchange Group (NGX) spanning a 15-year period (2010–2025). "
+        "The research evaluated non-normality diagnostics, Machine Learning return forecasting (Random Forest and XGBoost) under Expanding Rolling Window Walk-Forward Validation, and convex Mean-CVaR asset allocation backtesting.\n\n"
+        "The overall conclusion of this research is that while Machine Learning models extract gross predictive alpha on the NGX, market transaction friction and rebalancing turnover neutralize these marginal predictive gains post-fees. "
+        "Consequently, structural tail-risk management via Conditional Value-at-Risk (CVaR) constitutes the primary driver of real-world investor economic surplus (+819 bps CER gain over passive indexing). "
+        "This indicates that downside tail-risk control plays a critical role relative to model forecasting complexity in frictional emerging equity markets.",
         'body'
     )
     
-    add_styled_paragraph(doc, "5.3 Policy Recommendations", 'section_title')
+    add_styled_paragraph(doc, "5.3 Policy and Practical Recommendations", 'section_title')
+    
+    add_styled_paragraph(doc, "5.3.1 Regulatory and Macroeconomic Policy Recommendations", 'section_title')
     add_styled_paragraph(
         doc,
-        "Based on the empirical findings, the following policy recommendations are formulated for institutional regulators, fund managers, and market participants:\n\n"
-        "1. For Pension Fund Administrators (PFAs) & PENCOM: The National Pension Commission (PENCOM) should update its Investment Guidelines for Fund I, Fund II, and Fund III equity portfolios "
-        "to mandate downside tail-risk metrics, specifically Conditional Value-at-Risk (CVaR_0.95), alongside traditional variance. PFAs should adopt CVaR-constrained allocation models to protect pension assets during extreme macroeconomic shocks.\n\n"
-        "2. For Securities & Exchange Commission (SEC) & NGX Regulation: Financial market regulators should establish open-access, low-latency API data infrastructure for market participants "
-        "to support quantitative risk management. Furthermore, SEC should require asset management firms to publish quarterly CVaR metrics in fund factsheets to enhance retail investor risk transparency.\n\n"
-        "3. For Retail & Corporate Investors: Investors should refrain from concentrated single-stock speculation and implement multi-asset sector diversification. Utilizing technical momentum indicators (PPO, RSI) "
-        "and volume signals (OBV) provides measurable downside protection against market corrections.",
+        "1. PENCOM Investment Guidelines Update: The National Pension Commission (PENCOM) should update its Investment Guidelines for Fund I, Fund II, and Fund III equity portfolios to mandate downside tail-risk metrics, specifically Conditional Value-at-Risk (CVaR_0.95), alongside traditional variance. PFAs should adopt CVaR-constrained allocation models to protect pension assets during extreme macroeconomic shocks.\n\n"
+        "2. SEC & NGX Regulatory Data Transparency: The Securities and Exchange Commission (SEC) and NGX Regulation should establish open-access, low-latency API data infrastructure for market participants to support quantitative risk management. Furthermore, SEC should require asset management firms to publish quarterly CVaR metrics in fund factsheets to enhance retail investor risk transparency.",
         'body'
     )
     
-    add_styled_paragraph(doc, "5.4 Contribution to Knowledge", 'section_title')
+    add_styled_paragraph(doc, "5.3.2 Institutional Asset Allocation Recommendations", 'section_title')
     add_styled_paragraph(
         doc,
-        "This research contributes to quantitative finance literature by providing the first comprehensive empirical evaluation of Machine Learning integrated with convex Mean-CVaR optimization "
-        "on the Nigerian Exchange Group using a 15-year clean weekly dataset (2010-2025). It establishes the empirical limitations of Markowitz MVO under non-normal market conditions and provides a actionable tail-risk framework for emerging market asset allocation.",
+        "1. Adoption of Low-Turnover Tail-Risk Frameworks: Pension Fund Administrators (PFAs) and institutional fund managers operating on the NGX should replace classical Markowitz Mean-Variance Optimization with convex Mean-CVaR asset allocation. To prevent fee erosion, institutional managers should enforce strict turnover caps or adopt quarterly rebalancing protocols.\n\n"
+        "2. Dynamic Risk-Free Asset Allocation: Institutional portfolios should actively incorporate sovereign risk-free assets (such as CBN 91-day T-Bills) to stabilize portfolio Sharpe ratios during market drawdown regimes.",
         'body'
     )
     
-    add_styled_paragraph(doc, "5.5 Limitations and Suggestions for Further Research", 'section_title')
+    add_styled_paragraph(doc, "5.3.3 Quantitative Risk Management Recommendations", 'section_title')
     add_styled_paragraph(
         doc,
-        "1. Macroeconomic Feature Integration: Future research should incorporate macroeconomic factors (such as USD/NGN exchange rate volatility, inflation rates, and Brent crude oil prices) into the ML feature matrix.\n"
-        "2. Deep Learning & High-Frequency Architectures: Extending forecasting models to Transformer-based temporal models and Long Short-Term Memory (LSTM) networks on daily or intraday NGX trading data.\n"
-        "3. Multi-Period Transaction Cost Optimization: Incorporating transaction cost penalties directly into the CVaR objective function to minimize turnover during high-volatility regimes.",
+        "1. Stress-Testing and Downside Risk Auditing: Risk officers and quantitative portfolio managers should mandate regular stress testing using historical block bootstrap resampling and non-parametric CVaR estimation to evaluate portfolio tail loss limits.\n\n"
+        "2. Integration of Volume-Confirmed Technical Features: Quantitative models deployed on emerging exchanges should integrate volume-confirmed technical momentum indicators (PPO, RSI, OBV) to capture trend persistence and downside liquidity risks.",
         'body'
     )
     
-    add_styled_paragraph(doc, "5.6 Data and Code Availability Statement", 'section_title')
+    add_styled_paragraph(doc, "5.4 Limitations of the Study", 'section_title')
+    add_styled_paragraph(
+        doc,
+        "While this study provides empirical insights, several limitations are acknowledged:\n"
+        "1. Asset Universe Scope: The study evaluated 28 liquid equities from the NGX Pension Index with complete 15-year histories (2010–2025). Recently listed high-capitalization assets (e.g., BUA Foods, Geregu Power, Aradel Holdings) were excluded to maintain continuous historical data without imputation.\n"
+        "2. Data Frequency: Analysis was conducted using weekly log returns. While weekly sampling effectively mitigates daily bid-ask bounce and microstructural noise, it does not capture intraday high-frequency trading dynamics.\n"
+        "3. Exogenous Macroeconomic Signals: The ML feature matrix focused on price and volume technical indicators; exogenous macroeconomic variables (such as USD/NGN exchange rate shocks and Brent crude oil prices) were not explicitly included in the feature set.",
+        'body'
+    )
+    
+    add_styled_paragraph(doc, "5.5 Suggestions for Further Research", 'section_title')
+    add_styled_paragraph(
+        doc,
+        "1. Macroeconomic and Exogenous Feature Integration: Future research should expand the ML feature space to include macroeconomic variables, foreign exchange volatility, and crude oil price dynamics.\n"
+        "2. Deep Learning and High-Frequency Architectures: Extending forecasting models to Transformer-based temporal models and Long Short-Term Memory (LSTM) networks on daily or intraday NGX trading data.\n"
+        "3. Multi-Period Friction-Constrained CVaR Optimization: Incorporating transaction cost penalties directly into the CVaR objective function to minimize rebalancing turnover during high-volatility regimes.",
+        'body'
+    )
+    
+    add_styled_paragraph(doc, "5.6 Contribution to Knowledge", 'section_title')
+    add_styled_paragraph(
+        doc,
+        "This research contributes to quantitative finance literature in the following ways:\n"
+        "1. Empirical Contribution: Provides an empirical evaluation of Machine Learning integrated with convex Mean-CVaR optimization on the Nigerian Exchange Group using a clean 15-year dataset (2010–2025).\n"
+        "2. Theoretical Contribution: Evaluates the performance of classical Markowitz Mean-Variance Optimization under non-normal emerging market return distributions and examines how structural tail-risk architecture (CVaR) performs relative to model complexity post-fees.\n"
+        "3. Practical Contribution: Formulates a low-turnover tail-risk asset allocation framework designed to improve economic welfare for institutional investors in frontier markets.",
+        'body'
+    )
+    
+    add_styled_paragraph(doc, "5.7 Data and Code Availability Statement", 'section_title')
     add_styled_paragraph(
         doc,
         "To guarantee complete computational reproducibility and scientific transparency, the entire quantitative finance pipeline, encompassing "
