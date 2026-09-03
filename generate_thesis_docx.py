@@ -1,8 +1,6 @@
 import os
 import re
 import pandas as pd
-from pypdf import PdfReader
-
 import docx
 from docx import Document
 from docx.shared import Inches, Pt, RGBColor
@@ -38,13 +36,6 @@ def add_styled_paragraph(doc, text, style_type='body', space_before=0, space_aft
         run.font.size = Pt(14)
         run.font.bold = True
         run.font.color.rgb = RGBColor(0, 0, 0)
-    elif style_type == 'chapter_header_center':
-        p.alignment = WD_ALIGN_PARAGRAPH.CENTER
-        run = p.add_run(text)
-        run.font.name = 'Times New Roman'
-        run.font.size = Pt(14)
-        run.font.bold = True
-        run.font.color.rgb = RGBColor(0, 0, 0)
     elif style_type == 'section_title':
         p.alignment = WD_ALIGN_PARAGRAPH.LEFT
         run = p.add_run(text)
@@ -58,13 +49,6 @@ def add_styled_paragraph(doc, text, style_type='body', space_before=0, space_aft
         run = p.add_run(text)
         run.font.name = 'Times New Roman'
         run.font.size = Pt(12)
-        run.font.color.rgb = RGBColor(0, 0, 0)
-    elif style_type == 'formula':
-        p.alignment = WD_ALIGN_PARAGRAPH.CENTER
-        run = p.add_run(text)
-        run.font.name = 'Times New Roman'
-        run.font.size = Pt(12)
-        run.font.italic = True
         run.font.color.rgb = RGBColor(0, 0, 0)
     elif style_type == 'caption':
         p.alignment = WD_ALIGN_PARAGRAPH.LEFT
@@ -120,323 +104,22 @@ def add_table_to_docx(doc, headers, data):
                 run.font.color.rgb = RGBColor(0, 0, 0)
     doc.add_paragraph().paragraph_format.space_after = Pt(6)
 
-def clean_extracted_text(text):
-    text = re.sub(r'[\?\ufffdn]*l\s*usarczyk', 'Slusarczyk', text, flags=re.IGNORECASE)
-    text = re.sub(r'[\?\ufffdn]*lepaczuk', 'Slepaczuk', text, flags=re.IGNORECASE)
-    text = re.sub(r'Mart[\?\ufffd\si]*nez\s*-\s*Barbero', 'Martínez-Barbero', text, flags=re.IGNORECASE)
-    text = re.sub(r'Mart[\?\ufffd\si]*nez\s*Barbero', 'Martínez-Barbero', text, flags=re.IGNORECASE)
-    text = re.sub(r'Mart[\?\ufffd\si]*nez', 'Martínez', text, flags=re.IGNORECASE)
-    return text
-
 def generate_complete_thesis_docx(output_path="Abdulameen_Complete_Thesis_Chapters_1_5.docx"):
-    print("Building complete thesis DOCX document...")
-    doc = Document()
-    
-    # 1. Page Margins (1.0 inch all sides)
-    for section in doc.sections:
-        section.top_margin = Inches(1.0)
-        section.bottom_margin = Inches(1.0)
-        section.left_margin = Inches(1.0)
-        section.right_margin = Inches(1.0)
+    print("Loading base 'Abdulameen Chapter 1 -3.docx'...")
+    base_docx = "Abdulameen Chapter 1 -3.docx"
+    if not os.path.exists(base_docx):
+        raise FileNotFoundError(f"Base file not found: {base_docx}")
         
-    # Configure Normal Style
-    normal_style = doc.styles['Normal']
-    normal_style.font.name = 'Times New Roman'
-    normal_style.font.size = Pt(12)
-    normal_style.font.color.rgb = RGBColor(0, 0, 0)
-
-    # Standalone Centered Title / Cover Page (Page 1)
-    add_styled_paragraph(
-        doc,
-        "Equity Return Forecasting on Tail-Risk-Aware Portfolio Optimization on the\nNigerian Exchange Group (NGX)",
-        'chapter_header_center',
-        space_before=100,
-        space_after=24
-    )
-    add_styled_paragraph(doc, "BY", 'chapter_header_center', space_before=12, space_after=12)
-    add_styled_paragraph(doc, "SANNI ABDUL-AMEEN OLUWADARASIMI", 'chapter_header_center', space_before=12, space_after=6)
-    add_styled_paragraph(doc, "ECN/2021/158", 'chapter_header_center', space_before=6, space_after=100)
+    doc = Document(base_docx)
+    
+    # Page Break before Chapter 4
     doc.add_page_break()
     
+    print("Appending Chapters 4 & 5 + References to DOCX...")
+    
     # =========================================================================
-    # PART 1: CHAPTERS 1 - 3 (EARLY SECTIONS FROM ORIGINAL PDF + FIXES)
+    # CHAPTER 4: EMPIRICAL RESULTS AND DISCUSSION
     # =========================================================================
-    pdf_path = "Abdulameen Chapter 1 -3.pdf"
-    if os.path.exists(pdf_path):
-        reader = PdfReader(pdf_path)
-        print(f"Processing early PDF chapters ({len(reader.pages)} pages source)...")
-        
-        for p_idx in range(1, len(reader.pages)):
-            page_num = p_idx + 1
-            
-            # Skip page 15 (we use clean Page 15 fix)
-            if page_num == 15:
-                # Clean Page 15 replacement
-                add_styled_paragraph(
-                    doc,
-                    "resilient portfolio outcomes. While these improved methods exist, their applications in emerging "
-                    "markets such as the Nigerian Exchange Group (NGX) remains under-explored (Moyoweshumba "
-                    "& Seitshiro, 2025). This necessitates the study not only for academics and researchers but also "
-                    "for real decision-making.",
-                    'body'
-                )
-                add_styled_paragraph(doc, "1.6 Scope of the Study", 'section_title')
-                add_styled_paragraph(
-                    doc,
-                    "This study examines the effect of equity-return forecasting on tail-risk aware optimization on the "
-                    "Nigerian Exchange Group (NGX). Weekly price data on selected companies in the NGX Pension Index "
-                    "between the period of 2010 - 2025 will be utilized for the study. This study could not "
-                    "extend beyond the selected time frame due to unavailability of price data due to the date of "
-                    "companies' listings. Most available data on price data on publicly listed companies were sourced "
-                    "from ng.investing.com which was limited to the timeframe of the study.",
-                    'body'
-                )
-                add_styled_paragraph(doc, "1.7 Organization of the Study", 'section_title')
-                add_styled_paragraph(
-                    doc,
-                    "This study is divided into five chapters. The first chapter of this study provides the background "
-                    "of the study, which will further prove the need for the study. Chapter two presents the theoretical "
-                    "and empirical review of relevant studies in the study's subject matter. The theoretical perspective "
-                    "in the second chapter will introduce the adopted models in chapter three. Data analysis and "
-                    "presentation will be carried out in chapter four, while the concluding comments that include "
-                    "summary, conclusion, recommendations, and suggestions for further studies will be made in "
-                    "chapter five.",
-                    'body'
-                )
-                add_styled_paragraph(doc, "CHAPTER TWO", 'chapter_header_center')
-                continue
-                
-            # Skip pages 43 & 44 (we use clean replacement below)
-            if page_num in [43, 44]:
-                continue
-                
-            # Stop PDF processing at page 47 (end of Ch3 early text, replaced by clean_ch3_end)
-            if page_num >= 47:
-                break
-                
-            raw_text = reader.pages[p_idx].extract_text()
-            if not raw_text:
-                continue
-                
-            cleaned_text = clean_extracted_text(raw_text)
-            lines = [l.strip() for l in cleaned_text.split('\n') if l.strip()]
-            
-            # Filter out stray single digits (page numbers) at top/bottom
-            valid_lines = []
-            for l in lines:
-                if l.isdigit() and len(l) <= 3:
-                    continue
-                valid_lines.append(l)
-                
-            if not valid_lines:
-                continue
-                
-            # Group into paragraphs
-            current_para = []
-            for line in valid_lines:
-                # Heading detection
-                if (re.match(r'^(Chapter|CHAPTER|\d\.\d|\d\.\d\.\d)', line) or line.isupper()) and len(line) < 80:
-                    if current_para:
-                        add_styled_paragraph(doc, " ".join(current_para), 'body')
-                        current_para = []
-                    if line.startswith("CHAPTER") or line.startswith("Chapter"):
-                        add_styled_paragraph(doc, line, 'chapter_header')
-                    else:
-                        add_styled_paragraph(doc, line, 'section_title')
-                else:
-                    current_para.append(line)
-                    
-            if current_para:
-                add_styled_paragraph(doc, " ".join(current_para), 'body')
-
-    # Add Clean Replacement Pages 43 - 44 Content
-    add_styled_paragraph(
-        doc,
-        "shifts forward by one week. The oldest weekly observation is discarded, the most recent observation is absorbed, and the models are retrained.",
-        'body'
-    )
-    add_styled_paragraph(doc, "3.3.2 Model Training and Hyperparameter Tuning", 'section_title')
-    add_styled_paragraph(
-        doc,
-        "Out-of-the-box machine learning algorithms rarely capture the complex dynamics of financial time series optimally. Therefore, this study employs a Randomized Search Cross-Validation strategy within the training window to efficiently identify the optimal hyperparameter configurations for both models.",
-        'body'
-    )
-    add_styled_paragraph(doc, "The tuning process focuses on penalizing model complexity to prevent overfitting:", 'body')
-    add_styled_paragraph(
-        doc,
-        "• Random Forest Parameters: The search optimizes the number of trees in the forest (n_estimators), the maximum depth of each tree (max_depth), and the minimum number of samples required to split an internal node (min_samples_split).",
-        'bullet'
-    )
-    add_styled_paragraph(
-        doc,
-        "• XGBoost Parameters: The search optimizes the learning rate or step size shrinkage (learning_rate), the maximum tree depth (max_depth), and the minimum loss reduction required to make a further partition (gamma), which directly controls the structural regularization.",
-        'bullet'
-    )
-    
-    add_styled_paragraph(doc, "3.3.3 Portfolio Turnover and Transaction Costs", 'section_title')
-    add_styled_paragraph(
-        doc,
-        "To ensure that the optimized Mean-CVaR portfolio strategy is economically viable and not merely theoretically profitable, it is imperative to account for real-world trading frictions, such as brokerage fees and slippage on the Nigerian Exchange Group (NGX) (Ashrafzadeh et al., 2025). This requires measuring the portfolio turnover, which mathematically quantifies the absolute change in the portfolio's asset weights from one weekly rebalancing period to the next (Zsurkis, Nicolau, & Rodrigues, 2024):",
-        'body'
-    )
-    add_styled_paragraph(doc, "Turnover_t = Sum_{i=1..N} |w_{t,i} - w_{t^-,i}|", 'formula')
-    add_styled_paragraph(
-        doc,
-        "Following standard empirical finance procedures, transaction costs are deducted from gross returns to construct net returns. This study evaluates portfolio performance across three execution-cost regimes: a gross frictionless baseline (0.00%), an institutional PFA execution scenario applying a fixed 75 basis points (0.75%) per rebalancing trade, and a retail execution friction scenario applying 150 basis points (1.50%) to account for brokerage commissions and market slippage on the NGX. Finally, a Net Returns feature column will be constructed by deducting these calculated transaction costs from the gross portfolio returns, providing a rigorous and realistic evaluation of the portfolio's actual out-of-sample performance.",
-        'body'
-    )
-    
-    add_styled_paragraph(doc, "3.3.4 Feature Importance Extraction", 'section_title')
-    add_styled_paragraph(
-        doc,
-        "Due to the criticism of ensemble models of being black boxes in traditional econometrics and to ensure economic interpretability, this study extracts the built-in feature importance scores from the optimized models to determine which of the thirteen technical indicators exert the strongest predictive influence on NGX equity returns.",
-        'body'
-    )
-    add_styled_paragraph(
-        doc,
-        "• Random Forest Interpretation: Importance is calculated using the Mean Decrease in Impurity (Gini Importance). It measures the total reduction of the Mean Squared Error (MSE) brought by that specific feature across all trees in the forest.",
-        'bullet'
-    )
-    add_styled_paragraph(
-        doc,
-        "• XGBoost Interpretation: Importance is measured using Information Gain. It evaluates the relative contribution of each feature to the model by calculating the improvement in accuracy it provides to the branches it is on.",
-        'bullet'
-    )
-    add_styled_paragraph(doc, "3.3.5 Evaluation Metrics for Forecasting and Portfolio Performance", 'section_title')
-
-    # =========================================================================
-    # PART 2: END OF CHAPTER 3 (BENCHMARKS, HYPOTHESIS TESTING, VARIABLES TABLE)
-    # =========================================================================
-    add_styled_paragraph(doc, "3. Benchmark Portfolios for Evaluation", 'section_title')
-    add_styled_paragraph(
-        doc,
-        "To rigorously evaluate the economic value and true out-of-sample performance of the advanced ML-CVaR optimization strategy, it is essential to measure its results against standard baseline portfolios. By utilizing these benchmarks alongside the metrics above, the study empirically validates whether the non-linear machine learning forecasts, combined with CVaR tail-risk constraints, genuinely deliver superior risk-adjusted performance on the Nigerian Exchange.",
-        'body'
-    )
-    add_styled_paragraph(
-        doc,
-        "• The 1/N Equally Weighted Portfolio (EWP): In this naive diversification strategy, investment capital is simply divided uniformly across all selected stocks without relying on any parameter estimation or complex optimization algorithms. In an EWP strategy, each asset in the portfolio holds an equal weight of w_i = 1/N. This rule is chosen as a primary benchmark because it is easy to implement and continues to be a standard, highly effective allocation rule utilized by investors.",
-        'bullet'
-    )
-    add_styled_paragraph(
-        doc,
-        "• The Buy-and-Hold Market Index Strategy: This is a passive strategy that involves buying and holding the market index itself (in this case, the NGX Pension Index). This serves as a critical baseline to demonstrate whether active portfolio management based on machine learning predictions genuinely provides superior risk-adjusted returns compared to general market movements. Initialized at equal weights w_{0,i} = 1/N at t = 0, Buy-and-Hold weights drift passively with asset price returns (w_{t+1,i} proportional to w_{t,i}(1 + R_{t+1,i})) with zero rebalancing turnover post week 0.",
-        'bullet'
-    )
-    
-    add_styled_paragraph(doc, "3.3.6 Hypothesis Testing and Statistical Significance Framework", 'section_title')
-    add_styled_paragraph(
-        doc,
-        "To determine whether observed differences in risk-adjusted performance (Sharpe and Sortino ratios) and weekly portfolio returns between candidate strategies and baseline benchmarks are statistically meaningful or merely artifacts of sampling variation, this study implements a decision-theoretic inferential hypothesis testing framework. In emerging equity markets such as the NGX, where asset returns display pronounced non-normality, negative skewness, and heavy tails, traditional parametric Z-tests can yield misleading p-values. Therefore, both parametric and robust non-parametric bootstrap procedures are employed:",
-        'body'
-    )
-    add_styled_paragraph(
-        doc,
-        "1. Jobson and Korkie (1981) Test with Memmel (2007) Correction: Evaluates the null hypothesis of Sharpe ratio equality H0: Sharpe_A = Sharpe_B for two correlated portfolios. Memmel (2007) corrects the asymptotic variance under portfolio correlation rho: Z = (Sharpe_A - Sharpe_B) / sqrt( (1 / T) [ 2(1 - rho) + 0.5(Sharpe_A^2 + Sharpe_B^2 - 2 Sharpe_A Sharpe_B rho^2) ] ) where T is the number of out-of-sample weekly observations.",
-        'bullet'
-    )
-    add_styled_paragraph(
-        doc,
-        "2. Ledoit and Wolf (2008) Circular Block Bootstrap Test for Sharpe Ratio Equality: Resamples overlapping blocks of length b = 5 weeks across B = 2,000 bootstrap replicates to preserve time-series autocorrelation and conditional heteroskedasticity (GARCH effects). The empirical p-value evaluates H0: Sharpe_A - Sharpe_B = 0.",
-        'bullet'
-    )
-    add_styled_paragraph(
-        doc,
-        "3. Ledoit and Wolf (2011) Bootstrap Test for Sortino Ratio Equality: Extends non-parametric block bootstrapping to downside risk, evaluating H0: Sortino_A - Sortino_B = 0 to verify excess return per unit of downside risk.",
-        'bullet'
-    )
-    add_styled_paragraph(
-        doc,
-        "4. Non-Parametric Wilcoxon Signed-Rank Test and Paired t-Test: Evaluates whether weekly differential returns Delta R_t = R_{A,t} - R_{B,t} significantly deviate from zero (H0: E[Delta R_t] = 0).",
-        'bullet'
-    )
-    add_styled_paragraph(
-        doc,
-        "5. Diebold and Mariano (1995) Test for Predictive Accuracy: Evaluates whether out-of-sample forecasting loss (RMSE) differentials between machine learning models (Random Forest, XGBoost) and the Historical Mean baseline are statistically significant.",
-        'bullet'
-    )
-    
-    add_styled_paragraph(doc, "3.4 Description and Measurement of Study Variables", 'section_title')
-    add_styled_paragraph(
-        doc,
-        "The variables utilized in this study are partitioned into the target variable, the thirteen machine learning feature inputs (extracted exclusively from the weekly OHLCV data), and the exogenous risk-free rate parameter required for portfolio evaluation.",
-        'body'
-    )
-    add_styled_paragraph(
-        doc,
-        "Below is the tabular summary of all variables, their mathematical measurements, and their operational roles within the predictive and optimization models.",
-        'body'
-    )
-    
-    # Table of Variables
-    var_headers = ["Variable Symbol", "Variable Name", "Category", "Measurement / Formulation", "Operational Role"]
-    var_rows = [
-        ["R_{i,t+1}", "Weekly Log Return", "Target Variable", "ln(P_{i,t} / P_{i,t-1})", "Primary dependent variable. Continuous yield for upcoming week."],
-        ["MACD_t", "Moving Average Conv Divergence", "Momentum", "EMA_12(P_t) - EMA_26(P_t)", "Measures velocity of price changes to identify short-term momentum shifts."],
-        ["PPO_t", "Percentage Price Oscillator", "Momentum", "[EMA_12 - EMA_26] / EMA_26 * 100", "Normalized MACD for cross-asset comparison."],
-        ["RSI_t", "Relative Strength Index", "Momentum", "100 - [100 / (1 + RS)]", "Identifies overbought (>70) or oversold (<30) market conditions."],
-        ["STOCH_t", "Stochastic Oscillator (%K)", "Momentum", "[(P_t - L_14) / (H_14 - L_14)] * 100", "Evaluates closing price relative to 14-week high-low range."],
-        ["R_{i,t-n}", "Lagged Returns (Lags 1-4)", "Autoregressive", "R_{i,t-1}, R_{i,t-2}, R_{i,t-3}, R_{i,t-4}", "Feeds past 4 weeks of return momentum into ML algorithms."],
-        ["SMA_t", "Simple Moving Average", "Trend", "(1/n) Sum_{k=0..n-1} P_{t-k}", "Smooths weekly price data to identify baseline trend direction."],
-        ["ADX_t", "Average Directional Index", "Trend", "100 * MA(|+DI - -DI| / (+DI + -DI))", "Quantifies absolute strength of a trend."],
-        ["SAR_t", "Parabolic SAR", "Trend", "SAR_{t-1} + alpha(EP_{t-1} - SAR_{t-1})", "Signals entry/exit points and trend reversals."],
-        ["ATR_t", "Average True Range", "Volatility", "(1/n) Sum TR_i", "Measures intra-week market volatility and drop magnitude."],
-        ["OBV_t", "On-Balance Volume", "Volume", "OBV_{t-1} +/- V_t", "Measures underlying institutional liquidity and volume flow."],
-        ["R_f", "Risk-Free Rate", "Exogenous", "(1 + R_annual)^(1/52) - 1", "De-annualized CBN 91-day T-Bill yield for Sharpe/Sortino."]
-    ]
-    add_table_to_docx(doc, var_headers, var_rows)
-    add_styled_paragraph(
-        doc,
-        "(Note: In the formulations above, P_t represents the weekly closing price, H is the high price, L is the low price, V_t is the weekly volume, EMA is the Exponential Moving Average, and TR is the True Range).",
-        'caption'
-    )
-    
-    add_styled_paragraph(doc, "3.5 Data Preprocessing and Feature Scaling", 'section_title')
-    add_styled_paragraph(
-        doc,
-        "Prior to feeding the financial time-series data into the machine learning models, rigorous data preprocessing is required to ensure data integrity and model stability. First, missing values, which frequently arise in the Nigerian Exchange Group (NGX) due to market closures, public holidays, or reporting inconsistencies, will be handled using forward-fill imputation. This technique preserves the chronological continuity of historical price trends and prevents detrimental gaps in the sequential learning process of the algorithms.",
-        'body'
-    )
-    add_styled_paragraph(
-        doc,
-        "Consequently, this study applies Min-Max normalization to transform all raw prices and technical indicators into a standardized range. The Min-Max scaling formula utilized is expressed as:",
-        'body'
-    )
-    add_styled_paragraph(doc, "x_scaled = (x_i - min(x)) / (max(x) - min(x))", 'formula')
-    add_styled_paragraph(
-        doc,
-        "where x_scaled represents the normalized value of the input feature x_i, and min(x) and max(x) represent the minimum and maximum values of that specific feature over the defined period, respectively.",
-        'body'
-    )
-    add_styled_paragraph(
-        doc,
-        "Although tree-based ensemble models such as Random Forest and XGBoost are generally scale-invariant at the individual split level, Min-Max normalization is applied to ensure consistent data representation across all 13 technical indicators and to facilitate comparability across feature-derived indicators versus bounded oscillators such as RSI.",
-        'body'
-    )
-    
-    add_styled_paragraph(doc, "3.6 Software and Implementation Tools", 'section_title')
-    add_styled_paragraph(
-        doc,
-        "To ensure the complete reproducibility and accuracy of the empirical pipeline (from data preprocessing and hyperparameter tuning to machine learning predictions and Mean-CVaR portfolio optimization), all computational procedures in this study are executed programmatically. The methodology is implemented entirely within the Python programming language. Specifically, data manipulation, synchronization, and numerical calculations are handled using the pandas and NumPy libraries, while model training, cross-validation, and evaluation rely on the scikit-learn machine learning library. Furthermore, the gradient boosting framework is implemented utilizing the highly scalable XGBoost library. This unified computational pipeline guarantees that the complex asset allocation strategy can be robustly and consistently replicated.",
-        'body'
-    )
-    
-    add_styled_paragraph(doc, "3.7 Sources of Data", 'section_title')
-    add_styled_paragraph(
-        doc,
-        "The study is completely based on secondary data covering 2010-2025. Secondary data are appropriate for this study since the research entails stock trading data which are regularly published by reputable financial organizations.",
-        'body'
-    )
-    add_styled_paragraph(
-        doc,
-        "The data on the stock trading history of the individual companies under the NGX Pension Index are sourced primarily from Investing.com. The primary dataset consists of the historical daily closing prices, high/low prices, and trading volumes for the selected assets, which were programmatically downloaded from the Investing.com financial database. The study thus ensures the data employed are valid, accurate, and in accordance with literature regarding individual publicly traded companies on the NGX.",
-        'body'
-    )
-
-    # =========================================================================
-    # PART 3: CHAPTERS 4 & 5 (EMPIRICAL RESULTS, TABLES, FIGURES, CONCLUSION)
-    # =========================================================================
-    print("Adding Chapters 4 & 5 to DOCX...")
     add_styled_paragraph(doc, "Chapter 4", 'chapter_header')
     add_styled_paragraph(doc, "4.1 Empirical Results and Discussion", 'section_title')
     add_styled_paragraph(
@@ -767,7 +450,9 @@ def generate_complete_thesis_docx(output_path="Abdulameen_Complete_Thesis_Chapte
     add_table_to_docx(doc, welfare_headers, welfare_rows)
     add_styled_paragraph(doc, "Source: Author's computation (2026). Risk-aversion coefficient gamma = 3. Delta CER represents annual economic welfare gain.", 'caption')
     
-    # CHAPTER 5
+    # =========================================================================
+    # CHAPTER 5: SUMMARY, CONCLUSION, AND POLICY RECOMMENDATIONS
+    # =========================================================================
     add_styled_paragraph(doc, "Chapter 5", 'chapter_header')
     add_styled_paragraph(doc, "5.1 Summary, Conclusion, and Policy Recommendations", 'section_title')
     add_styled_paragraph(doc, "5.1 Summary of the Study", 'section_title')
@@ -832,29 +517,65 @@ def generate_complete_thesis_docx(output_path="Abdulameen_Complete_Thesis_Chapte
         'body'
     )
     
-    # REFERENCES SECTION
+    # =========================================================================
+    # FULL APA 7TH EDITION REFERENCES SECTION (42 REFERENCES)
+    # =========================================================================
     doc.add_page_break()
     add_styled_paragraph(doc, "References", 'section_title')
     
     references_list = [
         "Adegboyo, O. S., & Sarwar, K. (2025). Modelling and forecasting of Nigeria stock market volatility. Future Business Journal, 11(1), Article 124. https://doi.org/10.1186/s43093-025-00536-4",
         "Ajiga, D. I., Adeleye, R. A., Tubokirifuruar, T. S., Bello, B. G., Ndubuisi, N. L., Asuzu, O. F., & Owolabi, O. R. (2024). Machine learning for stock market forecasting: A review of models and accuracy. Finance & Accounting Research Journal, 6(2).",
-        "Al-Shboul, M., & Alfzari, S. (2025). Predictive analytics in portfolio management: A fusion of AI and investment economics for optimal risk-return trade-offs. International Review of Management and Marketing, 15(1).",
-        "Alim, W., Khan, N. U., Zhang, V. W., Cai, H. H., Mikhaylov, A., & Yuan, Q. (2024). Influence of political stability on the stock market returns and volatility: GARCH and EGARCH approach. Financial Innovation.",
-        "Alotaibi, T. S., Dalla Valle, L., & Craven, M. J. (2022). The worst case GARCH-copula CVaR approach for portfolio optimisation: Evidence from financial markets. Journal of Risk and Financial Management, 15(10), Article 482.",
+        "Al-Shboul, M., & Alfzari, S. (2025). Predictive analytics in portfolio management: A fusion of AI and investment economics for optimal risk-return trade-offs. International Review of Management and Marketing, 15(1). https://www.econjournals.net.tr/index.php/irmm/article/view/18594",
+        "Alim, W., Khan, N. U., Zhang, V. W., Cai, H. H., Mikhaylov, A., & Yuan, Q. (2024). Influence of political stability on the stock market returns and volatility: GARCH and EGARCH approach. Financial Innovation. https://doi.org/10.1186/s40854-024-00658-8",
+        "Alotaibi, T. S., Dalla Valle, L., & Craven, M. J. (2022). The worst case GARCH-copula CVaR approach for portfolio optimisation: Evidence from financial markets. Journal of Risk and Financial Management, 15(10), Article 482. https://doi.org/10.3390/jrfm15100482",
         "Arif, U., Sohail, M. T., & Majeed, M. I. (2020). Portfolio optimization with mean-variance & mean-CVaR: Evidence from Pakistan stock market. International Journal of Management Research & Emerging Sciences, 10(2), 215-226.",
-        "Ashrafzadeh, M., Sadrani, M., & Zolfani, S. H. (2025). Clustering-based return prediction model for stock pre-selection in portfolio optimization. Results in Engineering, 27, Article 106263.",
+        "Ashrafzadeh, M., Sadrani, M., & Zolfani, S. H. (2025). Clustering-based return prediction model for stock pre-selection in portfolio optimization. Results in Engineering, 27, Article 106263. https://doi.org/10.1016/j.rineng.2025.106263",
         "Bodnar, T., Lindholm, M., Niklasson, V., & Thorsen, E. (2022). Bayesian portfolio selection using VaR and CVaR. Applied Mathematics and Computation, 427, Article 127120.",
         "Campbell, J. Y., & Viceira, L. M. (2002). Strategic asset allocation: Portfolio choice for long-term investors. Oxford University Press.",
-        "Chaweewanchon, A., & Chaysiri, R. (2022). Markowitz mean-variance portfolio optimization with predictive stock selection using machine learning. International Journal of Financial Studies, 10(3), Article 64.",
-        "Diebold, F. X., & Mariano, R. S. (1995). Comparing predictive accuracy. Journal of Business & Economic Statistics, 13(3), 253-263."
+        "Chaweewanchon, A., & Chaysiri, R. (2022). Markowitz mean-variance portfolio optimization with predictive stock selection using machine learning. International Journal of Financial Studies, 10(3), Article 64. https://doi.org/10.3390/ijfs10030064",
+        "Diebold, F. X., & Mariano, R. S. (1995). Comparing predictive accuracy. Journal of Business & Economic Statistics, 13(3), 253-263.",
+        "Fama, E. F. (1970). Efficient capital markets: A review of theory and empirical work. The Journal of Finance, 25(2), 383-417. https://doi.org/10.1111/j.1540-6261.1970.tb00518.x",
+        "Fan, Y. (2025). Enhancing investment strategies with LSTM-based stock prediction and mean-variance portfolio optimization. Proceedings of the 3rd International Conference on Financial Technology and Business Analysis. https://doi.org/10.54254/2754-1169/2024.23667",
+        "Fapetu, O., Ojo, S. M., Balogun, A. A., & Asaolu, A. A. (2021). Capital market performance and macroeconomic dynamics in Nigeria. FUOYE Journal of Finance and Contemporary Issues, 1(1), 29-37.",
+        "Fatouros, G., Makridis, G., Kotios, D., Soldatos, J., Filippakis, M., & Kyriazis, D. (2023). DeepVaR: A framework for portfolio risk assessment leveraging probabilistic deep neural networks. Digital Finance, 5(1), 29-56.",
+        "Fleming, J., Kirby, C., & Ostdiek, B. (2001). The economic value of volatility timing using 'realized' volatility [Working paper]. Rice University, Jones Graduate School.",
+        "Gu, S., Kelly, B., & Xiu, D. (2020). Empirical asset pricing via machine learning. The Review of Financial Studies, 33(5), 2223-2273. https://doi.org/10.1093/rfs/hhz113",
+        "Job, O. D. (2022). An empirical evaluation of alternative asset allocation policies for emerging and frontier market investors in Africa. Journal of Financial Risk Management, 11(3), 481-521. https://doi.org/10.4236/jfrm.2022.113024",
+        "Jobson, J. D., & Korkie, B. M. (1981). Performance hypothesis testing with the Sharpe and Treynor measures. The Journal of Finance, 36(4), 889-908.",
+        "Kevin, J., & Yugopuspito, P. (2025). Hybrid LSTM and PPO networks for dynamic portfolio optimization (LPPM-UPH, No. 404/LPPM-UPH/VII/2025). Universitas Pelita Harapan Working Paper.",
+        "Leccadito, A., Staino, A., & Toscano, P. (2024). A novel robust method for estimating the covariance matrix of financial returns with applications to risk management. Financial Innovation, 10, Article 116.",
+        "Ledoit, O., & Wolf, M. (2008). Robust performance hypothesis testing with the Sharpe ratio. Journal of Empirical Finance, 15(5), 850-859.",
+        "Ledoit, O., & Wolf, M. (2011). Robust performance hypothesis testing with the variance. Wilmott Magazine, (55), 86-89.",
+        "Lorimer, D. A., van Schalkwyk, C. H., & Szczygielski, J. J. (2024). Portfolio optimisation using alternative risk measures. Finance Research Letters, 67, Article 105758. https://doi.org/10.1016/j.frl.2024.105758",
+        "Markowitz, H. (1952). Portfolio selection. The Journal of Finance, 7(1), 77-91. https://doi.org/10.1111/j.1540-6261.1952.tb01525.x",
+        "Martinez-Barbero, X., Cervello-Royo, R., & Ribal, J. (2024). Portfolio optimization with prediction-based return using Long Short-Term Memory neural networks: Testing on upward and downward European markets. Computational Economics, 65, 1479-1504. https://doi.org/10.1007/s10614-024-10604-6",
+        "Mba, J. C., Ababio, K. A., & Agyei, S. K. (2022). Markowitz mean-variance portfolio selection and optimization under a behavioral spectacle: New empirical evidence. International Journal of Financial Studies, 10(2), Article 28. https://doi.org/10.3390/ijfs10020028",
+        "Memmel, C. (2003). Performance hypothesis testing with the Sharpe ratio. Finance Letters, 1(1), 21-23.",
+        "Michaud, R. O. (1989). The Markowitz optimization enigma: Is \"optimized\" optimal? Financial Analysts Journal, 45(1), 31-42. https://doi.org/10.2469/faj.v45.n1.31",
+        "Moyoweshumba, E., & Seitshiro, M. (2025). Leveraging Markowitz, Random Forest, and XGBoost for optimal diversification of South African stock portfolios. Data Science in Finance and Economics, 5(2), 205-233. https://doi.org/10.3934/DSFE.2025010",
+        "Mozumder, S., Hasan, M. S., & Kabir, M. A. (2024). Multilevel and tail risk management. Financial Innovation, 10, Article 100.",
+        "Naeem, M., Jassim, H. S., & Korsah, D. (2024). The application of machine learning techniques to predict stock market crises in Africa. Journal of Risk and Financial Management, 17(12), Article 554. https://doi.org/10.3390/jrfm17120554",
+        "Rockafellar, R. T., & Uryasev, S. (2000). Optimization of conditional value-at-risk. Journal of Risk, 2(3), 21-41. https://doi.org/10.21314/JOR.2000.038",
+        "Rockafellar, R. T., & Uryasev, S. (2002). Conditional value-at-risk for general loss distributions. Journal of Banking & Finance, 26(7), 1443-1471. https://doi.org/10.1016/S0378-4266(02)00271-6",
+        "Sahiner, M. (2022). Forecasting volatility in Asian financial markets: Evidence from recursive and rolling window methods. SN Business & Economics, 2, Article 157. https://doi.org/10.1007/s43546-022-00329-9",
+        "Salo, A., Doumpos, M., Liesio, J., & Zopounidis, C. (2024). Fifty years of portfolio optimization. European Journal of Operational Research, 318(1), 1-18. https://doi.org/10.1016/j.ejor.2023.12.031",
+        "Samaniego Alcantar, A. (2023). Semi-variance optimization for the components of the Dow Jones Industrial Average index. Contaduria y Administracion, 68(4), 1-17. http://dx.doi.org/10.22201/fca.24488410e.2023.3409",
+        "Slusarczyk, D., & Slepaczuk, R. (2025). Algorithmic investment strategies on the Dow Jones Industrial Average. Journal of Big Data, 12, Article 127. https://doi.org/10.1186/s40537-025-01164-z",
+        "Uzoaga, G. A., Adenomon, M. O., Nweze, N. O., & Maijama, B. (2025). Modelling and predicting stock prices of Nigerian Stock Exchange using some machine learning techniques and time series model. Science World Journal, 20(2), 510-515. https://dx.doi.org/10.4314/swj.v20i2.9",
+        "Uzoaga, G. A., Adenomon, M. O., Nweze, N. O., & Maijamaa, B. (2025). Predictive machine learning methods for stock returns among emerging economies in Africa. Science World Journal, 20(3), 941-947. https://dx.doi.org/10.4314/swj.v20i3.3",
+        "Yadav, A., Madhavi, R., Bagaria, O., Ambulkar, A., & Sharma, S. (2024). Survey on financial portfolio management's role in investment decision-making strategies. Multidisciplinary Reviews, 6, Article e2023ss101. https://doi.org/10.31893/multirev.2023ss101",
+        "Zsurkis, G., Nicolau, J., & Rodrigues, P. M. M. (2024). First passage times in portfolio optimization: A novel nonparametric approach. European Journal of Operational Research, 312(3), 1074-1085. https://doi.org/10.1016/j.ejor.2023.07.044"
     ]
     
     for ref in references_list:
         add_styled_paragraph(doc, ref, 'reference')
         
     doc.save(output_path)
-    print(f"[OK] Successfully generated complete thesis DOCX: {output_path}")
+    print(f"\n========================================================")
+    print(f"SUCCESS: Complete Thesis Word document generated!")
+    print(f"Final Document: {output_path}")
+    print(f"========================================================")
 
 if __name__ == '__main__':
     generate_complete_thesis_docx()
