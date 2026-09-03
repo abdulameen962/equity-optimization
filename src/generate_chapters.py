@@ -29,14 +29,14 @@ def generate_chapters_pdf(pdf_filename='output/pdf/Chapters_4_and_5.pdf'):
     
     styles = getSampleStyleSheet()
     
-    # Custom Academic Styles matching Chapters 1 - 3
-    # Font: Times-Roman / Times-Bold, Color: Pure Black (#000000)
+    # Custom Academic Styles matching Chapters 1 - 5
+    # Font: Times-Roman / Times-Bold, Color: Pure Black (#000000), Double Spaced (leading=24)
     chapter_header_style = ParagraphStyle(
         'ChapterHeaderStyle',
         parent=styles['Heading1'],
         fontName='Times-Bold',
         fontSize=14,
-        leading=18,
+        leading=24,
         textColor=colors.black,
         spaceBefore=0,
         spaceAfter=12,
@@ -48,7 +48,7 @@ def generate_chapters_pdf(pdf_filename='output/pdf/Chapters_4_and_5.pdf'):
         parent=styles['Heading2'],
         fontName='Times-Bold',
         fontSize=12,
-        leading=16,
+        leading=24,
         textColor=colors.black,
         spaceBefore=14,
         spaceAfter=8
@@ -58,8 +58,8 @@ def generate_chapters_pdf(pdf_filename='output/pdf/Chapters_4_and_5.pdf'):
         'SubSectionTitleStyle',
         parent=styles['Heading3'],
         fontName='Times-Bold',
-        fontSize=11,
-        leading=15,
+        fontSize=12,
+        leading=24,
         textColor=colors.black,
         spaceBefore=10,
         spaceAfter=6
@@ -70,7 +70,7 @@ def generate_chapters_pdf(pdf_filename='output/pdf/Chapters_4_and_5.pdf'):
         parent=styles['Normal'],
         fontName='Times-Roman',
         fontSize=12,
-        leading=18, # 1.5 line spacing matching Chapters 1-3
+        leading=24, # Double spaced (12pt font x 2 = 24pt leading)
         textColor=colors.black,
         spaceAfter=12,
         alignment=4 # Justified
@@ -316,8 +316,8 @@ def generate_chapters_pdf(pdf_filename='output/pdf/Chapters_4_and_5.pdf'):
     # 4.4 Sectoral Correlation Analysis
     story.append(Paragraph("4.4 Sectoral Correlation and Multi-Asset Diversification", section_title_style))
     story.append(Paragraph(
-        "Figure 4.1 displays the 28x28 pairwise return correlation matrix across the sample period. Intra-sector equities (such as Tier-1 Banks GTCO, ZENITHBANK, and ACCESSCORP) "
-        "exhibit strong positive pairwise correlation (ranging from 0.55 to 0.78). Conversely, cross-sector correlations between Industrial Goods (DANGCEM, BUACEMENT) "
+        "Figure 4.1 displays the 28x28 pairwise return correlation matrix across the sample period. Intra-sector equities (such as Tier-1 Banks GTCO, ZENITHBANK, and UBA) "
+        "exhibit strong positive pairwise correlation (ranging from 0.55 to 0.78). Conversely, cross-sector correlations between Industrial Goods (DANGCEM, WAPCO) "
         "and Consumer Goods (NESTLE, DANGSUGAR) remain moderate (0.15 to 0.35), offering substantial structural diversification benefits for multi-asset portfolio construction.",
         body_style
     ))
@@ -384,13 +384,14 @@ def generate_chapters_pdf(pdf_filename='output/pdf/Chapters_4_and_5.pdf'):
     story.append(Paragraph("Source: Author's computation (2026). DA (%) denotes Directional Accuracy across all 28 assets.", caption_style))
     story.append(Spacer(1, 10))
     
-    story.append(Paragraph("<b>Econometric Evaluation of Forecasting Performance:</b>", subsection_title_style))
+    story.append(Paragraph("<b>Econometric Evaluation of Forecasting Performance & Directional Accuracy Mechanics:</b>", subsection_title_style))
     story.append(Paragraph(
         "As reported in Table 4.3, the out-of-sample Root Mean Squared Error (RMSE) across all 28 NGX equities averages 0.0602 for the Historical Mean baseline, "
-        "0.0608 for XGBoost, and 0.0627 for Random Forest, while binary directional accuracy hovers around ~37.8%--38.1%. Econometrically, standalone point forecasting "
-        "in weekly financial returns exhibits an extremely low signal-to-noise ratio. The flat historical baseline minimizes squared error during quiescent market periods "
-        "by predicting near-zero returns. However, non-linear tree-based models capture magnitude and cross-sectional tail signals during volatile periods. "
-        "Consequently, while ML models do not beat the baseline in raw RMSE, their value lies in providing dynamic expected return vectors into the portfolio optimizer.",
+        "0.0608 for XGBoost, and 0.0627 for Random Forest, while binary directional accuracy hovers around ~37.8%--38.1%. Econometrically, directional accuracy (DA) is a symmetric binary metric that treats minor zero-mean noise (+0.1%) identically to major crash movements (-10%). "
+        "At weekly sampling horizons, financial return series are dominated by unobserved news noise, causing flat historical baselines to minimize squared error during quiescent periods. "
+        "However, Mean-CVaR portfolio optimization does not rely on binary sign prediction across noise weeks; rather, it depends on <b>cross-sectional magnitude discrimination</b> during extreme left-tail drawdowns. "
+        "Tree-based models utilize volume-confirmed momentum (PPO, OBV) and volatility scaling (ATR, ADX) to correctly rank and penalize the bottom assets facing severe downside tail risk. "
+        "Consequently, while ML models do not beat the baseline in raw point RMSE or binary directional accuracy, their value lies in providing dynamic expected return vectors into the portfolio optimizer to reorder relative cross-sectional weights during tail events.",
         body_style
     ))
     story.append(Spacer(1, 10))
@@ -546,8 +547,10 @@ def generate_chapters_pdf(pdf_filename='output/pdf/Chapters_4_and_5.pdf'):
         "2. <b>Institutional PFA Performance (Table 4.5b - 0.75% Fees):</b> Under 0.75% institutional PFA transaction fees, active ML weekly turnover (11.00% for XGB) incurs a ~3.6% annual fee drag, reducing XGB-CVaR net Sharpe to <b>1.24</b> (37.71% return, -23.62% max drawdown) and RF-CVaR to <b>1.26</b> (38.33% return). In contrast, low-turnover Historical-CVaR (0.38% turnover) leads with a top net Sharpe ratio of <b>1.49</b> (42.12% return, -21.96% max drawdown).<br/><br/>"
         "3. <b>Retail Execution Friction (Table 4.4 - 1.50% Fees):</b> Under 1.50% retail brokerage fees and market slippage, high turnover introduces a severe ~7.2% annual fee drag, causing active XGB-CVaR net Sharpe to drop to <b>0.96</b> (33.42% return, -25.12% max drawdown), performing on par with passive Buy-and-Hold (0.90 Sharpe). "
         "In contrast, Historical-CVaR (0.38% turnover) retains a top net Sharpe ratio of <b>1.48</b> (41.97% return, -21.96% max drawdown), statistically outperforming active ML (Ledoit-Wolf pairwise p = 0.000).<br/><br/>"
-        "4. <b>Pathology of Markowitz MVO:</b> Unconstrained MVO failed severely across all fee tiers, exhibiting extreme volatility (53.87% - 54.18%) and catastrophic drawdowns (-86.38% retail 1.50% / -71.07% institutional 0.75% / -53.51% gross), "
-        "proving its mathematical breakdown under non-normal asset distributions.",
+        "4. <b>Pathology of Markowitz MVO & Turnover Drag Mechanism:</b> Under zero fee friction (0.00%), gross MVO achieves a high annualized return (+56.97%) with zero leverage (0 <= w_i <= 1) and ridge-regularized covariance (+10^-6 I). "
+        "However, unconstrained MVO exhibits extreme weight instability, shifting 100% of portfolio weights between single stocks every week (corner solutions), resulting in an average weekly turnover of <b>99.28%</b>. "
+        "Under 1.50% retail fees, paying 1.50% on ~99.28% turnover every week for 260 weeks imposes a severe ~77% annual fee drag that compounds the net equity curve down to -86.38% max drawdown. "
+        "This empirically demonstrates Michaud's (1989) classic finding that unconstrained MVO acts as an 'error maximizer', proving that classical MVO cannot be deployed in frictional emerging markets without explicit turnover or position constraints.",
         body_style
     ))
     story.append(Spacer(1, 10))
@@ -689,10 +692,10 @@ def generate_chapters_pdf(pdf_filename='output/pdf/Chapters_4_and_5.pdf'):
 
     story.append(Paragraph("<b>3. Real-World Naira Wealth Multiplier and Downside Protection:</b>", subsection_title_style))
     story.append(Paragraph(
-        "Translating performance into absolute financial growth, the reported <b>42.12% Annualized Return</b> represents the <b>Compound Annual Growth Rate (CAGR)</b> averaged over the 5-year out-of-sample period (2021–2025, 260 weekly periods). "
+        "Translating performance into absolute financial growth, the reported <b>42.12% Annualized Return</b> represents the <b>Compound Annual Growth Rate (CAGR)</b> averaged over the 5-year out-of-sample period (2021-2025, 260 weekly periods). "
         "An initial capital allocation of <b>N10,000,000 (10 Million Naira)</b> evolves as follows:<br/>"
         "&bull; <b>Average Annual Performance (CAGR):</b> A 42.12% annualized compound return represents an average portfolio growth rate of 42.12% per year. In a single baseline year, this rate yields <b>+N4.21 Million in net annual profit</b> (expanding capital to N14.21 Million).<br/>"
-        "&bull; <b>5-Year Out-of-Sample Horizon (Cumulative Compound Growth, 2021–2025):</b> Compounding this 42.12% annualized CAGR over the full 5-year backtest window (<i>W<sub>5</sub> = W<sub>0</sub> &times; (1 + CAGR)<sup>5</sup></i>):<br/>"
+        "&bull; <b>5-Year Out-of-Sample Horizon (Cumulative Compound Growth, 2021-2025):</b> Compounding this 42.12% annualized CAGR over the full 5-year backtest window (<i>W<sub>5</sub> = W<sub>0</sub> &times; (1 + CAGR)<sup>5</sup></i>):<br/>"
         "&nbsp;&nbsp;&nbsp;&nbsp;&ndash; <b>Historical-CVaR (0.75% Inst. Fee):</b> Compounds to <b>N57.77 Million</b> (5.78x capital multiplier), generating <b>+N47.77 Million in total cumulative net profit</b>.<br/>"
         "&nbsp;&nbsp;&nbsp;&nbsp;&ndash; <b>Historical-CVaR (1.50% Retail Fee):</b> Compounds to <b>N57.21 Million</b> (5.72x capital multiplier at 41.97% CAGR), generating <b>+N47.21 Million in total cumulative net profit</b>.<br/>"
         "&nbsp;&nbsp;&nbsp;&nbsp;&ndash; <b>NGX Index Buy-Hold:</b> Compounds to <b>N46.33 Million</b> (4.63x capital multiplier at 35.88% CAGR), generating <b>+N36.33 Million in total cumulative net profit</b>.<br/>"
@@ -765,9 +768,74 @@ def generate_chapters_pdf(pdf_filename='output/pdf/Chapters_4_and_5.pdf'):
         "<b>Repository URL:</b> <font color='#1A5276'><u>https://github.com/abdulameen962/equity-optimization</u></font>",
         body_style
     ))
+    story.append(Spacer(1, 15))
+    
+    # REFERENCES SECTION (APA 7th Edition)
+    story.append(PageBreak())
+    story.append(Paragraph("References", section_title_style))
+    story.append(Spacer(1, 10))
+    
+    ref_style = ParagraphStyle(
+        'ReferenceStyle',
+        parent=styles['Normal'],
+        fontName='Times-Roman',
+        fontSize=12,
+        leading=24,  # APA 7th double-spacing (12pt font x 2 = 24pt leading)
+        leftIndent=36,  # 0.5 inch hanging indent
+        firstLineIndent=-36,
+        spaceAfter=12
+    )
+    
+    references_list = [
+        "Adegboyo, O. S., & Sarwar, K. (2025). Modelling and forecasting of Nigeria stock market volatility. <i>Future Business Journal</i>, 11(1), Article 124. https://doi.org/10.1186/s43093-025-00536-4",
+        "Ajiga, D. I., Adeleye, R. A., Tubokirifuruar, T. S., Bello, B. G., Ndubuisi, N. L., Asuzu, O. F., & Owolabi, O. R. (2024). Machine learning for stock market forecasting: A review of models and accuracy. <i>Finance & Accounting Research Journal</i>, 6(2).",
+        "Al-Shboul, M., & Alfzari, S. (2025). Predictive analytics in portfolio management: A fusion of AI and investment economics for optimal risk-return trade-offs. <i>International Review of Management and Marketing</i>, 15(1). https://www.econjournals.net.tr/index.php/irmm/article/view/18594",
+        "Alim, W., Khan, N. U., Zhang, V. W., Cai, H. H., Mikhaylov, A., & Yuan, Q. (2024). Influence of political stability on the stock market returns and volatility: GARCH and EGARCH approach. <i>Financial Innovation</i>. https://doi.org/10.1186/s40854-024-00658-8",
+        "Alotaibi, T. S., Dalla Valle, L., & Craven, M. J. (2022). The worst case GARCH-copula CVaR approach for portfolio optimisation: Evidence from financial markets. <i>Journal of Risk and Financial Management</i>, 15(10), Article 482. https://doi.org/10.3390/jrfm15100482",
+        "Arif, U., Sohail, M. T., & Majeed, M. I. (2020). Portfolio optimization with mean-variance & mean-CVaR: Evidence from Pakistan stock market. <i>International Journal of Management Research & Emerging Sciences</i>, 10(2), 215-226.",
+        "Ashrafzadeh, M., Sadrani, M., & Zolfani, S. H. (2025). Clustering-based return prediction model for stock pre-selection in portfolio optimization. <i>Results in Engineering</i>, 27, Article 106263. https://doi.org/10.1016/j.rineng.2025.106263",
+        "Bodnar, T., Lindholm, M., Niklasson, V., & Thorsen, E. (2022). Bayesian portfolio selection using VaR and CVaR. <i>Applied Mathematics and Computation</i>, 427, Article 127120.",
+        "Campbell, J. Y., & Viceira, L. M. (2002). <i>Strategic asset allocation: Portfolio choice for long-term investors</i>. Oxford University Press.",
+        "Chaweewanchon, A., & Chaysiri, R. (2022). Markowitz mean-variance portfolio optimization with predictive stock selection using machine learning. <i>International Journal of Financial Studies</i>, 10(3), Article 64. https://doi.org/10.3390/ijfs10030064",
+        "Diebold, F. X., & Mariano, R. S. (1995). Comparing predictive accuracy. <i>Journal of Business & Economic Statistics</i>, 13(3), 253-263.",
+        "Fama, E. F. (1970). Efficient capital markets: A review of theory and empirical work. <i>The Journal of Finance</i>, 25(2), 383-417. https://doi.org/10.1111/j.1540-6261.1970.tb00518.x",
+        "Fan, Y. (2025). Enhancing investment strategies with LSTM-based stock prediction and mean-variance portfolio optimization. <i>Proceedings of the 3rd International Conference on Financial Technology and Business Analysis</i>. https://doi.org/10.54254/2754-1169/2024.23667",
+        "Fapetu, O., Ojo, S. M., Balogun, A. A., & Asaolu, A. A. (2021). Capital market performance and macroeconomic dynamics in Nigeria. <i>FUOYE Journal of Finance and Contemporary Issues</i>, 1(1), 29-37.",
+        "Fatouros, G., Makridis, G., Kotios, D., Soldatos, J., Filippakis, M., & Kyriazis, D. (2023). DeepVaR: A framework for portfolio risk assessment leveraging probabilistic deep neural networks. <i>Digital Finance</i>, 5(1), 29-56.",
+        "Fleming, J., Kirby, C., & Ostdiek, B. (2001). <i>The economic value of volatility timing using 'realized' volatility</i> [Working paper]. Rice University, Jones Graduate School.",
+        "Gu, S., Kelly, B., & Xiu, D. (2020). Empirical asset pricing via machine learning. <i>The Review of Financial Studies</i>, 33(5), 2223-2273. https://doi.org/10.1093/rfs/hhz113",
+        "Job, O. D. (2022). An empirical evaluation of alternative asset allocation policies for emerging and frontier market investors in Africa. <i>Journal of Financial Risk Management</i>, 11(3), 481-521. https://doi.org/10.4236/jfrm.2022.113024",
+        "Jobson, J. D., & Korkie, B. M. (1981). Performance hypothesis testing with the Sharpe and Treynor measures. <i>The Journal of Finance</i>, 36(4), 889-908.",
+        "Kevin, J., & Yugopuspito, P. (2025). Hybrid LSTM and PPO networks for dynamic portfolio optimization (LPPM-UPH, No. 404/LPPM-UPH/VII/2025). <i>Universitas Pelita Harapan Working Paper</i>.",
+        "Leccadito, A., Staino, A., & Toscano, P. (2024). A novel robust method for estimating the covariance matrix of financial returns with applications to risk management. <i>Financial Innovation</i>, 10, Article 116.",
+        "Ledoit, O., & Wolf, M. (2008). Robust performance hypothesis testing with the Sharpe ratio. <i>Journal of Empirical Finance</i>, 15(5), 850-859.",
+        "Ledoit, O., & Wolf, M. (2011). Robust performance hypothesis testing with the variance. <i>Wilmott Magazine</i>, (55), 86-89.",
+        "Lorimer, D. A., van Schalkwyk, C. H., & Szczygielski, J. J. (2024). Portfolio optimisation using alternative risk measures. <i>Finance Research Letters</i>, 67, Article 105758. https://doi.org/10.1016/j.frl.2024.105758",
+        "Markowitz, H. (1952). Portfolio selection. <i>The Journal of Finance</i>, 7(1), 77-91. https://doi.org/10.1111/j.1540-6261.1952.tb01525.x",
+        "Martinez-Barbero, X., Cervello-Royo, R., & Ribal, J. (2024). Portfolio optimization with prediction-based return using Long Short-Term Memory neural networks: Testing on upward and downward European markets. <i>Computational Economics</i>, 65, 1479-1504. https://doi.org/10.1007/s10614-024-10604-6",
+        "Mba, J. C., Ababio, K. A., & Agyei, S. K. (2022). Markowitz mean-variance portfolio selection and optimization under a behavioral spectacle: New empirical evidence. <i>International Journal of Financial Studies</i>, 10(2), Article 28. https://doi.org/10.3390/ijfs10020028",
+        "Memmel, C. (2003). Performance hypothesis testing with the Sharpe ratio. <i>Finance Letters</i>, 1(1), 21-23.",
+        "Michaud, R. O. (1989). The Markowitz optimization enigma: Is \"optimized\" optimal? <i>Financial Analysts Journal</i>, 45(1), 31-42. https://doi.org/10.2469/faj.v45.n1.31",
+        "Moyoweshumba, E., & Seitshiro, M. (2025). Leveraging Markowitz, Random Forest, and XGBoost for optimal diversification of South African stock portfolios. <i>Data Science in Finance and Economics</i>, 5(2), 205-233. https://doi.org/10.3934/DSFE.2025010",
+        "Mozumder, S., Hasan, M. S., & Kabir, M. A. (2024). Multilevel and tail risk management. <i>Financial Innovation</i>, 10, Article 100.",
+        "Naeem, M., Jassim, H. S., & Korsah, D. (2024). The application of machine learning techniques to predict stock market crises in Africa. <i>Journal of Risk and Financial Management</i>, 17(12), Article 554. https://doi.org/10.3390/jrfm17120554",
+        "Rockafellar, R. T., & Uryasev, S. (2000). Optimization of conditional value-at-risk. <i>Journal of Risk</i>, 2(3), 21-41. https://doi.org/10.21314/JOR.2000.038",
+        "Rockafellar, R. T., & Uryasev, S. (2002). Conditional value-at-risk for general loss distributions. <i>Journal of Banking & Finance</i>, 26(7), 1443-1471. https://doi.org/10.1016/S0378-4266(02)00271-6",
+        "Sahiner, M. (2022). Forecasting volatility in Asian financial markets: Evidence from recursive and rolling window methods. <i>SN Business & Economics</i>, 2, Article 157. https://doi.org/10.1007/s43546-022-00329-9",
+        "Salo, A., Doumpos, M., Liesio, J., & Zopounidis, C. (2024). Fifty years of portfolio optimization. <i>European Journal of Operational Research</i>, 318(1), 1-18. https://doi.org/10.1016/j.ejor.2023.12.031",
+        "Samaniego Alcantar, A. (2023). Semi-variance optimization for the components of the Dow Jones Industrial Average index. <i>Contaduria y Administracion</i>, 68(4), 1-17. http://dx.doi.org/10.22201/fca.24488410e.2023.3409",
+        "Slusarczyk, D., & Slepaczuk, R. (2025). Algorithmic investment strategies on the Dow Jones Industrial Average. <i>Journal of Big Data</i>, 12, Article 127. https://doi.org/10.1186/s40537-025-01164-z",
+        "Uzoaga, G. A., Adenomon, M. O., Nweze, N. O., & Maijama, B. (2025). Modelling and predicting stock prices of Nigerian Stock Exchange using some machine learning techniques and time series model. <i>Science World Journal</i>, 20(2), 510-515. https://dx.doi.org/10.4314/swj.v20i2.9",
+        "Uzoaga, G. A., Adenomon, M. O., Nweze, N. O., & Maijamaa, B. (2025). Predictive machine learning methods for stock returns among emerging economies in Africa. <i>Science World Journal</i>, 20(3), 941-947. https://dx.doi.org/10.4314/swj.v20i3.3",
+        "Yadav, A., Madhavi, R., Bagaria, O., Ambulkar, A., & Sharma, S. (2024). Survey on financial portfolio management's role in investment decision-making strategies. <i>Multidisciplinary Reviews</i>, 6, Article e2023ss101. https://doi.org/10.31893/multirev.2023ss101",
+        "Zsurkis, G., Nicolau, J., & Rodrigues, P. M. M. (2024). First passage times in portfolio optimization: A novel nonparametric approach. <i>European Journal of Operational Research</i>, 312(3), 1074-1085. https://doi.org/10.1016/j.ejor.2023.07.044"
+    ]
+    
+    for ref in references_list:
+        story.append(Paragraph(ref, ref_style))
     
     doc.build(story)
-    print(f"Successfully generated PDF: {pdf_filename}")
+    print(f"Successfully generated PDF with References: {pdf_filename}")
 
 if __name__ == '__main__':
     print("Generating Academic Chapters 4 & 5 PDF matching Chapters 1-3 layout...")

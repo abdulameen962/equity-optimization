@@ -1,0 +1,409 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<<
+/Producer (pypdf)
+>>
+endobj
+2 0 obj
+<<
+/Type /Pages
+/Count 3
+/Kids [ 4 0 R 13 0 R 17 0 R ]
+>>
+endobj
+3 0 obj
+<<
+/Type /Catalog
+/Pages 2 0 R
+>>
+endobj
+4 0 obj
+<<
+/Contents 5 0 R
+/MediaBox [ 0 0 612 792 ]
+/Resources <<
+/Font <<
+/F1 6 0 R
+/F1-0 7 0 R
+/F2 8 0 R
+/F2-0 9 0 R
+/F3 10 0 R
+/F4 11 0 R
+/F5 12 0 R
+>>
+/ProcSet [ /ImageB /ImageC /ImageI /PDF /Text ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Type /Page
+/Annots [ ]
+/Parent 2 0 R
+>>
+endobj
+5 0 obj
+<<
+/Length 3459
+>>
+stream
+q
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 78 690 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 12 Tm /F2 12 Tf 24 TL (3. Benchmark Portfolios for Evaluation) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 540 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 132 Tm /F3 12 Tf 24 TL 4.039636 Tw (To rigorously evaluate the economic value and true out-of-sample performance of the) Tj T* 0 Tw -0.135 Tw (advanced ML-CVaR optimization strategy, it is essential to measure its results against standard) Tj T* 0 Tw 2.64 Tw (baseline portfolios. By utilizing these benchmarks alongside the metrics above, the study) Tj T* 0 Tw .1752 Tw (empirically validates whether the non-linear machine learning forecasts, combined with CVaR) Tj T* 0 Tw 2.824 Tw (tail-risk constraints, genuinely deliver superior risk-adjusted performance on the Nigerian) Tj T* 0 Tw (Exchange.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 386 cm
+q
+BT 1 0 0 1 15 132 Tm 2.559273 Tw 24 TL /F3 12 Tf 0 0 0 rg (\177 ) Tj /F2 12 Tf (The 1/N Equally Weighted Portfolio \(EWP\):) Tj /F3 12 Tf ( In this naive diversification strategy,) Tj T* 0 Tw .196 Tw (investment capital is simply divided uniformly across all selected stocks without relying on) Tj T* 0 Tw 1.520727 Tw (any parameter estimation or complex optimization algorithms. In an EWP strategy, each) Tj T* 0 Tw .990222 Tw (asset in the portfolio holds an equal weight of ) Tj /F4 12 Tf (w) Tj /F4 10 Tf -6 Ts (i) Tj /F4 12 Tf 0 Ts ( = 1/N) Tj /F3 12 Tf (. This rule is chosen as a primary) Tj T* 0 Tw .386571 Tw (benchmark because it is easy to implement and continues to be a standard, highly effective) Tj T* 0 Tw (allocation rule utilized by investors.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 212 cm
+q
+BT 1 0 0 1 15 156 Tm 2.123 Tw 24 TL /F3 12 Tf 0 0 0 rg (\177 ) Tj /F2 12 Tf (The Buy-and-Hold Market Index Strategy:) Tj /F3 12 Tf ( This is a passive strategy that involves) Tj T* 0 Tw 1.797231 Tw (buying and holding the market index itself\227in this case, the NGX Pension Index. This) Tj T* 0 Tw .758 Tw (serves as a critical baseline to demonstrate whether active portfolio management based on) Tj T* 0 Tw .082667 Tw (machine learning predictions genuinely provides superior risk-adjusted returns compared to) Tj T* 0 Tw .659429 Tw (general market movements. Initialized at equal weights ) Tj /F4 12 Tf (w) Tj /F4 10 Tf -6 Ts (0,i) Tj /F4 12 Tf 0 Ts ( = 1/N) Tj /F3 12 Tf ( at ) Tj /F4 12 Tf (t = 0) Tj /F3 12 Tf (, Buy-and-Hold) Tj T* 0 Tw 3.516615 Tw (weights drift passively with asset price returns \() Tj /F4 12 Tf (w) Tj /F4 10 Tf -6 Ts (t+1,i) Tj /F4 12 Tf 0 Ts ( ) Tj /F5 12 Tf 24 TL (\265) Tj /F4 12 Tf 24 TL ( w) Tj /F4 10 Tf -6 Ts (t,i) Tj /F4 12 Tf 0 Ts (\(1 + R) Tj /F4 10 Tf -6 Ts (t+1,i) Tj /F4 12 Tf 0 Ts (\)) Tj /F3 12 Tf (\) with zero) Tj T* 0 Tw (rebalancing turnover post week 0.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 176 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 12 Tm /F2 12 Tf 24 TL (3.3.6 Hypothesis Testing and Statistical Significance Framework) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 98 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 60 Tm /F3 12 Tf 24 TL .7452 Tw (To determine whether observed differences in risk-adjusted performance \(Sharpe and Sortino) Tj T* 0 Tw .404727 Tw (ratios\) and weekly portfolio returns between candidate strategies and baseline benchmarks are) Tj T* 0 Tw 2.487273 Tw (statistically meaningful or merely artifacts of sampling variation, this study implements a) Tj T* 0 Tw ET
+Q
+Q
+ 
+
+Q
+q
+0.0 0.0 612 792 re
+W
+n
+1 0 0 1 0 0 cm
+BT
+/F1-0 12 Tf
+14.4 TL
+ET
+BT
+/F2-0 10 Tf
+12 TL
+ET
+BT
+1 0 0 1 303.5 36 Tm
+(1) Tj
+T*
+ET
+Q
+
+endstream
+endobj
+6 0 obj
+<<
+/BaseFont /Helvetica
+/Encoding /WinAnsiEncoding
+/Name /F1
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+7 0 obj
+<<
+/BaseFont /Helvetica
+/Encoding /WinAnsiEncoding
+/Name /F1
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+8 0 obj
+<<
+/BaseFont /Times-Bold
+/Encoding /WinAnsiEncoding
+/Name /F2
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+9 0 obj
+<<
+/BaseFont /Times-Roman
+/Encoding /WinAnsiEncoding
+/Name /F2
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+10 0 obj
+<<
+/BaseFont /Times-Roman
+/Encoding /WinAnsiEncoding
+/Name /F3
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+11 0 obj
+<<
+/BaseFont /Times-Italic
+/Encoding /WinAnsiEncoding
+/Name /F4
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+12 0 obj
+<<
+/BaseFont /Symbol
+/Name /F5
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+13 0 obj
+<<
+/Contents 14 0 R
+/MediaBox [ 0 0 612 792 ]
+/Resources <<
+/Font <<
+/F1 6 0 R
+/F1-0 15 0 R
+/F2 8 0 R
+/F2-0 16 0 R
+/F3 10 0 R
+/F4 11 0 R
+/F5 12 0 R
+>>
+/ProcSet [ /ImageB /ImageC /ImageI /PDF /Text ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Type /Page
+/Annots [ ]
+/Parent 2 0 R
+>>
+endobj
+14 0 obj
+<<
+/Length 4405
+>>
+stream
+q
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 78 618 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 84 Tm /F3 12 Tf 24 TL 1.045333 Tw (decision-theoretic inferential hypothesis testing framework. In emerging equity markets such) Tj T* 0 Tw .8088 Tw (as the NGX\227where asset returns display pronounced non-normality, negative skewness, and) Tj T* 0 Tw 2.934667 Tw (heavy tails\227traditional parametric Z-tests can yield misleading p-values. Therefore, both) Tj T* 0 Tw (parametric and robust non-parametric bootstrap procedures are employed:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 464 cm
+q
+BT 1 0 0 1 15 132 Tm .893 Tw 24 TL /F3 12 Tf 0 0 0 rg (1. ) Tj /F2 12 Tf (Jobson and Korkie \(1981\) Test with Memmel \(2007\) Correction:) Tj /F3 12 Tf ( Evaluates the null) Tj T* 0 Tw 1.311833 Tw (hypothesis of Sharpe ratio equality H) Tj /F3 10 Tf -6 Ts (0) Tj /F3 12 Tf 0 Ts (: Sharpe) Tj /F3 10 Tf -6 Ts (A) Tj /F3 12 Tf 0 Ts ( = Sharpe) Tj /F3 10 Tf -6 Ts (B) Tj /F3 12 Tf 0 Ts ( for two correlated portfolios.) Tj T* 0 Tw (Memmel \(2007\) corrects the asymptotic variance under portfolio correlation ) Tj /F5 12 Tf 24 TL (r) Tj /F3 12 Tf 24 TL (:) Tj  T* .556417 Tw ( ) Tj ( ) Tj ( ) Tj ( ) Tj /F4 12 Tf (Z = \(Sharpe) Tj /F4 10 Tf -6 Ts (A) Tj /F4 12 Tf 0 Ts ( - Sharpe) Tj /F4 10 Tf -6 Ts (B) Tj /F4 12 Tf 0 Ts (\) / ) Tj /F5 12 Tf 24 TL (\326) Tj /F4 12 Tf 24 TL (\( \(1 / T\) [ 2\(1 - ) Tj /F5 12 Tf 24 TL (r) Tj /F4 12 Tf 24 TL (\) + 0.5\(Sharpe) Tj /F4 10 Tf -6 Ts (A) Tj 6 Ts (2) Tj /F4 12 Tf 0 Ts ( + Sharpe) Tj /F4 10 Tf -6 Ts (B) Tj 6 Ts (2) Tj /F4 12 Tf 0 Ts ( - 2 Sharpe) Tj /F4 10 Tf -6 Ts (A) Tj /F4 12 Tf 0 Ts  T* 0 Tw (Sharpe) Tj /F4 10 Tf -6 Ts (B) Tj /F4 12 Tf 0 Ts ( ) Tj /F5 12 Tf 24 TL (r) Tj /F4 12 Tf 24 TL /F4 10 Tf 6 Ts (2) Tj /F4 12 Tf 0 Ts (\) ] \)) Tj /F3 12 Tf  T* (where ) Tj /F4 12 Tf (T) Tj /F3 12 Tf ( is the number of out-of-sample weekly observations.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 362 cm
+q
+BT 1 0 0 1 15 84 Tm 1 Tw 24 TL /F3 12 Tf 0 0 0 rg (2. ) Tj /F2 12 Tf (Ledoit and Wolf \(2008\) Circular Block Bootstrap Test for Sharpe Ratio Equality:) Tj /F3 12 Tf  T* 0 Tw .371143 Tw (Resamples overlapping blocks of length ) Tj /F4 12 Tf (b = 5) Tj /F3 12 Tf ( weeks across ) Tj /F4 12 Tf (B = 2,000) Tj /F3 12 Tf ( bootstrap replicates) Tj T* 0 Tw 5.82 Tw (to preserve time-series autocorrelation and conditional heteroskedasticity \(GARCH) Tj T* 0 Tw (effects\). The empirical p-value evaluates H) Tj /F3 10 Tf -6 Ts (0) Tj /F3 12 Tf 0 Ts (: Sharpe) Tj /F3 10 Tf -6 Ts (A) Tj /F3 12 Tf 0 Ts ( - Sharpe) Tj /F3 10 Tf -6 Ts (B) Tj /F3 12 Tf 0 Ts ( = 0.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 284 cm
+q
+BT 1 0 0 1 15 60 Tm 4.394182 Tw 24 TL /F3 12 Tf 0 0 0 rg (3. ) Tj /F2 12 Tf (Ledoit and Wolf \(2011\) Bootstrap Test for Sortino Ratio Equality:) Tj /F3 12 Tf ( Extends) Tj T* 0 Tw .306364 Tw (non-parametric block bootstrapping to downside risk, evaluating H) Tj /F3 10 Tf -6 Ts (0) Tj /F3 12 Tf 0 Ts (: Sortino) Tj /F3 10 Tf -6 Ts (A) Tj /F3 12 Tf 0 Ts ( - Sortino) Tj /F3 10 Tf -6 Ts (B) Tj /F3 12 Tf 0 Ts ( =) Tj T* 0 Tw (0 to verify excess return per unit of downside risk.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 206 cm
+q
+BT 1 0 0 1 15 60 Tm 1.301333 Tw 24 TL /F3 12 Tf 0 0 0 rg (4. ) Tj /F2 12 Tf (Non-Parametric Wilcoxon Signed-Rank Test and Paired t-Test:) Tj /F3 12 Tf ( Evaluates whether) Tj T* 0 Tw .607286 Tw (weekly differential returns ) Tj /F5 12 Tf 24 TL (D) Tj /F3 12 Tf 24 TL (R) Tj /F3 10 Tf -6 Ts (t) Tj /F3 12 Tf 0 Ts ( = R) Tj /F3 10 Tf -6 Ts (A,t) Tj /F3 12 Tf 0 Ts ( - R) Tj /F3 10 Tf -6 Ts (B,t) Tj /F3 12 Tf 0 Ts ( significantly deviate from zero \(H) Tj /F3 10 Tf -6 Ts (0) Tj /F3 12 Tf 0 Ts (: E[) Tj /F5 12 Tf 24 TL (D) Tj /F3 12 Tf 24 TL (R) Tj /F3 10 Tf -6 Ts (t) Tj /F3 12 Tf 0 Ts (] =) Tj T* 0 Tw (0\).) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 128 cm
+q
+BT 1 0 0 1 15 60 Tm 3.8736 Tw 24 TL /F3 12 Tf 0 0 0 rg (5. ) Tj /F2 12 Tf (Diebold and Mariano \(1995\) Test for Predictive Accuracy:) Tj /F3 12 Tf ( Evaluates whether) Tj T* 0 Tw 3.051 Tw (out-of-sample forecasting loss \(RMSE\) differentials between machine learning models) Tj T* 0 Tw (\(Random Forest, XGBoost\) and the Historical Mean baseline are statistically significant.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 92 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 12 Tm /F2 12 Tf 24 TL (3.4 Description and Measurement of Study Variables) Tj T* ET
+Q
+Q
+ 
+
+Q
+q
+0.0 0.0 612 792 re
+W
+n
+1 0 0 1 0 0 cm
+BT
+/F1-0 12 Tf
+14.4 TL
+ET
+BT
+/F2-0 10 Tf
+12 TL
+ET
+BT
+1 0 0 1 303.5 36 Tm
+(2) Tj
+T*
+ET
+Q
+
+endstream
+endobj
+15 0 obj
+<<
+/BaseFont /Helvetica
+/Encoding /WinAnsiEncoding
+/Name /F1
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+16 0 obj
+<<
+/BaseFont /Times-Roman
+/Encoding /WinAnsiEncoding
+/Name /F2
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+17 0 obj
+<<
+/Contents 18 0 R
+/MediaBox [ 0 0 612 792 ]
+/Resources <<
+/Font <<
+/F1 6 0 R
+/F1-0 19 0 R
+/F2 8 0 R
+/F2-0 20 0 R
+/F3 10 0 R
+/F4 11 0 R
+/F5 12 0 R
+>>
+/ProcSet [ /ImageB /ImageC /ImageI /PDF /Text ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Type /Page
+/Annots [ ]
+/Parent 2 0 R
+>>
+endobj
+18 0 obj
+<<
+/Length 561
+>>
+stream
+q
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 78 642 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 60 Tm /F3 12 Tf 24 TL .171429 Tw (The variables utilized in this study are partitioned into the target variable, the thirteen machine) Tj T* 0 Tw 4.130182 Tw (learning feature inputs \(extracted exclusively from the weekly OHLCV data\), and the) Tj T* 0 Tw (exogenous risk-free rate parameter required for portfolio evaluation.) Tj T* ET
+Q
+Q
+ 
+
+Q
+q
+0.0 0.0 612 792 re
+W
+n
+1 0 0 1 0 0 cm
+BT
+/F1-0 12 Tf
+14.4 TL
+ET
+BT
+/F2-0 10 Tf
+12 TL
+ET
+BT
+1 0 0 1 303.5 36 Tm
+(3) Tj
+T*
+ET
+Q
+
+endstream
+endobj
+19 0 obj
+<<
+/BaseFont /Helvetica
+/Encoding /WinAnsiEncoding
+/Name /F1
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+20 0 obj
+<<
+/BaseFont /Times-Roman
+/Encoding /WinAnsiEncoding
+/Name /F2
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+xref
+0 21
+0000000000 65535 f 
+0000000015 00000 n 
+0000000054 00000 n 
+0000000127 00000 n 
+0000000176 00000 n 
+0000000454 00000 n 
+0000003965 00000 n 
+0000004072 00000 n 
+0000004179 00000 n 
+0000004287 00000 n 
+0000004396 00000 n 
+0000004506 00000 n 
+0000004617 00000 n 
+0000004695 00000 n 
+0000004977 00000 n 
+0000009435 00000 n 
+0000009543 00000 n 
+0000009653 00000 n 
+0000009935 00000 n 
+0000010548 00000 n 
+0000010656 00000 n 
+trailer
+<<
+/Size 21
+/Root 3 0 R
+/Info 1 0 R
+>>
+startxref
+10766
+%%EOF

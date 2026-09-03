@@ -16,13 +16,41 @@ Run the entire end-to-end quantitative pipeline with a single command:
 uv run python main.py
 ```
 
-This master entry point automatically executes all 6 sequential stages:
+This master entry point automatically executes all sequential stages:
 1. **Data Preprocessing & Non-Normality Diagnostics** (`src/data_processing.py`)
 2. **Technical Feature Engineering & Wilder's Parabolic SAR** (`src/feature_engineering.py`)
 3. **ML Walk-Forward Forecasting with TimeSeriesSplit CV Tuning** (`src/ml_models.py`)
 4. **Convex Mean-CVaR Portfolio Optimization & Statistical Hypothesis Testing** (`src/portfolio_optimization.py`)
 5. **Academic ReportLab Chapters 4 & 5 PDF Generation** (`src/generate_chapters.py`)
-6. **Consolidated 69-Page Thesis PDF Compilation** (`generate_thesis_pdf.py`)
+6. **Consolidated Academic Thesis PDF Compilation** (`generate_thesis_pdf.py`)
+
+---
+
+## 📄 Thesis PDF Compilation & Reproducibility Workflow
+
+To ensure **100% reproducibility** and layout integrity across Microsoft Word and ReportLab vector PDF rendering:
+
+1. **Chapters 1–3 Source (`Abdulameen Chapter 1 -3.docx`)**:
+   - Maintained in native Microsoft Word format with fully justified body text, left-aligned section headers, and native vector math equations, matrices, and tables.
+   - Converted directly to PDF via Word COM API (`export_and_compile_thesis.py` or Word "Save As PDF") to produce `Abdulameen Chapter 1 -3.pdf`.
+
+2. **Chapters 4 & 5 Source (`src/generate_chapters.py`)**:
+   - Generated programmatically using ReportLab into `output/pdf/Chapters_4_and_5.pdf`, containing empirical findings, econometric tables, figures, and references.
+
+3. **Master PDF Synthesis (`generate_thesis_pdf.py`)**:
+   - Merges `Abdulameen Chapter 1 -3.pdf` (Chapters 1–3) + `output/pdf/Chapters_4_and_5.pdf` (Chapters 4–5 & References).
+   - Dynamically stamps centered bottom page numbers across the entire document.
+   - Outputs the final complete document: **`Abdulameen_Complete_Thesis_Chapters_1_5.pdf`** (82 total pages).
+
+To re-compile the complete thesis PDF at any time:
+
+```bash
+# Option A: Fast compilation from default Abdulameen Chapter 1 -3.pdf baseline
+python generate_thesis_pdf.py
+
+# Option B: Complete export from Abdulameen Chapter 1 -3.docx via Word COM + compilation
+python export_and_compile_thesis.py
+```
 
 ---
 
@@ -128,9 +156,11 @@ $$\text{CER} = \mu_p - \frac{\gamma}{2} \sigma_p^2$$
 ```text
 equity-optimization/
 ├── main.py                                    # Master execution entry point (Runs all 6 pipeline stages)
-├── Abdulameen Chapter 1 -3.pdf                # Original Chapters 1-3 PDF (Preserved untouched)
-├── Abdulameen_Complete_Thesis_Chapters_1_5.pdf # Consolidated 73-Page Academic Thesis Document
-├── generate_thesis_pdf.py                     # Final PDF synthesis and merger script
+├── export_and_compile_thesis.py               # Word COM export + complete thesis PDF compiler
+├── generate_thesis_pdf.py                     # Fast thesis PDF compilation script (Default input: Abdulameen Chapter 1 -3.pdf)
+├── Abdulameen Chapter 1 -3.docx               # Master Word source document for Chapters 1-3
+├── Abdulameen Chapter 1 -3.pdf                # Word-exported vector PDF for Chapters 1-3 (Default input)
+├── Abdulameen_Complete_Thesis_Chapters_1_5.pdf # Consolidated 82-Page Academic Thesis Document
 ├── README.md                                  # Comprehensive project documentation
 ├── data/
 │   ├── valid_from_2010/                       # 28 valid stock CSVs (complete 2010-2025 data)
@@ -140,10 +170,9 @@ equity-optimization/
 │   ├── feature_engineering.py                 # 13 technical indicators, Wilder SAR, warm-up handling
 │   ├── ml_models.py                           # TimeSeriesSplit CV, train-only scaling walk-forward ML models
 │   ├── portfolio_optimization.py              # Mean-CVaR LP solver & statistical significance tests
-│   ├── generate_section_3_3_6.py              # Standalone Section 3.3.6 PDF page builder
 │   └── generate_chapters.py                   # ReportLab academic PDF builder for Chapters 4 & 5
 └── output/
     ├── figures/                               # Heatmap, Feature Importance, Equity Growth Curves
     ├── tables/                                # Empirical results CSV tables (Stats, ML Perf, Portfolios, Significance)
-    └── pdf/                                   # Standalone Chapters 4 & 5 PDF & Section 3.3.6 PDF
+    └── pdf/                                   # Standalone Chapters 4 & 5 PDF & Word export PDF
 ```

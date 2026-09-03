@@ -24,7 +24,7 @@ def generate_section_3_3_6_pdf(output_path="output/pdf/section_3_3_6.pdf"):
         parent=styles['Heading2'],
         fontName='Times-Bold',
         fontSize=13,
-        leading=17,
+        leading=22,
         textColor=colors.black,
         spaceBefore=12,
         spaceAfter=8
@@ -35,7 +35,7 @@ def generate_section_3_3_6_pdf(output_path="output/pdf/section_3_3_6.pdf"):
         parent=styles['Normal'],
         fontName='Times-Roman',
         fontSize=12,
-        leading=18, # 1.5 line spacing matching original thesis
+        leading=24, # Double spaced (12pt font x 2 = 24pt leading)
         textColor=colors.black,
         spaceAfter=10,
         alignment=4 # Justified
@@ -52,7 +52,7 @@ def generate_section_3_3_6_pdf(output_path="output/pdf/section_3_3_6.pdf"):
     
     story.append(Paragraph("3.3.6 Hypothesis Testing and Statistical Significance Framework", section_title_style))
     story.append(Paragraph(
-        "To determine whether observed differences in risk-adjusted performance (Sharpe and Sortino ratios) and weekly portfolio returns between candidate strategies and baseline benchmarks are statistically meaningful or merely artifacts of sampling variation, this study implements a decision-theoretic inferential hypothesis testing framework. In emerging equity markets such as the NGX—where asset returns display pronounced non-normality, negative skewness, and heavy tails—traditional parametric Z-tests can yield misleading p-values. Therefore, both parametric and robust non-parametric bootstrap procedures are employed:",
+        "To determine whether observed differences in risk-adjusted performance (Sharpe and Sortino ratios) and weekly portfolio returns between candidate strategies and baseline benchmarks are statistically meaningful or merely artifacts of sampling variation, this study implements a decision-theoretic inferential hypothesis testing framework. In emerging equity markets such as the NGX, where asset returns display pronounced non-normality, negative skewness, and heavy tails, traditional parametric Z-tests can yield misleading p-values. Therefore, both parametric and robust non-parametric bootstrap procedures are employed:",
         body_style
     ))
     
