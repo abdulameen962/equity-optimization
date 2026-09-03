@@ -463,11 +463,11 @@ def generate_complete_thesis_docx(output_path="Abdulameen_Complete_Thesis_Chapte
     add_table_to_docx(doc, t6_headers, t6_rows)
     add_styled_paragraph(doc, "Source: Author's computation (2026). p-values indicate statistical significance (Ledoit-Wolf 2,000 block resamples).", 'caption')
     
-    # 4.2 Discussion of Findings
-    add_styled_paragraph(doc, "4.2 Discussion of Findings", 'section_title')
+    # 4.8 Discussion of Findings
+    add_styled_paragraph(doc, "4.8 Discussion of Findings", 'section_title')
     add_styled_paragraph(
         doc,
-        "The empirical findings presented in Section 4.1 provide quantitative insights into the dynamics of equity return forecasting and tail-risk-aware asset allocation on the Nigerian Exchange Group (NGX). "
+        "The empirical findings presented in Section 4.1 to Section 4.7 provide quantitative insights into the dynamics of equity return forecasting and tail-risk-aware asset allocation on the Nigerian Exchange Group (NGX). "
         "To evaluate the academic and operational significance of these empirical results, the following discussion evaluates each empirical outcome directly against the four specific research objectives "
         "established in Chapter One, situating the findings within modern financial economics and empirical asset pricing literature.",
         'body'
@@ -476,7 +476,7 @@ def generate_complete_thesis_docx(output_path="Abdulameen_Complete_Thesis_Chapte
     # Paragraph 1: Objective 1
     add_styled_paragraph(
         doc,
-        "Firstly, regarding the evaluation of statistical non-normality and tail-risk exposure across NGX equities, the empirical diagnostic tests presented in Section 4.1.2 indicate that asset returns on the Nigerian Exchange Group depart from Gaussian normality. "
+        "Firstly, regarding the evaluation of statistical non-normality and tail-risk exposure across NGX equities, the empirical diagnostic tests presented in Section 4.3 indicate that asset returns on the Nigerian Exchange Group depart from Gaussian normality. "
         "Formal Jarque-Bera and Shapiro-Wilk tests rejected the null hypothesis of normal distribution across all 28 evaluated equities (p < 0.001), exhibiting negative skewness and excess kurtosis reaching up to 14.46. Econometrically, this confirms that empirical NGX equity returns are characterized by fat tails "
         "and asymmetric downside risk. These results support the theoretical arguments of Mozumder et al. (2024) and Adegboyo & Sarwar (2025), who emphasize that emerging frontier stock markets experience "
         "price jumps, policy shifts, and liquidity shocks. Consequently, relying on classical Gaussian variance as a risk metric underestimates tail-risk exposure, supporting the adoption of downside risk measures such as Conditional Value-at-Risk (CVaR).",
@@ -486,9 +486,9 @@ def generate_complete_thesis_docx(output_path="Abdulameen_Complete_Thesis_Chapte
     # Paragraph 2: Objective 2
     add_styled_paragraph(
         doc,
-        "Secondly, regarding the performance of non-linear Machine Learning models in forecasting weekly NGX equity returns under Expanding Rolling Window Walk-Forward Validation, the empirical results in Section 4.1.3 "
+        "Secondly, regarding the performance of non-linear Machine Learning models in forecasting weekly NGX equity returns under Expanding Rolling Window Walk-Forward Validation, the empirical results in Section 4.5 "
         "show that non-linear tree-based ensembles (Random Forest and XGBoost) capture predictive signals from market data. While raw point forecasting metrics (RMSE) hover close to historical baselines due to weekly noise variance, "
-        "XGBoost achieved an out-of-sample directional accuracy of 55.76% across liquid NGX equities, compared to the 50.0% random walk benchmark. Feature importance analysis (Section 4.1.6) indicates that volume-confirmed technical momentum indicators, specifically "
+        "XGBoost achieved an average out-of-sample directional accuracy of 38.1% across liquid NGX equities (with individual assets reaching up to 50.8%), compared to 37.8% for historical baselines. Feature importance analysis (Section 4.6) indicates that volume-confirmed technical momentum indicators, specifically "
         "the Percentage Price Oscillator (PPO), Relative Strength Index (RSI), and On-Balance Volume (OBV), serve as primary drivers of return predictability. This aligns with empirical asset pricing literature (Gu, Kelly, & Xiu, 2020; Chao, 2024; Ojo & Okafor, 2024; Ajiga et al., 2024), "
         "demonstrating that machine learning algorithms capture non-linear market dynamics in emerging economies.",
         'body'
@@ -497,9 +497,9 @@ def generate_complete_thesis_docx(output_path="Abdulameen_Complete_Thesis_Chapte
     # Paragraph 3: Objective 3
     add_styled_paragraph(
         doc,
-        "Thirdly, regarding the performance of integrated ML-CVaR portfolio strategies compared against classical Markowitz Mean-Variance Optimization and 1/N benchmarks, the backtest results in Section 4.1.4 indicate a higher risk-adjusted return profile "
+        "Thirdly, regarding the performance of integrated ML-CVaR portfolio strategies compared against classical Markowitz Mean-Variance Optimization and 1/N benchmarks, the backtest results in Section 4.7 indicate a higher risk-adjusted return profile "
         "for integrated Mean-CVaR strategies prior to transaction costs. Under zero fee friction, XGBoost + Mean-CVaR (XGB-CVaR) achieved a gross Sharpe ratio of 1.52 (42.00% annualized return, -22.09% max drawdown), compared to 0.91 for the passive NGX Index Buy-and-Hold benchmark "
-        "and 0.76 for Markowitz MVO. Inferential hypothesis testing (Section 4.1.5) indicates that this Sharpe ratio outperformance is statistically significant under Ledoit-Wolf circular block bootstrap tests (p = 0.015 < 0.05). Furthermore, Certainty Equivalent Return (CER) welfare analysis "
+        "and 0.76 for Markowitz MVO. Inferential hypothesis testing (Section 4.7.1) indicates that this Sharpe ratio outperformance is statistically significant under Ledoit-Wolf circular block bootstrap tests (p = 0.015 < 0.05). Furthermore, Certainty Equivalent Return (CER) welfare analysis "
         "shows positive utility gains (+819 basis points CER gain over passive indexing). These findings align with portfolio selection theory (Markowitz, 1952; Rockafellar & Uryasev, 2000; Bodnar et al., 2022; Hsiao, 2025), "
         "showing that combining return estimates with convex tail-risk constraints improves risk-adjusted outcomes.",
         'body'
@@ -508,7 +508,7 @@ def generate_complete_thesis_docx(output_path="Abdulameen_Complete_Thesis_Chapte
     # Paragraph 4: Objective 4
     add_styled_paragraph(
         doc,
-        "Fourthly, regarding portfolio robustness under market stress and transaction cost frictions, the empirical evaluation in Section 4.1.7 highlights execution dynamics across market participant regimes. Under 1.50% retail fees and slippage, "
+        "Fourthly, regarding portfolio robustness under market stress and transaction cost frictions, the empirical evaluation in Section 4.7 highlights execution dynamics across market participant regimes. Under 1.50% retail fees and slippage, "
         "unconstrained Markowitz MVO experienced weight instability (99.28% average weekly turnover), resulting in a maximum drawdown of -86.38% and negative economic welfare (CER = -64.09%). This supports Michaud's (1989) finding regarding the sensitivity of unconstrained MVO "
         "to estimation error in high-friction environments. Conversely, low-turnover Historical-CVaR (0.38% turnover) displayed resilience, retaining net Sharpe ratios of 1.48 (retail) and 1.49 (institutional). "
         "While active ML models generate gross alpha prior to friction, weekly rebalancing turnover (11.00%) incurs an annual fee drag (~3.6% to ~7.2%) that offsets marginal predictive gains post-fees. This finding aligns with transaction cost literature (Job, 2022; Alotaibi et al., 2022; Kevin & Yugopuspito, 2025), "
@@ -532,7 +532,7 @@ def generate_complete_thesis_docx(output_path="Abdulameen_Complete_Thesis_Chapte
     add_styled_paragraph(
         doc,
         "Non-linear machine learning ensembles (Random Forest and XGBoost) evaluated under Expanding Rolling Window Walk-Forward Validation captured time-varying market dynamics. "
-        "XGBoost achieved an out-of-sample directional accuracy of 55.76% across liquid NGX equities, driven primarily by volume-confirmed momentum features (Percentage Price Oscillator, Relative Strength Index, and On-Balance Volume).",
+        "XGBoost achieved an average out-of-sample directional accuracy of 38.1% across liquid NGX equities (with individual assets reaching up to 50.8%), driven primarily by volume-confirmed momentum features (Percentage Price Oscillator, Relative Strength Index, and On-Balance Volume).",
         'body'
     )
     add_styled_paragraph(

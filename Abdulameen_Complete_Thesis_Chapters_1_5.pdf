@@ -1801,10 +1801,6 @@ endobj
 <<
 /Type /Page
 /Resources <<
-/ExtGState <<
-/GS7 5 0 R
-/GS8 6 0 R
->>
 /Font <<
 /F1 7 0 R
 /F1-0 40 0 R
@@ -1845,16 +1841,14 @@ endobj
 endobj
 42 0 obj
 <<
-/Length 8562
+/Length 8544
 >>
 stream
 q
  /P <</MCID 0>> BDC BT
 /F1 12 Tf
 1 0 0 1 72.024 709.18 Tm
-/GS7 gs
 0 g
-/GS8 gs
 0 G
 [(mar)5(ke)4(d )-19(b)-9(y)20( )-19(hi)-11(g)10(h )-19(volatil)-3(it)-13(y)20(, )-19(low )-19(li)-3(quid)8(it)-13(y)30( )-19(a)4(nd )-19(a)4(s)-20(y)20(m)-11(metr)3(ic )-17(infor)4(mation )-21(\(A)5(rif)4( )] TJ
 ET
@@ -2450,6 +2444,10 @@ endobj
 <<
 /Type /Page
 /Resources <<
+/ExtGState <<
+/GS7 5 0 R
+/GS8 6 0 R
+>>
 /Font <<
 /F1 7 0 R
 /F1-0 48 0 R
@@ -2491,14 +2489,16 @@ endobj
 endobj
 50 0 obj
 <<
-/Length 8168
+/Length 8186
 >>
 stream
 q
  /P <</MCID 0>> BDC BT
 /F1 12 Tf
 1 0 0 1 72.024 709.18 Tm
+/GS7 gs
 0 g
+/GS8 gs
 0 G
 [(risks a)3(nd r)-6(e)4(wa)-3(rds but a)-5(re)-2( a)4(lso helpful in und)-11(e)4(rsta)4(n)-9(ding)8( the)-7( im)-3(porta)5(nc)4(e)-5( of )-6(risk)] TJ
 ET
@@ -3912,6 +3912,10 @@ endobj
 <<
 /Type /Page
 /Resources <<
+/ExtGState <<
+/GS7 5 0 R
+/GS8 6 0 R
+>>
 /Font <<
 /F1 7 0 R
 /F1-0 67 0 R
@@ -4069,14 +4073,16 @@ endstream
 endobj
 77 0 obj
 <<
-/Length 7450
+/Length 7468
 >>
 stream
 q
  /P <</MCID 0>> BDC BT
 /F1 12 Tf
 1 0 0 1 72.024 709.18 Tm
+/GS7 gs
 0 g
+/GS8 gs
 0 G
 [(de)4(a)4(li)-3(ng)10( )-139(with )-141(c)4(a)4(pit)-3(a)4(l )-141(a)4(ll)-3(o)-9(c)4(a)4(ti)-3(on )-139(with )-141(unc)4(e)4(rta)] TJ
 ET
@@ -4394,6 +4400,7 @@ endobj
 /Resources <<
 /ExtGState <<
 /GS7 5 0 R
+/GS8 6 0 R
 >>
 /Font <<
 /F1 7 0 R
@@ -4438,7 +4445,7 @@ endobj
 endobj
 81 0 obj
 <<
-/Length 8796
+/Length 8805
 >>
 stream
 q
@@ -4447,6 +4454,7 @@ q
 1 0 0 1 90.024 708.22 Tm
 /GS7 gs
 0 g
+/GS8 gs
 0 G
 [<0078>] TJ
 ET
@@ -5209,6 +5217,10 @@ endobj
 <<
 /Type /Page
 /Resources <<
+/ExtGState <<
+/GS7 5 0 R
+/GS8 6 0 R
+>>
 /Font <<
 /F1 7 0 R
 /F1-0 87 0 R
@@ -5248,14 +5260,16 @@ endobj
 endobj
 89 0 obj
 <<
-/Length 8640
+/Length 8658
 >>
 stream
 q
  /P <</MCID 0>> BDC BT
 /F1 12 Tf
 1 0 0 1 72.024 709.18 Tm
+/GS7 gs
 0 g
+/GS8 gs
 0 G
 [(a)4(c)4(hieve)6( )-189(the )-197(full )-190(be)4(ne)4(fits)-11( )-189(of )-186(M)-10(L)21( )-189(fo)-6(re)-2(c)4(a)4(sts)-3(, )-189(it)-3( )-189(ne)4(e)4(ds )-190(to )-191(be)4( )-189(e)4(ff)-3(e)4(c)4(ti)-3(ve)4(l)-21(y)20( )-189(int)-3(e)4(gra)7(ted )-187(int)-3(o )-189(portf)4(oli)-3(o)-9( )] TJ
 ET
@@ -5559,10 +5573,6 @@ endobj
 <<
 /Type /Page
 /Resources <<
-/ExtGState <<
-/GS7 5 0 R
-/GS8 6 0 R
->>
 /Font <<
 /F1 7 0 R
 /F1-0 91 0 R
@@ -5603,16 +5613,14 @@ endobj
 endobj
 93 0 obj
 <<
-/Length 6977
+/Length 6959
 >>
 stream
 q
  /P <</MCID 0>> BDC BT
 /F2 12 Tf
 1 0 0 1 72.024 708.82 Tm
-/GS7 gs
 0 g
-/GS8 gs
 0 G
 [(1.6 S)-3(c)4(op)-3(e)4( of)-6( the Stud)-5(y)] TJ
 ET
@@ -5877,10 +5885,6 @@ endobj
 <<
 /Type /Page
 /Resources <<
-/ExtGState <<
-/GS7 5 0 R
-/GS8 6 0 R
->>
 /Font <<
 /F1 7 0 R
 /F1-0 95 0 R
@@ -5921,16 +5925,14 @@ endobj
 endobj
 97 0 obj
 <<
-/Length 8025
+/Length 8007
 >>
 stream
 q
  /P <</MCID 0>> BDC BT
 /F2 12 Tf
 1 0 0 1 72.024 708.94 Tm
-/GS7 gs
 0 g
-/GS8 gs
 0 G
 [(2.1 Conce)6(p)-3(tual)-2( )] TJ
 ET
@@ -6504,10 +6506,6 @@ endobj
 <<
 /Type /Page
 /Resources <<
-/ExtGState <<
-/GS7 5 0 R
-/GS8 6 0 R
->>
 /Font <<
 /F1 7 0 R
 /F1-0 103 0 R
@@ -6548,16 +6546,14 @@ endobj
 endobj
 105 0 obj
 <<
-/Length 8080
+/Length 8062
 >>
 stream
 q
  /P <</MCID 0>> BDC BT
 /F1 12 Tf
 1 0 0 1 72.024 709.18 Tm
-/GS7 gs
 0 g
-/GS8 gs
 0 G
 [(re)7(turns )-59(a)4(bov)-9(e)4( )-59(the )-57(me)-7(a)4(n )-69(a)4(s )-60(de)4(sira)4(ble )-67(ra)7(the)-7(r )-56(than )-67(da)4(nge)4(rous )-57(\()-6(Za)5(pa)4(ta)-7( )-59(Quimba)-7(y)20(o, )-69(2025; )-71(L)21(o)-9(rime)3(r )-66(e)4(t )] TJ
 ET
@@ -7161,10 +7157,6 @@ endobj
 <<
 /Type /Page
 /Resources <<
-/ExtGState <<
-/GS7 5 0 R
-/GS8 6 0 R
->>
 /Font <<
 /F1 7 0 R
 /F1-0 111 0 R
@@ -7205,16 +7197,14 @@ endobj
 endobj
 113 0 obj
 <<
-/Length 7597
+/Length 7579
 >>
 stream
 q
  /P <</MCID 0>> BDC BT
 /F1 12 Tf
 1 0 0 1 72.024 709.18 Tm
-/GS7 gs
 0 g
-/GS8 gs
 0 G
 [(a)4(l.)] TJ
 ET
@@ -7444,10 +7434,6 @@ endobj
 <<
 /Type /Page
 /Resources <<
-/ExtGState <<
-/GS7 5 0 R
-/GS8 6 0 R
->>
 /XObject <<
 /Image65 115 0 R
 >>
@@ -8569,16 +8555,14 @@ endobj
 endobj
 118 0 obj
 <<
-/Length 4833
+/Length 4815
 >>
 stream
 q
  /P <</MCID 0>> BDC BT
 /F1 12 Tf
 1 0 0 1 72.024 709.18 Tm
-/GS7 gs
 0 g
-/GS8 gs
 0 G
 [(All )-71(these)5( )-69(pose)-6( )-69(investm)-2(e)-5(nt )-71(c)4(ha)4(ll)-3(e)4(n)-9(g)10(e)4(s)-10( )-69(to )-71(investm)-12(e)4(nts )-72(in )-71(Ni)-9(g)10(e)4(ri)-8(a)4(n )-69(e)4(quit)-3(ies.)-8( )-69(Hist)-2(oric)5(a)] TJ
 ET
@@ -9107,10 +9091,6 @@ endobj
 <<
 /Type /Page
 /Resources <<
-/ExtGState <<
-/GS7 5 0 R
-/GS8 6 0 R
->>
 /Font <<
 /F1 7 0 R
 /F1-0 124 0 R
@@ -9150,16 +9130,14 @@ endobj
 endobj
 126 0 obj
 <<
-/Length 8164
+/Length 8146
 >>
 stream
 q
  /P <</MCID 0>> BDC BT
 /F1 12 Tf
 1 0 0 1 72.024 709.18 Tm
-/GS7 gs
 0 g
-/GS8 gs
 0 G
 [(P)-3(ost)] TJ
 ET
@@ -10386,10 +10364,6 @@ endobj
 <<
 /Type /Page
 /Resources <<
-/ExtGState <<
-/GS7 5 0 R
-/GS8 6 0 R
->>
 /Font <<
 /F1 7 0 R
 /F1-0 140 0 R
@@ -10430,16 +10404,14 @@ endobj
 endobj
 142 0 obj
 <<
-/Length 7948
+/Length 7930
 >>
 stream
 q
  /P <</MCID 0>> BDC BT
 /F1 12 Tf
 1 0 0 1 72.024 709.18 Tm
-/GS7 gs
 0 g
-/GS8 gs
 0 G
 [(Va)6(lue )-167(a)4(t )-171(R)-2(isk )-172(\(V)5(a)4(R)-2(\) )-166(ha)-5(s )-170(be)4(c)4(ome )-167(a)4( )-169(wide)4(l)-21(y)20( )-169(a)4(c)-5(c)4(e)-5(pted )-167(be)4(nc)4(hmar)5(k )-169(fo)-6(r )-166(me)-7(a)4(suring)10( )-169(fin)-8(a)4(nc)4(ial )-169(risk, )] TJ
 ET
@@ -10685,10 +10657,6 @@ endobj
 <<
 /Type /Page
 /Resources <<
-/ExtGState <<
-/GS7 5 0 R
-/GS8 6 0 R
->>
 /Font <<
 /F1 7 0 R
 /F1-0 144 0 R
@@ -10728,16 +10696,14 @@ endobj
 endobj
 146 0 obj
 <<
-/Length 8284
+/Length 8266
 >>
 stream
 q
  /P <</MCID 0>> BDC BT
 /F1 12 Tf
 1 0 0 1 72.024 709.18 Tm
-/GS7 gs
 0 g
-/GS8 gs
 0 G
 [(Ne)6(twork)3(s )-40(a)4(r)-6(e)4( )-39(de)4(si)-12(g)10(ne)4(d )-39(t)-11(o )-39(identif)-8(y)20( )-39(int)-3(ric)5(a)4(t)-11(e)4(, )-39(non)] TJ
 ET
@@ -11578,10 +11544,6 @@ endobj
 <<
 /Type /Page
 /Resources <<
-/ExtGState <<
-/GS7 5 0 R
-/GS8 6 0 R
->>
 /Font <<
 /F1 7 0 R
 /F1-0 156 0 R
@@ -11622,16 +11584,14 @@ endobj
 endobj
 158 0 obj
 <<
-/Length 6153
+/Length 6135
 >>
 stream
 q
  /P <</MCID 0>> BDC BT
 /F1 12 Tf
 1 0 0 1 72.024 709.18 Tm
-/GS7 gs
 0 g
-/GS8 gs
 0 G
 [(for)6( )-59(investors )-58(n)-9(a)4(vi)-11(g)10(a)4(ti)-3(n)-9(g)10( )-69(volatil)-3(e)4( )-59(a)4(nd )-59(c)4(ompl)-3(e)4(x)-9( )-59(ma)-7(rke)7(t )-61(e)4(nvironmen)3(ts.)-12( )-59(The)5(s)-10(e)4( )-69(g)10(a)4(ps )-60(just)-4(if)-18(y)20( )-59(the)-7( )-59(ne)-5(e)4(d )] TJ
 ET
@@ -12148,9 +12108,6 @@ endobj
 <<
 /Type /Page
 /Resources <<
-/ExtGState <<
-/GS7 5 0 R
->>
 /Font <<
 /F1 7 0 R
 /F1-0 164 0 R
@@ -12756,14 +12713,13 @@ endstream
 endobj
 174 0 obj
 <<
-/Length 7219
+/Length 7210
 >>
 stream
 q
  /P <</MCID 0>> BDC BT
 /F1 12 Tf
 1 0 0 1 72.024 709.18 Tm
-/GS7 gs
 0 g
 0 G
 [(sig)7(nific)3(a)4(nt )-121(volatil)-3(it)-13(y)30( )-129(c)4(lust)-4(e)] TJ
@@ -13069,6 +13025,9 @@ endobj
 <<
 /Type /Page
 /Resources <<
+/ExtGState <<
+/GS7 5 0 R
+>>
 /Font <<
 /F1 7 0 R
 /F1-0 176 0 R
@@ -13146,13 +13105,14 @@ endobj
 endobj
 181 0 obj
 <<
-/Length 13333
+/Length 13342
 >>
 stream
 q
  /P <</MCID 0>> BDC BT
 /F6 12 Tf
 1 0 0 1 90.024 707.02 Tm
+/GS7 gs
 0 g
 0 G
 [<0078>] TJ
@@ -14116,9 +14076,6 @@ endobj
 <<
 /Type /Page
 /Resources <<
-/ExtGState <<
-/GS7 5 0 R
->>
 /Font <<
 /F1 7 0 R
 /F1-0 183 0 R
@@ -14162,14 +14119,13 @@ endobj
 endobj
 185 0 obj
 <<
-/Length 11617
+/Length 11608
 >>
 stream
 q
  /P <</MCID 0>> BDC BT
 /F1 12 Tf
 1 0 0 1 72.024 708.82 Tm
-/GS7 gs
 0 g
 0 G
 [(The)5( va)4(ria)5(bl)-11(e)4(s withi)-4(n )] TJ
@@ -14828,9 +14784,6 @@ endobj
 <<
 /Type /Page
 /Resources <<
-/ExtGState <<
-/GS7 5 0 R
->>
 /Font <<
 /F1 7 0 R
 /F1-0 187 0 R
@@ -14873,14 +14826,13 @@ endobj
 endobj
 189 0 obj
 <<
-/Length 12382
+/Length 12373
 >>
 stream
 q
  /P <</MCID 0>> BDC BT
 /F2 12 Tf
 1 0 0 1 72.024 708.94 Tm
-/GS7 gs
 0 g
 0 G
 [(1. )] TJ
@@ -15737,9 +15689,6 @@ endobj
 <<
 /Type /Page
 /Resources <<
-/ExtGState <<
-/GS7 5 0 R
->>
 /Font <<
 /F1 7 0 R
 /F1-0 191 0 R
@@ -15784,14 +15733,13 @@ endobj
 endobj
 193 0 obj
 <<
-/Length 8874
+/Length 8865
 >>
 stream
 q
  /P <</MCID 0>> BDC BT
 /F1 12 Tf
 1 0 0 1 72.024 708.7 Tm
-/GS7 gs
 0 g
 0 G
 [( )] TJ
@@ -38838,7 +38786,7 @@ endobj
 endobj
 336 0 obj
 <<
-/Length 3048
+/Length 3051
 >>
 stream
 q
@@ -38856,14 +38804,14 @@ q
 1 0 0 1 78 606 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 12 Tm /F2 12 Tf 24 TL (4.2 Discussion of Findings) Tj T* ET
+BT 1 0 0 1 0 12 Tm /F2 12 Tf 24 TL (4.8 Discussion of Findings) Tj T* ET
 Q
 Q
 q
 1 0 0 1 78 454 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 132 Tm /F3 12 Tf 24 TL .03 Tw (The empirical findings presented in Section 4.1 provide quantitative insights into the dynamics) Tj T* 0 Tw 2.464364 Tw (of equity return forecasting and tail-risk-aware asset allocation on the Nigerian Exchange) Tj T* 0 Tw 2.980364 Tw (Group \(NGX\). To evaluate the academic and operational significance of these empirical) Tj T* 0 Tw 1.702909 Tw (results, the following discussion evaluates each empirical outcome directly against the four) Tj T* 0 Tw .975273 Tw (specific research objectives established in Chapter One, situating the findings within modern) Tj T* 0 Tw (financial economics and empirical asset pricing literature.) Tj T* ET
+BT 1 0 0 1 0 132 Tm /F3 12 Tf 24 TL 1.613 Tw (The empirical findings presented in Section 4.1 to Section 4.7 provide quantitative insights) Tj T* 0 Tw 2.84 Tw (into the dynamics of equity return forecasting and tail-risk-aware asset allocation on the) Tj T* 0 Tw 1.224 Tw (Nigerian Exchange Group \(NGX\). To evaluate the academic and operational significance of) Tj T* 0 Tw 2.04 Tw (these empirical results, the following discussion evaluates each empirical outcome directly) Tj T* 0 Tw .534 Tw (against the four specific research objectives established in Chapter One, situating the findings) Tj T* 0 Tw (within modern financial economics and empirical asset pricing literature.) Tj T* ET
 Q
 Q
 q
@@ -38872,7 +38820,7 @@ Q
 q
 1 0 0 1 78 170 cm
 q
-BT 1 0 0 1 0 252 Tm .005455 Tw 24 TL /F3 12 Tf 0 0 0 rg (Firstly, regarding the evaluation of statistical non-normality and tail-risk exposure across NGX) Tj T* 0 Tw .465231 Tw (equities, the empirical diagnostic tests presented in Section 4.1.2 indicate that asset returns on) Tj T* 0 Tw 3.4428 Tw (the Nigerian Exchange Group depart from Gaussian normality. Formal Jarque-Bera and) Tj T* 0 Tw .948 Tw (Shapiro-Wilk tests rejected the null hypothesis of normal distribution across all 28 evaluated) Tj T* 0 Tw 1.150154 Tw (equities \(p < 0.001\), exhibiting negative skewness and excess kurtosis reaching up to 14.46.) Tj T* 0 Tw .147 Tw (Econometrically, this confirms that empirical NGX equity returns are characterized by fat tails) Tj T* 0 Tw .794182 Tw (and asymmetric downside risk. These results support the theoretical arguments of Mozumder) Tj T* 0 Tw 1.776 Tw (et al. \(2024\) and Adegboyo & Sarwar \(2025\), who emphasize that emerging frontier stock) Tj T* 0 Tw .821455 Tw (markets experience price jumps, policy shifts, and liquidity shocks. Consequently, relying on) Tj T* 0 Tw 1.098545 Tw (classical Gaussian variance as a risk metric underestimates tail-risk exposure, supporting the) Tj T* 0 Tw (adoption of downside risk measures such as Conditional Value-at-Risk \(CVaR\).) Tj T* ET
+BT 1 0 0 1 0 252 Tm .005455 Tw 24 TL /F3 12 Tf 0 0 0 rg (Firstly, regarding the evaluation of statistical non-normality and tail-risk exposure across NGX) Tj T* 0 Tw 1.157538 Tw (equities, the empirical diagnostic tests presented in Section 4.3 indicate that asset returns on) Tj T* 0 Tw 3.4428 Tw (the Nigerian Exchange Group depart from Gaussian normality. Formal Jarque-Bera and) Tj T* 0 Tw .948 Tw (Shapiro-Wilk tests rejected the null hypothesis of normal distribution across all 28 evaluated) Tj T* 0 Tw 1.150154 Tw (equities \(p < 0.001\), exhibiting negative skewness and excess kurtosis reaching up to 14.46.) Tj T* 0 Tw .147 Tw (Econometrically, this confirms that empirical NGX equity returns are characterized by fat tails) Tj T* 0 Tw .794182 Tw (and asymmetric downside risk. These results support the theoretical arguments of Mozumder) Tj T* 0 Tw 1.776 Tw (et al. \(2024\) and Adegboyo & Sarwar \(2025\), who emphasize that emerging frontier stock) Tj T* 0 Tw .821455 Tw (markets experience price jumps, policy shifts, and liquidity shocks. Consequently, relying on) Tj T* 0 Tw 1.098545 Tw (classical Gaussian variance as a risk metric underestimates tail-risk exposure, supporting the) Tj T* 0 Tw (adoption of downside risk measures such as Conditional Value-at-Risk \(CVaR\).) Tj T* ET
 Q
 Q
 q
@@ -38881,7 +38829,7 @@ Q
 q
 1 0 0 1 78 78 cm
 q
-BT 1 0 0 1 0 60 Tm 1.5108 Tw 24 TL /F3 12 Tf 0 0 0 rg (Secondly, regarding the performance of non-linear Machine Learning models in forecasting) Tj T* 0 Tw .6396 Tw (weekly NGX equity returns under Expanding Rolling Window Walk-Forward Validation, the) Tj T* 0 Tw .944727 Tw (empirical results in Section 4.1.3 show that non-linear tree-based ensembles \(Random Forest) Tj T* 0 Tw ET
+BT 1 0 0 1 0 60 Tm 1.5108 Tw 24 TL /F3 12 Tf 0 0 0 rg (Secondly, regarding the performance of non-linear Machine Learning models in forecasting) Tj T* 0 Tw .6396 Tw (weekly NGX equity returns under Expanding Rolling Window Walk-Forward Validation, the) Tj T* 0 Tw -0.078 Tw (empirical results in Section 4.5 show that non-linear tree-based ensembles \(Random Forest and) Tj T* 0 Tw ET
 Q
 Q
  
@@ -38952,34 +38900,28 @@ endobj
 endobj
 340 0 obj
 <<
-/Length 3113
+/Length 2876
 >>
 stream
 q
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
 q
-1 0 0 1 78 498 cm
+1 0 0 1 78 474 cm
 q
-BT 1 0 0 1 0 204 Tm 3.159273 Tw 24 TL /F3 12 Tf 0 0 0 rg (and XGBoost\) capture predictive signals from market data. While raw point forecasting) Tj T* 0 Tw 1.533 Tw (metrics \(RMSE\) hover close to historical baselines due to weekly noise variance, XGBoost) Tj T* 0 Tw 3.9432 Tw (achieved an out-of-sample directional accuracy of 55.76% across liquid NGX equities,) Tj T* 0 Tw .704727 Tw (compared to the 50.0% random walk benchmark. Feature importance analysis \(Section 4.1.6\)) Tj T* 0 Tw 1.3845 Tw (indicates that volume-confirmed technical momentum indicators, specifically the Percentage) Tj T* 0 Tw .492 Tw (Price Oscillator \(PPO\), Relative Strength Index \(RSI\), and On-Balance Volume \(OBV\), serve) Tj T* 0 Tw 1.311 Tw (as primary drivers of return predictability. This aligns with empirical asset pricing literature) Tj T* 0 Tw .3352 Tw (\(Gu, Kelly, & Xiu, 2020; Chao, 2024; Ojo & Okafor, 2024; Ajiga et al., 2024\), demonstrating) Tj T* 0 Tw (that machine learning algorithms capture non-linear market dynamics in emerging economies.) Tj T* ET
+BT 1 0 0 1 0 228 Tm 1.522909 Tw 24 TL /F3 12 Tf 0 0 0 rg (XGBoost\) capture predictive signals from market data. While raw point forecasting metrics) Tj T* 0 Tw .923 Tw (\(RMSE\) hover close to historical baselines due to weekly noise variance, XGBoost achieved) Tj T* 0 Tw 2.312727 Tw (an average out-of-sample directional accuracy of 38.1% across liquid NGX equities \(with) Tj T* 0 Tw 1.117 Tw (individual assets reaching up to 50.8%\), compared to 37.8% for historical baselines. Feature) Tj T* 0 Tw 4.0485 Tw (importance analysis \(Section 4.6\) indicates that volume-confirmed technical momentum) Tj T* 0 Tw 1.0404 Tw (indicators, specifically the Percentage Price Oscillator \(PPO\), Relative Strength Index \(RSI\),) Tj T* 0 Tw .674 Tw (and On-Balance Volume \(OBV\), serve as primary drivers of return predictability. This aligns) Tj T* 0 Tw 1.265143 Tw (with empirical asset pricing literature \(Gu, Kelly, & Xiu, 2020; Chao, 2024; Ojo & Okafor,) Tj T* 0 Tw 1.096364 Tw (2024; Ajiga et al., 2024\), demonstrating that machine learning algorithms capture non-linear) Tj T* 0 Tw (market dynamics in emerging economies.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 478 cm
+1 0 0 1 78 454 cm
 Q
 q
-1 0 0 1 78 166 cm
+1 0 0 1 78 142 cm
 q
-BT 1 0 0 1 0 300 Tm 2.677333 Tw 24 TL /F3 12 Tf 0 0 0 rg (Thirdly, regarding the performance of integrated ML-CVaR portfolio strategies compared) Tj T* 0 Tw 1.492 Tw (against classical Markowitz Mean-Variance Optimization and 1/N benchmarks, the backtest) Tj T* 0 Tw -0.049 Tw (results in Section 4.1.4 indicate a higher risk-adjusted return profile for integrated Mean-CVaR) Tj T* 0 Tw 4.392 Tw (strategies prior to transaction costs. Under zero fee friction, XGBoost + Mean-CVaR) Tj T* 0 Tw .564 Tw (\(XGB-CVaR\) achieved a gross Sharpe ratio of 1.52 \(42.00% annualized return, -22.09% max) Tj T* 0 Tw .536 Tw (drawdown\), compared to 0.91 for the passive NGX Index Buy-and-Hold benchmark and 0.76) Tj T* 0 Tw 1.156364 Tw (for Markowitz MVO. Inferential hypothesis testing \(Section 4.1.5\) indicates that this Sharpe) Tj T* 0 Tw 2.489333 Tw (ratio outperformance is statistically significant under Ledoit-Wolf circular block bootstrap) Tj T* 0 Tw 1.821 Tw (tests \(p = 0.015 < 0.05\). Furthermore, Certainty Equivalent Return \(CER\) welfare analysis) Tj T* 0 Tw 3.131 Tw (shows positive utility gains \(+819 basis points CER gain over passive indexing\). These) Tj T* 0 Tw .034909 Tw (findings align with portfolio selection theory \(Markowitz, 1952; Rockafellar & Uryasev, 2000;) Tj T* 0 Tw 2.725 Tw (Bodnar et al., 2022; Hsiao, 2025\), showing that combining return estimates with convex) Tj T* 0 Tw (tail-risk constraints improves risk-adjusted outcomes.) Tj T* ET
+BT 1 0 0 1 0 300 Tm 2.677333 Tw 24 TL /F3 12 Tf 0 0 0 rg (Thirdly, regarding the performance of integrated ML-CVaR portfolio strategies compared) Tj T* 0 Tw 1.492 Tw (against classical Markowitz Mean-Variance Optimization and 1/N benchmarks, the backtest) Tj T* 0 Tw .701 Tw (results in Section 4.7 indicate a higher risk-adjusted return profile for integrated Mean-CVaR) Tj T* 0 Tw 4.392 Tw (strategies prior to transaction costs. Under zero fee friction, XGBoost + Mean-CVaR) Tj T* 0 Tw .564 Tw (\(XGB-CVaR\) achieved a gross Sharpe ratio of 1.52 \(42.00% annualized return, -22.09% max) Tj T* 0 Tw .536 Tw (drawdown\), compared to 0.91 for the passive NGX Index Buy-and-Hold benchmark and 0.76) Tj T* 0 Tw 1.156364 Tw (for Markowitz MVO. Inferential hypothesis testing \(Section 4.7.1\) indicates that this Sharpe) Tj T* 0 Tw 2.489333 Tw (ratio outperformance is statistically significant under Ledoit-Wolf circular block bootstrap) Tj T* 0 Tw 1.821 Tw (tests \(p = 0.015 < 0.05\). Furthermore, Certainty Equivalent Return \(CER\) welfare analysis) Tj T* 0 Tw 3.131 Tw (shows positive utility gains \(+819 basis points CER gain over passive indexing\). These) Tj T* 0 Tw .034909 Tw (findings align with portfolio selection theory \(Markowitz, 1952; Rockafellar & Uryasev, 2000;) Tj T* 0 Tw 2.725 Tw (Bodnar et al., 2022; Hsiao, 2025\), showing that combining return estimates with convex) Tj T* 0 Tw (tail-risk constraints improves risk-adjusted outcomes.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 146 cm
-Q
-q
-1 0 0 1 78 98 cm
-q
-BT 1 0 0 1 0 36 Tm .520364 Tw 24 TL /F3 12 Tf 0 0 0 rg (Fourthly, regarding portfolio robustness under market stress and transaction cost frictions, the) Tj T* 0 Tw .6048 Tw (empirical evaluation in Section 4.1.7 highlights execution dynamics across market participant) Tj T* 0 Tw ET
-Q
+1 0 0 1 78 122 cm
 Q
  
 
@@ -39049,19 +38991,19 @@ endobj
 endobj
 344 0 obj
 <<
-/Length 1465
+/Length 1701
 >>
 stream
 q
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
 q
-1 0 0 1 78 450 cm
+1 0 0 1 78 402 cm
 q
-BT 1 0 0 1 0 252 Tm 1.3776 Tw 24 TL /F3 12 Tf 0 0 0 rg (regimes. Under 1.50% retail fees and slippage, unconstrained Markowitz MVO experienced) Tj T* 0 Tw 1.430182 Tw (weight instability \(99.28% average weekly turnover\), resulting in a maximum drawdown of) Tj T* 0 Tw 1.437818 Tw (-86.38% and negative economic welfare \(CER = -64.09%\). This supports Michaud's \(1989\)) Tj T* 0 Tw 1.852364 Tw (finding regarding the sensitivity of unconstrained MVO to estimation error in high-friction) Tj T* 0 Tw 7.066 Tw (environments. Conversely, low-turnover Historical-CVaR \(0.38% turnover\) displayed) Tj T* 0 Tw .338769 Tw (resilience, retaining net Sharpe ratios of 1.48 \(retail\) and 1.49 \(institutional\). While active ML) Tj T* 0 Tw .453 Tw (models generate gross alpha prior to friction, weekly rebalancing turnover \(11.00%\) incurs an) Tj T* 0 Tw .033231 Tw (annual fee drag \(~3.6% to ~7.2%\) that offsets marginal predictive gains post-fees. This finding) Tj T* 0 Tw .54 Tw (aligns with transaction cost literature \(Job, 2022; Alotaibi et al., 2022; Kevin & Yugopuspito,) Tj T* 0 Tw .868 Tw (2025\), indicating that structural tail-risk architecture \(CVaR\) plays a central role in frictional) Tj T* 0 Tw (emerging markets.) Tj T* ET
+BT 1 0 0 1 0 300 Tm .520364 Tw 24 TL /F3 12 Tf 0 0 0 rg (Fourthly, regarding portfolio robustness under market stress and transaction cost frictions, the) Tj T* 0 Tw 1.5048 Tw (empirical evaluation in Section 4.7 highlights execution dynamics across market participant) Tj T* 0 Tw 1.3776 Tw (regimes. Under 1.50% retail fees and slippage, unconstrained Markowitz MVO experienced) Tj T* 0 Tw 1.430182 Tw (weight instability \(99.28% average weekly turnover\), resulting in a maximum drawdown of) Tj T* 0 Tw 1.437818 Tw (-86.38% and negative economic welfare \(CER = -64.09%\). This supports Michaud's \(1989\)) Tj T* 0 Tw 1.852364 Tw (finding regarding the sensitivity of unconstrained MVO to estimation error in high-friction) Tj T* 0 Tw 7.066 Tw (environments. Conversely, low-turnover Historical-CVaR \(0.38% turnover\) displayed) Tj T* 0 Tw .338769 Tw (resilience, retaining net Sharpe ratios of 1.48 \(retail\) and 1.49 \(institutional\). While active ML) Tj T* 0 Tw .453 Tw (models generate gross alpha prior to friction, weekly rebalancing turnover \(11.00%\) incurs an) Tj T* 0 Tw .033231 Tw (annual fee drag \(~3.6% to ~7.2%\) that offsets marginal predictive gains post-fees. This finding) Tj T* 0 Tw .54 Tw (aligns with transaction cost literature \(Job, 2022; Alotaibi et al., 2022; Kevin & Yugopuspito,) Tj T* 0 Tw .868 Tw (2025\), indicating that structural tail-risk architecture \(CVaR\) plays a central role in frictional) Tj T* 0 Tw (emerging markets.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 428 cm
+1 0 0 1 78 380 cm
 Q
  
 
@@ -39131,7 +39073,7 @@ endobj
 endobj
 348 0 obj
 <<
-/Length 2774
+/Length 2736
 >>
 stream
 q
@@ -39170,29 +39112,29 @@ q
 1 0 0 1 78 472 cm
 Q
 q
-1 0 0 1 78 352 cm
+1 0 0 1 78 328 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 108 Tm /F3 12 Tf 24 TL 3.601333 Tw (Non-linear machine learning ensembles \(Random Forest and XGBoost\) evaluated under) Tj T* 0 Tw 6.817714 Tw (Expanding Rolling Window Walk-Forward Validation captured time-varying market) Tj T* 0 Tw 1.1424 Tw (dynamics. XGBoost achieved an out-of-sample directional accuracy of 55.76% across liquid) Tj T* 0 Tw 1.342667 Tw (NGX equities, driven primarily by volume-confirmed momentum features \(Percentage Price) Tj T* 0 Tw (Oscillator, Relative Strength Index, and On-Balance Volume\).) Tj T* ET
+BT 1 0 0 1 0 132 Tm /F3 12 Tf 24 TL 3.601333 Tw (Non-linear machine learning ensembles \(Random Forest and XGBoost\) evaluated under) Tj T* 0 Tw 6.817714 Tw (Expanding Rolling Window Walk-Forward Validation captured time-varying market) Tj T* 0 Tw .8124 Tw (dynamics. XGBoost achieved an average out-of-sample directional accuracy of 38.1% across) Tj T* 0 Tw 3.225 Tw (liquid NGX equities \(with individual assets reaching up to 50.8%\), driven primarily by) Tj T* 0 Tw .927 Tw (volume-confirmed momentum features \(Percentage Price Oscillator, Relative Strength Index,) Tj T* 0 Tw (and On-Balance Volume\).) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 332 cm
+1 0 0 1 78 308 cm
 Q
 q
-1 0 0 1 78 188 cm
+1 0 0 1 78 164 cm
 q
 BT 1 0 0 1 0 132 Tm 4.934667 Tw 24 TL /F3 12 Tf 0 0 0 rg (Integrating machine learning return forecasts into a convex Mean-CVaR optimization) Tj T* 0 Tw 1.7016 Tw (framework generated risk-adjusted returns under zero fee friction. XGBoost + Mean-CVaR) Tj T* 0 Tw 4.461818 Tw (achieved a gross Sharpe ratio of 1.52 \(42.00% annualized return, -22.09% maximum) Tj T* 0 Tw 1.729 Tw (drawdown\) compared to 0.91 for the passive NGX Index Buy-Hold baseline, supported by) Tj T* 0 Tw .373846 Tw (Ledoit-Wolf circular block bootstrap Sharpe tests \(p = 0.015 < 0.05\) and Certainty Equivalent) Tj T* 0 Tw (Return utility gains \(+819 bps CER gain\).) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 168 cm
+1 0 0 1 78 144 cm
 Q
 q
 1 0 0 1 78 96 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 60 Tm /F3 12 Tf 24 TL 1.4076 Tw (Evaluating portfolio performance under market stress and multi-tier transaction cost friction) Tj T* 0 Tw 6.794 Tw (demonstrated that unconstrained Markowitz Mean-Variance Optimization experiences) Tj T* 0 Tw 2.4408 Tw (performance degradation \(-86.38% drawdown, -64.09% CER utility\) due to high turnover) Tj T* 0 Tw ET
+BT 1 0 0 1 0 36 Tm /F3 12 Tf 24 TL 1.4076 Tw (Evaluating portfolio performance under market stress and multi-tier transaction cost friction) Tj T* 0 Tw 6.794 Tw (demonstrated that unconstrained Markowitz Mean-Variance Optimization experiences) Tj T* 0 Tw ET
 Q
 Q
  
@@ -39263,55 +39205,49 @@ endobj
 endobj
 352 0 obj
 <<
-/Length 2740
+/Length 2536
 >>
 stream
 q
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
 q
-1 0 0 1 78 618 cm
+1 0 0 1 78 594 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 84 Tm /F3 12 Tf 24 TL 2.5104 Tw (\(99.28% weekly turnover\). Under institutional \(0.75%\) and retail \(1.50%\) brokerage fees,) Tj T* 0 Tw 1.369846 Tw (active ML rebalancing turnover \(11.00%\) creates an annual fee drag \(~3.6% to ~7.2%\) that) Tj T* 0 Tw 4.0095 Tw (offsets marginal predictive gains post-fees, while low-turnover Historical-CVaR \(0.38%) Tj T* 0 Tw (turnover\) maintains stable post-fee performance \(net Sharpe 1.48 to 1.49, pairwise p = 0.000\).) Tj T* ET
+BT 1 0 0 1 0 108 Tm /F3 12 Tf 24 TL 2.4408 Tw (performance degradation \(-86.38% drawdown, -64.09% CER utility\) due to high turnover) Tj T* 0 Tw 2.5104 Tw (\(99.28% weekly turnover\). Under institutional \(0.75%\) and retail \(1.50%\) brokerage fees,) Tj T* 0 Tw 1.369846 Tw (active ML rebalancing turnover \(11.00%\) creates an annual fee drag \(~3.6% to ~7.2%\) that) Tj T* 0 Tw 4.0095 Tw (offsets marginal predictive gains post-fees, while low-turnover Historical-CVaR \(0.38%) Tj T* 0 Tw (turnover\) maintains stable post-fee performance \(net Sharpe 1.48 to 1.49, pairwise p = 0.000\).) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 596 cm
+1 0 0 1 78 572 cm
 Q
 q
-1 0 0 1 78 558 cm
+1 0 0 1 78 534 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 12 Tm /F2 12 Tf 24 TL (5.2 Conclusion) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 238 cm
+1 0 0 1 78 214 cm
 q
 BT 1 0 0 1 0 300 Tm 2.413333 Tw 24 TL /F3 12 Tf 0 0 0 rg (This study investigated equity return forecasting and tail-risk-aware portfolio optimization) Tj T* 0 Tw 1.007077 Tw (across 28 liquid equities on the Nigerian Exchange Group \(NGX\) spanning a 15-year period) Tj T* 0 Tw 3.096 Tw (\(2010-2025\). The research evaluated non-normality diagnostics, Machine Learning return) Tj T* 0 Tw .784 Tw (forecasting \(Random Forest and XGBoost\) under Expanding Rolling Window Walk-Forward) Tj T* 0 Tw (Validation, and convex Mean-CVaR asset allocation backtesting.) Tj  T*  T* 1.160308 Tw (The overall conclusion of this research is that while Machine Learning models extract gross) Tj T* 0 Tw .979636 Tw (predictive alpha on the NGX, market transaction friction and rebalancing turnover neutralize) Tj T* 0 Tw 1.6 Tw (these marginal predictive gains post-fees. Consequently, structural tail-risk management via) Tj T* 0 Tw 3.969333 Tw (Conditional Value-at-Risk \(CVaR\) constitutes the primary driver of real-world investor) Tj T* 0 Tw 1.3 Tw (economic surplus \(+819 bps CER gain over passive indexing\). This indicates that downside) Tj T* 0 Tw 2.505 Tw (tail-risk control plays a critical role relative to model forecasting complexity in frictional) Tj T* 0 Tw (emerging equity markets.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 216 cm
+1 0 0 1 78 192 cm
 Q
 q
-1 0 0 1 78 178 cm
+1 0 0 1 78 154 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 12 Tm /F2 12 Tf 24 TL (5.3 Policy and Practical Recommendations) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 144 cm
+1 0 0 1 78 120 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 12 Tm /F2 12 Tf 24 TL (5.3.1 Regulatory and Macroeconomic Policy Recommendations) Tj T* ET
-Q
-Q
-q
-1 0 0 1 78 90 cm
-q
-BT 1 0 0 1 0 36 Tm 7.2075 Tw 24 TL /F3 12 Tf 0 0 0 rg (1. ) Tj /F2 12 Tf (PENCOM Investment Guidelines Update:) Tj /F3 12 Tf ( The National Pension Commission) Tj T* 0 Tw .716571 Tw (\(PENCOM\) should update its Investment Guidelines for Fund I, Fund II, and Fund III equity) Tj T* 0 Tw ET
 Q
 Q
  
@@ -39382,47 +39318,41 @@ endobj
 endobj
 356 0 obj
 <<
-/Length 2734
+/Length 2564
 >>
 stream
 q
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
 q
-1 0 0 1 78 498 cm
+1 0 0 1 78 450 cm
 q
-BT 1 0 0 1 0 204 Tm 4.296 Tw 24 TL /F3 12 Tf 0 0 0 rg (portfolios to mandate downside tail-risk metrics, specifically Conditional Value-at-Risk) Tj T* 0 Tw 1.5685 Tw (\(CVaR) Tj /F3 10 Tf -6 Ts (0.95) Tj /F3 12 Tf 0 Ts (\), alongside traditional variance. PFAs should adopt CVaR-constrained allocation) Tj T* 0 Tw (models to protect pension assets during extreme macroeconomic shocks.) Tj  T*  T* .427636 Tw (2. ) Tj /F2 12 Tf (SEC & NGX Regulatory Data Transparency:) Tj /F3 12 Tf ( The Securities and Exchange Commission) Tj T* 0 Tw .4416 Tw (\(SEC\) and NGX Regulation should establish open-access, low-latency API data infrastructure) Tj T* 0 Tw 2.1372 Tw (for market participants to support quantitative risk management. Furthermore, SEC should) Tj T* 0 Tw 2.894 Tw (require asset management firms to publish quarterly CVaR metrics in fund factsheets to) Tj T* 0 Tw (enhance retail investor risk transparency.) Tj T* ET
+BT 1 0 0 1 0 252 Tm 7.2075 Tw 24 TL /F3 12 Tf 0 0 0 rg (1. ) Tj /F2 12 Tf (PENCOM Investment Guidelines Update:) Tj /F3 12 Tf ( The National Pension Commission) Tj T* 0 Tw .716571 Tw (\(PENCOM\) should update its Investment Guidelines for Fund I, Fund II, and Fund III equity) Tj T* 0 Tw 4.296 Tw (portfolios to mandate downside tail-risk metrics, specifically Conditional Value-at-Risk) Tj T* 0 Tw 1.5685 Tw (\(CVaR) Tj /F3 10 Tf -6 Ts (0.95) Tj /F3 12 Tf 0 Ts (\), alongside traditional variance. PFAs should adopt CVaR-constrained allocation) Tj T* 0 Tw (models to protect pension assets during extreme macroeconomic shocks.) Tj  T*  T* .427636 Tw (2. ) Tj /F2 12 Tf (SEC & NGX Regulatory Data Transparency:) Tj /F3 12 Tf ( The Securities and Exchange Commission) Tj T* 0 Tw .4416 Tw (\(SEC\) and NGX Regulation should establish open-access, low-latency API data infrastructure) Tj T* 0 Tw 2.1372 Tw (for market participants to support quantitative risk management. Furthermore, SEC should) Tj T* 0 Tw 2.894 Tw (require asset management firms to publish quarterly CVaR metrics in fund factsheets to) Tj T* 0 Tw (enhance retail investor risk transparency.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 478 cm
+1 0 0 1 78 430 cm
 Q
 q
-1 0 0 1 78 444 cm
+1 0 0 1 78 396 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 12 Tm /F2 12 Tf 24 TL (5.3.2 Institutional Asset Allocation Recommendations) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 222 cm
+1 0 0 1 78 174 cm
 q
 BT 1 0 0 1 0 204 Tm -0.074667 Tw 24 TL /F3 12 Tf 0 0 0 rg (1. ) Tj /F2 12 Tf (Adoption of Low-Turnover Tail-Risk Frameworks:) Tj /F3 12 Tf ( Pension Fund Administrators \(PFAs\)) Tj T* 0 Tw 2.036727 Tw (and institutional fund managers operating on the NGX should replace classical Markowitz) Tj T* 0 Tw 4.010667 Tw (Mean-Variance Optimization with convex Mean-CVaR asset allocation. To prevent fee) Tj T* 0 Tw 5.04 Tw (erosion, institutional managers should enforce strict turnover caps or adopt quarterly) Tj T* 0 Tw (rebalancing protocols.) Tj  T*  T* 1.116 Tw (2. ) Tj /F2 12 Tf (Dynamic Risk-Free Asset Allocation:) Tj /F3 12 Tf ( Institutional portfolios should actively incorporate) Tj T* 0 Tw 1.783 Tw (sovereign risk-free assets \(such as CBN 91-day T-Bills\) to stabilize portfolio Sharpe ratios) Tj T* 0 Tw (during market drawdown regimes.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 202 cm
+1 0 0 1 78 154 cm
 Q
 q
-1 0 0 1 78 168 cm
+1 0 0 1 78 120 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 12 Tm /F2 12 Tf 24 TL (5.3.3 Quantitative Risk Management Recommendations) Tj T* ET
-Q
-Q
-q
-1 0 0 1 78 90 cm
-q
-BT 1 0 0 1 0 60 Tm 2.766 Tw 24 TL /F3 12 Tf 0 0 0 rg (1. ) Tj /F2 12 Tf (Stress-Testing and Downside Risk Auditing:) Tj /F3 12 Tf ( Risk officers and quantitative portfolio) Tj T* 0 Tw -0.086182 Tw (managers should mandate regular stress testing using historical block bootstrap resampling and) Tj T* 0 Tw (non-parametric CVaR estimation to evaluate portfolio tail loss limits.) Tj T* ET
 Q
 Q
  
@@ -39493,38 +39423,38 @@ endobj
 endobj
 360 0 obj
 <<
-/Length 2597
+/Length 2766
 >>
 stream
 q
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
 q
-1 0 0 1 78 594 cm
+1 0 0 1 78 546 cm
 q
-BT 1 0 0 1 0 108 Tm 24 TL /F3 12 Tf 0 0 0 rg  T*  T* .376 Tw (2. ) Tj /F2 12 Tf (Integration of Volume-Confirmed Technical Features:) Tj /F3 12 Tf ( Quantitative models deployed on) Tj T* 0 Tw -0.117 Tw (emerging exchanges should integrate volume-confirmed technical momentum indicators \(PPO,) Tj T* 0 Tw (RSI, OBV\) to capture trend persistence and downside liquidity risks.) Tj T* ET
+BT 1 0 0 1 0 156 Tm 2.766 Tw 24 TL /F3 12 Tf 0 0 0 rg (1. ) Tj /F2 12 Tf (Stress-Testing and Downside Risk Auditing:) Tj /F3 12 Tf ( Risk officers and quantitative portfolio) Tj T* 0 Tw -0.086182 Tw (managers should mandate regular stress testing using historical block bootstrap resampling and) Tj T* 0 Tw (non-parametric CVaR estimation to evaluate portfolio tail loss limits.) Tj  T*  T* .376 Tw (2. ) Tj /F2 12 Tf (Integration of Volume-Confirmed Technical Features:) Tj /F3 12 Tf ( Quantitative models deployed on) Tj T* 0 Tw -0.117 Tw (emerging exchanges should integrate volume-confirmed technical momentum indicators \(PPO,) Tj T* 0 Tw (RSI, OBV\) to capture trend persistence and downside liquidity risks.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 572 cm
+1 0 0 1 78 524 cm
 Q
 q
-1 0 0 1 78 534 cm
+1 0 0 1 78 486 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 12 Tm /F2 12 Tf 24 TL (5.4 Limitations of the Study) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 262 cm
+1 0 0 1 78 214 cm
 q
 BT 1 0 0 1 0 252 Tm 24 TL /F3 12 Tf 0 0 0 rg (While this study provides empirical insights, several limitations are acknowledged:) Tj  T* .075429 Tw (1. ) Tj /F2 12 Tf (Asset Universe Scope:) Tj /F3 12 Tf ( The study evaluated 28 liquid equities from the NGX Pension Index) Tj T* 0 Tw 1.377333 Tw (with complete 15-year histories \(2010-2025\). Recently listed high-capitalization assets \(e.g.,) Tj T* 0 Tw .036 Tw (BUA Foods, Geregu Power, Aradel Holdings\) were excluded to maintain continuous historical) Tj T* 0 Tw (data without imputation.) Tj  T* 4.036364 Tw (2. ) Tj /F2 12 Tf (Data Frequency:) Tj /F3 12 Tf ( Analysis was conducted using weekly log returns. While weekly) Tj T* 0 Tw 2.428364 Tw (sampling effectively mitigates daily bid-ask bounce and microstructural noise, it does not) Tj T* 0 Tw (capture intraday high-frequency trading dynamics.) Tj  T* .422 Tw (3. ) Tj /F2 12 Tf (Exogenous Macroeconomic Signals:) Tj /F3 12 Tf ( The ML feature matrix focused on price and volume) Tj T* 0 Tw 1.234667 Tw (technical indicators; exogenous macroeconomic variables \(such as USD/NGN exchange rate) Tj T* 0 Tw (shocks and Brent crude oil prices\) were not explicitly included in the feature set.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 240 cm
+1 0 0 1 78 192 cm
 Q
 q
-1 0 0 1 78 202 cm
+1 0 0 1 78 154 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 12 Tm /F2 12 Tf 24 TL (5.5 Suggestions for Further Research) Tj T* ET
@@ -39533,7 +39463,7 @@ Q
 q
 1 0 0 1 78 98 cm
 q
-BT 1 0 0 1 0 84 Tm .5736 Tw 24 TL /F3 12 Tf 0 0 0 rg (1. ) Tj /F2 12 Tf (Macroeconomic and Exogenous Feature Integration:) Tj /F3 12 Tf ( Future research should expand the) Tj T* 0 Tw .646909 Tw (ML feature space to include macroeconomic variables, foreign exchange volatility, and crude) Tj T* 0 Tw (oil price dynamics.) Tj  T* 2.522667 Tw (2. ) Tj /F2 12 Tf (Deep Learning and High-Frequency Architectures:) Tj /F3 12 Tf ( Extending forecasting models to) Tj T* 0 Tw ET
+BT 1 0 0 1 0 36 Tm .5736 Tw 24 TL /F3 12 Tf 0 0 0 rg (1. ) Tj /F2 12 Tf (Macroeconomic and Exogenous Feature Integration:) Tj /F3 12 Tf ( Future research should expand the) Tj T* 0 Tw .646909 Tw (ML feature space to include macroeconomic variables, foreign exchange volatility, and crude) Tj T* 0 Tw ET
 Q
 Q
  
@@ -39604,38 +39534,38 @@ endobj
 endobj
 364 0 obj
 <<
-/Length 2671
+/Length 2617
 >>
 stream
 q
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
 q
-1 0 0 1 78 594 cm
+1 0 0 1 78 546 cm
 q
-BT 1 0 0 1 0 108 Tm 2.712 Tw 24 TL /F3 12 Tf 0 0 0 rg (Transformer-based temporal models and Long Short-Term Memory \(LSTM\) networks on) Tj T* 0 Tw (daily or intraday NGX trading data.) Tj  T* 1.340571 Tw (3. ) Tj /F2 12 Tf (Multi-Period Friction-Constrained CVaR Optimization:) Tj /F3 12 Tf ( Incorporating transaction cost) Tj T* 0 Tw 1.246909 Tw (penalties directly into the CVaR objective function to minimize rebalancing turnover during) Tj T* 0 Tw (high-volatility regimes.) Tj T* ET
+BT 1 0 0 1 0 156 Tm 24 TL /F3 12 Tf 0 0 0 rg (oil price dynamics.) Tj  T* 2.522667 Tw (2. ) Tj /F2 12 Tf (Deep Learning and High-Frequency Architectures:) Tj /F3 12 Tf ( Extending forecasting models to) Tj T* 0 Tw 2.712 Tw (Transformer-based temporal models and Long Short-Term Memory \(LSTM\) networks on) Tj T* 0 Tw (daily or intraday NGX trading data.) Tj  T* 1.340571 Tw (3. ) Tj /F2 12 Tf (Multi-Period Friction-Constrained CVaR Optimization:) Tj /F3 12 Tf ( Incorporating transaction cost) Tj T* 0 Tw 1.246909 Tw (penalties directly into the CVaR objective function to minimize rebalancing turnover during) Tj T* 0 Tw (high-volatility regimes.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 572 cm
+1 0 0 1 78 524 cm
 Q
 q
-1 0 0 1 78 534 cm
+1 0 0 1 78 486 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 12 Tm /F2 12 Tf 24 TL (5.6 Contribution to Knowledge) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 286 cm
+1 0 0 1 78 238 cm
 q
 BT 1 0 0 1 0 228 Tm 24 TL /F3 12 Tf 0 0 0 rg (This research contributes to quantitative finance literature in the following ways:) Tj  T* .2388 Tw (1. ) Tj /F2 12 Tf (Empirical Contribution:) Tj /F3 12 Tf ( Provides an empirical evaluation of Machine Learning integrated) Tj T* 0 Tw .174 Tw (with convex Mean-CVaR optimization on the Nigerian Exchange Group using a clean 15-year) Tj T* 0 Tw (dataset \(2010-2025\).) Tj  T* 8.4675 Tw (2. ) Tj /F2 12 Tf (Theoretical Contribution:) Tj /F3 12 Tf ( Evaluates the performance of classical Markowitz) Tj T* 0 Tw 3.2595 Tw (Mean-Variance Optimization under non-normal emerging market return distributions and) Tj T* 0 Tw 1.008 Tw (examines how structural tail-risk architecture \(CVaR\) performs relative to model complexity) Tj T* 0 Tw (post-fees.) Tj  T* 2.229333 Tw (3. ) Tj /F2 12 Tf (Practical Contribution:) Tj /F3 12 Tf ( Formulates a low-turnover tail-risk asset allocation framework) Tj T* 0 Tw (designed to improve economic welfare for institutional investors in frontier markets.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 264 cm
+1 0 0 1 78 216 cm
 Q
 q
-1 0 0 1 78 226 cm
+1 0 0 1 78 178 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 12 Tm /F2 12 Tf 24 TL (5.7 Data and Code Availability Statement) Tj T* ET
@@ -39644,7 +39574,7 @@ Q
 q
 1 0 0 1 78 98 cm
 q
-BT 1 0 0 1 0 108 Tm 1.936 Tw 24 TL /F3 12 Tf 0 0 0 rg (To guarantee complete computational reproducibility and scientific transparency, the entire) Tj T* 0 Tw 2.1735 Tw (quantitative finance pipeline, encompassing data cleaning scripts, non-normality diagnostic) Tj T* 0 Tw 6.176 Tw (tests, technical feature extraction \(with Welles Wilder's Parabolic SAR\), expanding) Tj T* 0 Tw 1.449333 Tw (walk-forward machine learning models \(Random Forest and XGBoost with TimeSeriesSplit) Tj T* 0 Tw 4.196571 Tw (cross-validation tuning\), convex Mean-CVaR linear programming portfolio optimization) Tj T* 0 Tw ET
+BT 1 0 0 1 0 60 Tm 1.936 Tw 24 TL /F3 12 Tf 0 0 0 rg (To guarantee complete computational reproducibility and scientific transparency, the entire) Tj T* 0 Tw 2.1735 Tw (quantitative finance pipeline, encompassing data cleaning scripts, non-normality diagnostic) Tj T* 0 Tw 6.176 Tw (tests, technical feature extraction \(with Welles Wilder's Parabolic SAR\), expanding) Tj T* 0 Tw ET
 Q
 Q
  
@@ -39715,21 +39645,21 @@ endobj
 endobj
 368 0 obj
 <<
-/Length 566
+/Length 789
 >>
 stream
 q
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
 q
-1 0 0 1 78 642 cm
+1 0 0 1 78 594 cm
 q
 .101961 .321569 .462745 RG
 n 91.32 10.5 m 356.328 10.5 l S
-BT 1 0 0 1 0 60 Tm 24 TL /F3 12 Tf 0 0 0 rg (backtests, and ReportLab PDF synthesis, is open-source and publicly hosted on GitHub at:) Tj  T*  T* /F2 12 Tf (Repository URL:) Tj /F3 12 Tf ( ) Tj .101961 .321569 .462745 rg (https://github.com/abdulameen962/equity-optimization) Tj T* ET
+BT 1 0 0 1 0 108 Tm 1.449333 Tw 24 TL /F3 12 Tf 0 0 0 rg (walk-forward machine learning models \(Random Forest and XGBoost with TimeSeriesSplit) Tj T* 0 Tw 4.196571 Tw (cross-validation tuning\), convex Mean-CVaR linear programming portfolio optimization) Tj T* 0 Tw (backtests, and ReportLab PDF synthesis, is open-source and publicly hosted on GitHub at:) Tj  T*  T* /F2 12 Tf (Repository URL:) Tj /F3 12 Tf ( ) Tj .101961 .321569 .462745 rg (https://github.com/abdulameen962/equity-optimization) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 615 cm
+1 0 0 1 78 567 cm
 Q
  
 
@@ -41006,17 +40936,17 @@ xref
 0000139513 00000 n 
 0000139623 00000 n 
 0000147897 00000 n 
-0000148228 00000 n 
-0000148336 00000 n 
-0000148446 00000 n 
-0000157061 00000 n 
-0000157364 00000 n 
-0000157472 00000 n 
-0000157582 00000 n 
-0000166303 00000 n 
-0000166606 00000 n 
-0000166714 00000 n 
-0000166824 00000 n 
+0000148189 00000 n 
+0000148297 00000 n 
+0000148407 00000 n 
+0000157004 00000 n 
+0000157307 00000 n 
+0000157415 00000 n 
+0000157525 00000 n 
+0000166246 00000 n 
+0000166588 00000 n 
+0000166696 00000 n 
+0000166806 00000 n 
 0000175045 00000 n 
 0000175389 00000 n 
 0000175497 00000 n 
@@ -41033,350 +40963,350 @@ xref
 0000194802 00000 n 
 0000194854 00000 n 
 0000204214 00000 n 
-0000204530 00000 n 
-0000204638 00000 n 
-0000204748 00000 n 
-0000204882 00000 n 
-0000204909 00000 n 
-0000205073 00000 n 
-0000205148 00000 n 
-0000205395 00000 n 
-0000218547 00000 n 
-0000218589 00000 n 
-0000218887 00000 n 
-0000226390 00000 n 
-0000226745 00000 n 
-0000226853 00000 n 
-0000226963 00000 n 
-0000235812 00000 n 
-0000236143 00000 n 
-0000236251 00000 n 
-0000236361 00000 n 
-0000245661 00000 n 
-0000245942 00000 n 
-0000246050 00000 n 
-0000246160 00000 n 
-0000254853 00000 n 
-0000255186 00000 n 
-0000255294 00000 n 
-0000255404 00000 n 
-0000262434 00000 n 
-0000262767 00000 n 
-0000262875 00000 n 
-0000262985 00000 n 
-0000271063 00000 n 
-0000271398 00000 n 
-0000271506 00000 n 
-0000271617 00000 n 
-0000279323 00000 n 
-0000279660 00000 n 
-0000279769 00000 n 
-0000279880 00000 n 
-0000288014 00000 n 
-0000288362 00000 n 
-0000288471 00000 n 
-0000288582 00000 n 
-0000297174 00000 n 
-0000297511 00000 n 
-0000297620 00000 n 
-0000297731 00000 n 
-0000305382 00000 n 
-0000305762 00000 n 
-0000368172 00000 n 
-0000368281 00000 n 
-0000368392 00000 n 
-0000373279 00000 n 
-0000373627 00000 n 
-0000373736 00000 n 
-0000373847 00000 n 
-0000382215 00000 n 
-0000382539 00000 n 
-0000382648 00000 n 
-0000382759 00000 n 
-0000390977 00000 n 
-0000391275 00000 n 
-0000391384 00000 n 
-0000391495 00000 n 
-0000399659 00000 n 
-0000400007 00000 n 
-0000400116 00000 n 
-0000400227 00000 n 
-0000407901 00000 n 
-0000408249 00000 n 
-0000408358 00000 n 
-0000408469 00000 n 
-0000417685 00000 n 
-0000418022 00000 n 
-0000418131 00000 n 
-0000418242 00000 n 
-0000426244 00000 n 
-0000426568 00000 n 
-0000426677 00000 n 
-0000426788 00000 n 
-0000435126 00000 n 
-0000435474 00000 n 
-0000435583 00000 n 
-0000435694 00000 n 
-0000443644 00000 n 
-0000443981 00000 n 
-0000444090 00000 n 
-0000444201 00000 n 
-0000452009 00000 n 
-0000452346 00000 n 
-0000452455 00000 n 
-0000452566 00000 n 
-0000458773 00000 n 
-0000459110 00000 n 
-0000459219 00000 n 
-0000459330 00000 n 
-0000466634 00000 n 
-0000466972 00000 n 
-0000467081 00000 n 
-0000467192 00000 n 
-0000467339 00000 n 
-0000467368 00000 n 
-0000467546 00000 n 
-0000467622 00000 n 
-0000467884 00000 n 
-0000618103 00000 n 
-0000619408 00000 n 
-0000620356 00000 n 
-0000627629 00000 n 
-0000627960 00000 n 
-0000628069 00000 n 
-0000628180 00000 n 
-0000628368 00000 n 
-0000628630 00000 n 
-0000628655 00000 n 
-0000642043 00000 n 
-0000642404 00000 n 
-0000642513 00000 n 
-0000642624 00000 n 
-0000654296 00000 n 
-0000654646 00000 n 
-0000654755 00000 n 
-0000654866 00000 n 
+0000204569 00000 n 
+0000204677 00000 n 
+0000204787 00000 n 
+0000204921 00000 n 
+0000204948 00000 n 
+0000205112 00000 n 
+0000205187 00000 n 
+0000205434 00000 n 
+0000218586 00000 n 
+0000218628 00000 n 
+0000218926 00000 n 
+0000226447 00000 n 
+0000226813 00000 n 
+0000226921 00000 n 
+0000227031 00000 n 
+0000235889 00000 n 
+0000236220 00000 n 
+0000236328 00000 n 
+0000236438 00000 n 
+0000245738 00000 n 
+0000246058 00000 n 
+0000246166 00000 n 
+0000246276 00000 n 
+0000254987 00000 n 
+0000255281 00000 n 
+0000255389 00000 n 
+0000255499 00000 n 
+0000262511 00000 n 
+0000262805 00000 n 
+0000262913 00000 n 
+0000263023 00000 n 
+0000271083 00000 n 
+0000271418 00000 n 
+0000271526 00000 n 
+0000271637 00000 n 
+0000279343 00000 n 
+0000279641 00000 n 
+0000279750 00000 n 
+0000279861 00000 n 
+0000287977 00000 n 
+0000288325 00000 n 
+0000288434 00000 n 
+0000288545 00000 n 
+0000297137 00000 n 
+0000297435 00000 n 
+0000297544 00000 n 
+0000297655 00000 n 
+0000305288 00000 n 
+0000305629 00000 n 
+0000368039 00000 n 
+0000368148 00000 n 
+0000368259 00000 n 
+0000373128 00000 n 
+0000373476 00000 n 
+0000373585 00000 n 
+0000373696 00000 n 
+0000382064 00000 n 
+0000382349 00000 n 
+0000382458 00000 n 
+0000382569 00000 n 
+0000390769 00000 n 
+0000391067 00000 n 
+0000391176 00000 n 
+0000391287 00000 n 
+0000399451 00000 n 
+0000399799 00000 n 
+0000399908 00000 n 
+0000400019 00000 n 
+0000407693 00000 n 
+0000408041 00000 n 
+0000408150 00000 n 
+0000408261 00000 n 
+0000417477 00000 n 
+0000417775 00000 n 
+0000417884 00000 n 
+0000417995 00000 n 
+0000425979 00000 n 
+0000426264 00000 n 
+0000426373 00000 n 
+0000426484 00000 n 
+0000434804 00000 n 
+0000435152 00000 n 
+0000435261 00000 n 
+0000435372 00000 n 
+0000443322 00000 n 
+0000443659 00000 n 
+0000443768 00000 n 
+0000443879 00000 n 
+0000451687 00000 n 
+0000451985 00000 n 
+0000452094 00000 n 
+0000452205 00000 n 
+0000458394 00000 n 
+0000458731 00000 n 
+0000458840 00000 n 
+0000458951 00000 n 
+0000466255 00000 n 
+0000466565 00000 n 
+0000466674 00000 n 
+0000466785 00000 n 
+0000466932 00000 n 
+0000466961 00000 n 
+0000467139 00000 n 
+0000467215 00000 n 
+0000467477 00000 n 
+0000617696 00000 n 
+0000619001 00000 n 
+0000619949 00000 n 
+0000627213 00000 n 
+0000627572 00000 n 
+0000627681 00000 n 
+0000627792 00000 n 
+0000627980 00000 n 
+0000628242 00000 n 
+0000628267 00000 n 
+0000641664 00000 n 
+0000641997 00000 n 
+0000642106 00000 n 
+0000642217 00000 n 
+0000653880 00000 n 
+0000654202 00000 n 
+0000654311 00000 n 
+0000654422 00000 n 
+0000666850 00000 n 
+0000667194 00000 n 
 0000667303 00000 n 
-0000667675 00000 n 
-0000667784 00000 n 
-0000667895 00000 n 
-0000676823 00000 n 
-0000677167 00000 n 
-0000677276 00000 n 
-0000677387 00000 n 
-0000687375 00000 n 
-0000687719 00000 n 
-0000687828 00000 n 
-0000687939 00000 n 
-0000696067 00000 n 
-0000696389 00000 n 
-0000696498 00000 n 
-0000696609 00000 n 
-0000708119 00000 n 
-0000708463 00000 n 
-0000708572 00000 n 
-0000708683 00000 n 
-0000717827 00000 n 
-0000718136 00000 n 
-0000718245 00000 n 
-0000718356 00000 n 
-0000726285 00000 n 
-0000726605 00000 n 
-0000726714 00000 n 
-0000726825 00000 n 
-0000734698 00000 n 
-0000735030 00000 n 
-0000735139 00000 n 
-0000735250 00000 n 
-0000741704 00000 n 
-0000742036 00000 n 
-0000742145 00000 n 
-0000742256 00000 n 
-0000749888 00000 n 
-0000750220 00000 n 
-0000750329 00000 n 
-0000750440 00000 n 
-0000759091 00000 n 
-0000759445 00000 n 
-0000759554 00000 n 
-0000759665 00000 n 
-0000772694 00000 n 
-0000773014 00000 n 
-0000773123 00000 n 
-0000773234 00000 n 
-0000792866 00000 n 
-0000793186 00000 n 
-0000793295 00000 n 
-0000793406 00000 n 
-0000816421 00000 n 
-0000816729 00000 n 
-0000816838 00000 n 
-0000816949 00000 n 
-0000834334 00000 n 
-0000834667 00000 n 
-0000834776 00000 n 
-0000834887 00000 n 
-0000846221 00000 n 
-0000846542 00000 n 
-0000846651 00000 n 
-0000846762 00000 n 
-0000855153 00000 n 
-0000855438 00000 n 
-0000855547 00000 n 
-0000855658 00000 n 
-0000858984 00000 n 
-0000859265 00000 n 
-0000863324 00000 n 
-0000863433 00000 n 
-0000863542 00000 n 
-0000863652 00000 n 
-0000863763 00000 n 
-0000863874 00000 n 
-0000863986 00000 n 
-0000864267 00000 n 
-0000878889 00000 n 
-0000878998 00000 n 
-0000879109 00000 n 
-0000879390 00000 n 
-0000891480 00000 n 
-0000891589 00000 n 
-0000891700 00000 n 
-0000891981 00000 n 
-0000914201 00000 n 
-0000914310 00000 n 
-0000914421 00000 n 
-0000914702 00000 n 
-0000930773 00000 n 
-0000930882 00000 n 
-0000930993 00000 n 
-0000931274 00000 n 
-0000945257 00000 n 
-0000945366 00000 n 
-0000945477 00000 n 
-0000945823 00000 n 
-0000946557 00000 n 
-0003421172 00000 n 
-0003438651 00000 n 
-0003438760 00000 n 
-0003438871 00000 n 
-0003439152 00000 n 
-0003455907 00000 n 
-0003456016 00000 n 
-0003456127 00000 n 
-0003456408 00000 n 
-0003468068 00000 n 
-0003468177 00000 n 
-0003468288 00000 n 
-0003468569 00000 n 
-0003471743 00000 n 
-0003471852 00000 n 
-0003471963 00000 n 
-0003472244 00000 n 
-0003475303 00000 n 
-0003475412 00000 n 
-0003475523 00000 n 
-0003475869 00000 n 
-0003477813 00000 n 
-0003710939 00000 n 
-0003713037 00000 n 
-0003713146 00000 n 
-0003713257 00000 n 
-0003713538 00000 n 
-0003732151 00000 n 
-0003732260 00000 n 
-0003732371 00000 n 
-0003732652 00000 n 
-0003738519 00000 n 
-0003738628 00000 n 
-0003738739 00000 n 
-0003739085 00000 n 
-0003741015 00000 n 
-0004157325 00000 n 
-0004157434 00000 n 
-0004157545 00000 n 
-0004157826 00000 n 
-0004173736 00000 n 
-0004173845 00000 n 
-0004173956 00000 n 
-0004174237 00000 n 
-0004181004 00000 n 
-0004181113 00000 n 
-0004181224 00000 n 
-0004181505 00000 n 
-0004184607 00000 n 
-0004184716 00000 n 
-0004184827 00000 n 
-0004185108 00000 n 
-0004188275 00000 n 
-0004188384 00000 n 
-0004188495 00000 n 
-0004188776 00000 n 
-0004190295 00000 n 
-0004190404 00000 n 
-0004190515 00000 n 
-0004190796 00000 n 
-0004193624 00000 n 
-0004193733 00000 n 
-0004193844 00000 n 
-0004194125 00000 n 
-0004196919 00000 n 
-0004197028 00000 n 
-0004197139 00000 n 
-0004197420 00000 n 
-0004200208 00000 n 
-0004200317 00000 n 
-0004200428 00000 n 
-0004200709 00000 n 
-0004203360 00000 n 
-0004203469 00000 n 
-0004203580 00000 n 
-0004203861 00000 n 
-0004206586 00000 n 
-0004206695 00000 n 
-0004206806 00000 n 
-0004207087 00000 n 
-0004207706 00000 n 
-0004207815 00000 n 
-0004207926 00000 n 
-0004208207 00000 n 
-0004210912 00000 n 
-0004211021 00000 n 
-0004211132 00000 n 
-0004211413 00000 n 
-0004214438 00000 n 
-0004214547 00000 n 
-0004214658 00000 n 
-0004214939 00000 n 
-0004217709 00000 n 
-0004217818 00000 n 
-0004217929 00000 n 
-0004218210 00000 n 
-0004221323 00000 n 
-0004221432 00000 n 
-0004221543 00000 n 
-0004221824 00000 n 
-0004224624 00000 n 
-0004224733 00000 n 
-0004224844 00000 n 
-0004225125 00000 n 
-0004228098 00000 n 
-0004228207 00000 n 
-0004228318 00000 n 
-0004228599 00000 n 
-0004231538 00000 n 
-0004231647 00000 n 
-0004231758 00000 n 
-0004232039 00000 n 
-0004235035 00000 n 
-0004235144 00000 n 
-0004235255 00000 n 
-0004235536 00000 n 
-0004238508 00000 n 
-0004238617 00000 n 
-0004238728 00000 n 
-0004239009 00000 n 
-0004241469 00000 n 
-0004241578 00000 n 
+0000667414 00000 n 
+0000676333 00000 n 
+0000676677 00000 n 
+0000676786 00000 n 
+0000676897 00000 n 
+0000686885 00000 n 
+0000687229 00000 n 
+0000687338 00000 n 
+0000687449 00000 n 
+0000695577 00000 n 
+0000695899 00000 n 
+0000696008 00000 n 
+0000696119 00000 n 
+0000707629 00000 n 
+0000707973 00000 n 
+0000708082 00000 n 
+0000708193 00000 n 
+0000717337 00000 n 
+0000717646 00000 n 
+0000717755 00000 n 
+0000717866 00000 n 
+0000725795 00000 n 
+0000726115 00000 n 
+0000726224 00000 n 
+0000726335 00000 n 
+0000734208 00000 n 
+0000734540 00000 n 
+0000734649 00000 n 
+0000734760 00000 n 
+0000741214 00000 n 
+0000741546 00000 n 
+0000741655 00000 n 
+0000741766 00000 n 
+0000749398 00000 n 
+0000749730 00000 n 
+0000749839 00000 n 
+0000749950 00000 n 
+0000758601 00000 n 
+0000758955 00000 n 
+0000759064 00000 n 
+0000759175 00000 n 
+0000772204 00000 n 
+0000772524 00000 n 
+0000772633 00000 n 
+0000772744 00000 n 
+0000792376 00000 n 
+0000792696 00000 n 
+0000792805 00000 n 
+0000792916 00000 n 
+0000815931 00000 n 
+0000816239 00000 n 
+0000816348 00000 n 
+0000816459 00000 n 
+0000833844 00000 n 
+0000834177 00000 n 
+0000834286 00000 n 
+0000834397 00000 n 
+0000845731 00000 n 
+0000846052 00000 n 
+0000846161 00000 n 
+0000846272 00000 n 
+0000854663 00000 n 
+0000854948 00000 n 
+0000855057 00000 n 
+0000855168 00000 n 
+0000858494 00000 n 
+0000858775 00000 n 
+0000862834 00000 n 
+0000862943 00000 n 
+0000863052 00000 n 
+0000863162 00000 n 
+0000863273 00000 n 
+0000863384 00000 n 
+0000863496 00000 n 
+0000863777 00000 n 
+0000878399 00000 n 
+0000878508 00000 n 
+0000878619 00000 n 
+0000878900 00000 n 
+0000890990 00000 n 
+0000891099 00000 n 
+0000891210 00000 n 
+0000891491 00000 n 
+0000913711 00000 n 
+0000913820 00000 n 
+0000913931 00000 n 
+0000914212 00000 n 
+0000930283 00000 n 
+0000930392 00000 n 
+0000930503 00000 n 
+0000930784 00000 n 
+0000944767 00000 n 
+0000944876 00000 n 
+0000944987 00000 n 
+0000945333 00000 n 
+0000946067 00000 n 
+0003420682 00000 n 
+0003438161 00000 n 
+0003438270 00000 n 
+0003438381 00000 n 
+0003438662 00000 n 
+0003455417 00000 n 
+0003455526 00000 n 
+0003455637 00000 n 
+0003455918 00000 n 
+0003467578 00000 n 
+0003467687 00000 n 
+0003467798 00000 n 
+0003468079 00000 n 
+0003471253 00000 n 
+0003471362 00000 n 
+0003471473 00000 n 
+0003471754 00000 n 
+0003474813 00000 n 
+0003474922 00000 n 
+0003475033 00000 n 
+0003475379 00000 n 
+0003477323 00000 n 
+0003710449 00000 n 
+0003712547 00000 n 
+0003712656 00000 n 
+0003712767 00000 n 
+0003713048 00000 n 
+0003731661 00000 n 
+0003731770 00000 n 
+0003731881 00000 n 
+0003732162 00000 n 
+0003738029 00000 n 
+0003738138 00000 n 
+0003738249 00000 n 
+0003738595 00000 n 
+0003740525 00000 n 
+0004156835 00000 n 
+0004156944 00000 n 
+0004157055 00000 n 
+0004157336 00000 n 
+0004173246 00000 n 
+0004173355 00000 n 
+0004173466 00000 n 
+0004173747 00000 n 
+0004180514 00000 n 
+0004180623 00000 n 
+0004180734 00000 n 
+0004181015 00000 n 
+0004184120 00000 n 
+0004184229 00000 n 
+0004184340 00000 n 
+0004184621 00000 n 
+0004187551 00000 n 
+0004187660 00000 n 
+0004187771 00000 n 
+0004188052 00000 n 
+0004189807 00000 n 
+0004189916 00000 n 
+0004190027 00000 n 
+0004190308 00000 n 
+0004193098 00000 n 
+0004193207 00000 n 
+0004193318 00000 n 
+0004193599 00000 n 
+0004196189 00000 n 
+0004196298 00000 n 
+0004196409 00000 n 
+0004196690 00000 n 
+0004199308 00000 n 
+0004199417 00000 n 
+0004199528 00000 n 
+0004199809 00000 n 
+0004202629 00000 n 
+0004202738 00000 n 
+0004202849 00000 n 
+0004203130 00000 n 
+0004205801 00000 n 
+0004205910 00000 n 
+0004206021 00000 n 
+0004206302 00000 n 
+0004207144 00000 n 
+0004207253 00000 n 
+0004207364 00000 n 
+0004207645 00000 n 
+0004210350 00000 n 
+0004210459 00000 n 
+0004210570 00000 n 
+0004210851 00000 n 
+0004213876 00000 n 
+0004213985 00000 n 
+0004214096 00000 n 
+0004214377 00000 n 
+0004217147 00000 n 
+0004217256 00000 n 
+0004217367 00000 n 
+0004217648 00000 n 
+0004220761 00000 n 
+0004220870 00000 n 
+0004220981 00000 n 
+0004221262 00000 n 
+0004224062 00000 n 
+0004224171 00000 n 
+0004224282 00000 n 
+0004224563 00000 n 
+0004227536 00000 n 
+0004227645 00000 n 
+0004227756 00000 n 
+0004228037 00000 n 
+0004230976 00000 n 
+0004231085 00000 n 
+0004231196 00000 n 
+0004231477 00000 n 
+0004234473 00000 n 
+0004234582 00000 n 
+0004234693 00000 n 
+0004234974 00000 n 
+0004237946 00000 n 
+0004238055 00000 n 
+0004238166 00000 n 
+0004238447 00000 n 
+0004240907 00000 n 
+0004241016 00000 n 
 trailer
 <<
 /Size 411
@@ -41384,5 +41314,5 @@ trailer
 /Info 1 0 R
 >>
 startxref
-4241689
+4241127
 %%EOF
