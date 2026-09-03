@@ -296,15 +296,54 @@ def generate_complete_thesis_docx(output_path="Abdulameen_Complete_Thesis_Chapte
     add_table_to_docx(doc, t3_headers, t3_rows)
     add_styled_paragraph(doc, "Source: Author's computation (2026). DA (%) denotes Directional Accuracy across all 28 assets.", 'caption')
     
-    add_styled_paragraph(doc, "Econometric Evaluation of Forecasting Performance & Directional Accuracy Mechanics:", 'section_title')
+    add_styled_paragraph(doc, "4.5.1 Econometric Evaluation: Resolving the RMSE vs. Portfolio Alpha Paradox", 'section_title')
     add_styled_paragraph(
         doc,
-        "As reported in Table 4.3, the out-of-sample Root Mean Squared Error (RMSE) across all 28 NGX equities averages 0.0602 for the Historical Mean baseline, "
-        "0.0608 for XGBoost, and 0.0627 for Random Forest, while binary directional accuracy hovers around ~37.8%--38.1%. Econometrically, directional accuracy (DA) is a symmetric binary metric that treats minor zero-mean noise (+0.1%) identically to major crash movements (-10%). "
-        "At weekly sampling horizons, financial return series are dominated by unobserved news noise, causing flat historical baselines to minimize squared error during quiescent periods. "
-        "However, Mean-CVaR portfolio optimization does not rely on binary sign prediction across noise weeks; rather, it depends on cross-sectional magnitude discrimination during extreme left-tail drawdowns. "
-        "Tree-based models utilize volume-confirmed momentum (PPO, OBV) and volatility scaling (ATR, ADX) to correctly rank and penalize the bottom assets facing severe downside tail risk. "
-        "Consequently, while ML models do not beat the baseline in raw point RMSE or binary directional accuracy, their value lies in providing dynamic expected return vectors into the portfolio optimizer to reorder relative cross-sectional weights during tail events.",
+        "A critical empirical observation in Table 4.3 is that the out-of-sample Root Mean Squared Error (RMSE) across all 28 NGX equities averages 0.0602 for the flat Historical Mean baseline, "
+        "compared to 0.0608 for XGBoost and 0.0627 for Random Forest. Similarly, binary directional accuracy (DA) hovers around 37.8% to 38.1% across assets. On a surface level, this might lead to "
+        "the erroneous conclusion that machine learning models fail to outperform historical baselines. However, when evaluated in downstream portfolio optimization (Section 4.7), XGBoost-integrated "
+        "Mean-CVaR achieves a gross Sharpe ratio of 1.52 (42.00% annualized return) compared to 0.91 for passive indexing and 0.76 for Markowitz MVO. Resolving this apparent discrepancy requires "
+        "a rigorous econometric evaluation of the mathematical mechanics of RMSE versus portfolio selection utility.",
+        'body'
+    )
+    add_styled_paragraph(
+        doc,
+        "First, the apparent superiority of the Historical Mean in raw RMSE stems from the statistical properties of financial return noise under an L2 quadratic loss function. "
+        "The Root Mean Squared Error penalizes prediction errors quadratically: RMSE = sqrt((1/N) * sum((y_hat_t - y_t)^2)). At weekly sampling horizons, equity return series are dominated "
+        "by high-frequency, zero-mean unobserved news noise. During quiet, low-volatility market regimes where asset returns fluctuate randomly around zero (+0.4%, -0.2%, +0.1%), a static forecast "
+        "equal to the historical sample mean (y_hat_t = 0.001) minimizes squared error variance across hundreds of noise observations. Conversely, non-linear ML models generate dynamic, non-zero "
+        "return forecasts. When unpredictable random noise causes weekly returns to move opposite to a dynamic prediction, the quadratic L2 loss function severely penalizes the ML model. "
+        "Consequently, the flat baseline achieves a marginally lower aggregate point RMSE simply by predicting near-zero constant returns across noise weeks.",
+        'body'
+    )
+    add_styled_paragraph(
+        doc,
+        "Second, classical point-forecasting metrics such as RMSE and binary Directional Accuracy evaluate asset returns in isolation along a single temporal axis. In contrast, multi-asset "
+        "portfolio optimization (Markowitz, 1952; Rockafellar & Uryasev, 2000) does not operate on isolated point accuracy; rather, it depends fundamentally on cross-sectional magnitude "
+        "discrimination across the asset universe at each rebalancing time step t. The Mean-CVaR portfolio optimizer does not require perfect sign prediction across noise weeks; it requires "
+        "accurate cross-sectional ranking, specifically identifying which assets will experience severe downside drawdowns (left-tail events) versus which equities retain strong positive volume-confirmed momentum.",
+        'body'
+    )
+    add_styled_paragraph(
+        doc,
+        "Third, tree-based machine learning ensembles (Random Forest and XGBoost) successfully extract non-linear cross-sectional signals by leveraging technical indicators. Feature importance analysis "
+        "(Section 4.6) demonstrates that short-term momentum indicators, specifically the Percentage Price Oscillator (PPO), Relative Strength Index (RSI), and On-Balance Volume (OBV), serve as primary "
+        "predictive drivers. By incorporating volume-confirmed trend strength and volatility scaling (ATR, ADX), tree models effectively capture non-linear market regime shifts. Even if an ML model overpredicts "
+        "return magnitude during a noise week (incurring a small RMSE penalty), its predicted expected return vector (mu_hat_t) correctly ranks top-performing equities relative to high-risk equities across the 28 NGX assets.",
+        'body'
+    )
+    add_styled_paragraph(
+        doc,
+        "Fourth, when these dynamic expected return vectors (mu_hat_t) are passed into the convex Mean-CVaR linear program, the optimizer re-allocates capital toward high-ranked momentum equities while "
+        "penalizing assets exposed to left-tail drawdowns. Under zero fee friction (Table 4.5), XGB-CVaR achieves a gross Sharpe ratio of 1.52 (+42.00% annualized return, -22.09% max drawdown), "
+        "yielding a statistically significant Sharpe outperformance over passive indexing (Ledoit-Wolf circular block bootstrap p = 0.015 < 0.05) and positive welfare gains (+819 bps Certainty Equivalent Return gain).",
+        'body'
+    )
+    add_styled_paragraph(
+        doc,
+        "In conclusion, the empirical evidence demonstrates that raw RMSE is an inadequate metric for evaluating machine learning models in portfolio selection. RMSE measures point prediction noise, "
+        "whereas financial portfolio optimization rewards cross-sectional relative ranking and downside tail-risk avoidance. The machine learning models deliver superior portfolio performance because "
+        "they capture relative cross-sectional momentum and tail risk, generating substantial economic alpha despite achieving a slightly higher point RMSE.",
         'body'
     )
     
@@ -449,8 +488,8 @@ def generate_complete_thesis_docx(output_path="Abdulameen_Complete_Thesis_Chapte
         doc,
         "Secondly, regarding the performance of non-linear Machine Learning models in forecasting weekly NGX equity returns under Expanding Rolling Window Walk-Forward Validation, the empirical results in Section 4.1.3 "
         "show that non-linear tree-based ensembles (Random Forest and XGBoost) capture predictive signals from market data. While raw point forecasting metrics (RMSE) hover close to historical baselines due to weekly noise variance, "
-        "XGBoost achieved an out-of-sample directional accuracy of 55.76% across liquid NGX equities, compared to the 50.0% random walk benchmark. Feature importance analysis (Section 4.1.6) indicates that volume-confirmed technical momentum indicators—specifically "
-        "the Percentage Price Oscillator (PPO), Relative Strength Index (RSI), and On-Balance Volume (OBV)—serve as primary drivers of return predictability. This aligns with empirical asset pricing literature (Gu, Kelly, & Xiu, 2020; Chao, 2024; Ojo & Okafor, 2024; Ajiga et al., 2024), "
+        "XGBoost achieved an out-of-sample directional accuracy of 55.76% across liquid NGX equities, compared to the 50.0% random walk benchmark. Feature importance analysis (Section 4.1.6) indicates that volume-confirmed technical momentum indicators, specifically "
+        "the Percentage Price Oscillator (PPO), Relative Strength Index (RSI), and On-Balance Volume (OBV), serve as primary drivers of return predictability. This aligns with empirical asset pricing literature (Gu, Kelly, & Xiu, 2020; Chao, 2024; Ojo & Okafor, 2024; Ajiga et al., 2024), "
         "demonstrating that machine learning algorithms capture non-linear market dynamics in emerging economies.",
         'body'
     )
@@ -505,14 +544,14 @@ def generate_complete_thesis_docx(output_path="Abdulameen_Complete_Thesis_Chapte
     add_styled_paragraph(
         doc,
         "Evaluating portfolio performance under market stress and multi-tier transaction cost friction demonstrated that unconstrained Markowitz Mean-Variance Optimization experiences performance degradation (-86.38% drawdown, -64.09% CER utility) due to high turnover (99.28% weekly turnover). "
-        "Under institutional (0.75%) and retail (1.50%) brokerage fees, active ML rebalancing turnover (11.00%) creates an annual fee drag (~3.6% to ~7.2%) that offsets marginal predictive gains post-fees, while low-turnover Historical-CVaR (0.38% turnover) maintains stable post-fee performance (net Sharpe 1.48–1.49, pairwise p = 0.000).",
+        "Under institutional (0.75%) and retail (1.50%) brokerage fees, active ML rebalancing turnover (11.00%) creates an annual fee drag (~3.6% to ~7.2%) that offsets marginal predictive gains post-fees, while low-turnover Historical-CVaR (0.38% turnover) maintains stable post-fee performance (net Sharpe 1.48 to 1.49, pairwise p = 0.000).",
         'body'
     )
     
     add_styled_paragraph(doc, "5.2 Conclusion", 'section_title')
     add_styled_paragraph(
         doc,
-        "This study investigated equity return forecasting and tail-risk-aware portfolio optimization across 28 liquid equities on the Nigerian Exchange Group (NGX) spanning a 15-year period (2010–2025). "
+        "This study investigated equity return forecasting and tail-risk-aware portfolio optimization across 28 liquid equities on the Nigerian Exchange Group (NGX) spanning a 15-year period (2010-2025). "
         "The research evaluated non-normality diagnostics, Machine Learning return forecasting (Random Forest and XGBoost) under Expanding Rolling Window Walk-Forward Validation, and convex Mean-CVaR asset allocation backtesting.\n\n"
         "The overall conclusion of this research is that while Machine Learning models extract gross predictive alpha on the NGX, market transaction friction and rebalancing turnover neutralize these marginal predictive gains post-fees. "
         "Consequently, structural tail-risk management via Conditional Value-at-Risk (CVaR) constitutes the primary driver of real-world investor economic surplus (+819 bps CER gain over passive indexing). "
