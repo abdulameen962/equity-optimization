@@ -8,8 +8,8 @@ endobj
 2 0 obj
 <<
 /Type /Pages
-/Count 82
-/Kids [ 4 0 R 16 0 R 23 0 R 35 0 R 39 0 R 43 0 R 47 0 R 51 0 R 55 0 R 59 0 R 66 0 R 78 0 R 82 0 R 86 0 R 90 0 R 94 0 R 98 0 R 102 0 R 106 0 R 110 0 R 114 0 R 119 0 R 123 0 R 127 0 R 131 0 R 135 0 R 139 0 R 143 0 R 147 0 R 151 0 R 155 0 R 159 0 R 163 0 R 175 0 R 182 0 R 186 0 R 190 0 R 194 0 R 198 0 R 202 0 R 206 0 R 210 0 R 214 0 R 218 0 R 222 0 R 226 0 R 230 0 R 234 0 R 238 0 R 242 0 R 246 0 R 250 0 R 254 0 R 258 0 R 267 0 R 271 0 R 275 0 R 279 0 R 283 0 R 287 0 R 293 0 R 297 0 R 301 0 R 307 0 R 311 0 R 315 0 R 319 0 R 324 0 R 328 0 R 332 0 R 336 0 R 340 0 R 344 0 R 348 0 R 352 0 R 356 0 R 360 0 R 364 0 R 368 0 R 372 0 R 376 0 R 380 0 R ]
+/Count 86
+/Kids [ 4 0 R 16 0 R 23 0 R 35 0 R 39 0 R 43 0 R 47 0 R 51 0 R 55 0 R 59 0 R 66 0 R 78 0 R 82 0 R 86 0 R 90 0 R 94 0 R 98 0 R 102 0 R 106 0 R 110 0 R 114 0 R 119 0 R 123 0 R 127 0 R 131 0 R 135 0 R 139 0 R 143 0 R 147 0 R 151 0 R 155 0 R 159 0 R 163 0 R 175 0 R 182 0 R 186 0 R 190 0 R 194 0 R 198 0 R 202 0 R 206 0 R 210 0 R 214 0 R 218 0 R 222 0 R 226 0 R 230 0 R 234 0 R 238 0 R 242 0 R 246 0 R 250 0 R 254 0 R 258 0 R 267 0 R 271 0 R 275 0 R 279 0 R 283 0 R 287 0 R 293 0 R 297 0 R 301 0 R 307 0 R 311 0 R 315 0 R 319 0 R 324 0 R 328 0 R 332 0 R 336 0 R 340 0 R 344 0 R 348 0 R 352 0 R 356 0 R 360 0 R 364 0 R 368 0 R 372 0 R 376 0 R 380 0 R 384 0 R 388 0 R 392 0 R 396 0 R ]
 >>
 endobj
 3 0 obj
@@ -297,6 +297,10 @@ endobj
 <<
 /Type /Page
 /Resources <<
+/ExtGState <<
+/GS7 5 0 R
+/GS8 6 0 R
+>>
 /Font <<
 /F1 7 0 R
 /F1-0 17 0 R
@@ -372,14 +376,16 @@ endobj
 endobj
 22 0 obj
 <<
-/Length 7488
+/Length 7603
 >>
 stream
 q
  /P <</MCID 0>> BDC BT
 /F2 12 Tf
 1 0 0 1 72.024 708.82 Tm
+/GS7 gs
 0 g
+/GS8 gs
 0 G
 [(Chap)-5(te)7(r)4( 1)] TJ
 ET
@@ -398,11 +404,7 @@ ET
  EMC  /P <</MCID 2>> BDC BT
 /F1 12 Tf
 1 0 0 1 72.024 633.94 Tm
-[(C)-2(a)4(pit)-3(a)4(l )-261(mar)5(ke)4(ts )-262(pla)-17(y)30( )-269(a)-5( )-259(c)4(ruc)7(ial )-259(role)5( )-259(in )-261(n)-9(a)4(ti)-3(ona)4(l )] TJ
-ET
-BT
-1 0 0 1 318.89 633.94 Tm
-[(e)4(c)4(onomi)-3(c)4( )-259(de)4(ve)4(lopm)-3(e)4(n)-9(t )-261(a)4(s )-260(the)-7(y)20( )-259(provid)-8(e)4( )-259(the)-7( )] TJ
+[(C)-2(a)4(pit)-3(a)4(l )-261(mar)5(ke)4(ts )-262(pla)-17(y)30( )-269(a)-5( )-259(c)4(ruc)7(ial )-259(role)5( )-259(in )-261(n)-9(a)4(ti)-3(ona)4(l )-261(e)4(c)4(onomi)-3(c)4( )-259(de)4(ve)4(lopm)-3(e)4(n)-9(t )-261(a)4(s )-260(the)-7(y)20( )-259(provid)-8(e)4( )-259(the)-7( )] TJ
 ET
 BT
 1 0 0 1 72.024 606.34 Tm
@@ -410,197 +412,193 @@ BT
 ET
 BT
 1 0 0 1 72.024 578.74 Tm
-[(\(Sul)-2(a)4(im)-3(a)4(n, )-29(2023; )-31(Evbuo)-8(mwa)4(n, )-29(2024\))3(. )-29(Th)-8(e)4( )-29(stock )-38(mar)5(ke)4(t )] TJ
+[(\(Sul)-2(a)4(im)-3(a)4(n, )-29(2023)] TJ
 ET
 BT
-1 0 0 1 347.35 578.74 Tm
+1 0 0 1 151.7 578.74 Tm
+[(\). )-26(The)5( )-29(st)-12(oc)4(k )-29(mar)5(ke)4(t )] TJ
+ET
+BT
+1 0 0 1 249.41 578.74 Tm
 [(-)] TJ
 ET
 BT
-1 0 0 1 351.43 578.74 Tm
+1 0 0 1 253.49 578.74 Tm
 [( )] TJ
 ET
 BT
-1 0 0 1 354.79 578.74 Tm
-[(influe)3(nc)-5(e)4(d )-29(b)-19(y)20( )-29(f)-6(a)4(c)4(tors )-29(suc)3(h)-9( )-29(a)4(s )-30(d)-9(e)4(mand,)-7( )] TJ
+1 0 0 1 256.85 578.74 Tm
+[(influe)3(nc)-5(e)4(d )-39(b)-9(y)20( )-29(f)-6(a)4(c)4(tors )-29(su)-10(c)4(h )-29(a)4(s )-30(de)] TJ
+ET
+BT
+1 0 0 1 412.27 578.74 Tm
+[(man)-7(d, )-29(suppl)-12(y)20( )-29(a)4(nd )-29(investor)-7( )] TJ
 ET
 BT
 1 0 0 1 72.024 551.14 Tm
-[(suppl)-12(y)20( )-79(a)4(nd )-79(inv)-11(e)4(stor )-79(be)4(h)-9(a)-5(v)] TJ
-ET
-BT
-1 0 0 1 200.69 551.14 Tm
-[(ior )-78(a)4(mong)8(st )-82(oth)-11(e)4(rs, )-77(is )-92(whe)6(re)7( )-79(li)-3(sted )-88(c)4(ompanie)4(s )-90(r)-6(a)4(ise )-78(c)4(a)4(pit)-3(a)4(l )-81(b)-19(y)20( )-89(se)3(ll)-3(ing)8( )] TJ
+[(be)4(ha)4(vior )-28(a)4(mon)-11(g)10(st )-32(other)5(s, )-30(is )-32(whe)6(re)7( )-29(li)-3(sted )-28(c)4(ompanie)4(s )-30(ra)7(ise )-28(c)4(a)4(pit)-3(a)4(l )-31(b)-19(y)30( )-29(se)3(ll)-3(in)-11(g )-29(e)4(quit)-13(y)30( )-29(stak)-8(e)4(s )-30(throug)11(h)-9( )] TJ
 ET
 BT
 1 0 0 1 72.024 523.51 Tm
-[(e)4(quit)-13(y)20( )-279(stake)5(s )-280(throu)-8(g)10(h )-279(sha)3(re)7(s, )-280(while )-277(investors )-278(bu)-9(y)20( )-279(a)4(nd )-279(se)3(ll)-3( )-279(these)5( )-279(se)3(c)-5(urities )-279(\(N)5(a)4(ha)4(ri, )-278(2025\))3(.)-9( )] TJ
+[(sha)3(re)7(s, )-160(while )-147(investors)-8( )-159(bu)-9(y)20( )-159(a)4(nd )-149(s)-10(e)4(ll)-3( )-149(these)-4( )-149(se)3(c)4(u)-9(r)-6(it)-3(ies )-148(\(N)5(a)4(ha)-5(ri, )-148(2025\))3(.)-9( )-159(I)13(nv)-9(e)4(stm)-4(e)4(nt )-151(in )-151(the )-157(c)4(a)4(pit)-3(a)4(l )] TJ
 ET
 BT
 1 0 0 1 72.024 495.91 Tm
-[(I)13(nv)-9(e)4(stm)-4(e)4(nt )-101(in )-101(the )-97(c)-5(a)4(pit)-3(a)4(l )-101(mar)5(ke)4(ts )-102(ha)4(s )-100(b)-9(e)4(e)4(n )-99(on )-99(th)-11(e)4( )-99(rise)4( )-99(a)4(s)-10( )-99(one)4( )-99(of)-6( )-99(the )-97(man)-7(y)20( )-109(investm)-2(e)4(nt )-101(v)-9(e)4(hicle)4(s)] TJ
+[(mar)5(ke)4(ts )-52(ha)4(s )-50(b)-9(e)4(e)4(n)-9( )-49(on )-49(the )-57(rise)4( )-49(a)4(s )-50(on)-9(e)4( )] TJ
 ET
 BT
-1 0 0 1 540.1 495.91 Tm
-[( )] TJ
+1 0 0 1 248.93 495.91 Tm
+[(of)-6( )-49(the )-47(man)-17(y)20( )-49(i)-11(nve)4(stm)-4(e)4(nt )-51(ve)4(hicle)4(s )-60(a)4(va)4(il)-13(a)4(ble )-47(to )-51(indi)-3(vidual )-49(a)4(nd)-9( )] TJ
 ET
 BT
 1 0 0 1 72.024 468.31 Tm
-[(a)4(va)4(il)-3(a)4(ble to indi)-3(vidual a)4(n)-9(d inst)-4(it)-3(uti)-3(ona)4(l i)-3(nve)4(stors i)-2(n re)7(c)-5(e)4(nt t)-3(im)-3(e)4(s. The)4( )-9(g)10(o)-9(a)4(l )-11(of r)6(a)4(ti)-3(ona)4(l i)-3(nve)4(stors)-10( in )] TJ
+[(inst)-4(it)-3(uti)-3(ona)4(l )58(investors )51(in )48(re)7(c)4(e)4(nt )48(ti)-3(mes. )51(The)5( )40(g)10(oa)4(l )48(of )53(r)-6(a)4(ti)-3(ona)4(l )48(investors )51(in )48(these)5( )50(mar)5(ke)4(ts )47(is )47(to )48(mi)-3(nim)-3(i)8(z)-5(e)14( )] TJ
 ET
 BT
 1 0 0 1 72.024 440.83 Tm
-[(these)5( )-139(mar)5(k)-9(e)4(ts )-142(is )-142(to )-141(mi)-3(ni)-11(mi)-3(z)-5(e)4( )-139(risk )-139(a)4(nd )-139(max)-7(im)-3(iz)-7(e)14( )-139(re)7(turn)-8( )-139(on )-139(investm)-2(e)4(nts )-152(\()-6(Ma)3(ha)4(de)4(va)4(s)-10(wa)6(m)-21(y)20( )-149(a)4(nd )] TJ
+[(risk )-19(a)4(nd )-19(max)-7(im)-3(iz)-7(e)4( )-19(re)7(turn)-8( )-19(on )-19(investm)-2(e)4(nts )-22(\(M)-7(a)4(ha)4(de)-5(va)4(swa)5(m)-21(y)20( )-29(a)4(nd )-19(S)-3(h)-19(y)20(a)4(mala)4(,)-9( )-19(2022\))3(, )-19(b)-9(a)4(se)3(d )-19(on)-9( )-19(their)-6( )] TJ
 ET
 BT
 1 0 0 1 72.024 413.23 Tm
-[(S)-3(h)-9(y)20(a)4(mala)4(, )-29(2022\))3(, )-29(ba)4(s)-10(e)4(d )-29(on )-29(their)3( )-29(leve)6(l )-31(of )-26(risk)] TJ
+[(l)] TJ
 ET
 BT
-1 0 0 1 289.25 413.23 Tm
+1 0 0 1 75.384 413.23 Tm
+[(e)4(ve)4(l of r)4(isk)] TJ
+ET
+BT
+1 0 0 1 129.26 413.23 Tm
 [(-)] TJ
 ET
 BT
-1 0 0 1 293.21 413.23 Tm
-[(a)4(ve)-5(rsion )-29(whe)6(n )-29(the)-7(y)] TJ
-ET
-BT
-1 0 0 1 387.07 413.23 Tm
-[( )] TJ
-ET
-BT
-1 0 0 1 390.43 413.23 Tm
-[(invest )-30(in )-31(se)3(c)4(urities. )-29(The)-4(y)20( )-29(sha)-6(re)-2( )] TJ
+1 0 0 1 133.22 413.23 Tm
+[(a)4(ve)4(rsion wh)-7(e)4(n the)-7(y)20( invest i)-2(n se)3(c)4(uritie)-8(s. The)-5(y)20( sha)3(r)-6(e)4( the sa)5(me )-7(goa)4(ls of diver)5(sif)-9(y)20(in)-11(g)10( a)4(ll)-3( )] TJ
 ET
 BT
 1 0 0 1 72.024 385.63 Tm
-[(the )-87(sa)3(me )-87(g)10(o)-9(a)4(ls )-92(of )-86(diver)5(s)-10(if)-8(y)20(in)-11(g)10( )-89(a)4(ll)-3( )-89(diver)5(sifiable)4( )-99(risks )-90(a)4(nd )-89(a)4(c)4(hievin)-9(g)10( )-89(the )-87(be)-5(st )-92(possi)-3(ble )-87(risk)] TJ
+[(diver)5(sifiable)4( )-69(risks )-60(a)4(nd)-9( )-59(a)4(c)-5(hieving)10( )-59(th)-11(e)4( )-59(b)-9(e)4(st )-62(possi)-3(ble)-7( )-59(risk)] TJ
 ET
 BT
-1 0 0 1 507.58 385.63 Tm
+1 0 0 1 336.43 385.63 Tm
 [(-)] TJ
 ET
 BT
-1 0 0 1 511.54 385.63 Tm
-[(re)7(turn )] TJ
-ET
-BT
-1 0 0 1 72.024 358.01 Tm
-[(ra)7(ti)-3(o \()-6(Z)11(a)4(im)-3(ovic )] TJ
+1 0 0 1 340.39 385.63 Tm
+[(re)7(tu)-11(rn )-56(r)-6(a)4(ti)-3(o )-59(\()-6(Za)5(im)-3(ovic )] TJ
 ET
 BT
 /F3 12 Tf
-1 0 0 1 149.9 358.01 Tm
-[(e)4(t al)-3(.,)] TJ
+1 0 0 1 452.38 385.63 Tm
+[(e)4(t )-61(al.,)] TJ
 ET
 BT
 /F1 12 Tf
-1 0 0 1 176.9 358.01 Tm
+1 0 0 1 480.22 385.63 Tm
 [( )] TJ
 ET
 BT
-1 0 0 1 179.9 358.01 Tm
-[(20)-9(24\). T)4(his connote)3(s the im)-12(porta)5(nc)4(e)4( o)-9(f dive)5(rsific)-4(a)4(ti)-3(on a)4(s a)3( major)3( me)-7(a)4(ns of)-7( )] TJ
+1 0 0 1 483.94 385.63 Tm
+[(2024\))3(. )-59(This)-11( )] TJ
 ET
 BT
-1 0 0 1 72.024 330.29 Tm
-[(sust)-3(a)4(inable)4( c)4(a)4(pit)-3(a)4(l app)-7(r)] TJ
+1 0 0 1 72.024 357.89 Tm
+[(c)4(onnotes the importa)4(nc)-5(e)4( )-9(of dive)5(rsific)5(a)4(ti)-3(on a)4(s )-10(a)4( ma)-7(jor me)] TJ
 ET
 BT
-1 0 0 1 184.58 330.29 Tm
-[(e)-5(c)4(iation.)] TJ
+1 0 0 1 344.71 357.89 Tm
+[(a)4(ns of sustaina)4(ble )-7(c)4(a)4(pit)-3(a)4(l appr)-4(e)4(c)4(iation.)] TJ
 ET
 BT
-1 0 0 1 225.65 330.29 Tm
+1 0 0 1 530.38 357.89 Tm
 [( )] TJ
 ET
  EMC  /P <</MCID 3>> BDC BT
-1 0 0 1 72.024 292.73 Tm
+1 0 0 1 72.024 320.33 Tm
 [(Dive)4(rsific)5(a)4(ti)-3(on )-39(is )-42(not )-51(a)4(n )-49(a)4(utom)-3(a)4(ti)-3(c)4( )-39(risk)] TJ
 ET
 BT
-1 0 0 1 261.53 292.73 Tm
+1 0 0 1 261.53 320.33 Tm
 [(-)] TJ
 ET
 BT
-1 0 0 1 265.49 292.73 Tm
+1 0 0 1 265.49 320.33 Tm
 [(r)-6(e)4(duc)4(ti)-3(on )-49(mec)6(ha)4(nism)-4( )-39(a)4(s )-40(it)-3(s )-40(e)-5(ff)6(e)-5(c)4(ti)-3(ve)4(ne)4(ss )-41(de)4(p)-9(e)4(nds )-40(on )-39(the)-7( )] TJ
 ET
 BT
-1 0 0 1 72.024 265.13 Tm
+1 0 0 1 72.024 292.73 Tm
  -0.048 Tc[(co)] TJ
 ET
 BT
-1 0 0 1 83.304 265.13 Tm
+1 0 0 1 83.304 292.73 Tm
  0 Tc[(-)] TJ
 ET
 BT
-1 0 0 1 87.264 265.13 Tm
+1 0 0 1 87.264 292.73 Tm
 [(moveme)4(nt )-101(of)-6( )-99(the )-97(a)4(ss)-11(e)4(ts )-102(re)7(turns )-109(a)4(c)4(ross )-98(m)-11(a)4(rke)7(t)-11(s )-100(a)4(nd )-99(ove)4(r)-6( )-99(ti)-3(me. )-97(W)-5(he)4(n )-99(a)-5(sset )-99(re)7(turns )-99(h)-9(a)4(ve)4( )-99(low)-9( )] TJ
 ET
 BT
+1 0 0 1 72.024 265.13 Tm
+[(c)4(orr)6(e)4(l)-11(a)4(ti)-3(on, )20(uns)-10(y)20(stema)3(ti)-3(c)-5( )] TJ
+ET
+BT
+1 0 0 1 195.17 265.13 Tm
+[(risk )20(of )23(the )22(portf)4(oli)-3(o )20(c)4(a)4(n )20(be)4( )20(sig)7(nific)-6(a)4(ntl)-13(y)20( )20(r)-6(e)4(duc)4(e)4(d )20(t)-11(hroug)13(h )20(dive)-7(rsific)5(a)4(ti)-3(on.)-9( )] TJ
+ET
+BT
 1 0 0 1 72.024 237.53 Tm
-[(c)4(orr)6(e)4(l)-11(a)4(ti)-3(on, )20(uns)-10(y)20(stema)3(ti)-3(c)-5( )20(risk )20(of )23(the )22(portf)4(oli)-3(o )20(c)4(a)4(n )20(be)4( )20(si)] TJ
-ET
-BT
-1 0 0 1 332.23 237.53 Tm
-[(g)10(nific)-6(a)4(ntl)-13(y)20( )20(r)-6(e)4(duc)4(e)4(d )20(t)-11(hroug)13(h )20(dive)-7(rsific)5(a)4(ti)-3(on.)-9( )] TJ
-ET
-BT
-1 0 0 1 72.024 209.9 Tm
 [(Althoug)8(h )-229(diver)5(sifica)6(ti)-3(on)-9( )-229(is )-232(wide)4(l)-11(y)30( )-229(use)3(d )-229(a)4(nd )-229(popular)5(, )-229(it)-3( )-229(sti)5(ll)-3( )-229(pre)7(se)3(nts )-232(a)14( )-229(c)4(onti)-3(nua)4(ll)-13(y)30( )-229(e)4(volvi)-3(n)-9(g )] TJ
 ET
 BT
-1 0 0 1 72.024 182.3 Tm
+1 0 0 1 72.024 209.9 Tm
 [(c)4(ha)4(ll)-3(e)4(n)-9(g)10(e)4( )-379(in )-381(po)-9(rtf)4(oli)-3(o )-389(mana)-3(g)10(e)4(ment )] TJ
 ET
 BT
-1 0 0 1 260.93 182.3 Tm
+1 0 0 1 260.93 209.9 Tm
 [(-)] TJ
 ET
 BT
-1 0 0 1 265.01 182.3 Tm
+1 0 0 1 265.01 209.9 Tm
 [( )] TJ
 ET
 BT
-1 0 0 1 272.57 182.3 Tm
+1 0 0 1 272.57 209.9 Tm
 [(how )-377(to)-11( )-379(opti)-3(mall)-11(y)20( )-379(a)4(ll)-3(oc)-5(a)4(te )-377(r)-6(e)4(s)-10(ourc)7(e)4(s. )-390(F)6(or )-386(e)4(x)-9(a)4(mpl)-3(e)4(,)10( )] TJ
 ET
 BT
-1 0 0 1 72.024 154.7 Tm
+1 0 0 1 72.024 182.3 Tm
 [(int)-3(e)4(rna)7(ti)-3(ona)4(l)] TJ
 ET
 BT
-1 0 0 1 132.62 154.7 Tm
+1 0 0 1 132.62 182.3 Tm
 [( )] TJ
 ET
 BT
-1 0 0 1 135.62 154.7 Tm
-[(e)4(quit)-23(y)20( diver)-4(sific)] TJ
+1 0 0 1 135.62 182.3 Tm
+[(e)4(quit)-23(y)20( diver)-4(sifica)6(ti)-3(on wa)6(s hi)-2(storic)-7(a)4(ll)-3(y)20( )-9(mor)-8(e)4( r)-6(e)4(li)-3(a)4(ble )-7(for)6( U.S. i)-13(nve)4(stors prior)3( to 2009)-11(,)-9( )] TJ
 ET
 BT
-1 0 0 1 214.01 154.7 Tm
-[(a)4(ti)-3(on wa)6(s hi)-2(storic)-7(a)4(ll)-3(y)20( )-9(mor)-8(e)4( r)-6(e)4(li)-3(a)4(ble )-7(for)6( U.S. i)-13(nve)4(stors prior)3( to 2009)-11(,)-9( )] TJ
-ET
-BT
-1 0 0 1 72.024 127.1 Tm
+1 0 0 1 72.024 154.7 Tm
 [(howe)6(ve)4(r,)-6( )-109(the )-107(post)] TJ
 ET
 BT
-1 0 0 1 159.62 127.1 Tm
+1 0 0 1 159.62 154.7 Tm
 [(-)] TJ
 ET
 BT
-1 0 0 1 163.7 127.1 Tm
+1 0 0 1 163.7 154.7 Tm
 [(c)4(risis )-122(pe)4(riod )-108(f)-6(a)4(vore)7(d)-9( )-109(diver)5(sific)-7(a)4(ti)-3(on )-109(throug)11(h)-9( )-109(a)-5( )-109(portf)4(oli)-3(o)-9( )-109(of )-106(stocks)-9( )-109(a)4(nd )-109(bonds)-10( )] TJ
 ET
 BT
-1 0 0 1 72.024 99.504 Tm
-[(invol)-3(ving)8( )-109(e)4(quit)-3(ies, )-108(c)4(omm)-3(odit)-3(ies, )-108(a)4(nd )-109(g)10(ove)4(rnm)-8(e)-5(nt )-111(se)3(c)4(urities. )-109(As )-108(the )-107(c)4(orr)-3(e)4(lation )-111(a)4(mong)8( )-109(ma)-7(rk)] TJ
+1 0 0 1 72.024 127.1 Tm
+[(invol)-3(ving)8( )-109(e)4(quit)-3(ies, )-108(c)4(omm)-3(odit)-3(ies, )-108(a)4(nd )-109(g)10(ove)4(rnm)-8(e)-5(nt )-111(se)3(c)4(urities)] TJ
 ET
 BT
-1 0 0 1 526.66 99.504 Tm
-[(e)4(ts)-12( )] TJ
+1 0 0 1 364.87 127.1 Tm
+[(. )-109(As )-108(the )-107(c)4(orr)-3(e)4(lation )-111(a)4(mong)8( )-109(ma)-7(rke)7(ts)-12( )] TJ
+ET
+BT
+1 0 0 1 72.024 99.504 Tm
+[(incr)5(e)4(a)4(s)-10(e)4(s )-210(ove)-5(r )-216( )-209(ti)-3(me, )-207(in)-11(ter)5(na)4(ti)-3(ona)4(l )-211(port)-8(folio )-210(diver)5(sifica)6(ti)-3(on )-219(re)7(mains )-210(if)-8( )-209(i)-11(nve)4(stors )-210(c)4(onti)-3(nuousl)-22(y)20( )] TJ
 ET
  EMC 
 Q
@@ -634,6 +632,7 @@ endobj
 /Resources <<
 /ExtGState <<
 /GS7 5 0 R
+/GS8 6 0 R
 >>
 /Font <<
 /F1 7 0 R
@@ -1140,16 +1139,16 @@ endobj
 33 0 obj
 <<
 /Filter /FlateDecode
-/Length 394
+/Length 395
 >>
 stream
-xúÖSÀnÉ0ºÛ>∂á€ºäÑêá>T⁄ ∞§H≈XÜ¯˚/yK©%∞∆ûŸù]≠Ì$ﬂÊ¢â˝°˙™Äë4≠®˝AU@v∞oÖ≈)©€j\ê˘W])-[ããi°ÀE”[QDÏO}9åj"OÎ∫ﬂ¡≥eø´T+ˆ‰È;)4.R˛Bb$‘äcRC£ΩñÚ≠ÏÄÿF∂ k}ﬂé”JkŒåØI·34Sı5≤¨@ïbVDıäIîÈ[ Íõ˚Eµk™üR∂£ŸîrjÿÀ˘âuMêÌ/lºÁwA3§%ÒåCî^¶‡w):aûŸä⁄ _–}úó°='DmähÛ∏4Ókö7ó_•∏Î«F∏˛?A≥cÜù\uoÉ:X∫á5;X≥Á"Z#
-aÖ^¯∏óÆã4‘˙ÃhΩEª5[^yÚo=˘Xhä⁄ ¶[É6\#N:‹¯à∞ÎôÈ:£Ü…òI∆¥ëøÛXŒØÁ4Û’A)=ÓÊâô9ü'ºpzÖ≤ó≥j˛˛ ·è÷
+xú}SÀnÉ0ºÛ>¶á€ºÇ!%$}®¥@`ì"É9˜5ª‰—Dä%∞f=≥;k≠Ì8€e™ò˝°€2áÅjUiË€ì.ÅÌ·X+K¨XUó√å_6EgŸFúè˝ M¶≠µ^3˚”ˆÉŸbSµ{x±Ïw]ÅÆ’ë-æ„‹‡¸‘uø–Ä∑¢àUp0â^ãÓ≠hÄŸ([fï9Øáqi4W∆◊ÿìàô)€
+˙Æ(AÍ÷öõ±ujVdÅ™ÓŒg’˛P˛Ÿéas.9≤Á¯ÖuM"ç«ƒˆg6ùÀá§)—‚hBBJnK»áÇú7áì6†‡äÇÓÛ∫ÇÏ9!iB€€∫ŒC]Èù{ö6W¢VRAImª”≥5∆ˇÃ∏˜fÍ«£Fjƒs	mÑ»∂>ø ◊%i}ÅZo÷Óp¬û¸{O>ıìê6†Ñ…—V$π á[ü]eäW)82Ö¿b¬πÒ;Õ⁄Ù$.É\û¥63åÔáw€Z¡Âium7©¶ÔÎ˝{
 endstream
 endobj
 34 0 obj
 <<
-/Length 8901
+/Length 9031
 >>
 stream
 q
@@ -1158,302 +1157,315 @@ q
 1 0 0 1 72.024 709.18 Tm
 /GS7 gs
 0 g
+/GS8 gs
 0 G
-[(incr)5(e)4(a)4(s)-10(e)4(s )-210(ove)-5(r )-216( )-209(ti)-3(me, )-207(in)-11(ter)5(na)4(ti)-3(ona)4(l )-211(port)-8(folio )-210(diver)5(sifica)6(ti)-3(on )-219(re)7(mains )-210(if)-8( )-209(i)-11(nve)4(stors )-210(c)4(onti)-3(nuousl)-22(y)20( )] TJ
-ET
-BT
-1 0 0 1 72.024 681.58 Tm
 [(mea)6(sure)6( )-39(c)4(o)-9(rr)6(e)4(lation )-41(a)4(mo)-11(ng)10( )-39(these)5( )-39(mar)5(k)-9(e)4(ts )-42(so )-40(a)4(s )-40(to )-41(c)4(re)7(a)4(te )-47(a)4(n )-39(opti)-3(mal )-39(mar)5(ke)4(t )-41(c)4(ombi)-3(na)4(ti)-3(on )-39(\(H)5(ua)4(ng )] TJ
 ET
 BT
 /F3 12 Tf
-1 0 0 1 72.024 653.86 Tm
+1 0 0 1 72.024 681.46 Tm
 [(e)4(t al)-3(.,)] TJ
 ET
 BT
 /F1 12 Tf
-1 0 0 1 99.024 653.86 Tm
+1 0 0 1 99.024 681.46 Tm
 [( )] TJ
 ET
 BT
-1 0 0 1 102.02 653.86 Tm
+1 0 0 1 102.02 681.46 Tm
 [(2025\))3(.)] TJ
 ET
 BT
-1 0 0 1 132.98 653.86 Tm
+1 0 0 1 132.98 681.46 Tm
 [( )] TJ
 ET
  EMC  /P <</MCID 1>> BDC BT
+1 0 0 1 72.024 644.02 Tm
+[(To )-98(de)4(a)4(l )-101(with )-101(the )] TJ
+ET
+BT
+1 0 0 1 158.06 644.02 Tm
+[(proble)-4(ms )-102(that )-99(c)4(ome )-97(with )-101(diver)5(sifica)6(ti)-3(on, )-99(portf)4(oli)-3(o )-99(mana)6(ge)4(ment )-99(ha)4(s )-100(be)-5(c)4(ome )-97(a)-5( )] TJ
+ET
+BT
 1 0 0 1 72.024 616.42 Tm
-[(To )-98(de)4(a)4(l )-101(with )-101(the )-97(proble)-4(ms )-102(that )-99(c)4(ome )-97(with )-101(diver)5(si)] TJ
-ET
-BT
-1 0 0 1 317.57 616.42 Tm
-[(fic)5(a)4(ti)-3(on, )-99(portf)4(oli)-3(o )-99(mana)6(ge)4(ment )-99(ha)4(s )-100(be)-5(c)4(ome )-97(a)-5( )] TJ
-ET
-BT
-1 0 0 1 72.024 588.82 Tm
 [(step)] TJ
 ET
 BT
-1 0 0 1 91.344 588.82 Tm
+1 0 0 1 91.344 616.42 Tm
 [(-)] TJ
 ET
 BT
-1 0 0 1 95.304 588.82 Tm
+1 0 0 1 95.304 616.42 Tm
  0.12 Tc[(by)] TJ
 ET
 BT
-1 0 0 1 107.18 588.82 Tm
+1 0 0 1 107.18 616.42 Tm
  0 Tc[(-)] TJ
 ET
 BT
-1 0 0 1 111.26 588.82 Tm
+1 0 0 1 111.26 616.42 Tm
 [(step )-238(de)4(c)4(isi)-4(on )-239(pr)-6(oc)4(e)4(ss. )-241(The)5( )-239(portf)4(oli)-3(o )-239(ma)-7(na)4(ge)4(ment )-239(include)4(s )-240(ident)-9(if)-8(y)20(in)-11(g)10(, )-239(se)3(le)-7(c)4(ti)-3(ng)10( )-239(a)4(nd)-9( )] TJ
 ET
 BT
-1 0 0 1 72.024 561.22 Tm
-[(ove)4(rse)6(e)4(in)-11(g)10( )-69(investm)-2(e)4(nts )-82(b)-9(y)20( )-69(indi)-3(viduals )-70(or )-66(inst)-4(it)-3(uti)-3(ons )-70(with )-71(the )-67(g)10(oa)4(l )-71(of )-66(ma)-7(x)-9(im)6(iz)-7(ing)8( )-69(re)7(turns )-69(while )] TJ
+1 0 0 1 72.024 588.82 Tm
+[(ove)4(rse)6(e)4(in)-11(g)10( )-69(investm)-2(e)4(nts )-82(b)-9(y)20( )-69(indi)-3(viduals )-70(or )-66(inst)-4(it)-3(uti)-3(ons )-70(with )-71(the )-67(g)10(oa)4(l )-71(of )-66(ma)-7(x)-9(im)6(iz)-7(ing)8( )-69(re)7(turns)] TJ
 ET
 BT
-1 0 0 1 72.024 533.59 Tm
+1 0 0 1 509.62 588.82 Tm
+[( )] TJ
+ET
+BT
+1 0 0 1 513.46 588.82 Tm
+[(while )] TJ
+ET
+BT
+1 0 0 1 72.024 561.22 Tm
 [(mi)-3(nim)-3(i)8(z)-5(ing)8( )-19(risk )-19(\(Sa)3(lo )] TJ
 ET
 BT
 /F3 12 Tf
-1 0 0 1 180.5 533.59 Tm
- -0.048 Tc[(et)] TJ
-ET
-BT
-1 0 0 1 189.14 533.59 Tm
- 0 Tc[( )] TJ
-ET
-BT
-1 0 0 1 192.53 533.59 Tm
-[(al.,)] TJ
+1 0 0 1 180.5 561.22 Tm
+[(e)4(t )-31(al.,)] TJ
 ET
 BT
 /F1 12 Tf
-1 0 0 1 207.89 533.59 Tm
+1 0 0 1 207.89 561.22 Tm
 [( )] TJ
 ET
 BT
-1 0 0 1 211.13 533.59 Tm
+1 0 0 1 211.13 561.22 Tm
 [(2024\))3(. )-19(As )-18(m)-11(a)4(rke)7(ts )-22(k)-9(e)-5(e)4(p )-19(e)4(volvi)-3(n)-9(g)10(, )-19(po)-9(rtf)4(oli)-3(o )-19(mana)-3(g)10(e)4(ment)-9( )-19(is )-22(e)4(ssential)-9( )] TJ
 ET
 BT
-1 0 0 1 72.024 505.99 Tm
+1 0 0 1 72.024 533.59 Tm
 [(for)6( )-209(long)] TJ
 ET
 BT
-1 0 0 1 112.82 505.99 Tm
+1 0 0 1 112.82 533.59 Tm
 [(-)] TJ
 ET
 BT
-1 0 0 1 116.78 505.99 Tm
+1 0 0 1 116.78 533.59 Tm
 [(ter)5(m )-221(g)10(row)5(th )] TJ
 ET
 BT
-1 0 0 1 183.74 505.99 Tm
+1 0 0 1 183.74 533.59 Tm
  0.024 Tc[(to)] TJ
 ET
 BT
-1 0 0 1 193.25 505.99 Tm
+1 0 0 1 193.25 533.59 Tm
  0 Tc[( )] TJ
 ET
 BT
-1 0 0 1 198.77 505.99 Tm
+1 0 0 1 198.77 533.59 Tm
 [(max)-7(im)6(iz)-7(e)4( )-209(re)7(turns )-209(\(Y)5(a)4(d)-9(a)4(v )] TJ
 ET
 BT
 /F3 12 Tf
-1 0 0 1 331.27 505.99 Tm
+1 0 0 1 331.27 533.59 Tm
 [(e)4(t )-211(al.,)] TJ
 ET
 BT
 /F1 12 Tf
-1 0 0 1 360.79 505.99 Tm
+1 0 0 1 360.79 533.59 Tm
 [( )] TJ
 ET
 BT
-1 0 0 1 366.31 505.99 Tm
+1 0 0 1 366.31 533.59 Tm
 [(2024\))3(. )-209(The)5( )-209(main )-209(g)10(oa)4(l )-211(of )-206(po)-9(rtf)4(oli)-3(o )] TJ
 ET
 BT
-1 0 0 1 72.024 478.39 Tm
+1 0 0 1 72.024 505.99 Tm
 [(c)4(onst)-2(ruc)7(ti)-3(on is )-2(to )] TJ
 ET
 BT
-1 0 0 1 157.7 478.39 Tm
+1 0 0 1 157.7 505.99 Tm
 [(d)10(iver)5(sify)] TJ
 ET
 BT
-1 0 0 1 199.97 478.39 Tm
+1 0 0 1 199.97 505.99 Tm
 [( )] TJ
 ET
 BT
-1 0 0 1 203.09 478.39 Tm
+1 0 0 1 203.09 505.99 Tm
 [(uns)-20(y)30(st)-12(e)4(matic r)5(isk t)-4(hroug)13(h a)4( two)] TJ
 ET
 BT
-1 0 0 1 356.23 478.39 Tm
+1 0 0 1 356.23 505.99 Tm
 [(-)] TJ
 ET
 BT
-1 0 0 1 360.19 478.39 Tm
-[(step a)5(ll)-3(oc)4(a)4(ti)-3(on plan. F)8(irstl)-13(y)20(, )] TJ
+1 0 0 1 360.19 505.99 Tm
+[(step a)5(ll)-3(oc)4(a)4(ti)-3(on plan. F)8(irstl)-13(y)20(, investors)-8( )] TJ
 ET
 BT
-1 0 0 1 496.66 478.39 Tm
-[(investors)-8( )] TJ
-ET
-BT
-1 0 0 1 72.024 450.79 Tm
+1 0 0 1 72.024 478.39 Tm
 [(ba)4(lanc)6(e)-5( )-59(risk)] TJ
 ET
 BT
-1 0 0 1 130.34 450.79 Tm
+1 0 0 1 130.34 478.39 Tm
 [(-)] TJ
 ET
 BT
-1 0 0 1 134.3 450.79 Tm
+1 0 0 1 134.3 478.39 Tm
 [(r)-6(e)4(turn )-58(b)-19(y)20( )-59(sp)-10(li)-3(tt)-3(ing)8( )-59(funds )-57(be)4(twe)-5(e)4(n )-59(the)-7( )-59(risk)] TJ
 ET
 BT
-1 0 0 1 336.19 450.79 Tm
+1 0 0 1 336.19 478.39 Tm
 [(-)] TJ
 ET
 BT
-1 0 0 1 340.15 450.79 Tm
+1 0 0 1 340.15 478.39 Tm
 [(fr)-3(e)4(e)4( )-69(a)4(ssets )-60(a)4(nd )-59(th)-11(e)4( )-69(risk)-9(y)20( )-69(a)4(ssets. )-60(Af)5(t)-11(e)4(r )-56(the)-7( )] TJ
 ET
 BT
-1 0 0 1 72.024 423.19 Tm
+1 0 0 1 72.024 450.79 Tm
 [(divi)-3(sion, )-72(diver)5(sifica)6(ti)-3(on )-69(is )-72(re)7(a)4(li)-3(z)-5(e)4(d )-69(b)-19(y)20( )-69(c)4(ombi)-3(nin)-11(g)10( )-79(a)4(ssets )-70(with )-71(low )-69(c)4(or)-6(re)7(lati)-11(on )-69(ther)5(e)4(b)-19(y)20( )-69(im)-3(provin)-8(g)10( )] TJ
 ET
 BT
 /F4 12 Tf
-1 0 0 1 72.024 395.59 Tm
-[<0057004B00480003005300520055>5<005700490052004F004C0052>-2<00B6005600030055>5<004C0056004E>] TJ
+1 0 0 1 72.024 423.19 Tm
+[<0057004B00480003005300520055>5<005700490052004F004C0052>-2<00B6005600030055>5<004C>] TJ
 ET
 BT
 /F1 12 Tf
-1 0 0 1 161.3 395.59 Tm
-[(-)] TJ
+1 0 0 1 150.62 423.19 Tm
+ 0.012 Tc[(sk)] TJ
 ET
 BT
-1 0 0 1 165.26 395.59 Tm
-[(re)7(turn)-8( prof)6(il)-3(e)4( a)4(nd movi)-3(ng)10( th)] TJ
+1 0 0 1 161.3 423.19 Tm
+ 0 Tc[(-)] TJ
 ET
 BT
-1 0 0 1 301.13 395.59 Tm
-[(e)4( )-9(e)-5(ff)6(icie)4(nt fr)4(onti)-3(e)4(r to be)5(tt)-3(e)-5(r )-6(re)7(sult)-4(s \(Z)13(h)-9(a)4(n)-9(g)10(, 2024\))3(. )] TJ
+1 0 0 1 165.26 423.19 Tm
+[(re)7(turn)-8( prof)6(il)-3(e)4( a)4(nd movi)-3(ng)10( the )-7(e)-5(ff)6(icie)4(nt fr)4(onti)-3(e)4(r to be)5(tt)-3(e)-5(r )-6(re)7(sult)-4(s \(Z)13(h)-9(a)4(n)-9(g)10(, 2024\))3(. )] TJ
 ET
 BT
-1 0 0 1 72.024 367.97 Tm
+1 0 0 1 72.024 395.59 Tm
 [(W)-5(it)-3(hin )-171(th)8(is )-172(fr)6(a)4(mew)4(ork, )-176(the )-167(c)4(ha)4(ll)-3(e)4(n)-9(g)10(e)4( )-169(o)-9(f )-166(de)4(ter)5(mi)-13(ning)8( )-169(a)4( )-169(port)-8(folio )-170(c)4(ompos)-2(it)-3(ion )-171(is )-172(a)4(n )-169(im)-3(porta)5(nt)8( )] TJ
 ET
 BT
-1 0 0 1 72.024 340.25 Tm
-[(de)4(c)4(isi)-4(on )50(proble)5(m )48(whic)4(h )50(c)-5(a)4(n )50(be)4( )50(solved )51(throug)11(h )50(port)-8(folio )49(opti)-3(mi)6(z)-5(a)4(ti)-3(on )50(tec)6(hni)8(que)4(s )49(\(Sa)3(lo )] TJ
+1 0 0 1 72.024 367.85 Tm
+[(de)4(c)4(isi)-4(on )50(proble)5(m )48(whic)4(h )50(c)-5(a)4(n )50(be)4( )50(solved )51(throug)11(h )50(port)-8(folio )49(opti)-3(mi)6(z)-5(a)4(ti)-3(on )50(tec)6(hni)8(que)4(s )] TJ
+ET
+BT
+1 0 0 1 455.74 367.85 Tm
+[(\(Sa)3(lo )] TJ
 ET
 BT
 /F3 12 Tf
-1 0 0 1 483.46 340.25 Tm
+1 0 0 1 483.46 367.85 Tm
 [(e)4(t )48(al.,)] TJ
 ET
 BT
 /F1 12 Tf
-1 0 0 1 509.86 340.25 Tm
+1 0 0 1 509.86 367.85 Tm
 [( )] TJ
 ET
 BT
-1 0 0 1 512.26 340.25 Tm
+1 0 0 1 512.26 367.85 Tm
 [(2024\))3(.)] TJ
 ET
 BT
-1 0 0 1 543.1 340.25 Tm
+1 0 0 1 543.1 367.85 Tm
 [( )] TJ
 ET
  EMC  /P <</MCID 2>> BDC BT
-1 0 0 1 72.024 302.81 Tm
+1 0 0 1 72.024 330.41 Tm
 [(P)-3(ortf)4(oli)-3(o )] TJ
 ET
 BT
-1 0 0 1 117.02 302.81 Tm
+1 0 0 1 117.02 330.41 Tm
 [(opti)-3(mi)6(z)-5(a)4(ti)-3(on)] TJ
 ET
 BT
-1 0 0 1 177.74 302.81 Tm
+1 0 0 1 177.74 330.41 Tm
 [( )] TJ
 ET
 BT
-1 0 0 1 180.02 302.81 Tm
+1 0 0 1 180.02 330.41 Tm
 [(is )57(one)4( )60(of )63(the)-7( )60(ke)-15(y)20( )60(t)-11(e)4(ne)4(ts )57(of)-6( )60(investm)-2(e)4(nt )58(theor)-14(y)20(, )60(providin)-10(g)10( )50(a)4( )60(s)-20(y)20(stema)3(ti)-3(c)4( )60(str)-9(a)4(te)-7(g)-9(y)10( )] TJ
 ET
 BT
-1 0 0 1 72.024 275.21 Tm
+1 0 0 1 72.024 302.81 Tm
 [(for)6( )30(de)4(a)4(li)-3(n)-9(g)10( )30(with )28(ma)-7(rke)7(t )28(u)-9(npre)7(dicta)4(bil)-3(it)-13(y)20(. )30(This )28(of)-6(fe)-2(rs )32(a)4( )30(s)-20(y)20(stema)3(ti)-3(c)4( )30(f)-6(ra)7(mew)4(o)-9(r)-6(k )30(to )28(he)4(lp )28(investors )31(find )] TJ
 ET
 BT
-1 0 0 1 72.024 247.61 Tm
-[(a)4( )-9(ba)4(lanc)-3(e)4( )-9(be)4(tw)-9(e)4(e)4(n )-9(risk )-19(a)-5(nd )-9(re)7(turn )-8(a)4(nd )-9(thus )] TJ
+1 0 0 1 72.024 275.21 Tm
+[(a)4( )-9(ba)4(lanc)-3(e)4( )-9(be)4(tw)-9(e)4(e)4(n )-9(risk )-19(a)-5(nd )-9(re)7(turn)] TJ
 ET
 BT
-1 0 0 1 280.25 247.61 Tm
+1 0 0 1 233.57 275.21 Tm
+[( )] TJ
+ET
+BT
+1 0 0 1 236.69 275.21 Tm
+[(a)4(nd )-9(thus )] TJ
+ET
+BT
+1 0 0 1 280.25 275.21 Tm
 [(max)-7(im)-3(iz)-7(e)] TJ
 ET
 BT
-1 0 0 1 327.79 247.61 Tm
+1 0 0 1 327.79 275.21 Tm
 [( )] TJ
 ET
 BT
-1 0 0 1 330.91 247.61 Tm
-[(their)3( )-9(re)7(turn)] TJ
+1 0 0 1 330.91 275.21 Tm
+[(their)3( )-9(re)7(turns )-9(on )-9(e)4(ve)-5(r)-6(y)20( )-9(unit)-3( )-9(of )-16(risk )-9(the)-17(y)20( )-9(take)6(.)-9( )] TJ
 ET
 BT
-1 0 0 1 384.55 247.61 Tm
-[(s )-10(on )-9(e)4(ve)-5(r)-6(y)20( )-9(unit)-3( )-9(of )-16(risk )-9(the)-17(y)20( )-9(take)6(.)-9( )] TJ
-ET
-BT
-1 0 0 1 72.024 220.01 Tm
+1 0 0 1 72.024 247.61 Tm
 [(Thus, )-239(the )-237(portf)4(oli)-3(o )-239(opt)8(i)8(mi)-3(z)-5(a)4(ti)-3(on)10( )-239(proc)7(e)4(ss )-241(he)4(lps )-242(in )-241(g)10(uidi)-3(ng)10( )-239(investors )-238(throug)11(h )-239(the )-237(unc)4(e)4(rt)-8(a)4(int)-13(y)20(,)-9( )] TJ
 ET
 BT
-1 0 0 1 72.024 192.38 Tm
+1 0 0 1 72.024 220.01 Tm
 [(volatil)-3(it)-13(y)30(,)] TJ
 ET
 BT
-1 0 0 1 118.22 192.38 Tm
+1 0 0 1 118.22 220.01 Tm
 [( )] TJ
 ET
 BT
-1 0 0 1 121.82 192.38 Tm
-[(a)4(nd )-49(unpr)-6(e)4(dicta)-5(bil)-3(it)-13(y)30( )-49(of )-46(fina)5(n)-9(c)4(ial )-49(mar)5(ke)4(t)-11(s, )-50(a)4(nd )-49(a)4(ssi)-3(sts)-3( )-49(in )-41(mee)6(ti)-3(ng)10( )-49(their)3( )-49(unique )-47(fina)5(nc)4(ial)-9( )] TJ
+1 0 0 1 121.82 220.01 Tm
+[(a)4(nd )-49(unpr)-6(e)4(dicta)-5(bil)-3(it)-13(y)30( )-49(of )-46(fina)5(n)-9(c)4(ial )-49(mar)5(ke)4(t)-11(s, )-50(a)4(nd )-49(a)4(ssi)-3(sts)-3( )-49(in )-41(mee)6(ti)-3(ng)10( )-49(their)3( )-49(unique )-47(fina)5(nc)] TJ
+ET
+BT
+1 0 0 1 527.98 220.01 Tm
+[(ial)-9( )] TJ
+ET
+BT
+1 0 0 1 72.024 192.38 Tm
+[(g)10(oa)4(ls )-112(\()-6(Na)6(ha)-5(ri, )-108(2025\))3(. )-109(Th)-8(e)4( )-109(mar)5(ke)4(t )-111(downtur)3(ns )-110(that)-9( )-109(ha)4(ve)4( )-109(oc)-5(c)4(urr)-3(e)4(d, )-109(including)8( )-109(the )-117(g)10(lobal )-109(fin)-8(a)4(nc)4(ial)-9( )] TJ
 ET
 BT
 1 0 0 1 72.024 164.78 Tm
-[(g)10(oa)4(ls )-112(\()-6(Na)6(ha)-5(ri, )-108(2025\))3(. )-109(Th)-8(e)4( )-109(m)] TJ
-ET
-BT
-1 0 0 1 213.29 164.78 Tm
-[(a)4(rke)7(t )-111(downtur)3(ns )-110(that)-9( )-109(ha)4(ve)4( )-109(oc)-5(c)4(urr)-3(e)4(d, )-109(including)8( )-109(the )-117(g)10(lobal )-109(fin)-8(a)4(nc)4(ial)-9( )] TJ
-ET
-BT
-1 0 0 1 72.024 137.18 Tm
 [(c)4(risis )-362(of )-356(2008 )-359(\(G)5(lobal)-9( )-359(F)6(inanc)6(ial )-359(C)-2(risis\), )-359(we)-3(r)-6(e)4( )-359(e)4(videnc)-3(e)4( )-359(of )-356(the )-357(inad)-7(e)4(qua)4(c)-15(y)20( )-359(of )-356(t)-11(ra)7(dit)-3(ional )] TJ
 ET
 BT
+1 0 0 1 72.024 137.18 Tm
+[(diver)5(sifica)6(ti)-3(on )-29(methods. )-30(C)-2(onse)3(que)4(ntl)-13(y)20(, )-29(ther)-4(e)4( )-29(ha)4(s )-40(be)4(e)4(n )-29(a)4( )-39(g)10(r)-6(e)4(a)4(ter)5( )-29(d)-9(e)4(man)] TJ
+ET
+BT
+1 0 0 1 413.95 137.18 Tm
+[(d )-29(fo)-6(r )-26(a)4(nd )-29(usa)-6(g)10(e)4( )-29(of )-26(models)-10( )] TJ
+ET
+BT
 1 0 0 1 72.024 109.58 Tm
-[(diver)5(sifica)6(ti)-3(on )-29(methods. )-30(C)-2(onse)3(que)4(ntl)-13(y)20(, )-29(ther)-4(e)4( )-29(ha)4(s )-40(be)4(e)4(n )-29(a)4( )-39(g)10(r)-6(e)4(a)4(ter)5( )-29(d)-9(e)4(mand )-27(fo)-6(r )-26(a)4(nd )-29(usa)-6(g)10(e)4( )-29(of )-26(models)-10( )] TJ
+[(that )-309(a)4(ll)-3(ow )-307(for)6( )-309(a)4( )-309(mo)-11(re)7( )-319(sophi)-2(sti)-4(c)4(a)4(ted )-307(a)4(na)4(l)-21(y)20(sis)-3( )-309(of )-306(c)4(orr)-3(e)4(late)4(d )-309(risk )-319(\(Se)3(ne)4(s)-10(c)4(a)4(ll)-3( )-309(&)8( )-319(L)11(o)-9(w, )-307(2024\))3(.)-9( )] TJ
 ET
 BT
 1 0 0 1 72.024 81.984 Tm
-[(that )] TJ
+[(Optim)-3(iz)-7(a)4(ti)-3(on )-19(models )-20(pro)13(vide )-17(a)4( )-19(struc)4(tu)-11(re)7( )-19(fo)-6(r )-16(a)4(n)-9( )-19(investor')12(s)-10( )-19(de)4(c)4(isi)-4(on)] TJ
 ET
 BT
-1 0 0 1 96.744 81.984 Tm
-[(a)4(ll)-3(ow )-307(for)6( )-309(a)4( )-309(mo)-11(re)7( )-319(sophi)-2(sti)-4(c)4(a)4(ted )-307(a)4(na)4(l)-21(y)20(sis)-3( )-309(of )-306(c)4(orr)-3(e)4(late)4(d )-309(risk )-319(\(Se)3(ne)4(s)-10(c)4(a)4(ll)-3( )-309(&)8( )-319(L)11(o)-9(w, )-307(2024\))3(.)-9( )] TJ
+1 0 0 1 390.79 81.984 Tm
+[(-)] TJ
+ET
+BT
+1 0 0 1 394.75 81.984 Tm
+[(makin)-9(g)10( )-29(a)4(nd )-19(int)-3(e)-5(g)10(ra)7(te)-7( )-19(mul)-3(ti)-3(ple)-7( )] TJ
 ET
  EMC 
 Q
@@ -1530,7 +1542,7 @@ endobj
 endobj
 38 0 obj
 <<
-/Length 8125
+/Length 8223
 >>
 stream
 q
@@ -1541,221 +1553,231 @@ q
 0 g
 /GS8 gs
 0 G
-[(Optim)-3(iz)-7(a)4(ti)-3(on )-19(models )-20(pro)13(vide )-17(a)4( )-19(struc)4(tu)-11(re)7( )-19(fo)-6(r )-16(a)4(n)-9( )-19(investor')12(s)-10( )-19(de)4(c)4(isi)-4(on)] TJ
+[(dim)-3(e)4(nsion)-2(s )-110(of )-106(risk, )-99(including)8( )-109(c)4(re)7(dit)-3(, )-109(mar)5(ke)4(t)] TJ
 ET
 BT
-1 0 0 1 390.79 709.18 Tm
-[(-)] TJ
+1 0 0 1 287.93 709.18 Tm
+[( )] TJ
 ET
 BT
-1 0 0 1 394.75 709.18 Tm
-[(makin)-9(g)10( )-29(a)4(nd )-19(int)-3(e)-5(g)10(ra)7(te)-7( )-19(mul)-3(ti)-3(ple)-7( )] TJ
+1 0 0 1 292.25 709.18 Tm
+[(a)4(nd )-109(l)-11(iqui)-3(dit)-13(y)30( )-109(risk, )-109(int)-3(o )-109(a)4( )-109(sing)7(le )-107(proc)7(e)4(ss )-111(of )-106(making)10( )] TJ
 ET
 BT
 1 0 0 1 72.024 681.58 Tm
-[(dim)-3(e)4(nsion)-2(s )-110(of )-106(risk, )-99(including)8( )-109(c)4(re)7(dit)-3(, )-109(mar)5(ke)4(t )-111(a)4(nd )-109(l)-11(iqui)-3(dit)-13(y)30( )-109(risk, )-109(int)-3(o )-109(a)4( )-109(sin)] TJ
-ET
-BT
-1 0 0 1 430.87 681.58 Tm
-[(g)10(le )-107(proc)7(e)4(ss )-111(of )-106(making)10( )] TJ
-ET
-BT
-1 0 0 1 72.024 653.98 Tm
 [(investm)-2(e)4(nt )-171(de)4(c)4(isi)-4(ons )-170(ra)7(t)-11(he)4(r )-166(than )-167(r)-6(e)4(l)-11(y)20(in)-11(g)10( )-169(on )-169(tr)-8(a)4(d)-9(it)-3(ional )-169(methods )-170(of )-166(diver)5(sifica)6(ti)-3(on )-169(\(T)4(ji)-3(widjaja)4(, )] TJ
 ET
 BT
-1 0 0 1 72.024 626.26 Tm
+1 0 0 1 72.024 653.86 Tm
 [(2025\))3(.)] TJ
 ET
 BT
-1 0 0 1 102.98 626.26 Tm
+1 0 0 1 102.98 653.86 Tm
 [( )] TJ
 ET
  EMC  /P <</MCID 1>> BDC BT
-1 0 0 1 72.024 588.82 Tm
+1 0 0 1 72.024 616.42 Tm
 [(The)5( mea)6(n)] TJ
 ET
 BT
-1 0 0 1 119.54 588.82 Tm
+1 0 0 1 119.54 616.42 Tm
 [(-)] TJ
 ET
 BT
-1 0 0 1 123.5 588.82 Tm
+1 0 0 1 123.5 616.42 Tm
 [(v)-9(a)4(ria)5(nc)-5(e)4( mode)-7(l i)-3(ntroduc)5(e)4(d b)-9(y)20( H)-7(a)4(rr)-13(y)20( )] TJ
 ET
 BT
-1 0 0 1 300.41 588.82 Tm
+1 0 0 1 300.41 616.42 Tm
 [(M)-10(a)-5(rkow)5(it)-3(z)-5( \()] TJ
 ET
 BT
-1 0 0 1 360.31 588.82 Tm
+1 0 0 1 360.31 616.42 Tm
 [(1952\))3( is on)-2(e)4( of the)5( most)-4( foun)3(da)4(ti)-3(ona)4(l)8( )] TJ
 ET
 BT
+1 0 0 1 72.024 588.82 Tm
+[(portf)4(oli)-3(o )-69(opti)-3(mi)-3(z)-5(a)4(ti)-3(on )-69(m)8(ode)4(ls, )-72(whic)4(h )-79(re)7(late)4(d)-9( )-69(re)7(tu)-11(rns )-67(a)4(nd )-79(risks )-70(of)-6( )-69(a)4(n )-79(a)4(sset )-79(to )-71(it)-3(s )-70(e)4(x)-9(pe)4(c)4(tation )-71(a)4(nd)-9( )] TJ
+ET
+BT
 1 0 0 1 72.024 561.22 Tm
-[(portf)4(oli)-3(o )-69(opti)-3(mi)-3(z)-5(a)4(ti)-3(on )-69(m)8(ode)4(ls, )-72(whic)4(h )-79(r)] TJ
-ET
-BT
-1 0 0 1 261.17 561.22 Tm
-[(e)4(late)4(d)-9( )-69(re)7(tu)-11(rns )-67(a)4(nd )-79(risks )-70(of)-6( )-69(a)4(n )-79(a)4(sset )-79(to )-71(it)-3(s )-70(e)4(x)-9(pe)4(c)4(tation )-71(a)4(nd)-9( )] TJ
-ET
-BT
-1 0 0 1 72.024 533.59 Tm
 [(va)4(ria)5(nc)-5(e)4( )-289(of )-296(re)7(turns )-299(whic)4(h )-289(led )-287(to )-291(the)-7( )-289(e)4(f)-6(fic)5(ient )-299(fr)6(onti)-3(e)4(r )-296(c)4(onc)4(e)4(pt )-301(\()-6(Z)11(surki)-9(s )] TJ
 ET
 BT
 /F3 12 Tf
-1 0 0 1 448.87 533.59 Tm
+1 0 0 1 448.87 561.22 Tm
 [(e)4(t )-291(al.,)] TJ
 ET
 BT
 /F1 12 Tf
-1 0 0 1 479.38 533.59 Tm
+1 0 0 1 479.38 561.22 Tm
 [( )] TJ
 ET
 BT
-1 0 0 1 485.86 533.59 Tm
+1 0 0 1 485.86 561.22 Tm
 [(2024\))3(. )-289(His)-10( )] TJ
 ET
 BT
-1 0 0 1 72.024 505.99 Tm
-[(found)3(a)4(ti)-3(ona)4(l )18(c)4(ontribut)-2(ions )17(laid )20(the )22(found)3(a)4(ti)-3(ons )19(for)6( )10(the )22(moder)5(n )20(portf)4(oli)-3(o )20(theo)-7(r)-6(y)20( )10(\(Mba)6( )] TJ
+1 0 0 1 72.024 533.59 Tm
+[(found)3(a)4(ti)-3(ona)4(l )18(c)4(ontribut)-2(ions )17(laid )20(the )22(found)3(a)4(ti)-3(ons )19(for)6( )10(the )22(moder)5(n )20(por)] TJ
+ET
+BT
+1 0 0 1 388.63 533.59 Tm
+[(tfolio)-2( )20(theo)-7(r)-6(y)20( )10(\(Mba)6( )] TJ
 ET
 BT
 /F3 12 Tf
-1 0 0 1 479.62 505.99 Tm
+1 0 0 1 479.62 533.59 Tm
 [(e)4(t )18(al.,)] TJ
 ET
 BT
 /F1 12 Tf
-1 0 0 1 506.38 505.99 Tm
+1 0 0 1 506.38 533.59 Tm
 [( )] TJ
 ET
 BT
-1 0 0 1 509.14 505.99 Tm
+1 0 0 1 509.14 533.59 Tm
 [(2022\))3(. )] TJ
 ET
 BT
-1 0 0 1 72.024 478.39 Tm
+1 0 0 1 72.024 505.99 Tm
 [(B)-12(y)20( )60(int)-3(roduc)7(in)-11(g)10( )60(m)-11(a)4(thema)4(t)-11(ica)6(l )58(opti)-3(mi)-3(z)-5(a)4(ti)-3(on )60(tec)6(hniques, )61(the )62(a)4(ss)-11(e)4(t )58(a)4(ll)-3(oc)4(a)4(ti)-3(on )60(p)-9(roble)5(m )58(wa)6(s )49(for)6(maliz)-7(e)4(d )] TJ
 ET
 BT
-1 0 0 1 72.024 450.79 Tm
+1 0 0 1 72.024 478.39 Tm
 [(int)-3(o )-39(a)4(n )-39(opti)-3(mi)-3(z)-5(a)4(ti)-3(on )-39(fr)6(a)-5(mew)4(ork )-36(ba)4(s)-10(e)4(d )-39(on)-9( )-39(the )-37(tr)-8(a)-5(de)] TJ
 ET
 BT
-1 0 0 1 318.05 450.79 Tm
+1 0 0 1 318.05 478.39 Tm
 [(-)] TJ
 ET
 BT
-1 0 0 1 322.03 450.79 Tm
+1 0 0 1 322.03 478.39 Tm
 [(off)-3( )-39(be)4(twe)-5(e)4(n )-49(e)4(x)-9(pe)4(c)4(ted )-47(re)7(turn )-48(a)4(nd )-39(risk. )-39(W)-5(it)-3(hin)8( )] TJ
 ET
 BT
+1 0 0 1 72.024 450.79 Tm
+[(thi)-3(s )-30(fr)6(a)4(mew)4(o)-9(rk, )-26(investor)-7(s )-30(ma)-17(y)20( )] TJ
+ET
+BT
+1 0 0 1 222.53 450.79 Tm
+[(e)4(it)-3(he)-5(r )-26(mi)-3(nim)-3(iz)-7(e)4( )-29(portf)4(oli)-3(o )-29(risk )-29(fo)-6(r )-26(a)-5( )-39(g)10(iven )-27(l)-11(e)4(ve)4(l )-31(of)-6( )-29(e)4(x)-9(pe)4(c)4(ted)-7( )-29(re)7(tur)-8(n)-9( )] TJ
+ET
+BT
 1 0 0 1 72.024 423.19 Tm
-[(thi)-3(s )-30(fr)6(a)4(mew)4(o)-9(rk, )-26(investor)-7(s )-30(ma)-17(y)20( )-29(e)4(it)-3(he)-5(r )-26(mi)-3(nim)-3(iz)-7(e)4( )-29(portf)4(oli)-3(o )] TJ
-ET
-BT
-1 0 0 1 347.47 423.19 Tm
-[(risk )-29(fo)-6(r )-26(a)-5( )-39(g)10(iven )-27(l)-11(e)4(ve)4(l )-31(of)-6( )-29(e)4(x)-9(pe)4(c)4(ted)-7( )-29(re)7(tur)-8(n)-9( )] TJ
-ET
-BT
-1 0 0 1 72.024 395.59 Tm
 [(or )-6(max)-7(im)-3(i)8(z)-5(e)4( )-9(e)4(x)-9(pe)4(c)4(ted )-7(re)7(turn )-8(subj)-2(e)4(c)4(t )-11(to )-11(a)4( )-9(spe)3(c)4(ifie)3(d)-9( )-9(risk )-9(c)4(onst)-2(ra)7(int)-3(, )-9(lea)6(ding)8( )-9(t)-11(o )-9(the )-7(de)4(riva)5(ti)-3(on )-9(of )-6(the )] TJ
 ET
 BT
-1 0 0 1 72.024 367.97 Tm
+1 0 0 1 72.024 395.59 Tm
 [(e)4(ff)6(icie)4(nt )-21(fr)6(onti)-3(e)-5(r. )-16(The)5( )-19(the)-7(or)-6(y)20( )-19(is )-22(ba)4(se)3(d )-19(on )-19(va)4(rious )-19(a)-5(ssum)-3(pti)-3(ons )-20(suc)3(h )-19(a)4(s: )-22(Ho)12(mog)8(e)4(n)-9(e)4(it)-13(y)20( )-19(of )] TJ
 ET
 BT
-1 0 0 1 494.62 367.97 Tm
+1 0 0 1 494.62 395.59 Tm
 [(investors)-8(')] TJ
 ET
 BT
-1 0 0 1 540.1 367.97 Tm
+1 0 0 1 540.1 395.59 Tm
 [( )] TJ
 ET
 BT
+1 0 0 1 72.024 367.97 Tm
+[(e)4(x)-9(pe)4(c)4(tations)-2(, )-219(investors')11( )-229(de)4(c)4(isi)-4(ons )-220(ba)4(se)3(d )-219(solel)-20(y)20( )-229(on )-219(e)4(x)-9(pe)4(c)4(ted )-217(re)7(tu)-11(rns )-217(a)4(nd)-9( )-219(va)4(ria)5(nc)-5(e)4(s, )-220(e)4(x)-9(hibi)-3(ti)-3(ng )] TJ
+ET
+BT
 1 0 0 1 72.024 340.37 Tm
-[(e)4(x)-9(pe)4(c)4(tations)-2(, )-219(i)] TJ
-ET
-BT
-1 0 0 1 144.02 340.37 Tm
-[(nve)4(stors')9( )-229(de)4(c)4(isi)-4(ons )-220(ba)4(se)3(d )-219(solel)-20(y)20( )-229(on )-219(e)4(x)-9(pe)4(c)4(ted )-217(re)7(tu)-11(rns )-217(a)4(nd)-9( )-219(va)4(ria)5(nc)-5(e)4(s, )-220(e)4(x)-9(hibi)-3(ti)-3(ng )] TJ
-ET
-BT
-1 0 0 1 72.024 312.77 Tm
 [(ra)7(ti)-3(ona)4(l )-51(risk)] TJ
 ET
 BT
-1 0 0 1 130.22 312.77 Tm
+1 0 0 1 130.22 340.37 Tm
 [(-)] TJ
 ET
 BT
-1 0 0 1 134.18 312.77 Tm
+1 0 0 1 134.18 340.37 Tm
 [(a)4(ve)4(rs)-7(e)4( )-49(be)4(ha)-5(vior. )-48(F)6(inanc)6(ial )-49(mar)5(ke)4(ts )-52(a)-5(re)7( )-49(a)4(ssum)-3(e)4(d )-49(to )-51(be)4( )-49(fr)6(ictionl)-3(e)4(ss )-51(a)4(nd )-49(e)4(ff)6(icie)4(nt )-51(with)8( )] TJ
 ET
 BT
+1 0 0 1 72.024 312.77 Tm
+[(fr)6(e)4(e)4(l)-21(y)20( )30(divi)-3(sibl)-4(e)4( )30(a)4(ssets, )29(un)-9(re)7(stricte)4(d )30(short )30(s)-10(e)4(ll)-3(ing)8(,)] TJ
+ET
+BT
+1 0 0 1 301.13 312.77 Tm
+[( )] TJ
+ET
+BT
+1 0 0 1 303.77 312.77 Tm
+[(a)-5(nd )30(pric)5(e)4(s )29(that )30(full)-20(y)20( )30(r)-6(e)4(fle)-4(c)4(t )28(a)4(va)4(il)-3(a)4(ble )32(info)-8(rma)5(ti)-3(on.)-9( )] TJ
+ET
+BT
 1 0 0 1 72.024 285.17 Tm
-[(fr)6(e)4(e)4(l)-21(y)20( )30(divi)-3(sibl)-4(e)4( )30(a)4(ssets, )29(un)-9(re)7(stricte)4(d )30(short )30(s)-10(e)4(ll)-3(ing)8(, )30(a)-5(nd )30(pric)5(e)4(s )29(that )30(full)-20(y)20( )30(r)-6(e)4(f)] TJ
-ET
-BT
-1 0 0 1 414.31 285.17 Tm
-[(le)-7(c)4(t )28(a)4(va)4(il)-3(a)4(ble )32(info)-8(rma)5(ti)-3(on.)-9( )] TJ
-ET
-BT
-1 0 0 1 72.024 257.57 Tm
 [(Asse)4(t )-101(re)7(turns )-109(a)4(re)-2( )-99(unc)4(e)-5(rta)-4(in, )-101(norma)5(ll)-13(y)20( )-99(dist)-4(ribute)3(d, )-109(a)4(nd )-99(c)4(or)-6(re)7(late)4(d,)-9( )-99(while )-97(in)-11(divi)-3(dua)4(l )-101(investors )-98(a)4(re)-2( )] TJ
 ET
 BT
-1 0 0 1 72.024 229.85 Tm
+1 0 0 1 72.024 257.45 Tm
 [(pric)5(e)4( take)-3(rs w)4(hose)3( tr)-8(a)4(de)4(s)-10( do not af)5(fe)-2(c)4(t m)-3(a)4(rke)7(t pri)-10(c)-5(e)4(s \(H)4(e)4(, 2022)-9(\).)] TJ
 ET
 BT
-1 0 0 1 382.75 229.85 Tm
+1 0 0 1 382.75 257.45 Tm
 [( )] TJ
 ET
  EMC  /P <</MCID 2>> BDC BT
 /F4 12 Tf
-1 0 0 1 72.024 192.38 Tm
+1 0 0 1 72.024 220.01 Tm
 [<003A>-5<004B004C004F>-3<0048>4<0003>-89<00300044>3<0055004E0052005A>5<004C0057>-3<005D>-5<00B600560003>-87<005000480044>-3<0051>] TJ
 ET
 BT
 /F1 12 Tf
-1 0 0 1 196.97 192.38 Tm
+1 0 0 1 196.97 220.01 Tm
 [(-)] TJ
 ET
 BT
-1 0 0 1 200.93 192.38 Tm
-[(va)4(ria)5(n)-9(c)4(e)4( )-89(po)-9(rtf)4(oli)-3(o )-89(theo)-7(r)-6(y)20( )-99(re)7(mains)-10( )-89(found)3(a)4(t)] TJ
+1 0 0 1 200.93 220.01 Tm
+[(va)4(ria)5(n)-9(c)4(e)4( )-89(po)-9(rtf)4(o)] TJ
 ET
 BT
-1 0 0 1 405.31 192.38 Tm
-[(ional )-99(in )-91(fina)5(nc)4(e)-5( )-89(re)7(s)-10(e)4(a)4(r)-6(c)4(h, )-89(it)-3( )] TJ
+1 0 0 1 274.97 220.01 Tm
+[(li)-3(o )-89(theo)-7(r)-6(y)20( )-99(re)7(mains)-10( )-89(found)3(a)4(ti)-3(ona)4(l )-101(in )-91(fina)5(nc)4(e)-5( )-89(re)7(s)-10(e)4(a)4(r)-6(c)4(h, )-89(it)-3( )] TJ
 ET
 BT
-1 0 0 1 72.024 164.78 Tm
+1 0 0 1 72.024 192.38 Tm
 [(ha)4(s )-70(pra)7(c)4(ti)-3(c)4(a)4(l )-71(li)-3(mi)-3(tations)-2(.)10( )-69(One)6( )-69(ke)-5(y)20( )-69(c)4(ha)4(ll)-3(e)4(n)-9(ge)4( )-69(a)4(rise)-5(s )-70(fr)6(om )-71(e)4(rr)6(ors )-67(in )-71(e)4(sti)-4(mati)8(ng)10( )-69(the )-67(e)4(x)-9(pe)4(c)4(ted )-67(re)7(turn)-8( )] TJ
 ET
 BT
-1 0 0 1 72.024 137.18 Tm
+1 0 0 1 72.024 164.78 Tm
 [(ve)4(c)4(tor )-48(a)4(nd )-59(c)4(ova)4(ri)-8(a)4(nc)4(e)4( )-49(m)-11(a)4(trix)-10(, )-49(whic)4(h )-49(c)4(a)4(n )-49(lea)6(d )-49(to )-61(portf)4(oli)-3(os )-50(that )-49(diff)4(e)4(r )-46(sub)-10(stantiall)-12(y)20( )-49(fr)6(om )-51(the )-47(tru)-8(e)-5( )] TJ
 ET
 BT
+1 0 0 1 72.024 137.18 Tm
+[(opt)] TJ
+ET
+BT
+1 0 0 1 87.384 137.18 Tm
+[(im)-3(um )-131(\()13(J)-10(ob, )-129(2022\))3(. )-129(A )-127(se)3(c)4(ond )-129(li)-3(mi)-3(tation )-131(is )-132(that )-129(MVO)3( )-129(doe)4(s )-130(not )-131(a)4(c)-5(c)4(oun)-9(t )-131(for)6( )-129(tail )-131(risk. )-129(This )-131(is)7( )] TJ
+ET
+BT
 1 0 0 1 72.024 109.58 Tm
-[(opti)-3(mum)-3( )-129(\()13(J)-10(ob, )-129(2022\))3(. )-129(A )-127(se)3(c)4(ond)] TJ
-ET
-BT
-1 0 0 1 230.21 109.58 Tm
-[( )] TJ
-ET
-BT
-1 0 0 1 234.77 109.58 Tm
-[(li)-3(mi)-3(tation )-131(is )-132(that )-129(MVO)3( )-129(doe)4(s )-130(not )-131(a)4(c)-5(c)4(oun)-9(t )-131(for)6( )-129(tail )-131(risk. )-129(This )-131(is)7( )] TJ
+[(be)4(c)4(a)4(use)-6( )-69(of )-66(v)-9(a)4(ria)5(n)-9(c)4(e)4( )-79(whic)4(h )-69(mea)6(sur)-7(e)4(s )-70(d)-9(e)4(viation )-71(fr)-3(om )-71(mea)6(n )-69(a)4(nd)-9( )-69(thi)-3(s )-70(c)4(a)4(n)-9( )-69(re)-2(sult)-4( )-69(in )-71(hug)10(e)-5( )-69(loss)-3(e)4(s )-70(fo)-6(r)-6( )] TJ
 ET
 BT
 1 0 0 1 72.024 81.984 Tm
-[(be)4(c)4(a)4(use)-6( )-69(of )-66(v)-9(a)4(ria)5(n)-9(c)4(e)4( )-79(whic)4(h )-69(mea)6(sur)-7(e)4(s )-70(d)-9(e)4(viation )-71(fr)-3(om )-71(mea)6(n )-69(a)4(nd)-9( )-69(thi)-3(s )-70(c)4(a)4(n)-9( )-69(re)-2(sult)-4( )-69(in )-71(hug)10(e)-5( )-69(loss)-3(e)4(s )-70(fo)-6(r)-6( )] TJ
+[(investors )-98(during)11( )-109(e)4(x)-9(tre)5(me)-7( )-99(e)4(ve)4(nts )-102(\(W)-2(a)4(n)-9(g)10( )] TJ
+ET
+BT
+/F3 12 Tf
+1 0 0 1 269.69 81.984 Tm
+[(e)4(t )-101(al.,)] TJ
+ET
+BT
+/F1 12 Tf
+1 0 0 1 297.89 81.984 Tm
+[( )] TJ
+ET
+BT
+1 0 0 1 302.09 81.984 Tm
+[(20)-9(24\) )-96(e)4(spe)-6(c)4(iall)-11(y)20( )-99(in )-111(e)4(mer)-4(g)10(i)] TJ
+ET
+BT
+1 0 0 1 433.51 81.984 Tm
+[(ng)10( )-99(ma)-7(rke)7(ts )-102(whic)4(h )-109(a)4(re)-2( )] TJ
 ET
  EMC 
 Q
@@ -1831,7 +1853,7 @@ endobj
 endobj
 42 0 obj
 <<
-/Length 8668
+/Length 8564
 >>
 stream
 q
@@ -1842,281 +1864,267 @@ q
 0 g
 /GS8 gs
 0 G
-[(investors )-98(during)11( )-109(e)4(x)-9(tre)5(me)-7( )-99(e)4(ve)4(nts )-102(\(W)-2(a)4(n)-9(g)10( )] TJ
+[(mar)5(ke)4(d )-19(b)-9(y)20( )-19(hi)-11(g)10(h )-19(volatil)-3(it)-13(y)20(, )-19(low )-19(li)-3(quid)8(it)-13(y)30( )-19(a)4(nd )-19(a)4(s)-20(y)20(m)-11(metr)3(ic )-17(infor)4(mation )-21(\(A)5(rif)4( )] TJ
 ET
 BT
 /F3 12 Tf
-1 0 0 1 269.69 709.18 Tm
-[(e)4(t )-101(al.,)] TJ
-ET
-BT
-/F1 12 Tf
-1 0 0 1 297.89 709.18 Tm
-[( )] TJ
-ET
-BT
-1 0 0 1 302.09 709.18 Tm
-[(20)-9(24\) )-96(e)4(spe)-6(c)4(iall)-11(y)20( )-99(in )-111(e)4(mer)-4(g)10(i)-11(ng)10( )-99(ma)-7(rke)7(ts )-102(whic)4(h )-109(a)4(re)-2( )] TJ
-ET
-BT
-1 0 0 1 72.024 681.58 Tm
-[(mar)5(ke)] TJ
-ET
-BT
-1 0 0 1 101.9 681.58 Tm
-[(d )-19(b)-9(y)20( )-19(hi)-11(g)10(h )-19(volatil)-3(it)-13(y)20(, )-19(low )-19(li)-3(quid)8(it)-13(y)30( )-19(a)4(nd )-19(a)4(s)-20(y)20(m)-11(metr)3(ic )-17(infor)4(mation )-21(\(A)5(rif)4( )] TJ
-ET
-BT
-/F3 12 Tf
-1 0 0 1 432.19 681.58 Tm
+1 0 0 1 432.19 709.18 Tm
 [(e)4(t )-21(al., )] TJ
 ET
 BT
 /F1 12 Tf
-1 0 0 1 462.7 681.58 Tm
+1 0 0 1 462.7 709.18 Tm
 [(2020)] TJ
 ET
 BT
 /F3 12 Tf
-1 0 0 1 486.7 681.58 Tm
+1 0 0 1 486.7 709.18 Tm
 [(\))] TJ
 ET
 BT
 /F1 12 Tf
-1 0 0 1 490.54 681.58 Tm
+1 0 0 1 490.54 709.18 Tm
 [(. )-19(Va)6(ria)5(nc)-5(e)-5( )] TJ
 ET
 BT
-1 0 0 1 72.024 653.98 Tm
+1 0 0 1 72.024 681.58 Tm
 [(a)4(s )-20(a)4( )-19(risk )-19(o)-9(f )-16(mea)6(su)-10(re)7( )-19(is )-32(a)4(lso )-22(fla)5(we)6(d )-19(in )-21(th)-11(e)4( )-19(se)3(nse)-6( )-19(that )-19(it)-3( )-19(tre)5(a)4(ts )-22(both )-21(upsi)-2(de)4( )-29(a)4(n)-9(d )-19(downside )-16(de)4(viations)-12( )] TJ
 ET
 BT
+1 0 0 1 72.024 653.98 Tm
+[(e)4(qua)4(ll)-13(y)20(. )20(This )28(is )27(a)-5(g)10(a)4(inst)-4( )30(the )32(goa)4(l )28(of )] TJ
+ET
+BT
+1 0 0 1 237.41 653.98 Tm
+[(investors )21(a)4(s )29(upsi)-12(de)4( )30(de)4(viations )27(a)4(r)-6(e)4( )30(not )28(onl)-21(y)10( )30(we)6(lcome)4( )30(but )28(de)4(sir)-9(e)4(d )] TJ
+ET
+BT
 1 0 0 1 72.024 626.38 Tm
-[(e)4(qua)4(ll)-13(y)20(. )20(This )28(is )27(a)-5(g)10(a)4(inst)-4( )30(the )32(goa)4(l )28(of )33(investors )21(a)4(s )29(upsi)-12(de)4( )30(de)4(viat)] TJ
-ET
-BT
-1 0 0 1 359.47 626.38 Tm
-[(ions )27(a)4(r)-6(e)4( )30(not )28(onl)-21(y)10( )30(we)6(lcome)4( )30(but )28(de)4(sir)-9(e)4(d )] TJ
-ET
-BT
-1 0 0 1 72.024 598.78 Tm
 [(a)4(nd )30(the)-17(y)20( )30(a)4(r)-6(e)4( )30(most)-4(l)-11(y)20( )20(c)4(onc)-5(e)4(rne)7(d )30(with )28(downside)-6( )30(risk )20(\(F)9(e)-5(rr)6(a)-5(ri )] TJ
 ET
 BT
 /F3 12 Tf
-1 0 0 1 352.51 598.78 Tm
+1 0 0 1 352.51 626.38 Tm
 [(e)4(t )28(al.,)] TJ
 ET
 BT
 /F1 12 Tf
-1 0 0 1 379.15 598.78 Tm
+1 0 0 1 379.15 626.38 Tm
 [( )] TJ
 ET
 BT
-1 0 0 1 381.79 598.78 Tm
+1 0 0 1 381.79 626.38 Tm
 [(2024\))3(. )30(Thi)-10(s )29(shows )30(that )30(the )32(mea)6(n)] TJ
 ET
 BT
-1 0 0 1 536.02 598.78 Tm
+1 0 0 1 536.02 626.38 Tm
 [(-)] TJ
 ET
 BT
-1 0 0 1 72.024 571.06 Tm
+1 0 0 1 72.024 598.66 Tm
 [(va)4(ria)5(nc)-5(e)4( model doe)4(sn)-10(')10(t t)-3(r)-6(ul)-11(y)20( pe)4(r)-6(c)4(e)4(ive th)-9(e)4( )] TJ
 ET
 BT
-1 0 0 1 272.09 571.06 Tm
+1 0 0 1 272.09 598.66 Tm
 [(investor)-7(s')] TJ
 ET
 BT
-1 0 0 1 317.57 571.06 Tm
+1 0 0 1 317.57 598.66 Tm
 [( )] TJ
 ET
 BT
-1 0 0 1 320.59 571.06 Tm
+1 0 0 1 320.59 598.66 Tm
 [(pe)-5(rc)7(e)4(pti)-3(on of)3( )-9(risk.)] TJ
 ET
 BT
-1 0 0 1 408.31 571.06 Tm
+1 0 0 1 408.31 598.66 Tm
 [( )] TJ
 ET
  EMC  /P <</MCID 1>> BDC BT
-1 0 0 1 72.024 533.59 Tm
-[(Due)6( )-9(to )-11(th)-11(e)4( )-9(li)-3(mi)-3(tations)-2( )-9(of )-16(the )-7(mea)6(n)-9( )-9(a)4(nd)-9( )-9(va)4(ria)5(n)-9(c)4(e)] TJ
+1 0 0 1 72.024 561.22 Tm
+[(Due)6( )-9(to )-11(th)-11(e)4( )] TJ
 ET
 BT
-1 0 0 1 301.37 533.59 Tm
-[( )] TJ
+1 0 0 1 125.42 561.22 Tm
+[(li)-3(mi)-3(tations)-2( )-9(of )-16(the )-7(mea)6(n)-9( )-9(a)4(nd)-9( )-9(va)4(ria)5(n)-9(c)4(e)-5( )-9(a)4(p)-9(proa)7(c)4(h,)-9( )-9(other)-4( )-9(risk )-9(me)-7(a)4(sur)-7(e)4(s )-10(li)-3(ke)4( )-9(V)-7(a)4(lue)] TJ
 ET
 BT
-1 0 0 1 304.49 533.59 Tm
-[(a)4(p)-9(proa)7(c)4(h,)-9( )-9(other)-4( )-9(risk )-9(me)-7(a)4(sur)-7(e)4(s )-10(li)-3(ke)4( )-9(V)-7(a)4(lue)] TJ
-ET
-BT
-1 0 0 1 501.34 533.59 Tm
+1 0 0 1 501.34 561.22 Tm
 [(-)] TJ
 ET
 BT
-1 0 0 1 505.42 533.59 Tm
+1 0 0 1 505.42 561.22 Tm
  -0.048 Tc[(at)] TJ
 ET
 BT
-1 0 0 1 514.06 533.59 Tm
+1 0 0 1 514.06 561.22 Tm
  0 Tc[(-)] TJ
 ET
 BT
-1 0 0 1 518.02 533.59 Tm
+1 0 0 1 518.02 561.22 Tm
 [(R)-2(isk )] TJ
 ET
 BT
-1 0 0 1 72.024 505.99 Tm
+1 0 0 1 72.024 533.59 Tm
 [(e)4(mer)-4(g)10(e)4(d. )20(Va)6(lu)-11(e)] TJ
 ET
 BT
-1 0 0 1 147.62 505.99 Tm
+1 0 0 1 147.62 533.59 Tm
 [(-)] TJ
 ET
 BT
-1 0 0 1 151.58 505.99 Tm
+1 0 0 1 151.58 533.59 Tm
  -0.048 Tc[(at)] TJ
 ET
 BT
-1 0 0 1 160.22 505.99 Tm
+1 0 0 1 160.22 533.59 Tm
  0 Tc[(-)] TJ
 ET
 BT
-1 0 0 1 164.18 505.99 Tm
+1 0 0 1 164.18 533.59 Tm
 [(R)-2(isk )17(wa)6(s )19(pa)4(rtic)3(ular)5(l)-21(y)30( )20(int)-3(rodu)-6(c)-5(e)4(d )20(since)5( )20(it)-3( )20(foc)7(use)3(s )19(on )20(a)4(ss)8(e)4(ssi)-3(ng)10( )20(the )22(risk )20(ba)4(se)3(d )20(on )] TJ
 ET
 BT
-1 0 0 1 72.024 478.39 Tm
-[(the )12(hig)8(h)-9(e)4(st )7(potential )10(loss)-3( that )10(c)4(a)4(n )10(o)-9(c)4(c)4(u)-9(r )13(withi)-3(n )10(a)-5( )10(spe)3(c)4(ific)3( )10(C)-2(onfid)-8(e)4(nc)4(e)-5( I)13(nter)5(v)-9(a)-5(l )8(\(W)-2(a)4(ng )10(e)4(t )8(a)4(l.,)-11( )10(2024\))3(.)-9( )] TJ
+1 0 0 1 72.024 505.99 Tm
+[(the )12(hig)8(h)-9(e)4(st )7(potential )10(loss)-3( that )10(c)4(a)4(n )10(o)-9(c)4(c)4(u)-9(r )13(withi)-3(n )10(a)-5( )10(spe)3(c)4(ific)3( )10(C)-2(onfid)-8(e)4(nc)4(e)-5( )] TJ
 ET
 BT
-1 0 0 1 72.024 450.79 Tm
+1 0 0 1 404.11 505.99 Tm
+[(I)13(nter)5(v)-9(a)-5(l )8(\(W)-2(a)4(ng )10(e)4(t )8(a)4(l.,)-11( )10(2024\))3(.)-9( )] TJ
+ET
+BT
+1 0 0 1 72.024 478.39 Tm
 [(Va)6(lue)] TJ
 ET
 BT
-1 0 0 1 100.58 450.79 Tm
+1 0 0 1 100.58 478.39 Tm
 [(-)] TJ
 ET
 BT
-1 0 0 1 104.54 450.79 Tm
+1 0 0 1 104.54 478.39 Tm
  -0.048 Tc[(at)] TJ
 ET
 BT
-1 0 0 1 113.3 450.79 Tm
+1 0 0 1 113.3 478.39 Tm
  0 Tc[(-)] TJ
 ET
 BT
-1 0 0 1 117.26 450.79 Tm
+1 0 0 1 117.26 478.39 Tm
 [(R)-2(isk )7(\(V)5(a)4(R)-2(\),)-6( )10(a)-5( )10(statis)-3(ti)-3(c)4(a)4(l )8(risk )10(me)-7(a)4(sure)-3( )10(that)-9( )10(a)4(im)-3(s )9(to )8(qu)-9(a)4(nti)-3(f)-6(y)20( potentia)-7(l )8(loss)-3(e)4(s )9(via a)6( )10(sp)-10(e)4(c)4(ific)-6( )] TJ
 ET
 BT
-1 0 0 1 72.024 423.19 Tm
+1 0 0 1 72.024 450.79 Tm
 [(qua)4(nti)-3(le )-77(of )-76(the )-77(c)4(ondit)-3(ional )-79(re)7(turn )-78(dist)-4(ributi)-2(on )-79(of )-76(a)4( )-79(portf)4(oli)-3(o, )-79(ha)4(s )-80(e)4(mer)-4(g)10(e)4(d)-9( )-79(a)4(s )-80(a)4( )-79(c)4(omm)-3(on )-79(tool)-3( )-79(for)6( )] TJ
 ET
 BT
-1 0 0 1 72.024 395.59 Tm
-[(mar)5(ke)4(t )-21(risk )-19(a)4(ssessment )-19(a)4(nd )-19(re)7(mains )-20(a)4( )-19(funda)7(menta)-5(l )-21(piec)6(e)4( )-19(of )-16(risk )] TJ
+1 0 0 1 72.024 423.19 Tm
+[(mar)5(ke)4(t )-21(risk )-19(a)4(ssessment )-19(a)4(nd )] TJ
 ET
 BT
-1 0 0 1 382.63 395.59 Tm
-[(mana)6(g)10(e)4(me)-7(nt )-21(pra)7(c)4(ti)-3(c)4(e)4(s )-20(a)4(c)4(c)4(o)-9(rding )] TJ
+1 0 0 1 206.81 423.19 Tm
+[(re)7(mains )-20(a)4( )-19(funda)7(menta)-5(l )-21(piec)6(e)4( )-19(of )-16(risk )-19(mana)6(g)10(e)4(me)-7(nt )-21(pra)7(c)4(ti)-3(c)4(e)4(s )-20(a)4(c)4(c)4(o)-9(rding )] TJ
 ET
 BT
-1 0 0 1 72.024 367.85 Tm
+1 0 0 1 72.024 395.47 Tm
 [(to t)-3(he)4( B)7(a)4(se)3(l )-11(II)6(I)13( )-9(A)-7(c)4(c)4(ord )-6(\()-6(C)-2(he)4(ng)10(, 2025; )-11(L)11(e)-5(c)4(c)-5(a)4(dit)-3(o e)4(t al., 2024\))3(.)] TJ
 ET
 BT
-1 0 0 1 367.39 367.85 Tm
+1 0 0 1 367.39 395.47 Tm
 [( )] TJ
 ET
  EMC  /P <</MCID 2>> BDC BT
-1 0 0 1 72.024 330.41 Tm
+1 0 0 1 72.024 358.01 Tm
 [(How)4(e)4(ve)-5(r, )-36(Va)6(R)-2( )-39(quickl)-9(y)30( )-49(ga)4(ined )-37(a)4(c)4(c)-5(e)4(ptanc)-3(e)4( )-39(a)4(s )-40(the )-37(standa)5(rd )-36(a)4(ppro)-6(a)4(c)4(h )-39(for)6( )-39(modeling)8( )-39(mar)5(ke)4(t )-41(risk )-39(for)-3( )] TJ
 ET
 BT
+1 0 0 1 72.024 330.41 Tm
+[(se)3(ve)4(ra)7(l )-51(y)20(e)-5(a)-5(rs )-27(be)4(c)-5(a)4(use)3( )-29(o)-9(f )-36(it)-3(s )-30(sim)-4(p)] TJ
+ET
+BT
+1 0 0 1 231.05 330.41 Tm
+[(li)-3(c)4(it)-13(y)30(. )-29(Y)-7(e)4(t, )-31(Va)6(R)-2( )-39(f)-6(a)4(c)4(e)4(s )-40(c)4(ha)4(ll)-3(e)4(n)-9(g)10(e)4(s)-10( )-29(that )-29(inve)-7(stors )-30(shoul)-2(d )-29(be)4( )-29(a)4(w)-7(a)4(r)-6(e)4( )] TJ
+ET
+BT
 1 0 0 1 72.024 302.81 Tm
-[(se)3(ve)4(ra)7(l )-51(y)20(e)-5(a)-5(rs )-27(be)4(c)-5(a)4(use)3( )-29(o)-9(f )-36(it)-3(s )-30(sim)-4(pli)-3(c)4(it)-13(y)30(. )-29(Y)-7(e)4(t, )-31(Va)6(R)-2( )-39(f)-6(a)4(c)4(e)4(s )-40(c)4(ha)4(ll)-3(e)4(n)-9(g)10(e)4(s)-10( )-29(th)] TJ
-ET
-BT
-1 0 0 1 402.55 302.81 Tm
-[(a)4(t )-31(inve)-7(stors )-30(shoul)-2(d )-29(be)4( )-29(a)4(w)-7(a)4(r)-6(e)4( )] TJ
-ET
-BT
-1 0 0 1 72.024 275.21 Tm
 [(of. )-156(F)6(indi)-3(n)-9(g)10(s )-160(fr)6(om )-161(v)-9(a)4(rio)-8(us )-160(studi)-4(e)4(s )-160(ha)4(ve)4( )-159(shown )-158(t)-11(ha)4(t )-161(during)11( )-159(th)-11(e)4( )-159(oc)-5(c)4(urr)-3(e)4(nc)-5(e)4( )-159(of )-156(pa)4(nd)-9(e)4(mi)-3(c)4(s, )-160(Va)6(R)-2( )] TJ
 ET
 BT
-1 0 0 1 72.024 247.61 Tm
+1 0 0 1 72.024 275.21 Tm
 [(models )9(we)6(re)7( )10(not )8(a)-5(c)4(c)4(ur)-6(a)4(te)-7( )10(a)4(t )8(a)4(ll)-3( )10(a)4(s )9(fa)7(r a)7(s )9(investors w)3(e)4(re)7( c)4(onc)4(e)-5(rne)7(d, )10(e)4(v)-9(e)4(n )10(du)-9(ring)11( )10(c)-5(rise)4(s, )9(a)4(s )9(noted )12(b)-19(y)20( )] TJ
 ET
 BT
+1 0 0 1 72.024 247.61 Tm
+[(F)] TJ
+ET
+BT
+1 0 0 1 78.624 247.61 Tm
+[(a)4(touros )-19(e)4(t )-21(a)4(l. )-21(\(2022)-6(\). )-16(M)-10(ore)7(ove)4(r, )-26(Va)6(R)-2( )-19(models )-20(not )-21(onl)-11(y)20( )-29(g)10(ive )-17(da)4(ta )-27(c)4(onc)4(e)-5(rning)11( )-19(potential )-19(loss)-3(e)4(s )-20(a)4(t )-21(a)-5( )] TJ
+ET
+BT
 1 0 0 1 72.024 220.01 Tm
-[(F)6(a)4(touros )-19(e)4(t )-21(a)4(l. )-21(\(2022)-6(\). )-16(M)-10(ore)7(ove)4(r, )-26(Va)6(R)] TJ
-ET
-BT
-1 0 0 1 257.81 220.01 Tm
-[( )] TJ
-ET
-BT
-1 0 0 1 261.05 220.01 Tm
-[(models )-20(not )-21(onl)-11(y)20( )-29(g)10(ive )-17(da)4(ta )-27(c)4(onc)4(e)-5(rning)11( )-19(potential )-19(loss)-3(e)4(s )-20(a)4(t )-21(a)-5( )] TJ
-ET
-BT
-1 0 0 1 72.024 192.38 Tm
 [(c)4(e)4(rta)5(in )-11(c)4(onfide)5(nc)-5(e)4( leve)6(l, )-11(but neg)12(le)-7(c)4(t l)-3(osses of)4( )-9(g)10(r)-6(e)4(a)-5(ter)5( ma)-7(g)10(nit)-3(ude)4(, a)4(s poi)-2(nted)-7( out b)-11(y)20( \(Moz)-3(umder)5( )-9(e)4(t)-11( )] TJ
 ET
 BT
-1 0 0 1 72.024 164.78 Tm
+1 0 0 1 72.024 192.38 Tm
 [(a)4(l., )-221(2024\))3(. )-219(More)6(ove)4(r, )-216(it)-3( )-219(is )-222(not )-211(sub)] TJ
 ET
 BT
-1 0 0 1 248.33 164.78 Tm
+1 0 0 1 248.33 192.38 Tm
 [(-)] TJ
 ET
 BT
-1 0 0 1 252.29 164.78 Tm
-[(a)4(ddit)-3(ive, )-217(mea)6(ning)8( )-219(the )-217(sum )-222(of )-216(indi)-3(vi)8(dua)4(l )-221(a)4(sset )-219(Va)6(R)-2(s )-220(c)4(a)4(n)-9( )] TJ
+1 0 0 1 252.29 192.38 Tm
+[(a)4(ddit)-3(ive, )-217(mea)6(ning)8( )-219(the )-217(sum )] TJ
 ET
 BT
-1 0 0 1 72.024 137.18 Tm
-[(unde)4(re)7(s)] TJ
+1 0 0 1 392.35 192.38 Tm
+[(of )-216(indi)-3(vi)8(dua)4(l )-221(a)4(sset )-219(Va)6(R)-2(s )-220(c)4(a)4(n)-9( )] TJ
 ET
 BT
-1 0 0 1 109.22 137.18 Tm
-[(ti)-3(mate)4( )30(tot)-3(a)4(l )28(portf)-5(oli)-3(o )30(risk. )30(\()-6(L)21(e)-5(c)4(c)4(a)4(dit)-3(o )] TJ
+1 0 0 1 72.024 164.78 Tm
+[(unde)4(re)7(sti)-4(mate)4( )30(tot)-3(a)4(l )28(portf)-5(oli)-3(o )30(risk. )30(\()-6(L)21(e)-5(c)4(c)4(a)4(dit)-3(o )] TJ
 ET
 BT
 /F3 12 Tf
-1 0 0 1 288.05 137.18 Tm
+1 0 0 1 288.05 164.78 Tm
 [(e)4(t )28(al.)-11(,)] TJ
 ET
 BT
 /F1 12 Tf
-1 0 0 1 314.81 137.18 Tm
+1 0 0 1 314.81 164.78 Tm
 [( )] TJ
 ET
 BT
-1 0 0 1 317.45 137.18 Tm
+1 0 0 1 317.45 164.78 Tm
 [(2024\))3(. )30(All )28(of )33(these)5( )] TJ
 ET
 BT
-1 0 0 1 408.91 137.18 Tm
+1 0 0 1 408.91 164.78 Tm
 [(hig)8(hl)-11(ig)8(ht)] TJ
 ET
 BT
-1 0 0 1 452.26 137.18 Tm
+1 0 0 1 452.26 164.78 Tm
 [( )] TJ
 ET
 BT
-1 0 0 1 454.9 137.18 Tm
+1 0 0 1 454.9 164.78 Tm
 [(the )32(ne)4(e)4(d )20(for)6( )30(a)4( )20(risk )] TJ
 ET
 BT
-1 0 0 1 72.024 109.58 Tm
+1 0 0 1 72.024 137.18 Tm
 [(mea)6(sure)6( )-69(to)-11( )-69(show )-68(se)3(v)-9(e)4(rit)-10(y)20( )-79(o)-9(f )-66(e)4(x)-9(tre)5(me )-67(loss)-3(e)4(s )-70(th)-11(e)4(re)-2(b)-9(y)20( )-69(showin)-10(g )-69(the )-67(ne)-5(e)4(d )-69(fo)-6(r)-6( )-69(a)4( )-69(te)-7(c)4(hnique )-67(that )-79(g)10(o)-9(e)4(s )] TJ
+ET
+BT
+1 0 0 1 72.024 109.58 Tm
+[(be)-5(y)20(ond)-9( )-139(the )-137(tr)-8(a)4(dit)-3(ional )-149(mea)6(sure)6(s )-140(th)-11(e)4(re)7(b)-19(y)20( )-149(a)4(idi)-3(n)-9(g )-139(investors )-138(in )-141(the)-7( )-139(c)4(onst)-2(ru)-6(c)4(ti)-3(on )-139(of )-136(a)-5( )-139(more)-4( )-139(robust )] TJ
+ET
+BT
+1 0 0 1 72.024 81.864 Tm
+[(portf)4(oli)-3(o \(F)9(a)4(n, 2020)-9(\).)] TJ
+ET
+BT
+1 0 0 1 176.06 81.864 Tm
+[( )] TJ
 ET
  EMC 
 Q
@@ -2193,7 +2201,7 @@ endobj
 endobj
 46 0 obj
 <<
-/Length 8479
+/Length 8688
 >>
 stream
 q
@@ -2204,223 +2212,231 @@ q
 0 g
 /GS8 gs
 0 G
-[(be)-5(y)20(ond)-9( )-139(the )-137(tr)-8(a)4(dit)-3(ional )-149(mea)6(sure)6(s )-140(th)-11(e)4(re)7(b)-19(y)20( )-149(a)4(idi)-3(n)-9(g )-139(investors )-138(in )-141(the)-7( )] TJ
+[(C)-2(onse)3(que)4(ntl)-13(y)20(, )-179(portf)4(oli)-3(o )] TJ
 ET
 BT
-1 0 0 1 391.87 709.18 Tm
-[(c)4(onst)-2(ru)-6(c)4(ti)-3(on )-139(of )-136(a)-5( )-139(more)-4( )-139(robust )] TJ
-ET
-BT
-1 0 0 1 72.024 681.46 Tm
-[(portf)4(oli)-3(o \(F)9(a)4(n, 2020)-9(\).)] TJ
-ET
-BT
-1 0 0 1 176.06 681.46 Tm
-[( )] TJ
-ET
- EMC  /P <</MCID 1>> BDC BT
-1 0 0 1 72.024 644.02 Tm
-[(C)-2(onse)3(que)4(ntl)-13(y)20(, )-179(portf)4(oli)-3(o )-179(opti)-3(mi)-3(z)-5(a)4(ti)-3(on)10( )-179(models )-180(ba)4(s)9(e)4(d )-179(solel)-10(y)30( )-179(on )-179(hist)-4(oric)5(a)4(l )-191(da)4(ta )-177(c)4(a)4(n )-179(mi)-3(sre)6(pre)7(s)-10(e)4(nt )] TJ
+1 0 0 1 193.25 709.18 Tm
+[(opti)-3(mi)-3(z)-5(a)4(ti)-3(on)10( )-179(models )-180(ba)4(s)9(e)4(d )-179(solel)-10(y)30( )-179(on )-179(hist)-4(oric)5(a)4(l )-191(da)4(ta )-177(c)4(a)4(n )-179(mi)-3(sre)6(pre)7(s)-10(e)4(nt )] TJ
 ET
 BT
 /F4 12 Tf
-1 0 0 1 72.024 616.42 Tm
+1 0 0 1 72.024 681.58 Tm
 [<00490058005700580055>4<0048>4<0003>40<0055004C0056004E000F0003>40<004C00510047004C>-3<0046>4<0044>4<0057004C>-3<0051004A>10<0003>40<0057004B00480003>32<00510048>4<0048>4<00470003>40<004900520055>6<0003>40<005000480057004B0052004700560003>39<0057004B004400570003>40<004C0051004600520055>5<0053005200550044>7<005700480003>42<00530055>-6<0048>4<0047004C00460057004C005900480003>42<0044>4<0053005300550052>-6<0044>4<0046>4<004B0048>4<00560003>39<000B011D004F00580056>-3<0044>4<0055>-6<0046>4<005D>-15<005C>20<004E0003>40<0044>4<00510047>-9<0003>] TJ
 ET
 BT
-1 0 0 1 72.024 588.82 Tm
-[<011D>-3<004F0058005600440055>4<0046>4<005D>-15<005C>20<004E>] TJ
+1 0 0 1 72.024 653.98 Tm
+[<011D>-3<004F0058005600440055>4<0046>4<005D>-15<005C>20<004E000F0003>50<0015001300150018000C>3<00110003>50<002800500053004C>-2<0055>-6<004C00460044>6<004F0003>48<0056005700580047004C>-4<0048>4<00560003>49<004B004C004A>8<004B004F004C>-3<004A>10<004B00570003>48<0057004B00480003>52<004F>-11<004C0050>-3<004C0057>-3<0044>4<0057004C>-3<0052005100560003>49<005200490003>53<00580056004C0051004A>7<0003>50<004B004C00560057>-4<00520055004C0046>5<0044>4<004F0003>48<00470044>4<00570044>] TJ
 ET
 BT
 /F1 12 Tf
-1 0 0 1 124.58 588.82 Tm
-[(, )50(2025\))3(. )50(Empi)-2(r)-6(ica)6(l )48(studi)-4(e)4(s )49(hig)8(hli)-3(g)10(ht )48(the )52(l)-11(im)-3(it)-3(a)4(ti)-3(ons )49(of )53(using)7( )50(hist)-4(oric)5(a)4(l )48(da)4(ta )52(fo)-6(r )53(pre)7(di)-11(c)4(ti)-3(ve)4( )] TJ
+1 0 0 1 473.26 653.98 Tm
+[( )] TJ
 ET
 BT
-1 0 0 1 72.024 561.22 Tm
+1 0 0 1 475.66 653.98 Tm
+[(fo)-6(r )53(pre)7(di)-11(c)4(ti)-3(ve)4( )] TJ
+ET
+BT
+1 0 0 1 72.024 626.38 Tm
 [(models )49(suc)3(h )50(a)4(s )49(unre)7(li)-3(a)4(bil)-13(it)-13(y)20( )50(durin)-8(g)10( )50(e)-5(c)4(onomi)-3(c)4( )50(unc)4(e)-5(rta)5(int)-13(y)20( )50(or)-6( )50(fina)5(nc)4(i)-11(a)4(l )48(c)4(rise)4(s,)-10( )50(e)4(ve)4(r)] TJ
 ET
 BT
-1 0 0 1 456.22 561.22 Tm
+1 0 0 1 456.22 626.38 Tm
 [(-)] TJ
 ET
 BT
-1 0 0 1 460.3 561.22 Tm
+1 0 0 1 460.3 626.38 Tm
 [(c)4(ha)4(n)-9(g)10(in)-11(g)10( )50(ma)-7(rke)7(t)-11( )] TJ
 ET
 BT
-1 0 0 1 72.024 533.59 Tm
-[(c)4(ondit)-3(ions, )-32(ove)4(r )-26(fitti)-4(ng)10( )-29(a)4(nd )-29(bias )-28(of )-26(da)4(ta )-27(mi)-3(ning)8( )-29(\(Z)14(ha)4(n)-9(g)10(, )-29(2025\))3(, )] TJ
+1 0 0 1 72.024 598.78 Tm
+[(c)4(ondit)-3(ions, )-32(ove)4(r )-26(fitti)-4(ng)10( )-29(a)4(nd )-29(bias )-28(of )-26(da)4(ta )-27(mi)-3(ning)8( )-29(\(Z)14(ha)4(n)-9(g)10(, )-29(2025\))3(, )-29(ine)-7(ff)6(e)-5(c)4(ti)-3(ve)-5( )-29(c)4(a)4(pturing)9( )-29(of )-26(nonli)-3(ne)4(a)-5(r )] TJ
 ET
 BT
-1 0 0 1 378.07 533.59 Tm
-[(ine)-7(ff)6(e)-5(c)4(ti)-3(ve)-5( )-29(c)4(a)4(pturing)9( )-29(of )-26(nonli)-3(ne)4(a)-5(r )] TJ
-ET
-BT
-1 0 0 1 72.024 505.99 Tm
+1 0 0 1 72.024 571.18 Tm
 [(a)4(nd )10(ti)-3(me)] TJ
 ET
 BT
-1 0 0 1 113.54 505.99 Tm
+1 0 0 1 113.54 571.18 Tm
 [(-)] TJ
 ET
 BT
-1 0 0 1 117.5 505.99 Tm
+1 0 0 1 117.5 571.18 Tm
 [(va)4(r)-16(y)20(in)-11(g)10( )10(d)-19(y)20(na)4(mi)-13(c)4(s )9(\(Chung)10( )] TJ
 ET
 BT
 /F3 12 Tf
-1 0 0 1 244.85 505.99 Tm
+1 0 0 1 244.85 571.18 Tm
 [(e)4(t )8(al.,)] TJ
 ET
 BT
 /F1 12 Tf
-1 0 0 1 271.73 505.99 Tm
+1 0 0 1 271.73 571.18 Tm
 [( )] TJ
 ET
 BT
-1 0 0 1 274.61 505.99 Tm
-[(2025\))3(. Hist)-2(oric)5(a)4(l )8(models )9(ha)4(ve)4( a)4(lso )7(be)4(e)4(n )10(obse)3(rv)-6(e)4(d )10(to )8(do)-9( )] TJ
+1 0 0 1 274.61 571.18 Tm
+[(2)] TJ
 ET
 BT
-1 0 0 1 72.024 478.39 Tm
+1 0 0 1 280.61 571.18 Tm
+[(025\).)3( Hist)-2(oric)5(a)4(l )8(models )9(ha)4(ve)4( a)4(lso )7(be)4(e)4(n )10(obse)3(rv)-6(e)4(d )10(to )8(do)-9( )] TJ
+ET
+BT
+1 0 0 1 72.024 543.55 Tm
 [(not )-141(suff)5(icie)4(ntl)-23(y)20( )-149(a)4(c)4(c)4(ount)-11( )-149(for)6( )-139(volatil)-3(it)-13(y)20( )-149(fe)-2(a)4(ture)5(s)-10( )-139(in )-141(e)4(mer)-4(g)10(in)-11(g )-139(mar)5(ke)4(ts)-12( )-139(due)4( )-149(to )-141(poor )-136(out)] TJ
 ET
 BT
-1 0 0 1 488.02 478.39 Tm
+1 0 0 1 488.02 543.55 Tm
 [(-)] TJ
 ET
 BT
-1 0 0 1 491.98 478.39 Tm
+1 0 0 1 491.98 543.55 Tm
 [(of)] TJ
 ET
 BT
-1 0 0 1 502.06 478.39 Tm
+1 0 0 1 502.06 543.55 Tm
 [(-)] TJ
 ET
 BT
-1 0 0 1 506.02 478.39 Tm
+1 0 0 1 506.02 543.55 Tm
 [(sa)3(mpl)-3(e)-5( )] TJ
 ET
 BT
-1 0 0 1 72.024 450.79 Tm
-[(for)6(e)4(c)-5(a)4(sti)-4(ng)10( )-9(\(Sa)3(hine)-7(r, )-6(202)-9(2; )-11(Ad)] TJ
+1 0 0 1 72.024 515.95 Tm
+[(for)6(e)4(c)-5(a)4(sti)-4(ng)10( )-9(\(Sa)3(hine)-7(r, )-6(202)-9(2; )-11(Ade)6(g)10(bo)-19(y)20(o, )-9(2025\))3(.Th)-8(e)-5(se)3( )-9(li)-3(mi)-3(tations)-2( )-9(h)10(ig)8(hli)-3(g)10(ht )-11(the )-7(incr)5(e)4(a)4(sin)-12(g)10( )-9(diff)4(icult)-21(y)20( )] TJ
 ET
 BT
-1 0 0 1 220.37 450.79 Tm
-[(e)4(g)10(bo)-19(y)20(o, )-9(2025\))3(.Th)-8(e)-5(se)3( )-9(li)-3(mi)-3(tations)-2( )-9(h)10(ig)8(hli)-3(g)10(ht )-11(the )-7(incr)5(e)4(a)4(sin)-12(g)10( )-9(diff)4(icult)-21(y)20( )] TJ
+1 0 0 1 72.024 488.35 Tm
+[(of )-156(a)4(c)-5(c)4(ura)] TJ
 ET
 BT
-1 0 0 1 72.024 423.19 Tm
-[(of )-156(a)4(c)-5(c)4(ura)7(tel)-19(y)20( )-169(for)6(e)-5(c)4(a)4(sti)-4(n)-9(g )-159(risk )-159(a)4(nd )-159(re)7(turn)-8( )-159(in )-161(unst)-2(a)4(ble )-157(a)4(nd )-169(e)4(mer)-4(g)10(in)-11(g)10( )-159(mar)5(k)-9(e)4(ts, )-162(ra)7(isi)-4(ng)10( )-159(im)-3(port)-8(a)4(nt )] TJ
+1 0 0 1 118.1 488.35 Tm
+[(tel)-19(y)20( )-169(for)6(e)-5(c)4(a)4(sti)-4(n)-9(g )-159(risk )-159(a)4(nd )-159(re)7(turn)-8( )-159(in )-161(unst)-2(a)4(ble )-157(a)4(nd )-169(e)4(mer)-4(g)10(in)-11(g)10( )-159(mar)5(k)-9(e)4(ts, )-162(ra)7(isi)-4(ng)10( )-159(im)-3(port)-8(a)4(nt )] TJ
 ET
 BT
-1 0 0 1 72.024 395.47 Tm
+1 0 0 1 72.024 460.63 Tm
 [(que)4(sti)-4(ons a)3(bout how f)3(uture)5( portf)4(oli)-3(o outcome)4(s c)-6(a)-5(n be)4( re)7(li)-3(a)4(bl)-21(y)20( a)4(nti)-3(c)4(ipat)-9(e)4(d.)] TJ
 ET
 BT
-1 0 0 1 428.71 395.47 Tm
+1 0 0 1 428.71 460.63 Tm
 [( )] TJ
 ET
- EMC  /P <</MCID 2>> BDC BT
-1 0 0 1 72.024 358.01 Tm
-[(Eme)3(r)-6(g)10(ing)8( m)-11(a)4(rke)7(ts )-12(a)4(s)] TJ
+ EMC  /P <</MCID 1>> BDC BT
+1 0 0 1 72.024 423.19 Tm
+[(Eme)3(r)-6(g)10(ing)8( m)-11(a)4(rke)7(ts )-12(a)4(ssets )-10(re)7(turns a)4(nd )-9(risk f)3(ore)-2(c)4(a)4(sts)-13( fa)7(c)-5(e)4( dist)-4(inct c)4(ha)4(ll)-3(e)4(n)-9(g)10(in)-11(g c)4(ondit)-3(ions. )-2(Vola)4(ti)-3(l)] TJ
 ET
 BT
-1 0 0 1 173.3 358.01 Tm
-[(se)3(ts )-12(re)7(turns a)4(nd )-9(risk f)3(ore)-2(c)4(a)4(sts)-13( fa)7(c)-5(e)4( dist)-4(inct c)4(ha)4(ll)-3(e)4(n)-9(g)10(in)-11(g c)4(ondit)-3(ions. )-2(Vola)4(ti)-3(li)-3(t)-11(y)30( )] TJ
+1 0 0 1 527.62 423.19 Tm
+[(it)-13(y)30( )] TJ
 ET
 BT
-1 0 0 1 72.024 330.41 Tm
+1 0 0 1 72.024 395.59 Tm
 [(in )-161(e)4(mer)-4(g)10(ing)8( )-159(ma)-7(rke)7(t )-161(stoc)-8(ks )-160(is )-162(hig)8(h, )-159(making)10( )-159(it)-3( )-159(c)4(h)-9(a)4(ll)-3(e)4(ng)10(in)-11(g)10( )-159(to )-161(re)7(l)-21(y)20( )-159(on )-159(c)4(on)-9(ve)4(nti)-3(ona)4(l )-161(for)6(e)4(c)-5(a)4(sti)-4(ng )] TJ
 ET
 BT
-1 0 0 1 72.024 302.81 Tm
-[(models )9(\(A)5(lfe)5(us )9(e)4(t )8(a)4(l., )8(2024\))3(. )10(C)-2(onve)4(nti)-3(ona)4(l )8(for)6(e)4(c)-5(a)-5(sti)-4(ng)10( )10(models )9(c)4(a)4(nnot )8(fit )9(fina)5(nc)4(ial)] TJ
+1 0 0 1 72.024 367.97 Tm
+[(models )9(\(A)5(lfe)5(us )9(e)4(t )8(a)4(l., )8(2024\))3(. )10(C)-2(onve)4(nti)-3(ona)4(l )8(for)6(e)4(c)-5(a)-5(sti)-4(ng)10( )10(models )9(c)4(a)4(nnot )8(fit )9(fina)5(nc)4(ial )10(ti)-3(me )12(se)3(rie)5(s )9(da)4(ta)-7( )] TJ
 ET
 BT
-1 0 0 1 462.82 302.81 Tm
-[( )] TJ
+1 0 0 1 72.024 340.37 Tm
+[(be)4(c)4(a)4(use)-6( of the)-4( stabil)-2(it)-13(y)20( )-9(c)4(r)-6(it)-3(e)4(ria)5( use)3(d in t)-3(he)-5( c)4(onv)-9(e)4(nti)-3(ona)4(l )] TJ
 ET
 BT
-1 0 0 1 465.7 302.81 Tm
-[(ti)-3(me )12(se)3(rie)5(s )9(da)4(ta)-7( )] TJ
+1 0 0 1 342.55 340.37 Tm
+[(model, a)4(s the )-8(fina)5(n)-9(c)4(ial ti)-3(me se)5(rie)5(s)-10( da)4(ta is)-10( )] TJ
 ET
 BT
-1 0 0 1 72.024 275.21 Tm
-[(be)4(c)4(a)4(use)-6( of the)-4( stabil)-2(it)-13(y)20( )-9(c)4(r)-6(it)-3(e)4(ria)5( use)3(d in t)-3(he)-5( c)4(onv)-9(e)4(nti)-3(ona)4(l m)-3(ode)4(l, as the)3( )-9(fina)5(n)-9(c)4(ial ti)-3(me se)5(rie)5(s)-10( da)4(ta is)-10( )] TJ
-ET
-BT
-1 0 0 1 72.024 247.61 Tm
+1 0 0 1 72.024 312.77 Tm
 [(prone)7( )-309(to )-311(stabili)-4(t)-11(y)20( )-319(c)4(rite)-6(r)-6(ia)] TJ
 ET
 BT
-1 0 0 1 201.65 247.61 Tm
+1 0 0 1 201.65 312.77 Tm
 [(-)] TJ
 ET
 BT
-1 0 0 1 205.61 247.61 Tm
+1 0 0 1 205.61 312.77 Tm
 [(re)7(lat)-9(e)4(d )-309(proble)5(ms )-312(b)-9(e)4(c)-5(a)4(use)3( )-309(of)-6( )-309(ra)7(ndomn)-11(e)4(ss )-311(a)4(n)-9(d )-309(ra)7(ndomness)] TJ
 ET
 BT
-1 0 0 1 503.38 247.61 Tm
+1 0 0 1 503.38 312.77 Tm
 [(-)] TJ
 ET
 BT
-1 0 0 1 507.46 247.61 Tm
+1 0 0 1 507.46 312.77 Tm
 [(re)7(late)4(d)-9( )] TJ
 ET
 BT
-1 0 0 1 72.024 220.01 Tm
-[(ing)8(re)7(di)-11(e)4(nts )-222(of )-216(the )-217(fin)-8(a)4(n)-9(c)4(ial )-219(ti)-3(me )-217(se)3(rie)5(s )-220(d)-9(a)4(ta)] TJ
+1 0 0 1 72.024 285.17 Tm
+[(ing)8(re)7(di)-11(e)4(nts )-222(of )-216(the )-217(fin)-8(a)4(n)-9(c)4(ial )-219(ti)-3(me )-217(se)3(rie)5(s )-220(d)-9(a)4(ta, )-217(th)-11(e)4(re)7(b)-19(y)20( )-229(e)4(mphasiz)-6(ing)8( )-219(the )-227(de)4(mand )-217(for)6( )-219(in)-11(c)4(re)-2(a)4(se)3(d )] TJ
 ET
 BT
-1 0 0 1 294.53 220.01 Tm
-[(, )-219(th)-11(e)4(re)7(b)-19(y)20( )-229(e)4(mphasiz)-6(ing)8( )-219(the )-227(de)4(mand )-217(for)6( )-219(in)-11(c)4(re)-2(a)4(se)3(d )] TJ
+1 0 0 1 72.024 257.57 Tm
+[(pre)7(c)4(isi)-4(on )-79(for)-3(e)4(c)-5(a)4(sti)-4(ng)10( )-79(mo)-11(de)4(ls )-82(l)] TJ
 ET
 BT
-1 0 0 1 72.024 192.38 Tm
-[(pre)7(c)4(isi)-4(on )-79(for)-3(e)4(c)-5(a)4(sti)-4(ng)10( )-79(mo)-11(de)4(ls )-82(li)-3(ke)4( )-79(Ma)3(c)4(hine)-7( )-89(L)11(e)4(a)-5(rning)11( )-79(Mod)-10(e)4(ls, )-82(whic)4(h )-79(ha)4(v)-9(e)4( )-89(a)4(tt)-3(ra)7(c)4(ted )-87(c)4(onsi)-2(de)4(r)-6(a)4(ble)-7( )] TJ
+1 0 0 1 219.29 257.57 Tm
+[(ike )-77(Ma)3(c)4(hine)-7( )-89(L)11(e)4(a)-5(rning)11( )-79(Mod)-10(e)4(ls, )-82(whic)4(h )-79(ha)4(v)-9(e)4( )-89(a)4(tt)-3(ra)7(c)4(ted )-87(c)4(onsi)-2(de)4(r)-6(a)4(ble)-7( )] TJ
 ET
 BT
-1 0 0 1 72.024 164.78 Tm
+1 0 0 1 72.024 229.97 Tm
 [(a)4(tt)-3(e)4(nti)-3(on )-119(a)4(nd )-119(use)3(d )-129(e)4(labo)-7(ra)7(tel)-19(y)20( )-119(in )-121(stock )-118(mar)-4(ke)4(t )-121(p)-9(re)7(dictions )-122(a)4(nd )-119(fo)-6(re)7(c)-5(a)4(sti)-4(ng)10( )-119(\()-6(Ashr)4(a)-5(fz)-2(a)4(de)4(h )-119(e)4(t )-131(a)4(l., )] TJ
 ET
 BT
-1 0 0 1 72.024 137.18 Tm
-[(2025\))3(. )-49(Va)6(rious )-49(e)4(mpi)-3(r)] TJ
+1 0 0 1 72.024 202.34 Tm
+[(2025\))3(. )-49(Va)6(rious )-49(e)4(mpi)-3(ric)5(a)4(l)-11( )-49(re)7(se)3(a)4(r)-6(c)4(h )-49(wor)5(ks )-50(indi)-3(c)4(a)4(te )-47(the )-47(e)4(ff)6(icie)4(nc)-15(y)20( )-49(a)4(nd )-49(a)4(ppli)-3(c)-5(a)4(bil)-3(it)-13(y)30( )-49(of )-46(M)-10(L)21( )-49(Mod)-10(e)4(ls )] TJ
 ET
 BT
-1 0 0 1 176.06 137.18 Tm
-[(ica)6(l)-11( )-49(re)7(se)3(a)4(r)-6(c)4(h )-49(wor)5(ks )-50(indi)-3(c)4(a)4(te )-47(the )-47(e)4(ff)6(icie)4(nc)-15(y)20( )-49(a)4(nd )-49(a)4(ppli)-3(c)-5(a)4(bil)-3(it)-13(y)30( )-49(of )-46(M)-10(L)21( )-49(Mod)-10(e)4(ls )] TJ
+1 0 0 1 72.024 174.74 Tm
+ 0.024 Tc[(in)] TJ
 ET
 BT
-1 0 0 1 72.024 109.58 Tm
-[(in )-11(unde)4(rsta)4(nding)8( )-9(the )-17(c)4(om)-11(plex)-7( )-9(pa)4(tt)-3(e)4(rns )-7(a)4(nd )-9(d)-9(y)20(na)4(mi)-13(c)4(s )-10(pre)7(se)3(nt )-11(in )-11(fina)5(n)-9(c)4(ial )-9(ti)-3(me )-7(se)3(rie)5(s )-10(da)4(ta, )-7(le)-7(a)4(din)-11(g)10( )] TJ
+1 0 0 1 81.384 174.74 Tm
+ 0 Tc[( )] TJ
 ET
 BT
-1 0 0 1 72.024 81.984 Tm
+1 0 0 1 84.504 174.74 Tm
+[(unde)4(rsta)4(nding)8( )-9(the )-17(c)4(om)-11(plex)-7( )-9(pa)4(tt)-3(e)4(rns )-7(a)4(nd )-9(d)-9(y)20(na)4(mi)-13(c)4(s )-10(pre)7(se)3(nt )-11(in )-11(fina)5(n)-9(c)4(ial )-9(ti)-3(me )-7(se)3(rie)5(s )-10(da)4(ta, )-7(le)-7(a)4(din)-11(g)10( )] TJ
+ET
+BT
+1 0 0 1 72.024 147.14 Tm
 [(to )58(incr)5(e)4(a)4(se)3(d )60(p)-9(re)7(c)4(isi)-4(on )60(a)4(nd)-9( )60(prof)6(it)-3(s )59(in )58(stock )61(mar)5(ke)4(t )58(investm)-2(e)4(nts )57(\(F)9(a)4(n, )] TJ
 ET
 BT
-1 0 0 1 392.23 81.984 Tm
-[(2020; )58(As)-8(hra)7(fz)-2(a)] TJ
+1 0 0 1 392.23 147.14 Tm
+[(2020; )58(As)-8(hra)7(fz)-2(a)4(de)4(h)] TJ
 ET
 BT
-1 0 0 1 465.22 81.984 Tm
-[(de)4(h)] TJ
-ET
-BT
-1 0 0 1 482.5 81.984 Tm
+1 0 0 1 482.5 147.14 Tm
 [( )] TJ
 ET
 BT
-1 0 0 1 484.78 81.984 Tm
+1 0 0 1 484.78 147.14 Tm
 [(e)4(t )48(a)4(l., )] TJ
 ET
 BT
-1 0 0 1 512.74 81.984 Tm
+1 0 0 1 512.74 147.14 Tm
 [(2025; )] TJ
+ET
+BT
+1 0 0 1 72.024 119.54 Tm
+[(Ke)6(vin)] TJ
+ET
+BT
+1 0 0 1 101.3 119.54 Tm
+[( )] TJ
+ET
+BT
+1 0 0 1 103.7 119.54 Tm
+[(a)4(nd )50(Yu)-7(g)10(opuspi)-2(to, )48(2025\))3(. )50(He)6(nc)4(e)4(, )40(for)6(e)-5(c)4(a)4(sti)-4(ng )50(models )49(not)] TJ
+ET
+BT
+1 0 0 1 368.35 119.54 Tm
+[( )] TJ
+ET
+BT
+1 0 0 1 370.75 119.54 Tm
+[(onl)-11(y)30( )50(a)4(ssi)-3(st )47(in )58(e)4(sti)-4(mating)8( )50(pre)7(dicta)4(bl)-11(e)-5( )] TJ
 ET
  EMC 
 Q
@@ -2497,7 +2513,7 @@ endobj
 endobj
 50 0 obj
 <<
-/Length 8322
+/Length 8188
 >>
 stream
 q
@@ -2508,233 +2524,221 @@ q
 0 g
 /GS8 gs
 0 G
-[(Ke)6(vin)] TJ
-ET
-BT
-1 0 0 1 101.3 709.18 Tm
-[( )] TJ
-ET
-BT
-1 0 0 1 103.7 709.18 Tm
-[(a)4(nd )50(Yu)-7(g)10(opuspi)-2(to, )48(2025\))3(. )50(He)6(nc)4(e)4(, )40(for)6(e)-5(c)4(a)4(sti)-4(ng )50(models )49(not )48(onl)-11(y)30( )50(a)4(ssi)-3(st )47(in )58(e)4(sti)-4(mating)8( )50(pre)7(dicta)4(bl)-11(e)-5( )] TJ
-ET
-BT
-1 0 0 1 72.024 681.58 Tm
 [(risks a)3(nd r)-6(e)4(wa)-3(rds but a)-5(re)-2( a)4(lso helpful in und)-11(e)4(rsta)4(n)-9(ding)8( the)-7( im)-3(porta)5(nc)4(e)-5( of )-6(risk)] TJ
 ET
 BT
-1 0 0 1 443.71 681.58 Tm
+1 0 0 1 443.71 709.18 Tm
 [(-)] TJ
 ET
 BT
-1 0 0 1 447.67 681.58 Tm
+1 0 0 1 447.67 709.18 Tm
 [(a)4(wa)-3(re)7( opti)-3(mi)-3(z)-5(a)4(ti)-3(on )] TJ
 ET
 BT
-1 0 0 1 72.024 653.86 Tm
+1 0 0 1 72.024 681.46 Tm
 [(tec)6(hniques.)] TJ
 ET
 BT
-1 0 0 1 126.38 653.86 Tm
+1 0 0 1 126.38 681.46 Tm
 [( )] TJ
 ET
  EMC  /P <</MCID 1>> BDC BT
+1 0 0 1 72.024 644.02 Tm
+[(More)6(ove)4(r, )33(du)-9(e)4( )30(to )28(the )32(va)4(ri)-8(ous )29(be)4(ne)4(fits )28(in )28(using)7( )30(pre)7(d)-9(ictive )32(models, )29(the )32(for)6(e)4(c)-5(a)4(s)-10(ts )27(c)4(a)4(n )30(be)4( )30(plugged )32(int)-3(o )] TJ
+ET
+BT
 1 0 0 1 72.024 616.42 Tm
-[(More)6(ove)4(r, )33(du)-9(e)4( )30(to )28(the )32(va)4(ri)-8(ous )29(b)] TJ
+[(opti)-3(mi)-3(z)] TJ
 ET
 BT
-1 0 0 1 218.21 616.42 Tm
-[(e)4(ne)4(fits )28(in )28(using)7( )30(pre)7(d)-9(ictive )32(models, )29(the )32(for)6(e)4(c)-5(a)4(s)-10(ts )27(c)4(a)4(n )30(be)4( )30(plugged )32(int)-3(o )] TJ
+1 0 0 1 108.86 616.42 Tm
+[(a)4(ti)-3(on )-219(tec)6(hniques )] TJ
 ET
 BT
-1 0 0 1 72.024 588.82 Tm
-[(opti)-3(mi)-3(z)-5(a)4(ti)-3(on )-219(tec)6(hniques )] TJ
-ET
-BT
-1 0 0 1 195.53 588.82 Tm
+1 0 0 1 195.53 616.42 Tm
 [(-)] TJ
 ET
 BT
-1 0 0 1 199.49 588.82 Tm
+1 0 0 1 199.49 616.42 Tm
 [( )] TJ
 ET
 BT
-1 0 0 1 205.25 588.82 Tm
+1 0 0 1 205.25 616.42 Tm
 [(a)4( )-229(lar)-4(ge)4(l)-21(y)20( )-229(untappe)6(d )-229(p)-9(otential )-229(to )-231(im)-3(prove)7( )-229(outcome)4(s )-230(\()-6(Z)11(ha)4(n)-9(g)10(, )-229(2024)-9(\).)-6( )] TJ
 ET
 BT
-1 0 0 1 72.024 561.22 Tm
+1 0 0 1 72.024 588.82 Tm
 [(Ma)3(c)4(hine )12(lea)6(rnin)-8(g)10( )10(models)-10( )10(im)-3(prove)7( )10(the )12(qua)4(li)-3(t)-11(y)30( )10(of )13(input)-3(s )9(e)4(sti)-4(mate)4(s )9(whic)4(h )10(he)4(l)8(ps )9(investors )11(in )18(making)10( )] TJ
 ET
 BT
-1 0 0 1 72.024 533.59 Tm
+1 0 0 1 72.024 561.22 Tm
 [(be)4(tt)-3(e)4(r )-96(portf)4(oli)-3(o )-99(d)-9(e)4(c)4(isi)-4(ons)-10( )-99(\(Ma)6(rtÌne)3(z)] TJ
 ET
 BT
-1 0 0 1 246.05 533.59 Tm
+1 0 0 1 246.05 561.22 Tm
 [(-)] TJ
 ET
 BT
-1 0 0 1 250.13 533.59 Tm
-[(B)7(a)4(rb)-6(e)4(ro, )-96(202)-9(4\). )-106(I)13(n )-109(e)4(mer)-4(g)10(in)-11(g)10( )-99(m)-11(a)4(rke)7(ts)-12( )-99(mar)5(ke)4(d)-9( )-99(b)-19(y)20( )-99(volatil)-3(it)-13(y)20(,)-9( )] TJ
+1 0 0 1 250.13 561.22 Tm
+[(B)7(a)4(rb)-6(e)4(ro, )-96(202)-9(4\). )-106(I)13(n )-109(e)4(mer)-4(g)10(in)-11(g)10( )-99(m)-11(a)4(rke)7(ts)-12( )-99(mar)5(k)] TJ
 ET
 BT
-1 0 0 1 72.024 505.99 Tm
+1 0 0 1 461.86 561.22 Tm
+[(e)4(d)-9( )-99(b)-19(y)20( )-99(volatil)-3(it)-13(y)20(,)-9( )] TJ
+ET
+BT
+1 0 0 1 72.024 533.59 Tm
 [(struc)4(tura)5(l )-51(de)4(fic)5(ien)-7(c)4(ies )-48(a)4(n)-9(d )-49(nois)-12(y)30( )-49(da)4(ta, )-47(M)-10(L)11( )-49(models)-10( )-49(ha)4(ve)4( )-49(be)4(e)4(n )-49(a)4(ppli)-3(e)4(d )-49(to )-51(sto)7(c)4(k )-49(pric)5(e)4(s )-50(for)6(e)-5(c)4(a)4(sti)-4(n)-9(g)10(, )] TJ
 ET
 BT
-1 0 0 1 72.024 478.39 Tm
+1 0 0 1 72.024 505.99 Tm
 [(pre)7(dicting )-161(mar)5(k)-9(e)4(t )-161(c)4(r)-6(a)4(she)-6(s, )-160(a)4(nd )-159(c)-5(a)4(pturin)-10(g)10( )-159(non)] TJ
 ET
 BT
-1 0 0 1 297.65 478.39 Tm
+1 0 0 1 297.65 505.99 Tm
 [(-)] TJ
 ET
 BT
-1 0 0 1 301.61 478.39 Tm
-[(li)-3(n)-9(e)4(a)4(r )-166(re)7(lations)-2(hip)] TJ
+1 0 0 1 301.61 505.99 Tm
+[(li)-3(n)-9(e)4(a)4(r )-166(re)7(lations)-2(hips )-162(in )-161(fina)-4(nc)4(ial )-159(ti)-3(me )-157(se)3(rie)5(s)-10( )-159(da)4(ta)-7( )] TJ
 ET
 BT
-1 0 0 1 390.67 478.39 Tm
-[(s )-160(in )-161(fina)-4(nc)4(ial )-159(ti)-3(me )-157(se)3(rie)5(s)-10( )-159(da)4(ta)-7( )] TJ
-ET
-BT
-1 0 0 1 72.024 450.79 Tm
+1 0 0 1 72.024 478.39 Tm
 [(\(N)5(a)4(e)-5(e)4(m )] TJ
 ET
 BT
 /F3 12 Tf
-1 0 0 1 116.78 450.79 Tm
+1 0 0 1 116.78 478.39 Tm
 [(e)4(t )-321(al.,)] TJ
 ET
 BT
 /F1 12 Tf
-1 0 0 1 147.62 450.79 Tm
+1 0 0 1 147.62 478.39 Tm
 [( )] TJ
 ET
 BT
-1 0 0 1 154.46 450.79 Tm
+1 0 0 1 154.46 478.39 Tm
 [(2024; )-331(Ashr)4(a)4(fz)-2(a)4(de)4(h)-9( )] TJ
 ET
 BT
 /F3 12 Tf
-1 0 0 1 256.25 450.79 Tm
+1 0 0 1 256.25 478.39 Tm
 [(e)4(t )-321(al.,)] TJ
 ET
 BT
 /F1 12 Tf
-1 0 0 1 287.09 450.79 Tm
+1 0 0 1 287.09 478.39 Tm
 [( )] TJ
 ET
 BT
-1 0 0 1 293.93 450.79 Tm
-[(20)-9(25\). )-326(I)13(nte)-7(g)10(r)-6(a)4(ti)-3(ng )-319(these)5( )-329(f)-6(ore)7(c)4(a)4(sts)-3( )-319(int)-3(o )-319(po)-9(rtf)4(oli)-3(o )] TJ
+1 0 0 1 293.93 478.39 Tm
+[(20)-9(25)] TJ
 ET
 BT
-1 0 0 1 72.024 423.19 Tm
+1 0 0 1 318.05 478.39 Tm
+[(\). )-326(I)13(nte)-7(g)10(r)-6(a)4(ti)-3(ng )-319(these)5( )-329(f)-6(ore)7(c)4(a)4(sts)-3( )-319(int)-3(o )-319(po)-9(rtf)4(oli)-3(o )] TJ
+ET
+BT
+1 0 0 1 72.024 450.79 Tm
 [(opti)-3(mi)-3(z)-5(a)4(ti)-3(on)10( )-179(fr)6(a)4(mew)4(ork)-6(s )-180(c)4(a)4(n )-179(im)-3(prove)7( )-179(a)4(ll)-3(oc)4(a)4(ti)-3(o)-9(n )-179(de)4(c)4(isi)-4(ons )-180(a)4(nd )-179(be)4(tt)-3(e)4(r )-186(mi)-3(nim)-3(i)8(z)-5(e)4( )-179(portf)4(oli)-3(o )-179(risk)10( )] TJ
 ET
 BT
-1 0 0 1 72.024 395.47 Tm
-[(\(K)5(e)4(vin &)-3( Yu)-7(g)10(opuspi)-2(to, 2025;)-3( Uz)-3(oa)4(g)10(a)4(, 2025)-9(\))] TJ
+1 0 0 1 72.024 423.07 Tm
+[(\(K)5(e)4(vin &)-3( Yu)-7(g)10(opuspi)-2(to, 2025;)-3( Uz)-3(oa)4(g)10(a)4(, 2025)-9(\).)] TJ
 ET
 BT
-1 0 0 1 289.61 395.47 Tm
-[(.)] TJ
-ET
-BT
-1 0 0 1 292.73 395.47 Tm
+1 0 0 1 292.73 423.07 Tm
 [( )] TJ
 ET
  EMC  /P <</MCID 2>> BDC BT
-1 0 0 1 72.024 358.01 Tm
-[(De)6(spit)-4(e)4( )-89(se)3(ve)4(r)-6(a)4(l )-91(de)4(c)-5(a)4(de)4(s )-100(of )-86(progr)6(e)4(ss )-91(in )-91(portf)4(oli)-3(o )-89(opti)-3(mi)-3(z)-5(a)4(ti)-3(on)10( )-89(fr)6(om )-91(the )-87(m)8(e)4(a)4(n )-89(va)4(ri)-8(a)4(nc)4(e)4( )-89(model )-89(in)-11( )] TJ
+1 0 0 1 72.024 385.63 Tm
+[(De)6(spit)-4(e)4( )-89(se)3(ve)4(r)-6(a)4(l )-91(de)4(c)-5(a)4(de)4(s )-100(of )-86(progr)6(e)4(ss )-91(in )-91(portf)4(oli)-3(o )-89(opti)-3(mi)-3(z)-5(a)4(ti)-3(on)10( )-89(fr)6(om )-91(the )-87(m)8(e)4(a)4(n)] TJ
 ET
 BT
-1 0 0 1 72.024 330.41 Tm
-[(1952, )-39(se)3(ve)4(ra)7(l )-41(c)4(h)-9(a)4(ll)-3(e)4(n)-9(g)10(e)4(s )-50(a)4(re)7( )-39(found)3( )-39(withi)-3(n )-39(a)4(nd )-39(a)4(ro)-6(und )-39(e)4(x)-9(ist)5(ing)8( )-39(models. )-40(The)5( )-39(c)4(onve)4(nti)-3(ona)4(l )-41(models )] TJ
-ET
-BT
-1 0 0 1 72.024 302.81 Tm
-[(for)6( )-179(me)-7(a)4(n )-179(va)-5(ria)5(nc)-5(e)4( )-179(a)-5(re)7( )-189(f)-6(law)4(e)4(d )-179(du)-9(e)4( )-179(to )-181(e)-5(rr)6(or)-6( )-179(in )-181(e)-5(sti)-4(mation )-181(with )-181(s)-10(y)30(mm)-13(e)] TJ
-ET
-BT
-1 0 0 1 422.47 302.81 Tm
-[(tr)-8(y)20( )-189(b)-9(e)4(twe)-5(e)4(n )-179(upsi)-2(de)4( )-189(a)4(nd )] TJ
-ET
-BT
-1 0 0 1 72.024 275.21 Tm
-[(downside )23(risks. )19(F)6(urthe)5(rm)-8(ore)7(, )20(Va)6(lue)] TJ
-ET
-BT
-1 0 0 1 243.53 275.21 Tm
-[(-)] TJ
-ET
-BT
-1 0 0 1 247.49 275.21 Tm
- -0.048 Tc[(at)] TJ
-ET
-BT
-1 0 0 1 256.13 275.21 Tm
- 0 Tc[(-)] TJ
-ET
-BT
-1 0 0 1 260.09 275.21 Tm
-[(R)-2(isk )17(models )19(a)4(re)7( )20(inef)5(fi)-8(c)4(ient )20(a)4(s )19(the)-17(y)30( )10(a)4(r)-6(e)4( )20(una)4(ble )22(to )18(de)4(ter)5(mi)-3(ne)-5( )] TJ
-ET
-BT
-1 0 0 1 72.024 247.61 Tm
-[(the )-17(e)4(x)-9(tent )-19(or )-16(va)4(lue )-17(of )-16(tail)8( )-19(loss)-3(e)4(s )-20(a)4(nd )-19(de)4(mons)-2(tra)5(te )-17(unst)-2(e)4(a)4(d)-9(y)20( )-29(for)6(e)-5(c)4(a)4(sts)-3( )-19(using)7( )-29(a)4(c)4(tual )-19(hist)-4(oric)5( )-19(da)4(ta )-17(for)-3( )] TJ
-ET
-BT
-1 0 0 1 72.024 220.01 Tm
-[(volatil)-3(e)4( )10(a)4(nd )10(de)4(ve)4(lopi)-3(n)-9(g)10( mar)5(ke)4(ts )7(\(J)] TJ
-ET
-BT
-1 0 0 1 236.93 220.01 Tm
-[(ob, )10(2022; )8(W)-5(a)4(ng)10( e)4(t )8(a)4(l., )8(2024; )8(Ar)5(i)-11(f )13(e)4(t al., )10(2020; )8(Moz)-6(umder)5( )10(e)4(t )8(a)4(l.,)-11( )] TJ
-ET
-BT
-1 0 0 1 72.024 192.38 Tm
-[(2024\))3(. )-309(The)5( )-309(a)4(bove)4( )-319(fa)7(c)4(to)-11(rs )-307(il)-3(lust)-4(ra)7(te )-307(a)4(nd )-309(e)4(x)-9(e)4(mpl)-3(if)-8(y)20( )-319(g)10(a)4(ps )-310(a)4(nd )-309(n)-9(e)4(e)4(ds )-310(fo)-6(r )-306(im)-3(prove)7(d )-309(portf)4(oli)-3(o )] TJ
-ET
-BT
-/F4 12 Tf
-1 0 0 1 72.024 164.78 Tm
-[<005200530057004C>-3<0050004C>-3<005D>-5<0044>4<0057004C>-3<005200510003>-159<005700520052>8<004F00560003>-162<005A004C0057004B0003>-151<0044>4<0046>4<0046>4<00580055>-6<0044>4<005700480003>-167<0044>4<005100470003>-159<0046>4<005200510056004C>-2<005600570048005100570003>-170<00550048>7<00560058004F0057>-4<00560003>-160<0044>4<005100470003>-159<0055>-6<0048>4<0046>4<005200500050>-3<0048>4<005100470044>-5<0057004C>-3<0052005100560003>-160<000B011D004F00580056>-3<0044>4<00550046>7<005D>-15<005C>20<004E0003>-159<0044>4<0051>-9<0047>-9<0003>] TJ
-ET
-BT
-1 0 0 1 72.024 137.18 Tm
-[<011D>-3<004F0058005600440055>4<0046>4<005D>-15<005C>20<004E000F>] TJ
-ET
-BT
-/F1 12 Tf
-1 0 0 1 127.58 137.18 Tm
+1 0 0 1 447.79 385.63 Tm
 [( )] TJ
 ET
 BT
-1 0 0 1 133.46 137.18 Tm
-[(2025\))3(. )-239(The)5( )-239(int)-3(e)4(rse)6(c)4(ti)-3(on )-239(a)4(nd )-239(fusion )-239(be)4(twe)4(e)4(n )-239(pre)7(di)-11(c)4(ti)-3(ve)4( )-239(models )-240(suc)3(h )-239(a)4(s )-240(mac)6(hine )] TJ
+1 0 0 1 451.9 385.63 Tm
+[(va)4(ri)-8(a)4(nc)4(e)4( )-89(model )-89(in)-11( )] TJ
 ET
 BT
-1 0 0 1 72.024 109.58 Tm
-[(lea)6(rnin)-8(g)10( )20(models )19(a)4(nd )20(Ta)5(il)] TJ
+1 0 0 1 72.024 358.01 Tm
+[(1952, )-39(se)3(ve)4(ra)7(l )-41(c)4(h)-9(a)4(ll)-3(e)4(n)-9(g)10(e)4(s )-50(a)4(re)7( )-39(found)3( )-39(withi)-3(n )-39(a)4(nd )-39(a)4(ro)-6(und )-39(e)4(x)-9(ist)5(ing)8( )-39(models. )-40(The)5( )-39(c)4(onve)4(nti)-3(ona)4(l )-41(models )] TJ
 ET
 BT
-1 0 0 1 190.97 109.58 Tm
+1 0 0 1 72.024 330.41 Tm
+[(for)6( )-179(me)-7(a)4(n )-179(va)-5(ria)5(nc)-5(e)4( )-179(a)-5(re)7( )-189(f)-6(law)4(e)4(d )-179(du)-9(e)4( )-179(to )-181(e)-5(rr)6(or)-6( )-179(in )-181(e)-5(sti)-4(mation )-181(with )-181(s)-10(y)30(mm)-13(e)4(tr)-8(y)20( )-189(b)-9(e)4(twe)-5(e)4(n )-179(upsi)-2(de)4( )-189(a)4(nd )] TJ
+ET
+BT
+1 0 0 1 72.024 302.81 Tm
+[(downside )23(risks. )19(F)6(urthe)5(rm)-8(ore)7(, )20(Va)6(lue)] TJ
+ET
+BT
+1 0 0 1 243.53 302.81 Tm
 [(-)] TJ
 ET
 BT
-1 0 0 1 194.93 109.58 Tm
+1 0 0 1 247.49 302.81 Tm
+ -0.048 Tc[(at)] TJ
+ET
+BT
+1 0 0 1 256.13 302.81 Tm
+ 0 Tc[(-)] TJ
+ET
+BT
+1 0 0 1 260.09 302.81 Tm
+[(R)-2(isk )17(models )19(a)4(re)7( )] TJ
+ET
+BT
+1 0 0 1 339.67 302.81 Tm
+[(inef)5(fi)-8(c)4(ient )20(a)4(s )19(the)-17(y)30( )10(a)4(r)-6(e)4( )20(una)4(ble )22(to )18(de)4(ter)5(mi)-3(ne)-5( )] TJ
+ET
+BT
+1 0 0 1 72.024 275.21 Tm
+[(the )-17(e)4(x)-9(tent )-19(or )-16(va)4(lue )-17(of )-16(tail)8( )-19(loss)-3(e)4(s )-20(a)4(nd )-19(de)4(mons)-2(tra)5(te )-17(unst)-2(e)4(a)4(d)-9(y)20( )-29(for)6(e)-5(c)4(a)4(sts)-3( )-19(using)7( )-29(a)4(c)4(tual )-19(hist)-4(oric)5( )-19(da)4(ta )-17(for)-3( )] TJ
+ET
+BT
+1 0 0 1 72.024 247.61 Tm
+[(volatil)-3(e)4( )10(a)4(nd )10(de)4(ve)4(lopi)-3(n)-9(g)10( mar)5(ke)4(ts )7(\(J)-7(ob, )10(2022; )8(W)-5(a)4(ng)10( e)4(t )8(a)4(l., )8(2024; )8(Ar)5(i)-11(f )13(e)4(t al., )10(2020; )8(Moz)-6(umder)5( )10(e)4(t )8(a)4(l.,)-11( )] TJ
+ET
+BT
+1 0 0 1 72.024 220.01 Tm
+[(2024\))3(. )-309(The)5( )-309(a)] TJ
+ET
+BT
+1 0 0 1 140.3 220.01 Tm
+[(bove)4( )-319(fa)7(c)4(to)-11(rs )-307(il)-3(lust)-4(ra)7(te )-307(a)4(nd )-309(e)4(x)-9(e)4(mpl)-3(if)-8(y)20( )-319(g)10(a)4(ps )-310(a)4(nd )-309(n)-9(e)4(e)4(ds )-310(fo)-6(r )-306(im)-3(prove)7(d )-309(portf)4(oli)-3(o )] TJ
+ET
+BT
+/F4 12 Tf
+1 0 0 1 72.024 192.38 Tm
+[<005200530057004C>-3<0050004C>-3<005D>-5<0044>4<0057004C>-3<005200510003>-159<005700520052>8<004F00560003>-162<005A004C0057004B0003>-151<0044>4<0046>4<0046>4<00580055>-6<0044>4<005700480003>-167<0044>4<005100470003>-159<0046>4<005200510056004C>-2<005600570048005100570003>-170<00550048>7<00560058004F0057>-4<00560003>-160<0044>4<005100470003>-159<0055>-6<0048>4<0046>4<005200500050>-3<0048>4<005100470044>-5<0057004C>-3<0052005100560003>-160<000B011D004F00580056>-3<0044>4<00550046>7<005D>-15<005C>20<004E0003>-159<0044>4<0051>-9<0047>-9<0003>] TJ
+ET
+BT
+1 0 0 1 72.024 164.78 Tm
+[<011D>-3<004F0058005600440055>4<0046>4<005D>-15<005C>20<004E000F0003>-239<0015001300150018000C>3<00110003>-239<0037004B0048>5<0003>-239<004C00510057>-3<0048>4<005500560048>6<0046>4<0057004C>-3<005200510003>-239<0044>4<005100470003>-239<004900580056004C005200510003>-239<00450048>4<0057005A0048>4<0048>4<00510003>-239<005300550048>7<0047004C>-11<0046>4<0057004C>-3<00590048>4<0003>-239<0050005200470048004F00560003>-240<005600580046>3<004B0003>-239<0044>4<00560003>-240<005000440046>6<004B004C00510048>] TJ
+ET
+BT
+/F1 12 Tf
+1 0 0 1 540.1 164.78 Tm
+[( )] TJ
+ET
+BT
+1 0 0 1 72.024 137.18 Tm
+[(lea)6(rnin)-8(g)10( )20(models )19(a)4(nd )20(Ta)5(il)] TJ
+ET
+BT
+1 0 0 1 190.97 137.18 Tm
+[(-)] TJ
+ET
+BT
+1 0 0 1 194.93 137.18 Tm
 [(R)-2(isk )17(a)4(wa)6(re)7( )20(mod)-11(e)4(ls )17(for)6( )20(p)-9(ortf)4(oli)-3(o )20(opti)-3(mi)-3(z)-5(a)4(t)8(ion, )18(re)7(c)-5(omm)-3(e)4(nd )20(a)4(nd )20(e)4(x)-9(pre)7(ss )18(a)4( )] TJ
 ET
 BT
-1 0 0 1 72.024 81.984 Tm
-[(posi)-2(ti)-3(ve)4( )-129(potential )-129(for)-3( )-129(im)-3(prove)7(ment )-129(withi)-3(n )-129(port)-8(fo)-6(li)-3(o )-129(a)4(nd )-129(risk )-129(m)-11(a)4(na)-5(g)10(e)4(men)-7(t )-131(de)4(c)4(isi)-4(ons )-130(i)] TJ
-ET
-BT
-1 0 0 1 493.42 81.984 Tm
-[(n )-129(volatil)-3(e)-5( )] TJ
+1 0 0 1 72.024 109.58 Tm
+[(posi)-2(ti)-3(ve)4( )-129(potential )-129(for)-3( )-129(im)-3(prove)7(ment )-129(withi)-3(n )-129(port)-8(fo)-6(li)-3(o )-129(a)4(nd )-129(risk )-129(m)-11(a)4(na)-5(g)10(e)4(men)-7(t )-131(de)4(c)4(isi)-4(ons )-130(in )-131(volatil)-3(e)-5( )] TJ
 ET
  EMC 
 Q
@@ -2807,7 +2811,7 @@ endobj
 endobj
 54 0 obj
 <<
-/Length 8109
+/Length 8122
 >>
 stream
 q
@@ -2816,7 +2820,11 @@ q
 1 0 0 1 72.024 709.18 Tm
 0 g
 0 G
-[(mar)5(ke)4(ts )-72(a)4(nd )-69(de)4(v)-9(e)4(lopi)-3(ng)10( )-79(mar)5(ke)4(ts )-72(\(A)5(shr)-7(a)4(fz)-2(a)4(de)4(h )-79(e)4(t )-71(a)4(l., )-71(2025; )-71(Ke)6(vin )-71(a)4(nd )-69(Yu)-7(g)10(opuspi)-2(to, )-71(2025\))3(, )-69(a)4(n)-9(d)-9( )] TJ
+[(mar)5(ke)4(ts )-72(a)4(nd )-69(de)4(v)-9(e)4(lopi)-3(ng)10( )-79(mar)5(ke)4(ts )-72(\(A)5(shr)-7(a)4(fz)-2(a)4(de)4(h )-79(e)4(t )-71(a)4(l., )-71(2025; )-71(Ke)6(vin )-71(a)4(n)] TJ
+ET
+BT
+1 0 0 1 409.03 709.18 Tm
+[(d )-69(Yu)-7(g)10(opuspi)-2(to, )-71(2025\))3(, )-69(a)4(n)-9(d)-9( )] TJ
 ET
 BT
 1 0 0 1 72.024 681.46 Tm
@@ -2838,15 +2846,15 @@ ET
  EMC  /P <</MCID 2>> BDC BT
 /F1 12 Tf
 1 0 0 1 72.024 606.34 Tm
-[(P)-3(ortf)4(oli)-3(o )-149(opti)-3(mi)6(z)-5(a)4(ti)-3(on )-149(is )-152(a)4( )-149(c)4(o)-9(re)-2( )] TJ
-ET
-BT
-1 0 0 1 233.57 606.34 Tm
-[(mec)6(ha)-5(nism)-4( )-149(in )-151(the )-147(mar)5(k)-9(e)4(ts )-152(for)-3( )-149(ba)4(lan)-7(c)4(ing)8( )-159(risk )-149(a)4(nd )-159(re)7(turn.)-8( )-149(The)-4( )] TJ
+[(P)-3(ortf)4(oli)-3(o )-149(opti)-3(mi)6(z)-5(a)4(ti)-3(on )-149(is )-152(a)4( )-149(c)4(o)-9(re)-2( )-149(mec)6(ha)-5(nism)-4( )-149(in )-151(the )-147(mar)5(k)-9(e)4(ts )-152(for)-3( )-149(ba)4(lan)-7(c)4(ing)8( )-159(risk )-149(a)4(nd )-159(re)7(turn.)-8( )-149(The)-4( )] TJ
 ET
 BT
 1 0 0 1 72.024 578.74 Tm
-[(popular)5(it)-13(y)20( a)4(ros)-7(e)4( due)4( to t)-3(h)10(e)4( incr)5(e)4(a)4(se)3(d si)-2(z)-5(e)4( of the)5( wor)5(ld ec)6(onom)-11(y)20( prov)3(idi)-3(n)-9(g)10( investors w)3(it)-3(h a)4(n e)4(ve)4(r)] TJ
+[(popular)5(it)-13(y)20( a)4(ros)-7(e)4( )] TJ
+ET
+BT
+1 0 0 1 152.54 578.74 Tm
+[(due)4( to t)-3(h)10(e)4( incr)5(e)4(a)4(se)3(d si)-2(z)-5(e)4( of the)5( wor)5(ld ec)6(onom)-11(y)20( prov)3(idi)-3(n)-9(g)10( investors w)3(it)-3(h a)4(n e)4(ve)4(r)] TJ
 ET
 BT
 1 0 0 1 536.14 578.74 Tm
@@ -2858,15 +2866,7 @@ BT
 ET
 BT
 1 0 0 1 72.024 523.51 Tm
-[(Gr)5(oup)] TJ
-ET
-BT
-1 0 0 1 102.62 523.51 Tm
-[( )] TJ
-ET
-BT
-1 0 0 1 106.22 523.51 Tm
-[(\(N)5(GX)-5(\) )] TJ
+[(Gr)5(oup )-49(\(N)5(GX)-5(\) )] TJ
 ET
 BT
 1 0 0 1 143.78 523.51 Tm
@@ -2886,7 +2886,11 @@ BT
 ET
 BT
 1 0 0 1 334.15 523.51 Tm
-[(, )-49(whe)6(re)7( )-49(the )-47(number)5( )-59(of )-46(se)3(c)4(urities )-49(li)-3(sted )-48(ha)4(s )] TJ
+[(, )-49(whe)6(re)7( )-49(the )-47(number)5( )-59(of )-46(se)3(c)4(uriti)] TJ
+ET
+BT
+1 0 0 1 480.94 523.51 Tm
+[(e)4(s )-50(li)-3(sted )-48(ha)4(s )] TJ
 ET
 BT
 1 0 0 1 72.024 495.91 Tm
@@ -2906,15 +2910,15 @@ BT
 ET
 BT
 1 0 0 1 72.024 468.31 Tm
-[(c)4(ompanie)4(s )-170(a)4(s)-10( )-169(a)4(t )-171(S)-3(e)4(ptem)-9(be)4(r )-166(2024 )-179(\(N)5(GX)-5( )-169(we)6(bsit)-4(e)-5(\). )-166(P)-3(ortf)4(oli)-3(o )-169(opti)-3(mi)-3(z)-5(a)4(ti)-3(on)10( )-169(re)] TJ
-ET
-BT
-1 0 0 1 449.26 468.31 Tm
-[(se)-6(a)4(rc)7(h)-9( )-169(re)7(m)-11(a)4(ined )-167(a)-5( )] TJ
+[(c)4(ompanie)4(s )-170(a)4(s)-10( )-169(a)4(t )-171(S)-3(e)4(ptem)-9(be)4(r )-166(2024 )-179(\(N)5(GX)-5( )-169(we)6(bsit)-4(e)-5(\). )-166(P)-3(ortf)4(oli)-3(o )-169(opti)-3(mi)-3(z)-5(a)4(ti)-3(on)10( )-169(re)7(se)-6(a)4(rc)7(h)-9( )-169(re)7(m)-11(a)4(ined )-167(a)-5( )] TJ
 ET
 BT
 1 0 0 1 72.024 440.83 Tm
-[(sig)7(nific)3(a)4(nt )-51(c)4(onc)-5(e)4(rn )-46(for)6( )-49(r)-6(e)-5(se)3(a)4(rc)7(h)-9(e)4(rs )-47(for)6( )-49(e)4(f)-6(fic)5(ient )-49(a)4(ll)-3(oc)4(a)4(ti)-3(on )-49(of )-46(c)4(a)4(pit)-3(a)4(l, )-51(whic)4(h )-49(e)4(ntails )-52(the )-47(a)4(ll)-3(oc)4(a)4(ti)-3(on)10( )] TJ
+[(sig)7(nific)3(a)4(nt )-51(c)4(onc)-5(e)4(rn )-46(for)6( )-49(r)-6(e)-5(se)3(a)4(rc)7(h)-9(e)4(rs )-47(for)6( )-49(e)4(f)-6(fic)5(ient )-49(a)4(ll)-3(oc)4(a)4(ti)-3(o)] TJ
+ET
+BT
+1 0 0 1 345.19 440.83 Tm
+[(n )-49(of )-46(c)4(a)4(pit)-3(a)4(l, )-51(whic)4(h )-49(e)4(ntails )-52(the )-47(a)4(ll)-3(oc)4(a)4(ti)-3(on)10( )] TJ
 ET
 BT
 1 0 0 1 72.024 413.23 Tm
@@ -2930,11 +2934,7 @@ BT
 ET
 BT
 1 0 0 1 72.024 385.63 Tm
-[(mar)5(ke)4(ts, )-22(whic)4(h )-19(e)4(ntails )-22(mar)5(ke)4(t )-21(volatil)-3(it)] TJ
-ET
-BT
-1 0 0 1 257.33 385.63 Tm
-[(y)20(, )-19(va)-5(g)10(u)-9(e)4(ne)4(s)-10(s, )-20(a)4(nd )-19(mar)5(ke)4(t )-21(shifts)] TJ
+[(mar)5(ke)4(ts, )-22(whic)4(h )-19(e)4(ntails )-22(mar)5(ke)4(t )-21(volatil)-3(it)-13(y)20(, )-19(va)-5(g)10(u)-9(e)4(ne)4(s)-10(s, )-20(a)4(nd )-19(mar)5(ke)4(t )-21(shifts)] TJ
 ET
 BT
 1 0 0 1 408.07 385.63 Tm
@@ -2950,7 +2950,11 @@ BT
 ET
 BT
 1 0 0 1 72.024 358.01 Tm
-[(of )-126(mar)5(ke)4(t )-131(fluc)5(tuations, )-132(a)-5(s )-130(se)3(e)4(n )-129(on )-129(the )-127(NG)4(X. )-127(\(U)5(z)-15(oa)4(ga)4( )-129(e)4(t )-131(a)4(l., )-131(2025\))3(. )-129(Ne)-3(ve)-5(rthe)5(less, )-129(in )-131(e)4(ff)6(orts )-129(to )] TJ
+[(of )-126(mar)5(ke)4(t )-131(fluc)5(tua)] TJ
+ET
+BT
+1 0 0 1 157.58 358.01 Tm
+[(ti)-3(ons, )-130(a)-5(s )-130(se)3(e)4(n )-129(on )-129(the )-127(NG)4(X. )-127(\(U)5(z)-15(oa)4(ga)4( )-129(e)4(t )-131(a)4(l., )-131(2025\))3(. )-129(Ne)-3(ve)-5(rthe)5(less, )-129(in )-131(e)4(ff)6(orts )-129(to )] TJ
 ET
 BT
 1 0 0 1 72.024 330.41 Tm
@@ -2958,11 +2962,7 @@ BT
 ET
 BT
 1 0 0 1 72.024 302.81 Tm
- -0.048 Tc[(an)] TJ
-ET
-BT
-1 0 0 1 83.304 302.81 Tm
- 0 Tc[(a)4(l)-21(y)30(ti)-13(c)4(s )-110(for)6( )-119(a)4( )-109(be)4(tt)-3(e)-5(r )-106(a)4(p)-9(proa)7(c)4(h )-119(for)6( )-109(non)] TJ
+[(a)4(na)4(l)-21(y)30(ti)-13(c)4(s )-110(for)6( )-119(a)4( )-109(be)4(tt)-3(e)-5(r )-106(a)4(p)-9(proa)7(c)4(h )-119(for)6( )-109(non)] TJ
 ET
 BT
 1 0 0 1 263.21 302.81 Tm
@@ -2970,7 +2970,11 @@ BT
 ET
 BT
 1 0 0 1 267.17 302.81 Tm
-[(li)-3(ne)-5(a)4(r )-116(a)4(n)-9(a)4(l)-11(y)20(sis)-3(, )-109(a)4(nd)-9( )-109(mar)5(k)-9(e)4(t )-111(shifts)-2( )-109(\(A)5(lfz)-4(a)4(ri )-108(e)4(t )-121(a)4(l., )-111(2025\))3(.)-9( )] TJ
+[(li)-3(ne)-5(a)4(r )-116(a)4(n)-9(a)4(l)-11(y)20(sis)-3(, )-109(a)4(nd)-9( )-109(mar)5(k)-9(e)4(t )-111(shifts)-2( )-109(\(A)5(lf)] TJ
+ET
+BT
+1 0 0 1 454.66 302.81 Tm
+[(z)-5(a)4(ri )-108(e)4(t )-121(a)4(l., )-111(2025\))3(.)-9( )] TJ
 ET
 BT
 1 0 0 1 72.024 275.21 Tm
@@ -2986,15 +2990,15 @@ BT
 ET
  EMC  /P <</MCID 3>> BDC BT
 1 0 0 1 72.024 209.9 Tm
-[(I)13(n )-9(th)-11(e)4(or)-16(y)20(, )-9(portf)4(oli)-3(o )-9(opti)-13(mi)-3(z)-5(a)4(ti)-3(on )-9(e)4(na)] TJ
-ET
-BT
-1 0 0 1 247.61 209.9 Tm
-[(bles )-8(investors )-8(to )-11(c)4(onst)-2(ruc)7(t )-11(portf)4(oli)-3(os )-20(that )-9(max)-7(im)-3(i)8(z)-5(e)4( )-9(e)4(x)-9(pe)4(c)4(ted)12( )] TJ
+[(I)13(n )-9(th)-11(e)4(or)-16(y)20(, )-9(portf)4(oli)-3(o )-9(opti)-13(mi)-3(z)-5(a)4(ti)-3(on )-9(e)4(na)4(bles )-8(investors )-8(to )-11(c)4(onst)-2(ruc)7(t )-11(portf)4(oli)-3(os )-20(that )-9(max)-7(im)-3(i)8(z)-5(e)4( )-9(e)4(x)-9(pe)4(c)4(ted)12( )] TJ
 ET
 BT
 1 0 0 1 72.024 182.3 Tm
-[(re)7(turns )-209(fo)-6(r )-206(a)-5( )-219(g)10(iven )-207(l)-11(e)4(ve)-5(l )-211(of )-206(risk, )-209(o)-9(r )-206(e)4(quival)-9(e)4(ntl)-3(y)20(,)-9( )-209(mi)-3(nim)-3(iz)-7(e)4( )-209(risk )-209(for)-3( )-209(a)-5( )-219(g)10(iven)-7( )-209(re)7(turn)-8( )-209(\(E)4(spi)-12(g)10(a)] TJ
+[(re)7(turns )-209(fo)-6(r )-206(a)-5( )-219(g)] TJ
+ET
+BT
+1 0 0 1 147.26 182.3 Tm
+[(iven )-207(l)-11(e)4(ve)-5(l )-211(of )-206(risk, )-209(o)-9(r )-206(e)4(quival)-9(e)4(ntl)-3(y)20(,)-9( )-209(mi)-3(nim)-3(iz)-7(e)4( )-209(risk )-209(for)-3( )-209(a)-5( )-219(g)10(iven)-7( )-209(re)7(turn)-8( )-209(\(E)4(spi)-12(g)10(a)] TJ
 ET
 BT
 1 0 0 1 536.14 182.3 Tm
@@ -3020,11 +3024,7 @@ BT
 ET
 BT
 1 0 0 1 72.024 127.1 Tm
-[(c)4(orr)6(e)4(l)-11(a)] TJ
-ET
-BT
-1 0 0 1 105.26 127.1 Tm
-[(ti)-3(ons )-50(a)4(nd )-49(indi)-3(vidu)-11(a)4(l )-51(a)4(ssets )-60(risk )] TJ
+[(c)4(orr)6(e)4(l)-11(a)4(ti)-3(ons )-50(a)4(nd )-49(indi)-3(vidu)-11(a)4(l )-51(a)4(ssets )-60(risk )] TJ
 ET
 BT
 1 0 0 1 258.89 127.1 Tm
@@ -3041,7 +3041,11 @@ ET
 BT
 /F3 12 Tf
 1 0 0 1 460.18 127.1 Tm
-[(e)4(t )-51(al.,)] TJ
+[(e)] TJ
+ET
+BT
+1 0 0 1 465.46 127.1 Tm
+[(t )-51(al.,)] TJ
 ET
 BT
 /F1 12 Tf
@@ -3130,7 +3134,7 @@ endobj
 endobj
 58 0 obj
 <<
-/Length 9425
+/Length 9417
 >>
 stream
 q
@@ -3163,15 +3167,15 @@ BT
 ET
 BT
 1 0 0 1 318.29 709.18 Tm
-[(2024\))3(. )-129(How)4(e)4(v)-9(e)4(r, )] TJ
-ET
-BT
-1 0 0 1 405.19 709.18 Tm
-[(to)-11( )-119(a)4(c)4(h)-9(ieve)6( )-119(thes)-8(e)4( )-119(theo)-7(re)7(ti)-3(c)4(a)4(l)-11( )] TJ
+[(2024\))3(. )-129(How)4(e)4(v)-9(e)4(r, )-116(to)-11( )-119(a)4(c)4(h)-9(ieve)6( )-119(thes)-8(e)4( )-119(theo)-7(re)7(ti)-3(c)4(a)4(l)-11( )] TJ
 ET
 BT
 1 0 0 1 72.024 681.58 Tm
-[(be)4(ne)4(fits )-31(de)4(pe)4(nds )-40(c)4(ritica)5(ll)-13(y)20( )-39(on )-29(a)-5(c)4(c)4(ur)-6(a)4(te )-27(e)4(sti)-4(mate)4(s )-30(o)-9(f )-26(re)7(turns, )-29(c)4(ov)-9(a)4(ria)5(nc)-5(e)4(, )-29(sto)-12(c)4(k )-29(for)6(e)-5(c)4(a)4(sts)-3( )-29(a)4(nd )-29(other)5( )] TJ
+[(be)4(ne)4(fits )-31(de)4(pe)4(nds )-40(c)4(ritica)5(ll)-13(y)20( )-39(on )-29(a)-5(c)4(c)4(ur)-6(a)4(te )-27(e)4(sti)-4(mate)] TJ
+ET
+BT
+1 0 0 1 300.65 681.58 Tm
+[(s )-30(o)-9(f )-26(re)7(turns, )-29(c)4(ov)-9(a)4(ria)5(nc)-5(e)4(, )-29(sto)-12(c)4(k )-29(for)6(e)-5(c)4(a)4(sts)-3( )-29(a)4(nd )-29(other)5( )] TJ
 ET
 BT
 1 0 0 1 72.024 653.98 Tm
@@ -3193,15 +3197,11 @@ BT
 ET
 BT
 1 0 0 1 72.024 626.38 Tm
-[(c)4(a)4(n )-99(dist)-4(ort )-98(the )-97(po)-9(rtf)4(oli)-3(o's )-100(ri)] TJ
-ET
-BT
-1 0 0 1 207.05 626.38 Tm
- 0.012 Tc[(sk)] TJ
+[(c)4(a)4(n )-99(dist)-4(ort )-98(the )-97(po)-9(rtf)4(oli)-3(o's )-100(risk)] TJ
 ET
 BT
 1 0 0 1 217.73 626.38 Tm
- 0 Tc[(-)] TJ
+[(-)] TJ
 ET
 BT
 1 0 0 1 221.69 626.38 Tm
@@ -3219,7 +3219,11 @@ BT
 ET
 BT
 1 0 0 1 72.024 598.78 Tm
-[(2024; )-101(Ar)5(if )] TJ
+[(2024; )-101(Ar)5(if)] TJ
+ET
+BT
+1 0 0 1 123.5 598.78 Tm
+[( )] TJ
 ET
 BT
 /F3 12 Tf
@@ -3265,7 +3269,11 @@ BT
 ET
 BT
 1 0 0 1 72.024 505.99 Tm
-[(2008 )-69(fina)5(nc)4(ial )-69(c)4(risis, )-72(the)-7( )-69(c)4(lassica)6(l )-71(opti)-3(mi)-3(z)-5(a)4(ti)-3(on )-69(m)8(ode)4(ls )-72(prove)7(d )-69(to )-71(be)4( )-69(inef)5(fi)-8(c)4(ient )-69(\(Fa)3(touros )] TJ
+[(2008 )-69(fina)5(nc)4(ial )-69(c)4(risis, )-72(the)-7( )-69(c)4(lassica)] TJ
+ET
+BT
+1 0 0 1 233.57 505.99 Tm
+[(l )-71(opti)-3(mi)-3(z)-5(a)4(ti)-3(on )-69(m)8(ode)4(ls )-72(prove)7(d )-69(to )-71(be)4( )-69(inef)5(fi)-8(c)4(ient )-69(\(Fa)3(touros )] TJ
 ET
 BT
 /F3 12 Tf
@@ -3287,11 +3295,7 @@ BT
 ET
 BT
 1 0 0 1 309.89 478.39 Tm
-[(2009 )-299(diver)5(sifi)] TJ
-ET
-BT
-1 0 0 1 380.47 478.39 Tm
-[(c)4(a)4(ti)-3(on )-299(de)4(l)-11(iver)5(s )-300(less )-299(be)4(ne)4(fits )-301(a)4(s )] TJ
+[(2009 )-299(diver)5(sifica)6(ti)-3(on )-299(de)4(l)-11(iver)5(s )-300(less )-299(be)4(ne)4(fits )-301(a)4(s )] TJ
 ET
 BT
 1 0 0 1 72.024 450.79 Tm
@@ -3313,7 +3317,11 @@ BT
 ET
 BT
 1 0 0 1 72.024 423.19 Tm
-[(loss)-3(e)4(s )39(suc)3(h )40(a)4(s )39(Va)6(lue)] TJ
+[(los)] TJ
+ET
+BT
+1 0 0 1 86.064 423.19 Tm
+[(se)3(s )39(suc)3(h )40(a)4(s )39(Va)6(lue)] TJ
 ET
 BT
 1 0 0 1 168.74 423.19 Tm
@@ -3341,11 +3349,7 @@ BT
 ET
 BT
 1 0 0 1 162.74 395.59 Tm
-[(a)4(ddit)-3(ive )12(\()] TJ
-ET
-BT
-1 0 0 1 208.25 395.59 Tm
-[(Moz)-6(umder)5( )] TJ
+[(a)4(ddit)-3(ive )12(\(Moz)-3(umder)5( )] TJ
 ET
 BT
 /F3 12 Tf
@@ -3381,11 +3385,15 @@ BT
 ET
 BT
 1 0 0 1 325.99 367.97 Tm
-[(il)-3(li)-3(quid)8(it)-13(y)30(,)] TJ
+[(il)-3(li)-3(quid)8(it)] TJ
+ET
+BT
+1 0 0 1 367.51 367.97 Tm
+ -0.36 Tc[(y,)] TJ
 ET
 BT
 1 0 0 1 376.15 367.97 Tm
-[( )] TJ
+ 0 Tc[( )] TJ
 ET
 BT
 1 0 0 1 380.71 367.97 Tm
@@ -3393,11 +3401,7 @@ BT
 ET
 BT
 1 0 0 1 72.024 340.37 Tm
-[(Oka)6(for)6(, )-329(2024\))-6(. )-329(Ne)6(ve)-5(rth)-8(e)4(less, )-329(the )-327(pe)4(rsist)-2(e)4(nc)-5(e)4( )-329(o)-9(f )-326(these)5( )-329(c)4(ha)4(ll)-3(e)4(n)-9(ge)4(s )-330(ha)4(s)-10( )-329(drive)5(n )-329(re)7(se)-6(a)4(rc)7(h )-329(in)] TJ
-ET
-BT
-1 0 0 1 530.74 340.37 Tm
-[(to )] TJ
+[(Oka)6(for)6(, )-329(2024\))-6(. )-329(Ne)6(ve)-5(rth)-8(e)4(less, )-329(the )-327(pe)4(rsist)-2(e)4(nc)-5(e)4( )-329(o)-9(f )-326(these)5( )-329(c)4(ha)4(ll)-3(e)4(n)-9(ge)4(s )-330(ha)4(s)-10( )-329(drive)5(n )-329(re)7(se)-6(a)4(rc)7(h )-329(int)-3(o )] TJ
 ET
 BT
 1 0 0 1 72.024 312.77 Tm
@@ -3419,7 +3423,11 @@ BT
 ET
 BT
 1 0 0 1 72.024 285.17 Tm
-[(re)7(se)3(a)-5(rc)7(h )-69(ha)4(s )-70(a)4(tt)-3(e)4(mpt)-3(e)4(d )-69(to )-71(a)4(ddre)7(ss )-71(these)5( )-69(iss)-3(ue)4(s )-70(th)8(roug)13(h )-69(a)4(lt)-3(e)-5(rna)7(ti)-3(ve)4( )-69(risk )-69(mea)6(sure)6(s )-70(a)4(nd )-69(ti)-3(me)] TJ
+[(re)7(se)3(a)-5(rc)7(h )-69(ha)4(s )-70(a)4(tt)-3(e)4(mpt)-3(e)4(d )-69(to )-71(a)4(ddre)7(ss )-71(thes)] TJ
+ET
+BT
+1 0 0 1 258.89 285.17 Tm
+[(e)4( )-69(iss)-3(ue)4(s )-70(th)8(roug)13(h )-69(a)4(lt)-3(e)-5(rna)7(ti)-3(ve)4( )-69(risk )-69(mea)6(sure)6(s )-70(a)4(nd )-69(ti)-3(me)] TJ
 ET
 BT
 1 0 0 1 508.66 285.17 Tm
@@ -3431,11 +3439,7 @@ BT
 ET
 BT
 1 0 0 1 72.024 257.57 Tm
-[(for)6(e)4(c)-5(a)4(sti)-4(ng )-49(models )-50(suc)3(h)-9( )-59(a)4(s )-50(Ex)-8(pe)4(c)4(ted )-47(S)-3(hortf)-5(a)4(ll)-3( )-49(\(E)-5(S)-3(\), )-46(Autor)3(e)-5(g)10(r)-6(e)4(ssi)-3(v)] TJ
-ET
-BT
-1 0 0 1 396.55 257.57 Tm
-[(e)4( )-59(I)13(nt)-11(e)-5(g)10(r)-6(a)4(ted )-47(Movi)-2(n)-9(g)10( )-49(Av)-7(e)4(ra)-2(ge)4( )] TJ
+[(for)6(e)4(c)-5(a)4(sti)-4(ng )-49(models )-50(suc)3(h)-9( )-59(a)4(s )-50(Ex)-8(pe)4(c)4(ted )-47(S)-3(hortf)-5(a)4(ll)-3( )-49(\(E)-5(S)-3(\), )-46(Autor)3(e)-5(g)10(r)-6(e)4(ssi)-3(ve)4( )-59(I)13(nt)-11(e)-5(g)10(r)-6(a)4(ted )-47(Movi)-2(n)-9(g)10( )-49(Av)-7(e)4(ra)-2(ge)4( )] TJ
 ET
 BT
 1 0 0 1 72.024 229.97 Tm
@@ -3443,7 +3447,11 @@ BT
 ET
 BT
 1 0 0 1 72.024 202.34 Tm
-[(2024; M)-2(oz)-5(umder)5( )] TJ
+[(2024; M)-2(oz)-5(um)] TJ
+ET
+BT
+1 0 0 1 139.82 202.34 Tm
+[(de)4(r )] TJ
 ET
 BT
 /F3 12 Tf
@@ -3461,11 +3469,7 @@ BT
 ET
 BT
 1 0 0 1 72.024 174.74 Tm
-[(don')10(t )-171(stem )-170(fr)6(om )-171(the)-7( )-169(opti)-3(mi)-3(z)-5(a)4(ti)-3(on )-169(mode)] TJ
-ET
-BT
-1 0 0 1 268.85 174.74 Tm
-[(ls )] TJ
+[(don')10(t )-171(stem )-170(fr)6(om )-171(the)-7( )-169(opti)-3(mi)-3(z)-5(a)4(ti)-3(on )-169(models )] TJ
 ET
 BT
 1 0 0 1 281.93 174.74 Tm
@@ -3489,7 +3493,11 @@ BT
 ET
  EMC  /P <</MCID 2>> BDC BT
 1 0 0 1 72.024 109.58 Tm
-[(P)-3(ortf)4(oli)-3(o )10(opti)-3(mi)6(z)-5(a)4(ti)-3(on )10(fa)7(il)-3(ure)7(s )9(a)4(r)-6(e)4( )10(prima)3(ril)-20(y)20( )10(d)-9(rive)5(n)-9( )10(b)-9(y)20( )10(poo)-9(r )13(e)4(sti)-4(mation )8(of r)6(isk )7(a)4(nd )10(r)-6(e)4(turns. )10(S)-3(tudi)-3(e)4(s )] TJ
+[(P)-3(ortf)4(oli)-3(o )10(opti)-3(mi)6(z)-5(a)4(ti)-3(on )10(fa)7(il)-3(ure)7(s )9(a)4(r)-6(e)4( )10(prima)3(ril)-20(y)20( )10(d)-9(rive)5(n)-9( )10(b)-9(y)20( )10(poo)-9(r )13(e)4(sti)-4(mat)] TJ
+ET
+BT
+1 0 0 1 393.19 109.58 Tm
+[(ion )8(of r)6(isk )7(a)4(nd )10(r)-6(e)4(turns. )10(S)-3(tudi)-3(e)4(s )] TJ
 ET
 BT
 1 0 0 1 72.024 81.984 Tm
@@ -3501,11 +3509,7 @@ BT
 ET
 BT
 1 0 0 1 192.89 81.984 Tm
-[(va)4(ria)5(nc)-5(e)4( )-19(opti)-3(mi)-3(z)-5(a)4(ti)-3(on)10( )-19(m)8(ode)4(l )-21(for)6( )-19(e)4(sti)-4(mation )-21(e)4(rr)6(ors )-17(in )-21(the )-17(e)14(x)-9(pe)4(c)4(ted )] TJ
-ET
-BT
-1 0 0 1 511.54 81.984 Tm
-[(re)7(turn )] TJ
+[(va)4(ria)5(nc)-5(e)4( )-19(opti)-3(mi)-3(z)-5(a)4(ti)-3(on)10( )-19(m)8(ode)4(l )-21(for)6( )-19(e)4(sti)-4(mation )-21(e)4(rr)6(ors )-17(in )-21(the )-17(e)14(x)-9(pe)4(c)4(ted )-17(re)7(turn )] TJ
 ET
  EMC 
 Q
@@ -3617,7 +3621,7 @@ endobj
 endobj
 65 0 obj
 <<
-/Length 9293
+/Length 9309
 >>
 stream
 q
@@ -3684,11 +3688,7 @@ BT
 ET
 BT
 1 0 0 1 316.37 653.98 Tm
-[(da)4(ta )-87(pe)-5(rf)6(orma)] TJ
-ET
-BT
-1 0 0 1 384.31 653.98 Tm
-[(n)-9(c)4(e)4(, )-89(h)-9(a)4(ve)4( )-99(stabili)-4(t)-11(y)30( )-99(a)4(ssum)-3(pti)-3(ons, )] TJ
+[(da)4(ta )-87(pe)-5(rf)6(orma)5(n)-9(c)4(e)4(, )-89(h)-9(a)4(ve)4( )-99(stabili)-4(t)-11(y)30( )-99(a)4(ssum)-3(pti)-3(ons, )] TJ
 ET
 BT
 1 0 0 1 72.024 626.38 Tm
@@ -3701,7 +3701,12 @@ ET
 BT
 /F4 12 Tf
 1 0 0 1 177.98 626.38 Tm
-[<004F004C>-3<0051>-9<0048>4<0044>4<00550003>23<0044>4<005100470003>20<0057004C>-3<005000480003>22<00590044>4<0055>-16<005C>30<004C0051>-11<004A>10<0003>20<0047>-19<005C>20<0051>-9<0044>4<0050004C>-3<0046>4<00560003>19<000B011D004F00580056>-3<0044>4<00550046>7<005D>-15<005C>20<004E0003>20<0044>4<005100470003>20<011D>-3<004F0058005600440055>4<0046>4<005D>-15<005C>20<004E000F0003>20<0015001300150018001E0003>18<0026>-2<004B00580051004A>10<0003>] TJ
+[<004F004C>-3<0051>-9<0048>4<0044>4<00550003>23<0044>4<005100470003>20<0057004C>-3<005000480003>22<00590044>4<0055>-16<005C>30<004C0051>-11<004A>10<0003>20<0047>-19<005C>20<0051>-9<0044>4<0050004C>-3<0046>4<00560003>19<000B011D004F00580056>-3<0044>4<00550046>7<005D>-15<005C>20<004E0003>20<0044>4<005100470003>20<011D>-3<004F0058005600440055>4<0046>4<005D>-15<005C>20<004E000F0003>20<00150013>] TJ
+ET
+BT
+/F1 12 Tf
+1 0 0 1 490.06 626.38 Tm
+[(25; )18(C)-2(hung)10( )] TJ
 ET
 BT
 /F3 12 Tf
@@ -3727,15 +3732,15 @@ BT
 ET
  EMC  /P <</MCID 1>> BDC BT
 1 0 0 1 72.024 533.47 Tm
-[(I)13(n)-9( )-139(e)4(mpi)-3(ric)5(a)4(l )-151(a)4(ppli)-3(c)4(a)4(ti)-3(ons)-10(, )-139(portf)4(oli)-3(o )-139(a)4(ll)-3(oc)4(a)4(ti)-3(ons )-140(a)-5(r)-6(e)4( )-149(g)10(e)4(ne)-5(ra)7(ll)-23(y)20( )-139(quit)-3(e)4( )-139(se)3(nsit)-4(i)-11(ve)4( )-139(to )-141(c)4(a)4(l)-11(c)4(ulations )-142(for)6( )] TJ
+[(I)13(n)-9( )-139(e)4(mpi)-3(ric)5(a)4(l )-151(a)4(ppli)-3(c)4(a)4(ti)-3(ons)-10(, )-139(portf)4(oli)-3(o )-139(a)4(ll)-3(oc)4(a)4(ti)-3(ons )-140(a)-5(r)-6(e)4( )-149(g)10(e)4(ne)-5(ra)7(ll)-23(y)20( )-139(quit)-3(e)4( )-139(se)3(nsit)-4(i)-11(ve)4( )-139(to )-141(c)4(a)4(l)-11(c)4(ulations )] TJ
+ET
+BT
+1 0 0 1 526.18 533.47 Tm
+[(for)6( )] TJ
 ET
 BT
 1 0 0 1 72.024 505.87 Tm
-[(e)4(sti)-4(mate)4(d )20(ris)] TJ
-ET
-BT
-1 0 0 1 132.74 505.87 Tm
-[(ks )19(a)4(nd )20(re)7(tur)-8(ns )19(\(Ma)6(rtÌne)3(z)] TJ
+[(e)4(sti)-4(mate)4(d )20(risks )19(a)4(nd )20(re)7(tur)-8(ns )19(\(Ma)6(rtÌne)3(z)] TJ
 ET
 BT
 1 0 0 1 249.65 505.87 Tm
@@ -3753,11 +3758,11 @@ BT
 ET
 BT
 1 0 0 1 72.024 450.67 Tm
-[(risk )-119(be)4(c)4(a)4(use)3( )-119(po)-9(rtf)4(oli)-3(o )-119(a)4(l)-11(loca)6(ti)-3(on )-119(we)6(i)-11(g)10(hts )-122(de)4(ter)5(mi)-13(ne)4(d )-119(b)-9(y)20( )-119(po)-9(rtf)4(oli)-3(o )-119(opti)-3(m)] TJ
+[(risk )-119(be)4(c)4(a)4(use)3( )-119(po)-9(rtf)4(oli)-3(o )-119(a)4(l)-11(loca)6(ti)-3(on )-119(we)6(i)-11(g)10(hts )-122(de)4(ter)5(mi)-13(ne)4(d )-119(b)] TJ
 ET
 BT
-1 0 0 1 426.31 450.67 Tm
-[(iza)6(ti)-3(on )-119(a)4(re)7( )-119(de)-5(rive)5(d )-119(a)4(nd )] TJ
+1 0 0 1 341.47 450.67 Tm
+[(y)20( )-119(po)-9(rtf)4(oli)-3(o )-119(opti)-3(mi)-3(z)4(a)4(ti)-3(on )-119(a)4(re)7( )-119(de)-5(rive)5(d )-119(a)4(nd )] TJ
 ET
 BT
 1 0 0 1 72.024 423.07 Tm
@@ -3785,11 +3790,11 @@ BT
 ET
 BT
 1 0 0 1 72.024 367.85 Tm
-[(a)4(l., )-101(2024\))3(, )-99(po)-9(rtf)4(oli)-3(os )-100(for)-3(med )-97(usi)] TJ
+[(a)4(l., )-101(2024\))3(, )-99(po)-9(rt)] TJ
 ET
 BT
-1 0 0 1 229.97 367.85 Tm
-[(ng )-99(futur)-5(e)4( )-99(fo)-6(re)-2(c)4(a)4(s)-10(ts )-102(b)-9(y)20( )-119(L)21(S)-3(TM)-9( )-99(models )-100(out)-11(pe)4(rf)6(orm)-8( )-99(those )-98(fo)-6(rme)5(d)-9( )] TJ
+1 0 0 1 145.46 367.85 Tm
+[(folios )-101(for)-3(med )-97(using)-2( )-99(futur)-5(e)4( )-99(fo)-6(re)-2(c)4(a)4(s)-10(ts )-102(b)-9(y)20( )-119(L)21(S)-3(TM)-9( )-99(models )-100(out)-11(pe)4(rf)6(orm)-8( )-99(those )-98(fo)-6(rme)5(d)-9( )] TJ
 ET
 BT
 1 0 0 1 72.024 340.25 Tm
@@ -3797,15 +3802,15 @@ BT
 ET
 BT
 1 0 0 1 72.024 312.77 Tm
-[(models )-10(for)6( )-9(im)-3(prove)7(d )-9(a)4(ll)-3(oc)4(a)4(ti)-3(on )-9(a)4(nd )-9(re)7(duc)-5(e)4(d )-9(portf)-5(oli)-3(o )-9(risks )-10(c)4(a)4(n )-9(indee)6(d )-9(provide)5( )-9(be)4(ne)4(fits )-11(\(K)5(e)4(vin )-11(& )] TJ
+[(models )-10(for)6( )-9(im)-3(prove)7(d )-9(a)4(ll)-3(oc)4(a)4(ti)-3(on )-9(a)4(nd )-9(re)7(duc)-5(e)4(d )-9(portf)-5(oli)-3(o )-9(risks )-10(c)4(a)4(n )-9(indee)6(d )-9(provide)5( )-9(be)4(ne)4(f)] TJ
+ET
+BT
+1 0 0 1 479.86 312.77 Tm
+[(it)-3(s )-10(\(K)5(e)4(vin )-11(& )] TJ
 ET
 BT
 1 0 0 1 72.024 285.05 Tm
-[(Yug)12(o)] TJ
-ET
-BT
-1 0 0 1 98.544 285.05 Tm
-[(puspi)-2(to, 2025;)-3( Uz)-3(oa)4(ga)4(, 2025\))3(.)] TJ
+[(Yug)12(opuspi)-2(to, 2025;)-3( Uz)-3(oa)4(ga)4(, 2025\))3(.)] TJ
 ET
 BT
 1 0 0 1 244.01 285.05 Tm
@@ -3841,11 +3846,11 @@ BT
 ET
 BT
 1 0 0 1 114.62 192.26 Tm
-[(ba)4(se)3(d)-9( )-9(loss)-3(e)4(s )-10(a)4(nd)-9( )-9(do )-9(not )-11(suf)-7(fic)5(ient)] TJ
+[(ba)4(se)3(d)-9( )-9(loss)-3(e)4(s )-10(a)4(nd)-9( )] TJ
 ET
 BT
-1 0 0 1 276.41 192.26 Tm
-[(l)-21(y)20( )-9(a)-5(c)4(c)4(ou)-9(nt )-11(for)6( )-9(the)-7( )-9(ma)-7(g)10(nit)-3(ude)-5( )-9(of )-6(l)-11(osses )-8(in )-11(the )-7(t)-11(a)4(il)-3( )-9(of )-6(th)-11(e)-5( )] TJ
+1 0 0 1 197.45 192.26 Tm
+[(do )-9(not )-11(suf)-7(fic)5(ientl)-21(y)20( )-9(a)-5(c)4(c)4(ou)-9(nt )-11(for)6( )-9(the)-7( )-9(ma)-7(g)10(nit)-3(ude)-5( )-9(of )-6(l)-11(osses )-8(in )-11(the )-7(t)-11(a)4(il)-3( )-9(of )-6(th)-11(e)-5( )] TJ
 ET
 BT
 1 0 0 1 72.024 164.66 Tm
@@ -3869,15 +3874,19 @@ BT
 ET
 BT
 1 0 0 1 72.024 137.06 Tm
-[(\(2000)3(\), )23(ha)4(ndles)-8( )20(thi)-3(s )19(proble)5(m )18(e)4(ff)-3(e)4(c)4(ti)-3(ve)4(l)-21(y)20( )10(a)4(s )19(it)-3( )20(mea)6(s)-10(ure)7(s )19(the )12(a)4(ve)4(r)-6(a)-5(g)10(e)4( )20(loss)-3( )10(e)4(x)-9(c)4(e)4(e)4(din)-11(g)10( )20(a)4( )10(g)10(iv)-11(e)4(n )20(leve)6(l )18(o)-9(f)-6( )] TJ
+[(\(2000)3(\), )23(ha)4(ndles)-8( )20(thi)-3(s )19(proble)5(m )18(e)4(ff)-3(e)4(c)4(ti)-3(ve)4(l)-21(y)20( )10(a)4(s )19(it)-3( )20(mea)6(s)-10(ure)7(s )19(the )12(a)4(ve)4(r)-6(a)-5(g)10(e)4( )20(loss)-3( )10(e)4(x)-9(c)4(e)4(e)4(din)-11(g)10( )20(a)4( )10(g)10(iv)-11(e)4(n)] TJ
+ET
+BT
+1 0 0 1 501.1 137.06 Tm
+[( )] TJ
+ET
+BT
+1 0 0 1 503.86 137.06 Tm
+[(leve)6(l )18(o)-9(f)-6( )] TJ
 ET
 BT
 1 0 0 1 72.024 109.46 Tm
-[(risk )30(ov)] TJ
-ET
-BT
-1 0 0 1 104.66 109.46 Tm
-[(e)4(r )33(a)4( )20(c)4(e)-5(rta)5(in )28(horiz)-4(on )30(thus )27(suit)-4(a)4(ble )32(for)6( )30(de)-5(a)4(li)-3(ng)10( )30(with )28(e)4(x)-9(tre)5(me )22(e)4(ve)4(nts )27(\(W)-12(a)4(hid )28(e)4(t )28(a)4(l., )28(2025\))3(. )] TJ
+[(risk )30(ove)4(r )33(a)4( )20(c)4(e)-5(rta)5(in )28(horiz)-4(on )30(thus )27(suit)-4(a)4(ble )32(for)6( )30(de)-5(a)4(li)-3(ng)10( )30(with )28(e)4(x)-9(tre)5(me )22(e)4(ve)4(nts )27(\(W)-12(a)4(hid )28(e)4(t )28(a)4(l., )28(2025\))3(. )] TJ
 ET
 BT
 1 0 0 1 515.98 109.46 Tm
@@ -4090,7 +4099,7 @@ endstream
 endobj
 77 0 obj
 <<
-/Length 7328
+/Length 7331
 >>
 stream
 q
@@ -4101,11 +4110,11 @@ q
 0 g
 /GS8 gs
 0 G
-[(de)4(a)4(li)-3(ng)10( )-139(with )-141(c)4(a)4(pit)-3(a)4(l )-141(a)4(ll)-3(o)-9(c)4(a)4(ti)-3(on )-139(with )-141(unc)4(e)4(rta)5(int)-23(y)20(. )-139(L)11(a)4(t)-11(e)4(r )-136(re)7(s)-10(e)4(a)] TJ
+[(de)4(a)4(li)-3(ng)10( )-139(with )-141(c)4(a)4(pit)-3(a)4(l )-141(a)4(ll)-3(o)-9(c)4(a)4(ti)-3(on )-139(with )-141(unc)4(e)4(rta)] TJ
 ET
 BT
-1 0 0 1 368.71 709.18 Tm
-[(r)-6(c)4(h )-139(ha)4(s )-140(a)4(lso )-152(c)4(onfir)4(med )-137(that )-139(C)-2(Va)6(R)-2( )] TJ
+1 0 0 1 287.81 709.18 Tm
+[(int)-23(y)20(. )-139(L)11(a)4(t)-11(e)4(r )-136(re)7(s)-10(e)4(a)4(r)-6(c)4(h )-139(ha)4(s )-140(a)4(lso )-152(c)4(onfir)4(med )-137(that )-139(C)-2(Va)6(R)-2( )] TJ
 ET
 BT
 1 0 0 1 72.024 681.58 Tm
@@ -4129,11 +4138,11 @@ BT
 ET
 BT
 1 0 0 1 72.024 626.38 Tm
-[(a)4(nd )30(c)4(a)4(n )30(r)-6(e)4(a)4(dil)-23(y)20( )30(be)4(c)4(om)-11(e)4( )30(more)5( )30(e)4(f)] TJ
+[(a)4(nd )30(c)4(a)4(n )30(r)-6(e)4(a)4(di)] TJ
 ET
 BT
-1 0 0 1 223.61 626.38 Tm
-[(f)-6(e)4(c)4(ti)-3(ve)4( )30(with )28(for)-3(e)4(c)-5(a)4(sti)-4(ng)10( )30(models )29(\()-6(Z)11(ha)4(n)-9(g)10(, )30(20)-9(25\). )33(This )28(is )27(pa)4(rtic)3(ular)5(l)-21(y)10( )] TJ
+1 0 0 1 135.14 626.38 Tm
+[(l)-21(y)20( )30(be)4(c)4(om)-11(e)4( )30(more)5( )30(e)4(ff)-3(e)4(c)4(ti)-3(ve)4( )30(with )28(for)-3(e)4(c)-5(a)4(sti)-4(ng)10( )30(models )29(\()-6(Z)11(ha)4(n)-9(g)10(, )30(20)-9(25\). )33(This )28(is )27(pa)4(rtic)3(ular)5(l)-21(y)10( )] TJ
 ET
 BT
 1 0 0 1 72.024 598.78 Tm
@@ -4149,11 +4158,11 @@ BT
 ET
 BT
 1 0 0 1 419.95 571.18 Tm
-[(tai)-9(led )-127(dist)-4(ributi)-2(ons. )-130(Thi)9(s)] TJ
+[(tai)-9(led )-127(di)] TJ
 ET
 BT
-1 0 0 1 540.1 571.18 Tm
-[( )] TJ
+1 0 0 1 460.66 571.18 Tm
+[(stribut)-3(ions. )-132(Thi)9(s)9( )] TJ
 ET
 BT
 1 0 0 1 72.024 543.55 Tm
@@ -4194,11 +4203,7 @@ ET
  EMC  /P <</MCID 1>> BDC BT
 /F2 12 Tf
 1 0 0 1 72.024 450.43 Tm
-[(1.3 Re)6(se)3(ar)-5(c)4(h)-3( Qu)-5(e)4(st)] TJ
-ET
-BT
-1 0 0 1 170.3 450.43 Tm
-[(ion)-5(s)] TJ
+[(1.3 Re)6(se)3(ar)-5(c)4(h)-3( Qu)-5(e)4(stion)-3(s)] TJ
 ET
 BT
 1 0 0 1 191.09 450.43 Tm
@@ -4265,11 +4270,15 @@ BT
 ET
 BT
 1 0 0 1 108.02 316.61 Tm
-[(pe)4(rf)6(orma)5(n)-9(c)4(e)4(?)] TJ
+[(pe)4(rf)6(orma)5(n)-9(c)] TJ
+ET
+BT
+1 0 0 1 163.22 316.61 Tm
+ -0.048 Tc[(e?)] TJ
 ET
 BT
 1 0 0 1 174.02 316.61 Tm
-[( )] TJ
+ 0 Tc[( )] TJ
 ET
  EMC  /P <</MCID 5>> BDC BT
 /F6 12 Tf
@@ -4338,11 +4347,11 @@ BT
 ET
 BT
 1 0 0 1 169.22 155.78 Tm
-[(r)-6(e)4(tur)-8(n )-69(for)6(e)4(c)4(a)4(sti)-4(n)-9(g)10( )-69(on )-69(t)] TJ
+[(r)-6(e)4(tur)] TJ
 ET
 BT
-1 0 0 1 278.09 155.78 Tm
-[(a)4(il)] TJ
+1 0 0 1 192.05 155.78 Tm
+[(n )-69(for)6(e)4(c)4(a)4(sti)-4(n)-9(g)10( )-69(on )-69(tail)] TJ
 ET
 BT
 1 0 0 1 290.09 155.78 Tm
@@ -4411,7 +4420,6 @@ endobj
 /Resources <<
 /ExtGState <<
 /GS7 5 0 R
-/GS8 6 0 R
 >>
 /Font <<
 /F1 7 0 R
@@ -4456,7 +4464,7 @@ endobj
 endobj
 81 0 obj
 <<
-/Length 8813
+/Length 8731
 >>
 stream
 q
@@ -4465,7 +4473,6 @@ q
 1 0 0 1 90.024 708.22 Tm
 /GS7 gs
 0 g
-/GS8 gs
 0 G
 [<0078>] TJ
 ET
@@ -4504,11 +4511,7 @@ BT
 ET
 BT
 1 0 0 1 177.74 679.78 Tm
-[(C)-2(Va)6(R)-2( )-69(po)] TJ
-ET
-BT
-1 0 0 1 223.73 679.78 Tm
-[(r)-6(tfolio)-2(s )-70(to )-71(tra)5(dit)-3(ional )-69(mea)-3(n)] TJ
+[(C)-2(Va)6(R)-2( )-69(po)-9(r)-6(tfolio)-2(s )-70(to )-71(tra)5(dit)-3(ional )-69(mea)-3(n)] TJ
 ET
 BT
 1 0 0 1 354.79 679.78 Tm
@@ -4557,11 +4560,7 @@ ET
  EMC  /P <</MCID 4>> BDC BT
 /F1 12 Tf
 1 0 0 1 72.024 546.58 Tm
-[(I)13(n )-59(moder)5(n )-59(fin)-8(a)4(nc)4(e)4(, )] TJ
-ET
-BT
-1 0 0 1 167.9 546.58 Tm
-[(portf)-5(oli)-3(o )-59(opti)-3(m)8(iz)-7(a)4(ti)-3(on)10( )-59(ha)4(s )-60(e)4(volved )-57(to )-61(be)4( )-59(c)4(e)4(ntra)5(l )-61(investm)-2(e)4(nt )-61(de)4(c)4(isi)-4(on)] TJ
+[(I)13(n )-59(moder)5(n )-59(fin)-8(a)4(nc)4(e)4(, )-59(portf)-5(oli)-3(o )-59(opti)-3(m)8(iz)-7(a)4(ti)-3(on)10( )-59(ha)4(s )-60(e)4(volved )-57(to )-61(be)4( )-59(c)4(e)4(ntra)5(l )-61(investm)-2(e)4(nt )-61(de)4(c)4(isi)-4(on)] TJ
 ET
 BT
 1 0 0 1 500.14 546.58 Tm
@@ -4599,11 +4598,11 @@ BT
 ET
 BT
 1 0 0 1 72.024 491.35 Tm
-[(c)4(ountrie)3(s )-200(be)4(c)4(ome )-197(more)5( )-209(volatil)-3(e)4(, )-199(c)4(ompl)-3(e)4(x )-199(a)4(nd )-199(u)10(nc)4(e)4(rta)5(in, )-201(tra)5(dit)-3(ona)4(l )-201(models )-200(ha)4(ve)4( )-199(g)10(ott)-3(e)4(n )-199(m)] TJ
+[(c)4(ountrie)3(s )-200(be)4(c)4(ome )-197(more)5( )-209(volatil)-3(e)4(, )-199(c)4(ompl)-3(e)4(x )-199(a)4(nd )-199(u)10(nc)4(e)4(rta)5(in, )-201(tra)5(dit)-3(ona)4(l )-201(m)] TJ
 ET
 BT
-1 0 0 1 524.74 491.35 Tm
-[(ore)-2( )] TJ
+1 0 0 1 421.39 491.35 Tm
+[(ode)4(ls )-202(ha)4(ve)4( )-199(g)10(ott)-3(e)4(n )-199(more)-4( )] TJ
 ET
 BT
 1 0 0 1 72.024 463.75 Tm
@@ -5582,10 +5581,6 @@ endobj
 <<
 /Type /Page
 /Resources <<
-/ExtGState <<
-/GS7 5 0 R
-/GS8 6 0 R
->>
 /Font <<
 /F1 7 0 R
 /F1-0 91 0 R
@@ -5626,16 +5621,14 @@ endobj
 endobj
 93 0 obj
 <<
-/Length 6979
+/Length 6961
 >>
 stream
 q
  /P <</MCID 0>> BDC BT
 /F2 12 Tf
 1 0 0 1 72.024 708.82 Tm
-/GS7 gs
 0 g
-/GS8 gs
 0 G
 [(1.6 S)-3(c)4(op)-3(e)4( of)-6( the Stud)-5(y)] TJ
 ET
@@ -6228,10 +6221,6 @@ endobj
 <<
 /Type /Page
 /Resources <<
-/ExtGState <<
-/GS7 5 0 R
-/GS8 6 0 R
->>
 /Font <<
 /F1 7 0 R
 /F1-0 99 0 R
@@ -6272,16 +6261,14 @@ endobj
 endobj
 101 0 obj
 <<
-/Length 7654
+/Length 7636
 >>
 stream
 q
  /P <</MCID 0>> BDC BT
 /F1 12 Tf
 1 0 0 1 72.024 709.18 Tm
-/GS7 gs
 0 g
-/GS8 gs
 0 G
 [(these)5( )20(princ)5(ipl)-3(e)4(s, )19(investor)-7(s )19(c)4(a)4(n )20(c)4(onst)-2(ruc)7(t )18(port)-8(folios )18(that )20(not )18(onl)-11(y)30( )20(opti)-3(mi)-3(z)-5(e)4( )20(pe)-5(rf)6(orma)5(nc)-5(e)4( )20(but )18(a)4(r)-6(e)4( )20(a)4(lso )] TJ
 ET
@@ -6533,6 +6520,10 @@ endobj
 <<
 /Type /Page
 /Resources <<
+/ExtGState <<
+/GS7 5 0 R
+/GS8 6 0 R
+>>
 /Font <<
 /F1 7 0 R
 /F1-0 103 0 R
@@ -6573,14 +6564,16 @@ endobj
 endobj
 105 0 obj
 <<
-/Length 8064
+/Length 8082
 >>
 stream
 q
  /P <</MCID 0>> BDC BT
 /F1 12 Tf
 1 0 0 1 72.024 709.18 Tm
+/GS7 gs
 0 g
+/GS8 gs
 0 G
 [(re)7(turns )-59(a)4(bov)-9(e)4( )-59(the )-57(me)-7(a)4(n )-69(a)4(s )-60(de)4(sira)4(ble )-67(ra)7(the)-7(r )-56(than )-67(da)4(nge)4(rous )-57(\()-6(Za)5(pa)4(ta)-7( )-59(Quimba)-7(y)20(o, )-69(2025; )-71(L)21(o)-9(rime)3(r )-66(e)4(t )] TJ
 ET
@@ -7182,6 +7175,10 @@ endobj
 <<
 /Type /Page
 /Resources <<
+/ExtGState <<
+/GS7 5 0 R
+/GS8 6 0 R
+>>
 /Font <<
 /F1 7 0 R
 /F1-0 111 0 R
@@ -7222,14 +7219,16 @@ endobj
 endobj
 113 0 obj
 <<
-/Length 7581
+/Length 7599
 >>
 stream
 q
  /P <</MCID 0>> BDC BT
 /F1 12 Tf
 1 0 0 1 72.024 709.18 Tm
+/GS7 gs
 0 g
+/GS8 gs
 0 G
 [(a)4(l.)] TJ
 ET
@@ -9404,10 +9403,6 @@ endobj
 <<
 /Type /Page
 /Resources <<
-/ExtGState <<
-/GS7 5 0 R
-/GS8 6 0 R
->>
 /Font <<
 /F1 7 0 R
 /F1-0 128 0 R
@@ -9448,16 +9443,14 @@ endobj
 endobj
 130 0 obj
 <<
-/Length 8130
+/Length 8112
 >>
 stream
 q
  /P <</MCID 0>> BDC BT
 /F1 12 Tf
 1 0 0 1 72.024 709.18 Tm
-/GS7 gs
 0 g
-/GS8 gs
 0 G
 [(mathe)4(matica)6(ll)-13(y)20( )-179(c)4(ohe)-5(re)7(nt)-11(, )-169(mea)6(nin)-11(g)10( )-169(it)-3( )-169(a)4(c)-5(c)4(ounts)-2( )-169(f)-6(or )-166(the )-167(se)3(v)-9(e)4(rit)-10(y)20( )-179(of )-166(tail )-171(e)-5(ve)4(nts )-172(a)4(nd )-169(e)4(nsu)-10(re)7(s )-170(that)-9( )] TJ
 ET
@@ -9703,7 +9696,6 @@ endobj
 /Resources <<
 /ExtGState <<
 /GS7 5 0 R
-/GS8 6 0 R
 >>
 /Font <<
 /F1 7 0 R
@@ -9746,7 +9738,7 @@ endobj
 endobj
 134 0 obj
 <<
-/Length 7622
+/Length 7613
 >>
 stream
 q
@@ -9755,7 +9747,6 @@ q
 1 0 0 1 72.024 709.18 Tm
 /GS7 gs
 0 g
-/GS8 gs
 0 G
 [(point)-3( )10(whe)6(re)7( )10(th)-11(e)4( )10(tot)-3(a)4(l )8(e)4(r)-6(ro)-6(r)] TJ
 ET
@@ -10002,7 +9993,6 @@ endobj
 /Resources <<
 /ExtGState <<
 /GS7 5 0 R
-/GS8 6 0 R
 >>
 /Font <<
 /F1 7 0 R
@@ -10045,7 +10035,7 @@ endobj
 endobj
 138 0 obj
 <<
-/Length 9164
+/Length 9155
 >>
 stream
 q
@@ -10054,7 +10044,6 @@ q
 1 0 0 1 72.024 709.18 Tm
 /GS7 gs
 0 g
-/GS8 gs
 0 G
 [(This )-231(se)3(c)4(ti)-3(on )-229(of )-226(the )-227(li)-3(ter)5(a)4(ture)5( )-229(r)-6(e)4(view)4( )-229(off)-3(e)4(rs )-227(a)4( )-229(s)-10(umm)-3(a)4(r)-6(y)20( )-229(o)-9(f )-226(the )-227(c)4(onne)-5(c)4(ti)-3(on )-229(be)4(twe)4(e)4(n )-229(port)-8(folio)-10( )] TJ
 ET
@@ -10459,7 +10448,7 @@ endobj
 endobj
 142 0 obj
 <<
-/Length 7981
+/Length 7950
 >>
 stream
 q
@@ -10622,18 +10611,22 @@ BT
 ET
 BT
 1 0 0 1 72.024 295.13 Tm
-[(a)4(djust)-4(e)4(d )-49(re)7(tur)-8(ns )-50(\(Y)-4(a)4(n )-59(e)4(t )-61(a)4(l., )-51(2020\))3(. )-59(Ac)6(c)4(o)-9(rding )-48(to )-61(Alotaibi )-51(e)4(t )-51(a)4(l. )-61(\(2022)3(\), )-46(C)-12(Va)6(R)-2( )-49(a)-5(c)4(hieve)6(s )-50(sup)-10(e)4(rior)-5( )] TJ
+[(a)4(djust)-4(e)4(d )20(re)7(turns)] TJ
+ET
+BT
+1 0 0 1 147.98 295.13 Tm
+[(.)-9( )20(Ac)-3(c)4(ordi)-8(ng)10( )20(to)-11( )20(Alotaibi )18(e)4(t )8(a)4(l. )18(\(202)-6(2\), )23(C)-2(Va)6(R)-2( )20(a)-5(c)4(hieve)6(s)-10( )20(supe)3(ri)-8(or )23(re)7(turns)-9( )20(c)4(ompa)-7(re)7(d )20(to)-11( )] TJ
 ET
 BT
 1 0 0 1 72.024 267.53 Tm
-[(re)7(turns c)4(ompa)-7(re)7(d to Va)4(R)-12( unde)4(rsc)6(orin)-8(g)10( )-9(a)4( more)5( a)-5(c)4(c)-5(ura)7(te me)4(a)4(su)-10(r)] TJ
+[(Va)6(R)-2( unde)4(rsc)6(o)-9(ring)11( )-9(a)4( mor)-8(e)4( a)4(c)-5(c)4(ura)7(te m)-9(e)4(a)4(sur)-7(e)4(ment )-9(of f)6(inanc)6(ial )] TJ
 ET
 BT
-1 0 0 1 375.19 267.53 Tm
-[(e)4(ment of)3( )-9(fina)5(nc)4(ial risk.)] TJ
+1 0 0 1 366.55 267.53 Tm
+[(risk.)] TJ
 ET
 BT
-1 0 0 1 486.58 267.53 Tm
+1 0 0 1 387.67 267.53 Tm
 [( )] TJ
 ET
  EMC  /P <</MCID 3>> BDC BT
@@ -10652,15 +10645,15 @@ ET
 ET
 BT
 1 0 0 1 72.024 184.7 Tm
-[(outper)5(for)6(m )-301(tr)-8(a)4(dit)-3(ional )-299(e)-5(c)4(onometr)3(ic )-297(te)-7(c)4(hniques )-308(whe)6(n )-299(it)-3( )-299(c)4(om)-11(e)4(s )-300(to )-301(fo)-6(re)-2(c)4(a)4(sti)-4(ng )-299(stock )-298(r)-6(e)4(turn)] TJ
-ET
-BT
-1 0 0 1 532.3 184.7 Tm
-[(s.)-10( )] TJ
+[(outper)5(for)6(m )-301(tr)-8(a)4(dit)-3(ional )-299(e)-5(c)4(onometr)3(ic )-297(te)-7(c)4(hniques )-308(whe)6(n )-299(it)-3( )-299(c)4(om)-11(e)4(s )-300(to )-301(fo)-6(re)-2(c)4(a)4(sti)-4(ng )-299(stock )-298(r)-6(e)4(turns.)-9( )] TJ
 ET
 BT
 1 0 0 1 72.024 157.1 Tm
-[(Tr)4(a)4(dit)-3(ional )-49(models, )-50(suc)3(h)-9( )-49(a)4(s )-50(AR)-10(I)13(MA, )-58(re)7(l)-21(y)20( )-49(he)-5(a)4(vil)-13(y)10( )-49(on )-49(the )-47(a)4(ssum)-3(pti)-3(on )-49(that )-49(f)-6(inanc)6(ial )-49(da)4(ta)-7( )-49(is )-52(stable)-6( )] TJ
+[(Tr)4(a)4(dit)-3(ional )-49(mode)] TJ
+ET
+BT
+1 0 0 1 155.54 157.1 Tm
+[(ls, )-52(suc)3(h)-9( )-49(a)4(s )-50(AR)-10(I)13(MA, )-58(re)7(l)-21(y)20( )-49(he)-5(a)4(vil)-13(y)10( )-49(on )-49(the )-47(a)4(ssum)-3(pti)-3(on )-49(that )-49(f)-6(inanc)6(ial )-49(da)4(ta)-7( )-49(is )-52(stable)-6( )] TJ
 ET
 BT
 1 0 0 1 72.024 129.5 Tm
@@ -10676,15 +10669,11 @@ BT
 ET
 BT
 1 0 0 1 72.024 101.9 Tm
-[(\(A)5(shra)6(fz)-2(a)4(d)-9(e)4(h )-189(e)4(t )-191(a)4(l., )-191(2025\))3(. )-199(I)23(n )-189(c)4(ontr)-8(a)4(st, )-192(a)4(dva)4(nc)-5(e)-5(d )-189(a)4(lg)8(orithm)-2(s )-190(li)-3(ke)] TJ
+[(\(A)5(shra)6(fz)-2(a)4(d)-9(e)4(h )-189(e)4(t )-191(a)4(l., )-191(2025\))3(. )-199(I)23(n )-189(c)4(ontr)-8(a)4(st, )-192(a)4(dva)4(nc)-5(e)-5(d )-189(a)4(lg)8(orithm)-2(s )-190(li)-3(ke)4( )-189(R)-2(a)4(ndom )-191(F)6(ore)7(st )-192(a)4(nd )] TJ
 ET
 BT
-1 0 0 1 398.59 101.9 Tm
-[( )] TJ
-ET
-BT
-1 0 0 1 403.87 101.9 Tm
-[(R)-2(a)4(ndom )-191(F)6(ore)7(st )-192(a)4(nd )-189(Ne)6(ura)7(l )] TJ
+1 0 0 1 507.58 101.9 Tm
+[(Ne)6(ura)7(l )] TJ
 ET
  EMC 
 Q
@@ -10759,7 +10748,7 @@ endobj
 endobj
 146 0 obj
 <<
-/Length 8220
+/Length 8286
 >>
 stream
 q
@@ -10786,11 +10775,7 @@ BT
 ET
 BT
 1 0 0 1 72.024 653.98 Tm
-[(e)4(rr)6(or )-66(r)-6(a)4(tes )-68(\(RMS)-4(E\))4( )-69(c)4(ompar)5(e)4(d )-69(to )-71(the )] TJ
-ET
-BT
-1 0 0 1 252.77 653.98 Tm
-[(h)-9(y)20(brid )-68(AR)-10(IMA)] TJ
+[(e)4(rr)6(or )-66(r)-6(a)4(tes )-68(\(RMS)-4(E\))4( )-69(c)4(ompar)5(e)4(d )-69(to )-71(the )-67(h)-9(y)20(brid )-68(AR)-10(IMA)] TJ
 ET
 BT
 1 0 0 1 327.91 653.98 Tm
@@ -10798,7 +10783,11 @@ BT
 ET
 BT
 1 0 0 1 331.87 653.98 Tm
-[(GA)4(R)-2(C)-2(H )-67(model )-69(be)4(c)4(a)4(use)3( )-69(the)-7(y)20( )-69(c)4(ould )-71(ha)4(ndle)-7( )] TJ
+[(GA)4(R)-2(C)-2(H )] TJ
+ET
+BT
+1 0 0 1 377.71 653.98 Tm
+[(model )-69(be)4(c)4(a)4(use)3( )-69(the)-7(y)20( )-69(c)4(ould )-71(ha)4(ndle)-7( )] TJ
 ET
 BT
 1 0 0 1 72.024 626.38 Tm
@@ -10826,11 +10815,11 @@ BT
 ET
 BT
 1 0 0 1 72.024 571.18 Tm
-[(tra)5(dit)-3(ional )-49(statis)-3(ti)-3(c)4(a)] TJ
+[(tra)5(dit)-3(ional )-49(statis)-3(ti)-3(c)4(a)4(l )-51(met)10(hods, )-50(both )-51(in )] TJ
 ET
 BT
-1 0 0 1 166.94 571.18 Tm
-[(l )-51(met)10(hods, )-50(both )-51(in )-51(e)4(sti)-4(mat)10(ing)8( )-49(pric)5(e)4( )-49(va)4(lues )-48(a)4(nd )-49(pr)-6(e)4(dicti)-11(ng)10( )-49(the )-47(dire)-4(c)4(ti)-3(on )-49(of )-46(the )] TJ
+1 0 0 1 259.01 571.18 Tm
+[(e)4(sti)-4(mat)10(ing)8( )-49(pric)5(e)4( )-49(va)4(lues )-48(a)4(nd )-49(pr)-6(e)4(dicti)-11(ng)10( )-49(the )-47(dire)-4(c)4(ti)-3(on )-49(of )-46(the )] TJ
 ET
 BT
 1 0 0 1 72.024 543.55 Tm
@@ -10854,15 +10843,15 @@ BT
 ET
 BT
 1 0 0 1 72.024 488.35 Tm
-[(mac)6(hine )-317(lea)-3(rning)11( )-319(p)-9(re)7(di)-11(c)4(ti)-3(ons )-320(dire)5(c)4(tl)-13(y)20( )-319(int)-3(o )-319(por)-6(tfolio)-2( )-319(opti)-3(mi)6(z)-5(a)4(ti)-3(on )-319(mod)8(e)4(ls. )-332(I)23(nst)] TJ
-ET
-BT
-1 0 0 1 473.74 488.35 Tm
-[(e)4(a)4(d )-319(of )-316(usin)-12(g )] TJ
+[(mac)6(hine )-317(lea)-3(rning)11( )-319(p)-9(re)7(di)-11(c)4(ti)-3(ons )-320(dire)5(c)4(tl)-13(y)20( )-319(int)-3(o )-319(por)-6(tfolio)-2( )-319(opti)-3(mi)6(z)-5(a)4(ti)-3(on )-319(mod)8(e)4(ls. )-332(I)23(nst)-12(e)4(a)4(d )-319(of )-316(usin)-12(g )] TJ
 ET
 BT
 1 0 0 1 72.024 460.75 Tm
-[(hist)-4(oric)5(a)4(l )-171(a)4(ve)4(r)-6(a)-5(g)10(e)4(s)] TJ
+[(hist)-4(or)] TJ
+ET
+BT
+1 0 0 1 99.384 460.75 Tm
+[(ica)6(l )-171(a)4(ve)4(r)-6(a)-5(g)10(e)4(s)] TJ
 ET
 BT
 1 0 0 1 163.58 460.75 Tm
@@ -10886,11 +10875,15 @@ BT
 ET
 BT
 1 0 0 1 72.024 405.55 Tm
-[(e)4(t )-141(a)4(l., )-141(2025\))3(. )-139(This )-141(method )-139(a)4(ll)-3(ows )-138(the )-137(portf)4(oli)-3(o )-139(to )-141(a)4(d)] TJ
+[(e)4(t )-141(a)4(l., )-141(2025\))3(. )-139(This )-141(method )-139(a)4(ll)-3(ows )-138(the )-137(portf)4(oli)-3(o )-139(to )-141(a)4(djust)-4( )-139(d)-9(y)20(na)4(mi)-3(c)-5(a)4(ll)-13(y)20( )-139(to)] TJ
 ET
 BT
-1 0 0 1 334.39 405.55 Tm
-[(just)-4( )-139(d)-9(y)20(na)4(mi)-3(c)-5(a)4(ll)-13(y)20( )-139(to )-151(ne)4(w )-137(infor)4(mation. )-141(F)6(o)-9(r )] TJ
+1 0 0 1 429.67 405.55 Tm
+[( )] TJ
+ET
+BT
+1 0 0 1 434.47 405.55 Tm
+[(ne)4(w )-137(infor)4(mation. )-141(F)6(o)-9(r )] TJ
 ET
 BT
 1 0 0 1 72.024 377.93 Tm
@@ -10918,11 +10911,15 @@ BT
 ET
 BT
 1 0 0 1 72.024 322.73 Tm
-[(model )-69(is )-72(use)3(d )-69(to )-81(a)4(ssi)-3(g)10(n)-9( )-79(we)6(ig)] TJ
+[(model )-69(is )-72(use)3(d )-69(to )-81(a)4(ssi)-3(g)10(n)-9( )-79(we)6(ig)8(hts.)-12( )-69(F)-3(a)4(n )-69(\(2025)-6(\) )-66(a)4(nd)] TJ
 ET
 BT
-1 0 0 1 214.01 322.73 Tm
-[(hts.)-12( )-69(F)-3(a)4(n )-69(\(2025)-6(\) )-66(a)4(nd)-9( )-69(Ma)3(no)-9(g)10(na)4( )-79(a)4(nd )-79(Kulka)4(rni )-78(\(2025)3(\) )-66(uti)-3(li)-3(z)-5(e)4(d )-69(sim)-4(il)-3(a)4(r )] TJ
+1 0 0 1 310.13 322.73 Tm
+[( )] TJ
+ET
+BT
+1 0 0 1 313.97 322.73 Tm
+[(Ma)3(no)-9(g)10(na)4( )-79(a)4(nd )-79(Kulka)4(rni )-78(\(2025)3(\) )-66(uti)-3(li)-3(z)-5(e)4(d )-69(sim)-4(il)-3(a)4(r )] TJ
 ET
 BT
 1 0 0 1 72.024 295.13 Tm
@@ -10942,11 +10939,7 @@ BT
 ET
 BT
 1 0 0 1 72.024 239.93 Tm
-[(mar)5(ke)4(t cha)6(n)-9(ge)4(s)] TJ
-ET
-BT
-1 0 0 1 146.9 239.93 Tm
-[(.)] TJ
+[(mar)5(ke)4(t cha)6(n)-9(ge)4(s.)] TJ
 ET
 BT
 1 0 0 1 150.02 239.93 Tm
@@ -10954,7 +10947,11 @@ BT
 ET
  EMC  /P <</MCID 2>> BDC BT
 1 0 0 1 72.024 212.33 Tm
-[(W)-5(he)4(n )50(these)5( )50(for)-3(e)4(c)4(a)4(st)] TJ
+[(W)-5(he)4(n )50(these)5( )] TJ
+ET
+BT
+1 0 0 1 130.1 212.33 Tm
+[(for)-3(e)4(c)4(a)4(st)] TJ
 ET
 BT
 1 0 0 1 168.02 212.33 Tm
@@ -10970,11 +10967,11 @@ BT
 ET
 BT
 1 0 0 1 72.024 157.1 Tm
-[(investor )62(using)7( )60(n)-9(e)4(ura)7(l )58(n)-9(e)4(twork)3( )60(for)-3(e)4(c)4(a)4(sts)-3( )60(to )58(ti)-3(me )62(the)-7( )60(S)-3(&)8(P)-3( )60(500 )60(c)4(o)] TJ
+[(investor )62(using)7( )60(n)-9(e)4(ura)7(l )58(n)-9(e)4(twork)3( )60(for)-3(e)4(c)4(a)4(sts)-3( )60(to )58(ti)-3(me )62(the)-7( )60(S)-3(&)8(P)-3( )60(500 )60(c)4(ould )58(incr)-4(e)4(a)4(se)3( )] TJ
 ET
 BT
-1 0 0 1 368.83 157.1 Tm
-[(uld )58(incr)-4(e)4(a)4(se)3( )60(t)-11(he)4(ir )61(a)4(nnua)4(li)-3(z)-5(e)4(d )60(S)-3(ha)4(rp)-6(e)-5( )] TJ
+1 0 0 1 427.99 157.1 Tm
+[(t)-11(he)4(ir )61(a)4(nnua)4(li)-3(z)-5(e)4(d )60(S)-3(ha)4(rp)-6(e)-5( )] TJ
 ET
 BT
 1 0 0 1 72.024 129.5 Tm
@@ -11091,7 +11088,7 @@ endobj
 endobj
 150 0 obj
 <<
-/Length 7766
+/Length 7898
 >>
 stream
 q
@@ -11110,7 +11107,11 @@ BT
 ET
 BT
 1 0 0 1 187.34 709.18 Tm
-[(b)-9(a)4(se)3(d )50(portf)4(oli)-3(os )49(c)4(onsi)-2(stent)-10(l)-11(y)20( )50(be)-5(a)4(t )48(the )52(EU)3(R)-2(O )52(S)-3(TO)3(X)-7(X )52(50 )50(index)-7(, )50(g)10(e)4(ne)-5(ra)7(ti)-3(n)-9(g)10( )] TJ
+[(b)-9(a)4(se)3(d )50(portf)4(o)] TJ
+ET
+BT
+1 0 0 1 246.41 709.18 Tm
+[(li)-3(os )49(c)4(onsi)-2(stent)-10(l)-11(y)20( )50(be)-5(a)4(t )48(the )52(EU)3(R)-2(O )52(S)-3(TO)3(X)-7(X )52(50 )50(index)-7(, )50(g)10(e)4(ne)-5(ra)7(ti)-3(n)-9(g)10( )] TJ
 ET
 BT
 /F4 12 Tf
@@ -11120,15 +11121,15 @@ ET
 BT
 /F1 12 Tf
 1 0 0 1 72.024 653.98 Tm
-[(that )-139(stra)4(te)-7(g)10(ies)-8( )-139(uti)-3(li)-3(z)-5(ing)8( )-139(XG)4(B)7(oost)-2( )-149(for)6(e)-5(c)4(a)4(sts)-3( )-139(outp)-11(e)4(rf)6(orme)5(d)-9( )-139(standa)-4(rd )-136(b)-9(e)4(nc)4(h)-9(mar)5(ks )-140(in )-141(te)-7(rms )-139(of)-6( )-139(t)] TJ
-ET
-BT
-1 0 0 1 528.7 653.98 Tm
-[(he)-5( )] TJ
+[(that )-139(stra)4(te)-7(g)10(ies)-8( )-139(uti)-3(li)-3(z)-5(ing)8( )-139(XG)4(B)7(oost)-2( )-149(for)6(e)-5(c)4(a)4(sts)-3( )-139(outp)-11(e)4(rf)6(orme)5(d)-9( )-139(standa)-4(rd )-136(b)-9(e)4(nc)4(h)-9(mar)5(ks )-140(in )-141(te)-7(rms )-139(of)-6( )-139(the)-7( )] TJ
 ET
 BT
 1 0 0 1 72.024 626.38 Tm
-[(I)13(n)-9(for)6(mation )-41(R)-2(a)4(ti)-3(o, )-39(c)4(onfir)-5(mi)-3(ng)10( )-39(that )-39(a)-5(c)4(ti)-3(ve)4( )-39(mana)-3(ge)-5(ment )-39(ba)4(se)3(d )-39(on )-39(a)4(l)-11(g)10(o)-9(rithm)-2(ic )-37(pre)7(dictions )-42(lea)6(ds )-40(to)-11( )] TJ
+[(I)13(n)-9(for)6(matio)] TJ
+ET
+BT
+1 0 0 1 123.26 626.38 Tm
+[(n )-39(R)-2(a)4(ti)-3(o, )-39(c)4(onfir)-5(mi)-3(ng)10( )-39(that )-39(a)-5(c)4(ti)-3(ve)4( )-39(mana)-3(ge)-5(ment )-39(ba)4(se)3(d )-39(on )-39(a)4(l)-11(g)10(o)-9(rithm)-2(ic )-37(pre)7(dictions )-42(lea)6(ds )-40(to)-11( )] TJ
 ET
 BT
 1 0 0 1 72.024 598.78 Tm
@@ -11140,15 +11141,15 @@ BT
 ET
  EMC  /P <</MCID 1>> BDC BT
 1 0 0 1 72.024 571.18 Tm
-[(I)13(n)-9( )40(the )42(c)4(ont)-11(e)4(x)-9(t )38(of )43(e)4(mer)-4(g)10(in)-11(g)10( )40(ma)-7(rke)7(ts )37(li)-3(ke)4( )30(Nige)4(ria)5(, )30(e)-5(mpi)-3(ric)5(a)4(l )38(e)4(videnc)-3(e)4( )40(stron)-9(g)10(l)-11(y)20( )30(supports )39(th)-11(e)4( )40(a)4(dopt)] TJ
-ET
-BT
-1 0 0 1 524.74 571.18 Tm
-[(ion )] TJ
+[(I)13(n)-9( )40(the )42(c)4(ont)-11(e)4(x)-9(t )38(of )43(e)4(mer)-4(g)10(in)-11(g)10( )40(ma)-7(rke)7(ts )37(li)-3(ke)4( )30(Nige)4(ria)5(, )30(e)-5(mpi)-3(ric)5(a)4(l )38(e)4(videnc)-3(e)4( )40(stron)-9(g)10(l)-11(y)20( )30(supports )39(th)-11(e)4( )40(a)4(dopti)-3(on )] TJ
 ET
 BT
 1 0 0 1 72.024 543.55 Tm
-[(of )-66(these)5( )-69(h)-9(y)20(b)-9(rid )-68(mac)6(hine )-77(lea)6(rnin)-8(g)10( )-69(a)4(pproa)-2(c)4(he)4(s. )-70(Uz)-13(oa)4(ga)4( )-69(e)4(t )-71(a)4(l. )-71(\(2025)3(\) )-66(a)4(na)4(l)-21(y)20(z)-15(e)4(d )-69(the )-67(Nig)10(e)-5(ria)5(n )-69(S)-3(tock)12( )] TJ
+[(of )-66(these)5( )] TJ
+ET
+BT
+1 0 0 1 114.26 543.55 Tm
+[(h)-9(y)20(b)-9(rid )-68(mac)6(hine )-77(lea)6(rnin)-8(g)10( )-69(a)4(pproa)-2(c)4(he)4(s. )-70(Uz)-13(oa)4(ga)4( )-69(e)4(t )-71(a)4(l. )-71(\(2025)3(\) )-66(a)4(na)4(l)-21(y)20(z)-15(e)4(d )-69(the )-67(Nig)10(e)-5(ria)5(n )-69(S)-3(tock)12( )] TJ
 ET
 BT
 1 0 0 1 72.024 515.95 Tm
@@ -11164,7 +11165,11 @@ BT
 ET
 BT
 1 0 0 1 397.39 488.35 Tm
-[(suit)-4(e)4(d )40(fo)-6(r )43(the )42(Nige)4(ria)5(n )40(mar)5(k)-9(e)4(t )] TJ
+[(suit)-4(e)4(d )40(fo)-6(r )43(th)] TJ
+ET
+BT
+1 0 0 1 454.54 488.35 Tm
+[(e)4( )40(Nige)4(ria)5(n )40(mar)5(k)-9(e)4(t )] TJ
 ET
 BT
 1 0 0 1 72.024 460.75 Tm
@@ -11176,11 +11181,11 @@ BT
 ET
 BT
 1 0 0 1 72.024 405.55 Tm
-[(wor)5(ke)4(d )-329(b)-9(e)4(tt)-3(e)4(r )-336(for)6( )-329(oth)-11(e)-5(r )-326(mar)5(k)-9(e)4(ts )-332(li)] TJ
+[(wor)5(ke)4(d )-329(b)-9(e)4(tt)-3(e)4(r )-336(for)6( )-329(oth)-11(e)-5(r )-326(mar)5(k)-9(e)4(ts )-332(li)-3(ke)4( )-329(U)-7(ga)4(nda)4(,)-9( )-329(hi)] TJ
 ET
 BT
-1 0 0 1 253.73 405.55 Tm
-[(ke)4( )-329(U)-7(ga)4(nda)4(,)-9( )-329(hig)8(hli)-13(g)10(hti)-3(ng )-329(the )-327(n)-9(e)4(e)4(d)-9( )-329(for)6( )-329(mod)-11(e)4(l )-331(se)3(le)-7(c)4(ti)-3(on. )] TJ
+1 0 0 1 328.75 405.55 Tm
+[(g)10(hli)-13(g)10(hti)-3(ng )-329(the )-327(n)-9(e)4(e)4(d)-9( )-329(for)6( )-329(mod)-11(e)4(l )-331(se)3(le)-7(c)4(ti)-3(on. )] TJ
 ET
 BT
 1 0 0 1 72.024 377.93 Tm
@@ -11192,11 +11197,11 @@ BT
 ET
 BT
 1 0 0 1 72.024 322.73 Tm
-[(S)-3(ha)4(rpe)7( )-239(ra)7(ti)-3(os )-240(of )-236(1.44 )-239(a)-5(nd )-239(1.)] TJ
+[(S)-3(ha)4(rpe)7( )-239(ra)7(ti)-3(os )-240(of )-236(1.44 )-239(a)-5(nd )-239(1.30 )-239(re)7(spe)3(c)4(ti)-3(ve)] TJ
 ET
 BT
-1 0 0 1 218.69 322.73 Tm
-[(30 )-239(re)7(spe)3(c)4(ti)-3(ve)4(l)-21(y)20(, )-239(f)-6(a)-5(r )-236(surpa)6(ssi)-3(ng)10( )-239(the )-237(0.41 )-249(r)-6(a)4(ti)-3(o )-239(of )-236(the )-237(tra)5(dit)-3(ional)10( )] TJ
+1 0 0 1 285.05 322.73 Tm
+[(l)-21(y)20(, )-239(f)-6(a)-5(r )-236(surpa)6(ssi)-3(ng)10( )-239(the )-237(0.41 )-249(r)-6(a)4(ti)-3(o )-239(of )-236(the )-237(tra)5(dit)-3(ional)10( )] TJ
 ET
 BT
 1 0 0 1 72.024 295.13 Tm
@@ -11222,11 +11227,11 @@ ET
  EMC  /P <</MCID 3>> BDC BT
 /F1 12 Tf
 1 0 0 1 72.024 212.33 Tm
-[(De)6(spit)-4(e)4( )-139(the )-137(g)10(ro)-6(win)] TJ
+[(De)6(spit)-4(e)4( )-139(the )-137(g)10(ro)-6(wing)10( )-139(bo)-9(d)-9(y)20( )-139(of )-136(r)-6(e)4(s)] TJ
 ET
 BT
-1 0 0 1 166.58 212.33 Tm
-[(g)10( )-139(bo)-9(d)-9(y)20( )-139(of )-136(r)-6(e)4(se)3(a)-5(rc)7(h )-139(on )-139(portf)4(o)-9(li)-3(o )-139(opti)-3(m)8(iz)-7(a)4(ti)-3(on )-139(a)4(nd )-139(e)4(qu)10(it)-13(y)30( )-149(re)7(turn )-138(for)-3(e)4(c)-5(a)4(sti)-4(ng)10(,)-9( )] TJ
+1 0 0 1 234.53 212.33 Tm
+[(e)4(a)-5(rc)7(h )-139(on )-139(portf)4(o)-9(li)-3(o )-139(opti)-3(m)8(iz)-7(a)4(ti)-3(on )-139(a)4(nd )-139(e)4(qu)10(it)-13(y)30( )-149(re)7(turn )-138(for)-3(e)4(c)-5(a)4(sti)-4(ng)10(,)-9( )] TJ
 ET
 BT
 1 0 0 1 72.024 184.7 Tm
@@ -11234,15 +11239,19 @@ BT
 ET
 BT
 1 0 0 1 72.024 157.1 Tm
-[(c)4(urr)6(e)4(nt )-51(studi)-4(e)4(s )-50(a)4(r)-6(e)4( )-49(foc)7(us)-10(e)4(d )-49(on )-49(de)4(ve)4(loped )-47(e)-5(c)4(onomi)-3(e)4(s )-50(with )-51(stable)3( )-49(a)4(nd )-49(li)-3(quid)8( )-49(mar)5(ke)4(ts, )-52(w)] TJ
-ET
-BT
-1 0 0 1 491.14 157.1 Tm
-[(hich )-47(ofte)5(n)-9( )] TJ
+[(c)4(urr)6(e)4(nt )-51(studi)-4(e)4(s )-50(a)4(r)-6(e)4( )-49(foc)7(us)-10(e)4(d )-49(on )-49(de)4(ve)4(loped )-47(e)-5(c)4(onomi)-3(e)4(s )-50(with )-51(stable)3( )-49(a)4(nd )-49(li)-3(quid)8( )-49(mar)5(ke)4(ts, )-52(whic)4(h )-49(ofte)5(n)-9( )] TJ
 ET
 BT
 1 0 0 1 72.024 129.5 Tm
-[(do )50(not )48(c)4(a)4(pture)5( )50(th)-11(e)4( )50(volatil)-3(it)-13(y)20(, )50(thi)-3(n )50(tra)5(din)-11(g)10(, )50(a)4(nd)-9( )50(struc)4(t)-11(ura)7(l )48(shoc)3(ks )49(c)4(h)-9(a)4(ra)-2(c)4(ter)5(ist)-4(ic )42(of )53(loca)6(l )48(mar)5(k)-9(e)4(ts. )47(This )] TJ
+[(do)] TJ
+ET
+BT
+1 0 0 1 84.024 129.5 Tm
+[( )] TJ
+ET
+BT
+1 0 0 1 86.424 129.5 Tm
+[(not )48(c)4(a)4(pture)5( )50(th)-11(e)4( )50(volatil)-3(it)-13(y)20(, )50(thi)-3(n )50(tra)5(din)-11(g)10(, )50(a)4(nd)-9( )50(struc)4(t)-11(ura)7(l )48(shoc)3(ks )49(c)4(h)-9(a)4(ra)-2(c)4(ter)5(ist)-4(ic )42(of )53(loca)6(l )48(mar)5(k)-9(e)4(ts. )47(This )] TJ
 ET
 BT
 1 0 0 1 72.024 101.9 Tm
@@ -11330,7 +11339,7 @@ endobj
 endobj
 154 0 obj
 <<
-/Length 7785
+/Length 7756
 >>
 stream
 q
@@ -11341,11 +11350,11 @@ q
 0 g
 /GS8 gs
 0 G
-[(more)5( )60(a)4(dv)-9(a)4(nc)4(e)4(d)-9( )60(tec)6(hnique)-7(s, )59(be)4(ha)4(ve)-5( )60(unde)4(r)-6( )60(c)4(on)] TJ
+[(more)5( )60(a)4(dv)-9(a)4(nc)4(e)4(d)-9( )60(tec)6(hnique)-7(s, )59(be)4(ha)4(ve)-5( )60(unde)4(r)-6( )60(c)4(ondit)-3(ion)-11(s )59(of )63(hi)] TJ
 ET
 BT
-1 0 0 1 286.37 709.18 Tm
-[(dit)-3(ion)-11(s )59(of )63(hi)-11(g)10(h )60(mar)5(k)-9(e)4(t )58(unc)-5(e)4(rta)5(i)-11(nt)-11(y)20(, )60(leptokur)3(ti)-3(c)-5( )60(re)7(turns,)-9( )] TJ
+1 0 0 1 343.27 709.18 Tm
+[(g)10(h )60(mar)5(k)-9(e)4(t )58(unc)-5(e)4(rta)5(i)-11(nt)-11(y)20(, )60(leptokur)3(ti)-3(c)-5( )60(re)7(turns,)-9( )] TJ
 ET
 BT
 1 0 0 1 72.024 681.58 Tm
@@ -11369,11 +11378,11 @@ BT
 ET
 BT
 1 0 0 1 72.024 626.38 Tm
-[(portf)4(oli)-3(o )-79(c)4(onst)-2(ruc)7(ti)-3(on. )-89(W)-5(hil)-3(e)4( )-79(mac)6(hine )-77(lea)6(rnin)-8(g)10( )-89(a)4(nd )-79(other)5( )-89(a)4(dva)4(n)] TJ
+[(portf)4(oli)-3(o )-79(c)4(onst)-2(ruc)7(ti)-3(on. )-89(W)-5(hil)-3(e)4( )-79(mac)6(hine )-77(lea)6(rnin)-8(g)10( )-89(a)4(nd )-79(other)5( )-89(a)4(dva)4(nc)-5(e)4(d )-79(fo)-6(re)-2(c)4(a)4(sti)] TJ
 ET
 BT
-1 0 0 1 384.07 626.38 Tm
-[(c)-5(e)4(d )-79(fo)-6(re)-2(c)4(a)4(sti)-4(ng)10( )-79(t)-11(e)4(c)4(hniques )-78(h)-9(a)4(ve)-5( )] TJ
+1 0 0 1 446.11 626.38 Tm
+[(ng)10( )-79(t)-11(e)4(c)4(hniques )-78(h)-9(a)4(ve)-5( )] TJ
 ET
 BT
 1 0 0 1 72.024 598.78 Tm
@@ -11385,15 +11394,11 @@ BT
 ET
 BT
 1 0 0 1 72.024 543.55 Tm
-[(a)4(s )-180(se)3(pa)-5(ra)7(te)-7( )-179(pro)-6(c)4(e)4(sses,)] TJ
+[(a)4(s )-180(se)3(pa)-5(ra)7(te)-7( )-179(pro)-6(c)4(e)4(sses,)-8( )-179(w)-7(hich )-177(re)7(du)-9(c)4(e)] TJ
 ET
 BT
-1 0 0 1 180.74 543.55 Tm
-[( )] TJ
-ET
-BT
-1 0 0 1 185.9 543.55 Tm
-[(w)-7(hich )-177(re)7(du)-9(c)4(e)4(s)-10( )-179(the )-177(lev)-7(e)4(l )-181(o)-9(f )-176(a)4(ppli)-3(c)-5(a)4(ti)-3(on )-179(of )-176(th)-11(e)4(se)3( )-179(m)-11(e)4(thods)-2( )-179(in )-181(r)-6(e)4(a)4(l)] TJ
+1 0 0 1 252.41 543.55 Tm
+[(s)-10( )-179(the )-177(lev)-7(e)4(l )-181(o)-9(f )-176(a)4(ppli)-3(c)-5(a)4(ti)-3(on )-179(of )-176(th)-11(e)4(se)3( )-179(m)-11(e)4(thods)-2( )-179(in )-181(r)-6(e)4(a)4(l)] TJ
 ET
 BT
 1 0 0 1 508.06 543.55 Tm
@@ -11425,11 +11430,11 @@ BT
 ET
  EMC  /P <</MCID 2>> BDC BT
 1 0 0 1 72.024 460.75 Tm
-[(F)6(inall)-11(y)20(,)-9( )-49(the )-47(p)-9(ra)7(c)4(ti)-3(c)-5(a)4(l )-51(im)-3(p)-9(leme)4(ntation )-51(of )-46(thes)-8(e)4( )-49(mo)-11(de)4(ls )-52(re)7(mains )-50(und)-9(e)4(r)-6(e)4(x)-9(plor)] TJ
+[(F)6(inall)-11(y)20(,)-9( )-49(the )-47(p)-9(ra)7(c)4(ti)-3(c)-5(a)4(l )-51(im)-3(p)-9(leme)4(ntation )-51(of )-46(thes)-8(e)4( )-49(mo)-11(de)4(ls )-52(re)7(mains )-50(und)-9(e)4(r)-6(e)4(x)-9(plore)5(d. )-49(Ma)3(n)-19(y)20( )-49(stud)] TJ
 ET
 BT
-1 0 0 1 434.95 460.75 Tm
-[(e)4(d. )-49(Ma)3(n)-19(y)20( )-49(studi)-4(e)4(s)-10( )-49(re)7(l)-21(y)20( )] TJ
+1 0 0 1 504.46 460.75 Tm
+[(ies)-8( )-49(re)7(l)-21(y)20( )] TJ
 ET
 BT
 1 0 0 1 72.024 433.15 Tm
@@ -11473,11 +11478,15 @@ BT
 ET
 BT
 1 0 0 1 72.024 377.93 Tm
-[(mar)5(ke)4(t )-131(mi)-3(c)4(rostru)3(c)4(tu)-11(re)7( )-129(e)-5(f)-6(fe)7(c)4(ts. )] TJ
+[(mar)5(ke)4(t )-131(mi)-3(c)4(rostru)3(c)4(tu)-11(re)7( )-129(e)-5(f)-6(fe)7(c)4(ts. )-132(This )-131(lea)6(v)-9(e)4(s )-130(a)] TJ
 ET
 BT
-1 0 0 1 223.97 377.93 Tm
-[(This )-131(lea)6(v)-9(e)4(s )-130(a)4( )-139(c)4(ritica)5(l )-141(g)10(a)4(p )-129(b)-9(e)4(twe)4(e)4(n )-129(th)-11(e)4(or)-16(y)20( )-139(a)4(nd )-129(pra)-2(c)4(ti)-3(c)4(e)4(, )-129(c)-5(re)-2(a)4(ti)-3(ng )] TJ
+1 0 0 1 289.73 377.93 Tm
+[( )] TJ
+ET
+BT
+1 0 0 1 294.41 377.93 Tm
+[(c)4(ritica)5(l )-141(g)10(a)4(p )-129(b)-9(e)4(twe)4(e)4(n )-129(th)-11(e)4(or)-16(y)20( )-139(a)4(nd )-129(pra)-2(c)4(ti)-3(c)4(e)4(, )-129(c)-5(re)-2(a)4(ti)-3(ng )] TJ
 ET
 BT
 1 0 0 1 72.024 350.33 Tm
@@ -11493,15 +11502,15 @@ BT
 ET
 BT
 1 0 0 1 72.024 322.73 Tm
-[(re)7(turns in eme)4(r)-6(g)10(in)-11(g)10( mar)5(k)-9(e)4(ts. Addre)6(ssi)-3(n)-9(g)10( these)5( )-9(g)10(a)4(p)-9(s is)-3( e)4(ssential f)3(or de)7(ve)4(lopi)-3(ng)10( a)4(d)-9(a)4(pti)-3(ve)4(, re)7(sil)-4(ient)] TJ
-ET
-BT
-1 0 0 1 536.98 322.73 Tm
- 0.12 Tc[(, )] TJ
+[(re)7(turns in eme)4(r)-6(g)10(in)-11(g)10( mar)5(k)-9(e)4(ts. Addre)6(ssi)-3(n)-9(g)10( these)5( )-9(g)10(a)4(p)-9(s is)-3( e)4(ssential f)3(or de)7(ve)4(lopi)-3(ng)10( a)4(d)-9(a)4(pti)-3(ve)4(, re)7(sil)-4(ient,)-9( )] TJ
 ET
 BT
 1 0 0 1 72.024 295.13 Tm
- 0 Tc[(a)4(nd )60(pra)7(c)4(ti)-3(c)-5(a)4(ll)-13(y)20( )60(im)-3(pleme)4(n)-9(table)4( )60(investm)-2(e)4(nt )58(stra)4(teg)12(i)-11(e)-5(s )59(tailore)5(d )60(to )58(mar)5(ke)4(ts )57(li)-3(ke)4( )60(the )62(Nige)4(ria)5(n )60(Ex)-8(c)4(ha)4(n)-9(g)10(e)4( )] TJ
+[(a)4(nd )60(pra)7(c)4(ti)-3(c)] TJ
+ET
+BT
+1 0 0 1 124.22 295.13 Tm
+[(a)4(ll)-13(y)20( )60(im)-3(pleme)4(n)-9(table)4( )60(investm)-2(e)4(nt )58(stra)4(teg)12(i)-11(e)-5(s )59(tailore)5(d )60(to )58(mar)5(ke)4(ts )57(li)-3(ke)4( )60(the )62(Nige)4(ria)5(n )60(Ex)-8(c)4(ha)4(n)-9(g)10(e)4( )] TJ
 ET
 BT
 1 0 0 1 72.024 267.53 Tm
@@ -11527,11 +11536,11 @@ ET
 ET
 BT
 1 0 0 1 72.024 184.7 Tm
-[(that )-39(bridg)11(e)4(s )-40(a)4(dva)4(n)] TJ
+[(that )-39(bridg)11(e)4(s )-40(a)4(dva)4(n)-9(c)4(e)4(d )-39(fo)-6(re)7(c)4(a)4(sti)] TJ
 ET
 BT
-1 0 0 1 160.82 184.7 Tm
-[(c)4(e)4(d )-39(fo)-6(re)7(c)4(a)4(sti)-4(n)-9(g)10( )-39(tec)6(hniques )-38(wit)-11(h )-39(robust )-39(risk )-39(mana)6(g)10(e)4(men)-7(t )-41(fr)6(a)4(mew)4(orks. )-37(The)5(r)-6(e)4( )-39(is )] TJ
+1 0 0 1 222.17 184.7 Tm
+[(n)-9(g)10( )-39(tec)6(hniques )-38(wit)-11(h )-39(robust )-39(risk )-39(mana)6(g)10(e)4(men)-7(t )-41(fr)6(a)4(mew)4(orks. )-37(The)5(r)-6(e)4( )-39(is )] TJ
 ET
 BT
 1 0 0 1 72.024 157.1 Tm
@@ -11555,11 +11564,11 @@ BT
 ET
 BT
 1 0 0 1 72.024 129.5 Tm
-[(fe)7(w )-27(studi)-4(e)4(s )-30(ha)4(v)-9(e)4( )-29(teste)3(d )-29(t)-11(he)4(se)3( )-29(methods )-30(in )-31(re)-2(a)4(l )-31(e)4(me)-7(rg)13(in)-11(g)10( )-29(ma)-7(rke)7(ts. )-32(This )-31(lea)6(v)-9(e)4(s )-30(im)-3(p)] TJ
+[(fe)7(w )-27(studi)-4(e)4(s )-30(ha)4(v)-9(e)4( )-29(teste)3(d )-29(t)-11(he)4(se)3( )-29(methods )-30(in )-31(re)-2(a)4(l )-31(e)4(me)-7(rg)13(in)-11(g)10( )-29(ma)-7(rke)7(ts. )-32(This )-31(lea)6(v)-9(e)4(s )-30(im)-3(porta)5(nt )-31(que)4(sti)] TJ
 ET
 BT
-1 0 0 1 463.42 129.5 Tm
-[(orta)5(nt )-31(que)4(sti)-4(ons )] TJ
+1 0 0 1 523.42 129.5 Tm
+[(ons )] TJ
 ET
 BT
 1 0 0 1 72.024 101.9 Tm
@@ -11639,7 +11648,7 @@ endobj
 endobj
 158 0 obj
 <<
-/Length 6119
+/Length 6155
 >>
 stream
 q
@@ -11654,11 +11663,15 @@ q
 ET
 BT
 1 0 0 1 72.024 681.58 Tm
-[(for)6( )-219(a)-5( )-219(stud)-12(y)20( )-219(th)-11(a)4(t )-221(de)4(v)-9(e)4(lo)-11(ps )-220(a)4(nd )-219(e)4(v)-9(a)4(luate)4(s )-230(a)4( )-219(f)-6(ra)-2(mew)] TJ
+[(for)6( )-219(a)-5( )-219(stud)-12(y)20( )-219(th)-11(a)4(t )-221(de)4(v)-9(e)4(lo)-11(ps )-220(a)4(nd )-219(e)4(v)-9(a)4(luate)4(s )-230(a)4( )-219(f)-6(ra)-2(mew)4(ork )-216(c)4(ombi)-3(nin)-11(g)] TJ
 ET
 BT
-1 0 0 1 327.43 681.58 Tm
-[(ork )-216(c)4(ombi)-3(nin)-11(g)10( )-219(pr)-6(e)-5(dictive )-217(for)6(e)-5(c)4(a)4(sti)-4(n)-9(g)10( )-219(with )] TJ
+1 0 0 1 400.39 681.58 Tm
+[( )] TJ
+ET
+BT
+1 0 0 1 406.03 681.58 Tm
+[(pr)-6(e)-5(dictive )-217(for)6(e)-5(c)4(a)4(sti)-4(n)-9(g)10( )-219(with )] TJ
 ET
 BT
 1 0 0 1 72.024 653.98 Tm
@@ -12165,10 +12178,6 @@ endobj
 <<
 /Type /Page
 /Resources <<
-/ExtGState <<
-/GS7 5 0 R
-/GS8 6 0 R
->>
 /Font <<
 /F1 7 0 R
 /F1-0 164 0 R
@@ -12774,16 +12783,14 @@ endstream
 endobj
 174 0 obj
 <<
-/Length 7230
+/Length 7212
 >>
 stream
 q
  /P <</MCID 0>> BDC BT
 /F1 12 Tf
 1 0 0 1 72.024 709.18 Tm
-/GS7 gs
 0 g
-/GS8 gs
 0 G
 [(sig)7(nific)3(a)4(nt )-121(volatil)-3(it)-13(y)30( )-129(c)4(lust)-4(e)] TJ
 ET
@@ -14139,10 +14146,6 @@ endobj
 <<
 /Type /Page
 /Resources <<
-/ExtGState <<
-/GS7 5 0 R
-/GS8 6 0 R
->>
 /Font <<
 /F1 7 0 R
 /F1-0 183 0 R
@@ -14186,16 +14189,14 @@ endobj
 endobj
 185 0 obj
 <<
-/Length 11628
+/Length 11610
 >>
 stream
 q
  /P <</MCID 0>> BDC BT
 /F1 12 Tf
 1 0 0 1 72.024 708.82 Tm
-/GS7 gs
 0 g
-/GS8 gs
 0 G
 [(The)5( va)4(ria)5(bl)-11(e)4(s withi)-4(n )] TJ
 ET
@@ -19757,9 +19758,6 @@ endobj
 <<
 /Type /Page
 /Resources <<
-/ExtGState <<
-/GS7 5 0 R
->>
 /Font <<
 /F1 7 0 R
 /F1-0 219 0 R
@@ -19803,14 +19801,13 @@ endobj
 endobj
 221 0 obj
 <<
-/Length 6411
+/Length 6402
 >>
 stream
 q
  /P <</MCID 0>> BDC BT
 /F2 12 Tf
 1 0 0 1 72.024 708.82 Tm
-/GS7 gs
 0 g
 0 G
 [(3.3.)] TJ
@@ -20620,9 +20617,6 @@ endobj
 <<
 /Type /Page
 /Resources <<
-/ExtGState <<
-/GS7 5 0 R
->>
 /Font <<
 /F1 7 0 R
 /F1-0 227 0 R
@@ -20666,14 +20660,13 @@ endobj
 endobj
 229 0 obj
 <<
-/Length 8608
+/Length 8599
 >>
 stream
 q
  /P <</MCID 0>> BDC BT
 /F6 12 Tf
 1 0 0 1 90.024 708.22 Tm
-/GS7 gs
 0 g
 0 G
 [<0078>] TJ
@@ -21110,6 +21103,9 @@ endobj
 <<
 /Type /Page
 /Resources <<
+/ExtGState <<
+/GS7 5 0 R
+>>
 /Font <<
 /F1 7 0 R
 /F1-0 231 0 R
@@ -21155,13 +21151,14 @@ endobj
 endobj
 233 0 obj
 <<
-/Length 12976
+/Length 12985
 >>
 stream
 q
  /P <</MCID 0>> BDC BT
 /F1 12 Tf
 1 0 0 1 108.02 709.18 Tm
+/GS7 gs
 0.188 g
 0.188 G
 [(on )-99(a)4(n)-19(y)20( )-99(pa)-5(ra)7(mete)-5(r )-96(e)4(sti)-4(ma)-7(ti)-3(on )-99(or )-96(c)4(ompl)-3(e)4(x)-9( )-99(opti)-3(mi)-3(z)4(a)4(ti)-3(on )-99(a)4(lg)8(o)-9(rithm)-2(s )-100(. )-109(I)13(n )-99(a)4(n)-9( )-109(EW)-4(P)-3( )-99(stra)4(teg)-7(y)20(, )] TJ
@@ -28002,9 +27999,6 @@ endobj
 <<
 /Type /Page
 /Resources <<
-/ExtGState <<
-/GS7 5 0 R
->>
 /Font <<
 /F1 7 0 R
 /F1-0 251 0 R
@@ -28047,14 +28041,13 @@ endobj
 endobj
 253 0 obj
 <<
-/Length 8348
+/Length 8339
 >>
 stream
 q
  /P <</MCID 0>> BDC BT
 /F1 12 Tf
 1 0 0 1 72.024 709.18 Tm
-/GS7 gs
 0.188 g
 0.188 G
 [(R)-2(a)4(ndom )-571(F)6(ore)7(st )-572(a)4(nd )-569(XG)4(B)7(oost)-2( )] TJ
@@ -39939,7 +39932,7 @@ endobj
 endobj
 361 0 obj
 <<
-/Length 2664
+/Length 2653
 >>
 stream
 q
@@ -39973,21 +39966,21 @@ BT 1 0 0 1 36 84 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Al-Shboul, M., & Alfzari,
 Q
 Q
 q
-1 0 0 1 78 300 cm
+1 0 0 1 78 324 cm
 q
-BT 1 0 0 1 36 84 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Alim, W., Khan, N. U., Zhang, V. W., Cai, H. H., Mikhaylov, A., & Yuan, Q. \(2024\).) Tj T* 36 0 Td (Influence of political stability on the stock market returns and volatility: GARCH and) Tj T* (EGARCH approach. ) Tj /F4 12 Tf (Financial Innovation) Tj /F3 12 Tf (.) Tj T* (https://doi.org/10.1186/s40854-024-00658-8) Tj T* ET
+BT 1 0 0 1 36 60 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Alfeus, M., Harvey, J., & Maphatsoe, P. \(2024\). Improving realised volatility forecast for) Tj T* 36 0 Td (emerging markets. ) Tj /F4 12 Tf (Journal of Economics and Finance) Tj /F3 12 Tf (. Advance online publication.) Tj T* (https://doi.org/10.1007/s12197-024-09701-x) Tj T* ET
 Q
 Q
 q
 1 0 0 1 78 216 cm
 q
-BT 1 0 0 1 36 60 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Alotaibi, T. S., Dalla Valle, L., & Craven, M. J. \(2022\). The worst case GARCH-copula CVaR) Tj T* 36 0 Td (approach for portfolio optimisation: Evidence from financial markets. ) Tj /F4 12 Tf (Journal of Risk) Tj T* (and Financial Management) Tj /F3 12 Tf (, 15\(10\), Article 482. https://doi.org/10.3390/jrfm15100482) Tj T* ET
+BT 1 0 0 1 36 84 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Alim, W., Khan, N. U., Zhang, V. W., Cai, H. H., Mikhaylov, A., & Yuan, Q. \(2024\).) Tj T* 36 0 Td (Influence of political stability on the stock market returns and volatility: GARCH and) Tj T* (EGARCH approach. ) Tj /F4 12 Tf (Financial Innovation) Tj /F3 12 Tf (.) Tj T* (https://doi.org/10.1186/s40854-024-00658-8) Tj T* ET
 Q
 Q
 q
 1 0 0 1 78 132 cm
 q
-BT 1 0 0 1 36 60 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Arif, U., Sohail, M. T., & Majeed, M. I. \(2020\). Portfolio optimization with mean-variance &) Tj T* 36 0 Td (mean-CVaR: Evidence from Pakistan stock market. ) Tj /F4 12 Tf (International Journal of) Tj T* (Management Research & Emerging Sciences) Tj /F3 12 Tf (, 10\(2\), 215-226.) Tj T* ET
+BT 1 0 0 1 36 60 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Alotaibi, T. S., Dalla Valle, L., & Craven, M. J. \(2022\). The worst case GARCH-copula CVaR) Tj T* 36 0 Td (approach for portfolio optimisation: Evidence from financial markets. ) Tj /F4 12 Tf (Journal of Risk) Tj T* (and Financial Management) Tj /F3 12 Tf (, 15\(10\), Article 482. https://doi.org/10.3390/jrfm15100482) Tj T* ET
 Q
 Q
  
@@ -40061,7 +40054,7 @@ endobj
 endobj
 365 0 obj
 <<
-/Length 2913
+/Length 2973
 >>
 stream
 q
@@ -40069,49 +40062,49 @@ q
 q
 1 0 0 1 78 642 cm
 q
+BT 1 0 0 1 36 60 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Arif, U., Sohail, M. T., & Majeed, M. I. \(2020\). Portfolio optimization with mean-variance &) Tj T* 36 0 Td (mean-CVaR: Evidence from Pakistan stock market. ) Tj /F4 12 Tf (International Journal of) Tj T* (Management Research & Emerging Sciences) Tj /F3 12 Tf (, 10\(2\), 215-226.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 558 cm
+q
 BT 1 0 0 1 36 60 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Ashrafzadeh, M., Sadrani, M., & Zolfani, S. H. \(2025\). Clustering-based return prediction) Tj T* 36 0 Td (model for stock pre-selection in portfolio optimization. ) Tj /F4 12 Tf (Results in Engineering) Tj /F3 12 Tf (, 27,) Tj T* (Article 106263. https://doi.org/10.1016/j.rineng.2025.106263) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 582 cm
+1 0 0 1 78 474 cm
+q
+BT 1 0 0 1 36 60 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Bali, T. G., Gokcan, S., & Liang, B. \(2007\). Value at risk and the cross-section of hedge fund) Tj T* 36 0 Td (returns. ) Tj /F4 12 Tf (Journal of Banking & Finance) Tj /F3 12 Tf (, 31\(4\), 1135-1166.) Tj T* (https://doi.org/10.1016/j.jbankfin.2006.10.023) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 414 cm
 q
 BT 1 0 0 1 36 36 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Bodnar, T., Lindholm, M., Niklasson, V., & Thorsen, E. \(2022\). Bayesian portfolio selection) Tj T* 36 0 Td (using VaR and CVaR. ) Tj /F4 12 Tf (Applied Mathematics and Computation) Tj /F3 12 Tf (, 427, Article 127120.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 522 cm
+1 0 0 1 78 354 cm
 q
 BT 1 0 0 1 36 36 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Campbell, J. Y., & Viceira, L. M. \(2002\). ) Tj /F4 12 Tf (Strategic asset allocation: Portfolio choice for) Tj T* 36 0 Td (long-term investors) Tj /F3 12 Tf (. Oxford University Press.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 438 cm
+1 0 0 1 78 270 cm
 q
-BT 1 0 0 1 36 60 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Chaweewanchon, A., & Chaysiri, R. \(2022\). Markowitz mean-variance portfolio optimization) Tj T* 36 0 Td (with predictive stock selection using machine learning. ) Tj /F4 12 Tf (International Journal of) Tj T* (Financial Studies) Tj /F3 12 Tf (, 10\(3\), Article 64. https://doi.org/10.3390/ijfs10030064) Tj T* ET
-Q
-Q
-q
-1 0 0 1 78 378 cm
-q
-BT 1 0 0 1 36 36 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Diebold, F. X., & Mariano, R. S. \(1995\). Comparing predictive accuracy. ) Tj /F4 12 Tf (Journal of Business) Tj T* 36 0 Td (& Economic Statistics) Tj /F3 12 Tf (, 13\(3\), 253-263.) Tj T* ET
-Q
-Q
-q
-1 0 0 1 78 294 cm
-q
-BT 1 0 0 1 36 60 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Fama, E. F. \(1970\). Efficient capital markets: A review of theory and empirical work. ) Tj /F4 12 Tf (The) Tj T* 36 0 Td (Journal of Finance) Tj /F3 12 Tf (, 25\(2\), 383-417.) Tj T* (https://doi.org/10.1111/j.1540-6261.1970.tb00518.x) Tj T* ET
+BT 1 0 0 1 36 60 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Chao, L. \(2024\). Application of machine learning in stock market return forecasting.) Tj T* 36 0 Td /F4 12 Tf (International Journal of Scientific Research and Management \(IJSRM\)) Tj /F3 12 Tf (, 12\(7\),) Tj T* (6827-6835. https://doi.org/10.18535/ijsrm/v12i07.em11) Tj T* ET
 Q
 Q
 q
 1 0 0 1 78 186 cm
 q
-BT 1 0 0 1 36 84 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Fan, Y. \(2025\). Enhancing investment strategies with LSTM-based stock prediction and) Tj T* 36 0 Td (mean-variance portfolio optimization. ) Tj /F4 12 Tf (Proceedings of the 3rd International Conference) Tj T* (on Financial Technology and Business Analysis) Tj /F3 12 Tf (.) Tj T* (https://doi.org/10.54254/2754-1169/2024.23667) Tj T* ET
+BT 1 0 0 1 36 60 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Chaweewanchon, A., & Chaysiri, R. \(2022\). Markowitz mean-variance portfolio optimization) Tj T* 36 0 Td (with predictive stock selection using machine learning. ) Tj /F4 12 Tf (International Journal of) Tj T* (Financial Studies) Tj /F3 12 Tf (, 10\(3\), Article 64. https://doi.org/10.3390/ijfs10030064) Tj T* ET
 Q
 Q
 q
 1 0 0 1 78 102 cm
 q
-BT 1 0 0 1 36 60 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Fapetu, O., Ojo, S. M., Balogun, A. A., & Asaolu, A. A. \(2021\). Capital market performance) Tj T* 36 0 Td (and macroeconomic dynamics in Nigeria. ) Tj /F4 12 Tf (FUOYE Journal of Finance and) Tj T* (Contemporary Issues) Tj /F3 12 Tf (, 1\(1\), 29-37.) Tj T* ET
+BT 1 0 0 1 36 60 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Chen, R. \(2025\). Stock price prediction and portfolio optimization based on mean variance) Tj T* 36 0 Td (model and random forest model. ) Tj /F4 12 Tf (Advances in Economics, Business and Management) Tj T* (Research) Tj /F3 12 Tf (, 333, 358-367.) Tj T* ET
 Q
 Q
  
@@ -40185,63 +40178,51 @@ endobj
 endobj
 369 0 obj
 <<
-/Length 3065
+/Length 2718
 >>
 stream
 q
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
 q
-1 0 0 1 78 642 cm
+1 0 0 1 78 666 cm
 q
-BT 1 0 0 1 36 60 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Fatouros, G., Makridis, G., Kotios, D., Soldatos, J., Filippakis, M., & Kyriazis, D. \(2023\).) Tj T* 36 0 Td (DeepVaR: A framework for portfolio risk assessment leveraging probabilistic deep) Tj T* (neural networks. ) Tj /F4 12 Tf (Digital Finance) Tj /F3 12 Tf (, 5\(1\), 29-56.) Tj T* ET
+BT 1 0 0 1 36 36 Tm -36 0 Td -0.023 Tw 24 TL /F3 12 Tf 0 0 0 rg (Cheng, Y. \(2025\). Monte Carlo-Based VaR Estimation and Backtesting Under Basel III. ) Tj /F4 12 Tf (Risks) Tj /F3 12 Tf (,) Tj T* 0 Tw 36 0 Td (13\(8\), Article 146. https://doi.org/10.3390/risks13080146) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 582 cm
+1 0 0 1 78 558 cm
 q
-BT 1 0 0 1 36 36 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Fleming, J., Kirby, C., & Ostdiek, B. \(2001\). ) Tj /F4 12 Tf (The economic value of volatility timing using) Tj T* 36 0 Td ('realized' volatility) Tj /F3 12 Tf ( [Working paper]. Rice University, Jones Graduate School.) Tj T* ET
+BT 1 0 0 1 36 84 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Chung, V., Espinoza, J., & Quispe, R. \(2025\). Forecasting Financial Volatility Under) Tj T* 36 0 Td (Structural Breaks: A Comparative Study of GARCH Models and Deep Learning) Tj T* (Techniques. ) Tj /F4 12 Tf (Journal of Risk and Financial Management) Tj /F3 12 Tf (, 18\(9\), Article 494.) Tj T* (https://doi.org/10.3390/jrfm18090494) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 522 cm
+1 0 0 1 78 498 cm
 q
-BT 1 0 0 1 36 36 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Gu, S., Kelly, B., & Xiu, D. \(2020\). Empirical asset pricing via machine learning. ) Tj /F4 12 Tf (The Review) Tj T* 36 0 Td (of Financial Studies) Tj /F3 12 Tf (, 33\(5\), 2223-2273. https://doi.org/10.1093/rfs/hhz113) Tj T* ET
+BT 1 0 0 1 36 36 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Diebold, F. X., & Mariano, R. S. \(1995\). Comparing predictive accuracy. ) Tj /F4 12 Tf (Journal of Business) Tj T* 36 0 Td (& Economic Statistics) Tj /F3 12 Tf (, 13\(3\), 253-263.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 438 cm
+1 0 0 1 78 390 cm
 q
-BT 1 0 0 1 36 60 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Job, O. D. \(2022\). An empirical evaluation of alternative asset allocation policies for emerging) Tj T* 36 0 Td (and frontier market investors in Africa. ) Tj /F4 12 Tf (Journal of Financial Risk Management) Tj /F3 12 Tf (, 11\(3\),) Tj T* (481-521. https://doi.org/10.4236/jfrm.2022.113024) Tj T* ET
+BT 1 0 0 1 36 84 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Espiga-Fernandez, F., Garcia-Sanchez, A., & Ordieres-Mere, J. \(2024\). A Systematic) Tj T* 36 0 Td (Approach to Portfolio Optimization: A Comparative Study of Reinforcement Learning) Tj T* (Agents, Market Signals, and Investment Horizons. ) Tj /F4 12 Tf (Algorithms) Tj /F3 12 Tf (, 17\(12\), Article 570.) Tj T* (https://doi.org/10.3390/a17120570) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 378 cm
+1 0 0 1 78 306 cm
 q
-BT 1 0 0 1 36 36 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Jobson, J. D., & Korkie, B. M. \(1981\). Performance hypothesis testing with the Sharpe and) Tj T* 36 0 Td (Treynor measures. ) Tj /F4 12 Tf (The Journal of Finance) Tj /F3 12 Tf (, 36\(4\), 889-908.) Tj T* ET
+BT 1 0 0 1 36 60 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Fama, E. F. \(1970\). Efficient capital markets: A review of theory and empirical work. ) Tj /F4 12 Tf (The) Tj T* 36 0 Td (Journal of Finance) Tj /F3 12 Tf (, 25\(2\), 383-417.) Tj T* (https://doi.org/10.1111/j.1540-6261.1970.tb00518.x) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 294 cm
+1 0 0 1 78 198 cm
 q
-BT 1 0 0 1 36 60 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Kevin, J., & Yugopuspito, P. \(2025\). Hybrid LSTM and PPO networks for dynamic portfolio) Tj T* 36 0 Td (optimization \(LPPM-UPH, No. 404/LPPM-UPH/VII/2025\). ) Tj /F4 12 Tf (Universitas Pelita) Tj T* (Harapan Working Paper) Tj /F3 12 Tf (.) Tj T* ET
+BT 1 0 0 1 36 84 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Fan, Y. \(2025\). Enhancing investment strategies with LSTM-based stock prediction and) Tj T* 36 0 Td (mean-variance portfolio optimization. ) Tj /F4 12 Tf (Proceedings of the 3rd International Conference) Tj T* (on Financial Technology and Business Analysis) Tj /F3 12 Tf (.) Tj T* (https://doi.org/10.54254/2754-1169/2024.23667) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 210 cm
+1 0 0 1 78 114 cm
 q
-BT 1 0 0 1 36 60 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Leccadito, A., Staino, A., & Toscano, P. \(2024\). A novel robust method for estimating the) Tj T* 36 0 Td (covariance matrix of financial returns with applications to risk management. ) Tj /F4 12 Tf (Financial) Tj T* (Innovation) Tj /F3 12 Tf (, 10, Article 116.) Tj T* ET
-Q
-Q
-q
-1 0 0 1 78 150 cm
-q
-BT 1 0 0 1 36 36 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Ledoit, O., & Wolf, M. \(2008\). Robust performance hypothesis testing with the Sharpe ratio.) Tj T* 36 0 Td /F4 12 Tf (Journal of Empirical Finance) Tj /F3 12 Tf (, 15\(5\), 850-859.) Tj T* ET
-Q
-Q
-q
-1 0 0 1 78 90 cm
-q
-BT 1 0 0 1 36 36 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Ledoit, O., & Wolf, M. \(2011\). Robust performance hypothesis testing with the variance.) Tj T* 36 0 Td /F4 12 Tf (Wilmott Magazine) Tj /F3 12 Tf (, \(55\), 86-89.) Tj T* ET
+BT 1 0 0 1 36 60 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Fapetu, O., Ojo, S. M., Balogun, A. A., & Asaolu, A. A. \(2021\). Capital market performance) Tj T* 36 0 Td (and macroeconomic dynamics in Nigeria. ) Tj /F4 12 Tf (FUOYE Journal of Finance and) Tj T* (Contemporary Issues) Tj /F3 12 Tf (, 1\(1\), 29-37.) Tj T* ET
 Q
 Q
  
@@ -40315,7 +40296,7 @@ endobj
 endobj
 373 0 obj
 <<
-/Length 2880
+/Length 3061
 >>
 stream
 q
@@ -40323,49 +40304,49 @@ q
 q
 1 0 0 1 78 642 cm
 q
-BT 1 0 0 1 36 60 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Lorimer, D. A., van Schalkwyk, C. H., & Szczygielski, J. J. \(2024\). Portfolio optimisation) Tj T* 36 0 Td (using alternative risk measures. ) Tj /F4 12 Tf (Finance Research Letters) Tj /F3 12 Tf (, 67, Article 105758.) Tj T* (https://doi.org/10.1016/j.frl.2024.105758) Tj T* ET
+BT 1 0 0 1 36 60 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Fatouros, G., Makridis, G., Kotios, D., Soldatos, J., Filippakis, M., & Kyriazis, D. \(2023\).) Tj T* 36 0 Td (DeepVaR: A framework for portfolio risk assessment leveraging probabilistic deep) Tj T* (neural networks. ) Tj /F4 12 Tf (Digital Finance) Tj /F3 12 Tf (, 5\(1\), 29-56.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 582 cm
+1 0 0 1 78 558 cm
 q
-BT 1 0 0 1 36 36 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Markowitz, H. \(1952\). Portfolio selection. ) Tj /F4 12 Tf (The Journal of Finance) Tj /F3 12 Tf (, 7\(1\), 77-91.) Tj T* 36 0 Td (https://doi.org/10.1111/j.1540-6261.1952.tb01525.x) Tj T* ET
+BT 1 0 0 1 36 60 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Ferrari, D., Paterlini, S., Rigamonti, A., & Weissensteiner, A. \(2024\). Smoothed) Tj T* 36 0 Td (semicovariance estimation for portfolio selection. ) Tj /F4 12 Tf (Annals of Operations Research) Tj /F3 12 Tf (.) Tj T* (Advance online publication. https://doi.org/10.1007/s10479-024-06043-z) Tj T* ET
 Q
 Q
 q
 1 0 0 1 78 474 cm
 q
-BT 1 0 0 1 36 84 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Martinez-Barbero, X., Cervello-Royo, R., & Ribal, J. \(2024\). Portfolio optimization with) Tj T* 36 0 Td (prediction-based return using Long Short-Term Memory neural networks: Testing on) Tj T* (upward and downward European markets. ) Tj /F4 12 Tf (Computational Economics) Tj /F3 12 Tf (, 65, 1479-1504.) Tj T* (https://doi.org/10.1007/s10614-024-10604-6) Tj T* ET
+BT 1 0 0 1 36 60 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Fleming, J., Kirby, C., & Ostdiek, B. \(2001\). ) Tj /F4 12 Tf (The economic value of volatility timing using) Tj T* 36 0 Td ('realized' volatility) Tj /F3 12 Tf ( [Working paper]. Rice University, Jones Graduate School.) Tj T* (https://ssrn.com/abstract=276921) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 366 cm
+1 0 0 1 78 414 cm
 q
-BT 1 0 0 1 36 84 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Mba, J. C., Ababio, K. A., & Agyei, S. K. \(2022\). Markowitz mean-variance portfolio) Tj T* 36 0 Td (selection and optimization under a behavioral spectacle: New empirical evidence.) Tj T* /F4 12 Tf (International Journal of Financial Studies) Tj /F3 12 Tf (, 10\(2\), Article 28.) Tj T* (https://doi.org/10.3390/ijfs10020028) Tj T* ET
+BT 1 0 0 1 36 36 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Gu, S., Kelly, B., & Xiu, D. \(2020\). Empirical asset pricing via machine learning. ) Tj /F4 12 Tf (The Review) Tj T* 36 0 Td (of Financial Studies) Tj /F3 12 Tf (, 33\(5\), 2223-2273. https://doi.org/10.1093/rfs/hhz113) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 306 cm
+1 0 0 1 78 354 cm
 q
-BT 1 0 0 1 36 36 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Memmel, C. \(2003\). Performance hypothesis testing with the Sharpe ratio. ) Tj /F4 12 Tf (Finance Letters) Tj /F3 12 Tf (,) Tj T* 36 0 Td (1\(1\), 21-23.) Tj T* ET
+BT 1 0 0 1 36 36 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (He, W. \(2022\). An empirical research based on Markowitz's portfolio theory. ) Tj /F4 12 Tf (World Scientific) Tj T* 36 0 Td (Research Journal) Tj /F3 12 Tf (, 8\(3\), 221-227. https://doi.org/10.6911/WSRJ.202203_8\(3\).0028) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 246 cm
+1 0 0 1 78 270 cm
 q
-BT 1 0 0 1 36 36 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Michaud, R. O. \(1989\). The Markowitz optimization enigma: Is "optimized" optimal?) Tj T* 36 0 Td /F4 12 Tf (Financial Analysts Journal) Tj /F3 12 Tf (, 45\(1\), 31-42. https://doi.org/10.2469/faj.v45.n1.31) Tj T* ET
+BT 1 0 0 1 36 60 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Hsiao, Y.-Y. \(2025\). A comprehensive survey of modern portfolio optimization: From) Tj T* 36 0 Td (traditional risk analysis to advanced analytics and machine learning approaches) Tj T* (\(Preprint\). ) Tj /F4 12 Tf (Johns Hopkins University) Tj /F3 12 Tf (.) Tj T* ET
 Q
 Q
 q
 1 0 0 1 78 162 cm
 q
-BT 1 0 0 1 36 60 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Moyoweshumba, E., & Seitshiro, M. \(2025\). Leveraging Markowitz, Random Forest, and) Tj T* 36 0 Td (XGBoost for optimal diversification of South African stock portfolios. ) Tj /F4 12 Tf (Data Science in) Tj T* (Finance and Economics) Tj /F3 12 Tf (, 5\(2\), 205-233. https://doi.org/10.3934/DSFE.2025010) Tj T* ET
+BT 1 0 0 1 36 84 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Huang, R., Kambouroudis, D., & McMillan, D. G. \(2025\). Is portfolio diversification still) Tj T* 36 0 Td (effective: Evidence spanning three crises from the perspective of U.S. investors.) Tj T* /F4 12 Tf (Journal of Asset Management) Tj /F3 12 Tf (, 26\(2\), 115-135.) Tj T* (https://doi.org/10.1057/s41260-025-00398-z) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 102 cm
+1 0 0 1 78 78 cm
 q
-BT 1 0 0 1 36 36 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Mozumder, S., Hasan, M. S., & Kabir, M. A. \(2024\). Multilevel and tail risk management.) Tj T* 36 0 Td /F4 12 Tf (Financial Innovation) Tj /F3 12 Tf (, 10, Article 100.) Tj T* ET
+BT 1 0 0 1 36 60 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Job, O. D. \(2022\). An empirical evaluation of alternative asset allocation policies for emerging) Tj T* 36 0 Td (and frontier market investors in Africa. ) Tj /F4 12 Tf (Journal of Financial Risk Management) Tj /F3 12 Tf (, 11\(3\),) Tj T* (481-521. https://doi.org/10.4236/jfrm.2022.113024) Tj T* ET
 Q
 Q
  
@@ -40439,57 +40420,57 @@ endobj
 endobj
 377 0 obj
 <<
-/Length 3000
+/Length 2748
 >>
 stream
 q
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
 q
-1 0 0 1 78 642 cm
+1 0 0 1 78 666 cm
 q
-BT 1 0 0 1 36 60 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Naeem, M., Jassim, H. S., & Korsah, D. \(2024\). The application of machine learning) Tj T* 36 0 Td (techniques to predict stock market crises in Africa. ) Tj /F4 12 Tf (Journal of Risk and Financial) Tj T* (Management) Tj /F3 12 Tf (, 17\(12\), Article 554. https://doi.org/10.3390/jrfm17120554) Tj T* ET
+BT 1 0 0 1 36 36 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Jobson, J. D., & Korkie, B. M. \(1981\). Performance hypothesis testing with the Sharpe and) Tj T* 36 0 Td (Treynor measures. ) Tj /F4 12 Tf (The Journal of Finance) Tj /F3 12 Tf (, 36\(4\), 889-908.) Tj T* ET
 Q
 Q
 q
 1 0 0 1 78 582 cm
 q
-BT 1 0 0 1 36 36 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Rockafellar, R. T., & Uryasev, S. \(2000\). Optimization of conditional value-at-risk. ) Tj /F4 12 Tf (Journal of) Tj T* 36 0 Td (Risk) Tj /F3 12 Tf (, 2\(3\), 21-41. https://doi.org/10.21314/JOR.2000.038) Tj T* ET
+BT 1 0 0 1 36 60 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Kevin, J., & Yugopuspito, P. \(2025\). Hybrid LSTM and PPO networks for dynamic portfolio) Tj T* 36 0 Td (optimization \(LPPM-UPH, No. 404/LPPM-UPH/VII/2025\). ) Tj /F4 12 Tf (Universitas Pelita) Tj T* (Harapan Working Paper) Tj /F3 12 Tf (.) Tj T* ET
 Q
 Q
 q
 1 0 0 1 78 498 cm
 q
-BT 1 0 0 1 36 60 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Rockafellar, R. T., & Uryasev, S. \(2002\). Conditional value-at-risk for general loss) Tj T* 36 0 Td (distributions. ) Tj /F4 12 Tf (Journal of Banking & Finance) Tj /F3 12 Tf (, 26\(7\), 1443-1471.) Tj T* (https://doi.org/10.1016/S0378-4266\(02\)00271-6) Tj T* ET
+BT 1 0 0 1 36 60 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Leccadito, A., Staino, A., & Toscano, P. \(2024\). A novel robust method for estimating the) Tj T* 36 0 Td (covariance matrix of financial returns with applications to risk management. ) Tj /F4 12 Tf (Financial) Tj T* (Innovation) Tj /F3 12 Tf (, 10, Article 116.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 414 cm
+1 0 0 1 78 438 cm
 q
-BT 1 0 0 1 36 60 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Sahiner, M. \(2022\). Forecasting volatility in Asian financial markets: Evidence from recursive) Tj T* 36 0 Td (and rolling window methods. ) Tj /F4 12 Tf (SN Business & Economics) Tj /F3 12 Tf (, 2, Article 157.) Tj T* (https://doi.org/10.1007/s43546-022-00329-9) Tj T* ET
+BT 1 0 0 1 36 36 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Ledoit, O., & Wolf, M. \(2008\). Robust performance hypothesis testing with the Sharpe ratio.) Tj T* 36 0 Td /F4 12 Tf (Journal of Empirical Finance) Tj /F3 12 Tf (, 15\(5\), 850-859.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 330 cm
+1 0 0 1 78 378 cm
 q
-BT 1 0 0 1 36 60 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Salo, A., Doumpos, M., Liesio, J., & Zopounidis, C. \(2024\). Fifty years of portfolio) Tj T* 36 0 Td (optimization. ) Tj /F4 12 Tf (European Journal of Operational Research) Tj /F3 12 Tf (, 318\(1\), 1-18.) Tj T* (https://doi.org/10.1016/j.ejor.2023.12.031) Tj T* ET
+BT 1 0 0 1 36 36 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Ledoit, O., & Wolf, M. \(2011\). Robust performance hypothesis testing with the variance.) Tj T* 36 0 Td /F4 12 Tf (Wilmott Magazine) Tj /F3 12 Tf (, \(55\), 86-89.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 246 cm
+1 0 0 1 78 294 cm
 q
-BT 1 0 0 1 36 60 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Samaniego Alcantar, A. \(2023\). Semi-variance optimization for the components of the Dow) Tj T* 36 0 Td (Jones Industrial Average index. ) Tj /F4 12 Tf (Contaduria y Administracion) Tj /F3 12 Tf (, 68\(4\), 1-17.) Tj T* (http://dx.doi.org/10.22201/fca.24488410e.2023.3409) Tj T* ET
+BT 1 0 0 1 36 60 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Li, G. \(2023\). Portfolio optimization and risk analysis in financial markets. ) Tj /F4 12 Tf (Proceedings of the) Tj T* 36 0 Td (2nd International Conference on Financial Technology and Business Analysis) Tj /F3 12 Tf (, 61,) Tj T* (243-247. https://doi.org/10.54254/2754-1169/61/20231273) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 162 cm
+1 0 0 1 78 210 cm
 q
-BT 1 0 0 1 36 60 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Slusarczyk, D., & Slepaczuk, R. \(2025\). Algorithmic investment strategies on the Dow Jones) Tj T* 36 0 Td (Industrial Average. ) Tj /F4 12 Tf (Journal of Big Data) Tj /F3 12 Tf (, 12, Article 127.) Tj T* (https://doi.org/10.1186/s40537-025-01164-z) Tj T* ET
+BT 1 0 0 1 36 60 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Lorimer, D. A., van Schalkwyk, C. H., & Szczygielski, J. J. \(2024\). Portfolio optimisation) Tj T* 36 0 Td (using alternative risk measures. ) Tj /F4 12 Tf (Finance Research Letters) Tj /F3 12 Tf (, 67, Article 105758.) Tj T* (https://doi.org/10.1016/j.frl.2024.105758) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 78 cm
+1 0 0 1 78 126 cm
 q
-BT 1 0 0 1 36 60 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Uzoaga, G. A., Adenomon, M. O., Nweze, N. O., & Maijama, B. \(2025\). Modelling and) Tj T* 36 0 Td (predicting stock prices of Nigerian Stock Exchange using some machine learning) Tj T* (techniques and time series model. ) Tj /F4 12 Tf (Science World Journal) Tj /F3 12 Tf (, 20\(2\), 510-515.) Tj T* ET
+BT 1 0 0 1 36 60 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Lyu, X. \(2024\). Portfolio Optimization Strategies: New Approaches Based on Machine) Tj T* 36 0 Td (Learning Forecasting. ) Tj /F4 12 Tf (Highlights in Business, Economics and Management) Tj /F3 12 Tf (, 40,) Tj T* (1077-1082.) Tj T* ET
 Q
 Q
  
@@ -40563,33 +40544,57 @@ endobj
 endobj
 381 0 obj
 <<
-/Length 1482
+/Length 2921
 >>
 stream
 q
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
 q
-1 0 0 1 78 690 cm
+1 0 0 1 78 642 cm
 q
-BT 1 0 0 1 36 12 Tm 24 TL /F3 12 Tf 0 0 0 rg (https://dx.doi.org/10.4314/swj.v20i2.9) Tj T* ET
+BT 1 0 0 1 36 60 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Mahadevaswamy, G. H., & Shyamala, G. \(2022\). Markowitz Model Is Right Choice to) Tj T* 36 0 Td (Investment. ) Tj /F4 12 Tf (International Journal of Novel Research and Development) Tj /F3 12 Tf (, 7\(11\),) Tj T* (305-314.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 606 cm
+1 0 0 1 78 558 cm
 q
-BT 1 0 0 1 36 60 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Uzoaga, G. A., Adenomon, M. O., Nweze, N. O., & Maijamaa, B. \(2025\). Predictive machine) Tj T* 36 0 Td (learning methods for stock returns among emerging economies in Africa. ) Tj /F4 12 Tf (Science) Tj T* (World Journal) Tj /F3 12 Tf (, 20\(3\), 941-947. https://dx.doi.org/10.4314/swj.v20i3.3) Tj T* ET
+BT 1 0 0 1 36 60 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Manogna, R. L., & Kulkarni, N. \(2025\). Portfolio Optimization Model for Stock Price) Tj T* 36 0 Td (Prediction Using Machine Learning. ) Tj /F4 12 Tf (Journal of Statistical Theory and Applications) Tj /F3 12 Tf (,) Tj T* (24\(1\).) Tj T* ET
 Q
 Q
 q
 1 0 0 1 78 498 cm
 q
-BT 1 0 0 1 36 84 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Yadav, A., Madhavi, R., Bagaria, O., Ambulkar, A., & Sharma, S. \(2024\). Survey on financial) Tj T* 36 0 Td (portfolio management's role in investment decision-making strategies.) Tj T* /F4 12 Tf (Multidisciplinary Reviews) Tj /F3 12 Tf (, 6, Article e2023ss101.) Tj T* (https://doi.org/10.31893/multirev.2023ss101) Tj T* ET
+BT 1 0 0 1 36 36 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Markowitz, H. \(1952\). Portfolio selection. ) Tj /F4 12 Tf (The Journal of Finance) Tj /F3 12 Tf (, 7\(1\), 77-91.) Tj T* 36 0 Td (https://doi.org/10.1111/j.1540-6261.1952.tb01525.x) Tj T* ET
 Q
 Q
 q
-1 0 0 1 78 414 cm
+1 0 0 1 78 390 cm
 q
-BT 1 0 0 1 36 60 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Zsurkis, G., Nicolau, J., & Rodrigues, P. M. M. \(2024\). First passage times in portfolio) Tj T* 36 0 Td (optimization: A novel nonparametric approach. ) Tj /F4 12 Tf (European Journal of Operational) Tj T* (Research) Tj /F3 12 Tf (, 312\(3\), 1074-1085. https://doi.org/10.1016/j.ejor.2023.07.044) Tj T* ET
+BT 1 0 0 1 36 84 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Martinez-Barbero, X., Cervello-Royo, R., & Ribal, J. \(2024\). Portfolio optimization with) Tj T* 36 0 Td (prediction-based return using Long Short-Term Memory neural networks: Testing on) Tj T* (upward and downward European markets. ) Tj /F4 12 Tf (Computational Economics) Tj /F3 12 Tf (, 65, 1479-1504.) Tj T* (https://doi.org/10.1007/s10614-024-10604-6) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 282 cm
+q
+BT 1 0 0 1 36 84 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Mba, J. C., Ababio, K. A., & Agyei, S. K. \(2022\). Markowitz mean-variance portfolio) Tj T* 36 0 Td (selection and optimization under a behavioral spectacle: New empirical evidence.) Tj T* /F4 12 Tf (International Journal of Financial Studies) Tj /F3 12 Tf (, 10\(2\), Article 28.) Tj T* (https://doi.org/10.3390/ijfs10020028) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 222 cm
+q
+BT 1 0 0 1 36 36 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Memmel, C. \(2003\). Performance hypothesis testing with the Sharpe ratio. ) Tj /F4 12 Tf (Finance Letters) Tj /F3 12 Tf (,) Tj T* 36 0 Td (1\(1\), 21-23.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 162 cm
+q
+BT 1 0 0 1 36 36 Tm -36 0 Td -0.056727 Tw 24 TL /F3 12 Tf 0 0 0 rg (Michaud, R. O. \(1989\). The Markowitz optimization enigma: Is 'optimized' optimal? ) Tj /F4 12 Tf (Financial) Tj T* 0 Tw 36 0 Td (Analysts Journal) Tj /F3 12 Tf (, 45\(1\), 31-42. https://doi.org/10.2469/faj.v45.n1.31) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 78 cm
+q
+BT 1 0 0 1 36 60 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Moyoweshumba, E., & Seitshiro, M. \(2025\). Leveraging Markowitz, Random Forest, and) Tj T* 36 0 Td (XGBoost for optimal diversification of South African stock portfolios. ) Tj /F4 12 Tf (Data Science in) Tj T* (Finance and Economics) Tj /F3 12 Tf (, 5\(2\), 205-233. https://doi.org/10.3934/DSFE.2025010) Tj T* ET
 Q
 Q
  
@@ -40637,398 +40642,898 @@ endobj
 /Type /Font
 >>
 endobj
+384 0 obj
+<<
+/Contents 385 0 R
+/MediaBox [ 0 0 612 792 ]
+/Resources <<
+/Font <<
+/F1 260 0 R
+/F1-0 386 0 R
+/F2 262 0 R
+/F2-0 387 0 R
+/F3 264 0 R
+/F4 265 0 R
+/F5 266 0 R
+>>
+/ProcSet [ /ImageB /ImageC /ImageI /PDF /Text ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Type /Page
+/Annots [ ]
+/Parent 2 0 R
+>>
+endobj
+385 0 obj
+<<
+/Length 2887
+>>
+stream
+q
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 78 642 cm
+q
+BT 1 0 0 1 36 60 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Mozumder, S., Hasan, M. K., & Kabir, M. H. \(2024\). An evaluation of the adequacy of Levy) Tj T* 36 0 Td (and extreme value tail risk estimates. ) Tj /F4 12 Tf (Financial Innovation) Tj /F3 12 Tf (, 10\(1\), Article 100.) Tj T* (https://doi.org/10.1186/s40854-024-00614-6) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 558 cm
+q
+BT 1 0 0 1 36 60 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Naeem, M., Jassim, H. S., & Korsah, D. \(2024\). The application of machine learning) Tj T* 36 0 Td (techniques to predict stock market crises in Africa. ) Tj /F4 12 Tf (Journal of Risk and Financial) Tj T* (Management) Tj /F3 12 Tf (, 17\(12\), Article 554. https://doi.org/10.3390/jrfm17120554) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 426 cm
+q
+BT 1 0 0 1 36 108 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Nahari, F. \(2025\). Portfolio optimization in practice: A comparative analysis of the Markowitz) Tj T* 36 0 Td (and Index models. In M. M. Husin \(Ed.\), ) Tj /F4 12 Tf (Proceedings of the 2025 International) Tj T* (Conference on Financial Risk and Investment Management \(ICFRIM 2025\), Advances) Tj T* (in Economics, Business and Management Research) Tj /F3 12 Tf ( \(Vol. 333, pp. 367-375\). Atlantis) Tj T* (Press.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 342 cm
+q
+BT 1 0 0 1 36 60 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Ojo, A. K., & Okafor, I. J. \(2024\). Forecasting Nigerian Equity Stock Returns Using Long) Tj T* 36 0 Td (Short-Term Memory Technique. ) Tj /F4 12 Tf (Journal of Advances in Mathematics and Computer) Tj T* (Science) Tj /F3 12 Tf (, 39\(7\), 45-54. https://doi.org/10.9734/jamcs/2024/v39i71911) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 258 cm
+q
+BT 1 0 0 1 36 60 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Okafor, C., & Robertson, A. \(2022\). Maximizing returns: Portfolio optimization in the) Tj T* 36 0 Td (Nigerian Stock Exchange. ) Tj /F4 12 Tf (International Journal of Advances in Applied Mathematics) Tj T* (and Computer Science) Tj /F3 12 Tf (, 10\(2\), 1-9.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 150 cm
+q
+BT 1 0 0 1 36 84 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Quimbayo, C. Z., & Leon, B. \(2025\). Downside Risk Measures and ESG Factors in Optimal) Tj T* 36 0 Td (Portfolio Construction: Evidence from European Equity Markets. ) Tj /F4 12 Tf (Economics -) Tj T* (Innovative and Economics Research Journal) Tj /F3 12 Tf (, 13\(2\), 5-17.) Tj T* (https://doi.org/10.2478/eoik-2025-0082) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 90 cm
+q
+BT 1 0 0 1 36 36 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Rigamonti, A., & Lucivjanska, K. \(2021\). Mean-semivariance portfolio optimization using) Tj T* 36 0 Td (minimum average partial. ) Tj /F4 12 Tf (SSRN Electronic Journal) Tj /F3 12 Tf (, Article 3542727.) Tj T* ET
+Q
+Q
+ 
+
+Q
+
+q
+0.0 0.0 612 792 re
+W
+n
+1 0 0 1 0 0 cm
+BT
+/F1-0 12 Tf
+14.4 TL
+ET
+BT
+/F2-0 10 Tf
+12 TL
+ET
+BT
+1 0 0 1 301 36 Tm
+(83) Tj
+T*
+ET
+Q
+
+
+endstream
+endobj
+386 0 obj
+<<
+/BaseFont /Helvetica
+/Encoding /WinAnsiEncoding
+/Name /F1
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+387 0 obj
+<<
+/BaseFont /Times-Roman
+/Encoding /WinAnsiEncoding
+/Name /F2
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+388 0 obj
+<<
+/Contents 389 0 R
+/MediaBox [ 0 0 612 792 ]
+/Resources <<
+/Font <<
+/F1 260 0 R
+/F1-0 390 0 R
+/F2 262 0 R
+/F2-0 391 0 R
+/F3 264 0 R
+/F4 265 0 R
+/F5 266 0 R
+>>
+/ProcSet [ /ImageB /ImageC /ImageI /PDF /Text ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Type /Page
+/Annots [ ]
+/Parent 2 0 R
+>>
+endobj
+389 0 obj
+<<
+/Length 2944
+>>
+stream
+q
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 78 690 cm
+q
+BT 1 0 0 1 36 12 Tm 24 TL /F3 12 Tf 0 0 0 rg (https://doi.org/10.2139/ssrn.3542727) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 630 cm
+q
+BT 1 0 0 1 36 36 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Rockafellar, R. T., & Uryasev, S. \(2000\). Optimization of conditional value-at-risk. ) Tj /F4 12 Tf (Journal of) Tj T* 36 0 Td (Risk) Tj /F3 12 Tf (, 2\(3\), 21-41. https://doi.org/10.21314/JOR.2000.038) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 546 cm
+q
+BT 1 0 0 1 36 60 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Rockafellar, R. T., & Uryasev, S. \(2002\). Conditional value-at-risk for general loss) Tj T* 36 0 Td (distributions. ) Tj /F4 12 Tf (Journal of Banking & Finance) Tj /F3 12 Tf (, 26\(7\), 1443-1471.) Tj T* (https://doi.org/10.1016/S0378-4266\(02\)00271-6) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 462 cm
+q
+BT 1 0 0 1 36 60 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Sahiner, M. \(2022\). Forecasting volatility in Asian financial markets: Evidence from recursive) Tj T* 36 0 Td (and rolling window methods. ) Tj /F4 12 Tf (SN Business & Economics) Tj /F3 12 Tf (, 2, Article 157.) Tj T* (https://doi.org/10.1007/s43546-022-00329-9) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 378 cm
+q
+BT 1 0 0 1 36 60 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Salo, A., Doumpos, M., Liesio, J., & Zopounidis, C. \(2024\). Fifty years of portfolio) Tj T* 36 0 Td (optimization. ) Tj /F4 12 Tf (European Journal of Operational Research) Tj /F3 12 Tf (, 318\(1\), 1-18.) Tj T* (https://doi.org/10.1016/j.ejor.2023.12.031) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 294 cm
+q
+BT 1 0 0 1 36 60 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Samaniego Alcantar, A. \(2023\). Semi-variance optimization for the components of the Dow) Tj T* 36 0 Td (Jones Industrial Average index. ) Tj /F4 12 Tf (Contaduria y Administracion) Tj /F3 12 Tf (, 68\(4\), 1-17.) Tj T* (http://dx.doi.org/10.22201/fca.24488410e.2023.3409) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 210 cm
+q
+BT 1 0 0 1 36 60 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (San, J. \(2025\). Stock Forecasting and Portfolio Optimization Based on ARIMA-GARCH,) Tj T* 36 0 Td (Random Forest and Monte Carlo Models. ) Tj /F4 12 Tf (Advances in Economics, Business and) Tj T* (Management Research) Tj /F3 12 Tf (, 333, 580-588.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 150 cm
+q
+BT 1 0 0 1 36 36 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Senescall, M., & Low, R. K. Y. \(2024\). Quantitative Portfolio Management: Review and) Tj T* 36 0 Td (Outlook. ) Tj /F4 12 Tf (Mathematics) Tj /F3 12 Tf (, 12\(18\), Article 2897. https://doi.org/10.3390/math12182897) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 90 cm
+q
+BT 1 0 0 1 36 36 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Sulaiman, L. A., Adejayan, A. O., & Ilori, O. O. \(2023\). Capital Market Development and) Tj T* 36 0 Td (Economic Growth of West African Countries. ) Tj /F4 12 Tf (Nigerian Journal of Banking and) Tj T* ET
+Q
+Q
+ 
+
+Q
+
+q
+0.0 0.0 612 792 re
+W
+n
+1 0 0 1 0 0 cm
+BT
+/F1-0 12 Tf
+14.4 TL
+ET
+BT
+/F2-0 10 Tf
+12 TL
+ET
+BT
+1 0 0 1 301 36 Tm
+(84) Tj
+T*
+ET
+Q
+
+
+endstream
+endobj
+390 0 obj
+<<
+/BaseFont /Helvetica
+/Encoding /WinAnsiEncoding
+/Name /F1
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+391 0 obj
+<<
+/BaseFont /Times-Roman
+/Encoding /WinAnsiEncoding
+/Name /F2
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+392 0 obj
+<<
+/Contents 393 0 R
+/MediaBox [ 0 0 612 792 ]
+/Resources <<
+/Font <<
+/F1 260 0 R
+/F1-0 394 0 R
+/F2 262 0 R
+/F2-0 395 0 R
+/F3 264 0 R
+/F4 265 0 R
+/F5 266 0 R
+>>
+/ProcSet [ /ImageB /ImageC /ImageI /PDF /Text ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Type /Page
+/Annots [ ]
+/Parent 2 0 R
+>>
+endobj
+393 0 obj
+<<
+/Length 2920
+>>
+stream
+q
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 78 690 cm
+q
+BT 1 0 0 1 36 12 Tm 24 TL /F4 12 Tf 0 0 0 rg (Financial Issues) Tj /F3 12 Tf (, 9\(1\), 117-125.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 606 cm
+q
+BT 1 0 0 1 36 60 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Slusarczyk, D., & Slepaczuk, R. \(2025\). Algorithmic investment strategies on the Dow Jones) Tj T* 36 0 Td (Industrial Average. ) Tj /F4 12 Tf (Journal of Big Data) Tj /F3 12 Tf (, 12, Article 127.) Tj T* (https://doi.org/10.1186/s40537-025-01164-z) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 546 cm
+q
+BT 1 0 0 1 36 36 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Tjiwidjaja, H. \(2025\). Optimization of Investment Portfolio Returns Through an Integrated) Tj T* 36 0 Td (Risk Management Approach. ) Tj /F4 12 Tf (STIE Ganesha Research Papers) Tj /F3 12 Tf (, 853-863.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 438 cm
+q
+BT 1 0 0 1 36 84 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Uzoaga, G. A., Adenomon, M. O., Nweze, N. O., & Maijama, B. \(2025\). Modelling and) Tj T* 36 0 Td (predicting stock prices of Nigerian Stock Exchange using some machine learning) Tj T* (techniques and time series model. ) Tj /F4 12 Tf (Science World Journal) Tj /F3 12 Tf (, 20\(2\), 510-515.) Tj T* (https://dx.doi.org/10.4314/swj.v20i2.9) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 354 cm
+q
+BT 1 0 0 1 36 60 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Uzoaga, G. A., Adenomon, M. O., Nweze, N. O., & Maijamaa, B. \(2025\). Predictive machine) Tj T* 36 0 Td (learning methods for stock returns among emerging economies in Africa. ) Tj /F4 12 Tf (Science) Tj T* (World Journal) Tj /F3 12 Tf (, 20\(3\), 941-947. https://dx.doi.org/10.4314/swj.v20i3.3) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 270 cm
+q
+BT 1 0 0 1 36 60 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Wahid, A. J., Riaman, & Sukono. \(2025\). A Systematic Literature Review on Mean-CVaR) Tj T* 36 0 Td (Based Financial Asset Portfolio Weight Allocation Using K-Means Clustering. ) Tj /F4 12 Tf (Journal) Tj T* (of Applied Mathematics and Computing) Tj /F3 12 Tf (, 10\(2\), 1069-1091.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 186 cm
+q
+BT 1 0 0 1 36 60 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Wang, T., Pan, Q., Wu, W., Gao, J., & Zhou, K. \(2024\). Dynamic Mean-Variance Portfolio) Tj T* 36 0 Td (Optimization with Value-at-Risk Constraint in Continuous Time. ) Tj /F4 12 Tf (Mathematics) Tj /F3 12 Tf (, 12\(14\),) Tj T* (Article 2268. https://doi.org/10.3390/math12142268) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 78 cm
+q
+BT 1 0 0 1 36 84 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Yadav, A., Madhavi, R., Bagaria, O., Ambulkar, A., & Sharma, S. \(2024\). Survey on financial) Tj T* 36 0 Td (portfolio management's role in investment decision-making strategies.) Tj T* /F4 12 Tf (Multidisciplinary Reviews) Tj /F3 12 Tf (, 6, Article e2023ss101.) Tj T* (https://doi.org/10.31893/multirev.2023ss101) Tj T* ET
+Q
+Q
+ 
+
+Q
+
+q
+0.0 0.0 612 792 re
+W
+n
+1 0 0 1 0 0 cm
+BT
+/F1-0 12 Tf
+14.4 TL
+ET
+BT
+/F2-0 10 Tf
+12 TL
+ET
+BT
+1 0 0 1 301 36 Tm
+(85) Tj
+T*
+ET
+Q
+
+
+endstream
+endobj
+394 0 obj
+<<
+/BaseFont /Helvetica
+/Encoding /WinAnsiEncoding
+/Name /F1
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+395 0 obj
+<<
+/BaseFont /Times-Roman
+/Encoding /WinAnsiEncoding
+/Name /F2
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+396 0 obj
+<<
+/Contents 397 0 R
+/MediaBox [ 0 0 612 792 ]
+/Resources <<
+/Font <<
+/F1 260 0 R
+/F1-0 398 0 R
+/F2 262 0 R
+/F2-0 399 0 R
+/F3 264 0 R
+/F4 265 0 R
+/F5 266 0 R
+>>
+/ProcSet [ /ImageB /ImageC /ImageI /PDF /Text ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Type /Page
+/Annots [ ]
+/Parent 2 0 R
+>>
+endobj
+397 0 obj
+<<
+/Length 2408
+>>
+stream
+q
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 78 642 cm
+q
+BT 1 0 0 1 36 60 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Yu, S. \(2024\). Advancing Stock Market Return Forecasting with LSTM Models and Financial) Tj T* 36 0 Td -0.141333 Tw (Indicators. ) Tj /F4 12 Tf (Proceedings of the International Conference on Economic Management and) Tj T* 0 Tw (Green Development) Tj /F3 12 Tf (, Article 122. https://doi.org/10.54254/2754-1169/122/2024.17734) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 558 cm
+q
+BT 1 0 0 1 36 60 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Zaimovic, A., Arnaut-Berilo, A., & Be\232lija, R. \(2024\). International Portfolio Diversification) Tj T* 36 0 Td (Benefits: An Empirical Investigation of the 28 European Stock Markets. ) Tj /F4 12 Tf (School of) Tj T* (Economics and Business Sarajevo Working Papers) Tj /F3 12 Tf (, Article 46.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 474 cm
+q
+BT 1 0 0 1 36 60 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Zhang, G. \(2025\). Using Machine Learning for Stock Return Prediction. ) Tj /F4 12 Tf (Proceedings of) Tj T* 36 0 Td (ICEMGD 2025 Symposium) Tj /F3 12 Tf (, Article LH23915.) Tj T* (https://doi.org/10.54254/2754-1169/2025.LH23915) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 390 cm
+q
+BT 1 0 0 1 36 60 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Zhang, P., Yang, Y., Li, J., & Zeng, Y. \(2023\). A Two-stage Mean-CVaR Investment Strategy) Tj T* 36 0 Td (Based on LSTM. ) Tj /F4 12 Tf (Journal of South China Normal University \(Natural Science Edition\)) Tj /F3 12 Tf (,) Tj T* (55\(5\), 93-102.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 306 cm
+q
+BT 1 0 0 1 36 60 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Zhang, Y. \(2024\). Integrating Forecasting and Mean-Variance Portfolio Optimization: A) Tj T* 36 0 Td (Machine Learning Approach. ) Tj /F4 12 Tf (Proceedings of the 3rd International Conference on) Tj T* (Financial Technology and Business Analysis) Tj /F3 12 Tf (, Article 2002.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 222 cm
+q
+BT 1 0 0 1 36 60 Tm -36 0 Td 24 TL /F3 12 Tf 0 0 0 rg (Zsurkis, G., Nicolau, J., & Rodrigues, P. M. M. \(2024\). First passage times in portfolio) Tj T* 36 0 Td (optimization: A novel nonparametric approach. ) Tj /F4 12 Tf (European Journal of Operational) Tj T* (Research) Tj /F3 12 Tf (, 312\(3\), 1074-1085. https://doi.org/10.1016/j.ejor.2023.07.044) Tj T* ET
+Q
+Q
+ 
+
+Q
+
+q
+0.0 0.0 612 792 re
+W
+n
+1 0 0 1 0 0 cm
+BT
+/F1-0 12 Tf
+14.4 TL
+ET
+BT
+/F2-0 10 Tf
+12 TL
+ET
+BT
+1 0 0 1 301 36 Tm
+(86) Tj
+T*
+ET
+Q
+
+
+endstream
+endobj
+398 0 obj
+<<
+/BaseFont /Helvetica
+/Encoding /WinAnsiEncoding
+/Name /F1
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+399 0 obj
+<<
+/BaseFont /Times-Roman
+/Encoding /WinAnsiEncoding
+/Name /F2
+/Subtype /Type1
+/Type /Font
+>>
+endobj
 xref
-0 384
+0 400
 0000000000 65535 f 
 0000000015 00000 n 
 0000000054 00000 n 
-0000000746 00000 n 
-0000000795 00000 n 
-0000001127 00000 n 
-0000001183 00000 n 
-0000001239 00000 n 
-0000001421 00000 n 
-0000001672 00000 n 
-0000002265 00000 n 
-0000002373 00000 n 
-0000002563 00000 n 
-0000002820 00000 n 
-0000003157 00000 n 
-0000003267 00000 n 
-0000005537 00000 n 
-0000005842 00000 n 
-0000005950 00000 n 
-0000006060 00000 n 
-0000006252 00000 n 
-0000006515 00000 n 
-0000006807 00000 n 
-0000014348 00000 n 
-0000014679 00000 n 
-0000014787 00000 n 
-0000014897 00000 n 
-0000015040 00000 n 
-0000015067 00000 n 
-0000015240 00000 n 
-0000015315 00000 n 
-0000015585 00000 n 
-0000128830 00000 n 
-0000129296 00000 n 
-0000129763 00000 n 
-0000138717 00000 n 
-0000139059 00000 n 
-0000139167 00000 n 
-0000139277 00000 n 
-0000147455 00000 n 
-0000147786 00000 n 
-0000147894 00000 n 
-0000148004 00000 n 
-0000156725 00000 n 
-0000157067 00000 n 
-0000157175 00000 n 
-0000157285 00000 n 
-0000165817 00000 n 
-0000166159 00000 n 
-0000166267 00000 n 
-0000166377 00000 n 
-0000174752 00000 n 
-0000175057 00000 n 
-0000175165 00000 n 
-0000175275 00000 n 
-0000183437 00000 n 
-0000183768 00000 n 
-0000183876 00000 n 
-0000183986 00000 n 
-0000193464 00000 n 
-0000193817 00000 n 
-0000193925 00000 n 
-0000194035 00000 n 
-0000194209 00000 n 
-0000194451 00000 n 
-0000194503 00000 n 
-0000203849 00000 n 
-0000204204 00000 n 
-0000204312 00000 n 
-0000204422 00000 n 
-0000204556 00000 n 
-0000204583 00000 n 
-0000204747 00000 n 
-0000204822 00000 n 
-0000205069 00000 n 
-0000218221 00000 n 
-0000218263 00000 n 
-0000218561 00000 n 
-0000225942 00000 n 
-0000226308 00000 n 
-0000226416 00000 n 
-0000226526 00000 n 
-0000235392 00000 n 
-0000235723 00000 n 
-0000235831 00000 n 
-0000235941 00000 n 
-0000245155 00000 n 
-0000245475 00000 n 
-0000245583 00000 n 
-0000245693 00000 n 
-0000254416 00000 n 
-0000254749 00000 n 
-0000254857 00000 n 
-0000254967 00000 n 
-0000261999 00000 n 
-0000262332 00000 n 
-0000262440 00000 n 
-0000262550 00000 n 
-0000270630 00000 n 
-0000270965 00000 n 
-0000271073 00000 n 
-0000271184 00000 n 
-0000278892 00000 n 
-0000279190 00000 n 
-0000279299 00000 n 
-0000279410 00000 n 
-0000287528 00000 n 
-0000287837 00000 n 
-0000287946 00000 n 
-0000288057 00000 n 
-0000296633 00000 n 
-0000296931 00000 n 
-0000297040 00000 n 
-0000297151 00000 n 
-0000304786 00000 n 
-0000305127 00000 n 
-0000305236 00000 n 
-0000305347 00000 n 
-0000367757 00000 n 
-0000372628 00000 n 
-0000372976 00000 n 
-0000373085 00000 n 
-0000373196 00000 n 
-0000381566 00000 n 
-0000381890 00000 n 
-0000381999 00000 n 
-0000382110 00000 n 
-0000390330 00000 n 
-0000390667 00000 n 
-0000390776 00000 n 
-0000390887 00000 n 
-0000399071 00000 n 
-0000399419 00000 n 
-0000399528 00000 n 
-0000399639 00000 n 
-0000407315 00000 n 
-0000407663 00000 n 
-0000407772 00000 n 
-0000407883 00000 n 
-0000417101 00000 n 
-0000417438 00000 n 
-0000417547 00000 n 
-0000417658 00000 n 
-0000425693 00000 n 
-0000426017 00000 n 
-0000426126 00000 n 
-0000426237 00000 n 
-0000434511 00000 n 
-0000434859 00000 n 
-0000434968 00000 n 
-0000435079 00000 n 
-0000442899 00000 n 
-0000443236 00000 n 
-0000443345 00000 n 
-0000443456 00000 n 
-0000451295 00000 n 
-0000451632 00000 n 
-0000451741 00000 n 
-0000451852 00000 n 
-0000458025 00000 n 
-0000458362 00000 n 
-0000458471 00000 n 
-0000458582 00000 n 
-0000465888 00000 n 
-0000466237 00000 n 
-0000466346 00000 n 
-0000466457 00000 n 
-0000466604 00000 n 
-0000466633 00000 n 
-0000466811 00000 n 
-0000466887 00000 n 
-0000467149 00000 n 
-0000617368 00000 n 
-0000618673 00000 n 
-0000619621 00000 n 
-0000626905 00000 n 
-0000627236 00000 n 
-0000627345 00000 n 
-0000627456 00000 n 
-0000627644 00000 n 
-0000627906 00000 n 
-0000627931 00000 n 
-0000641321 00000 n 
-0000641693 00000 n 
-0000641802 00000 n 
-0000641913 00000 n 
-0000653596 00000 n 
-0000653918 00000 n 
-0000654027 00000 n 
-0000654138 00000 n 
-0000666568 00000 n 
-0000666912 00000 n 
-0000667021 00000 n 
-0000667132 00000 n 
-0000676053 00000 n 
-0000676397 00000 n 
-0000676506 00000 n 
-0000676617 00000 n 
-0000686607 00000 n 
-0000686951 00000 n 
-0000687060 00000 n 
-0000687171 00000 n 
-0000695301 00000 n 
-0000695623 00000 n 
-0000695732 00000 n 
-0000695843 00000 n 
-0000707355 00000 n 
-0000707699 00000 n 
-0000707808 00000 n 
-0000707919 00000 n 
-0000717065 00000 n 
-0000717374 00000 n 
-0000717483 00000 n 
-0000717594 00000 n 
-0000725525 00000 n 
-0000725845 00000 n 
-0000725954 00000 n 
-0000726065 00000 n 
-0000733940 00000 n 
-0000734300 00000 n 
-0000734409 00000 n 
-0000734520 00000 n 
-0000740985 00000 n 
-0000741317 00000 n 
-0000741426 00000 n 
-0000741537 00000 n 
-0000749171 00000 n 
-0000749531 00000 n 
-0000749640 00000 n 
-0000749751 00000 n 
-0000758413 00000 n 
-0000758767 00000 n 
-0000758876 00000 n 
-0000758987 00000 n 
-0000772018 00000 n 
-0000772338 00000 n 
-0000772447 00000 n 
-0000772558 00000 n 
-0000792192 00000 n 
-0000792512 00000 n 
-0000792621 00000 n 
-0000792732 00000 n 
-0000815749 00000 n 
-0000816057 00000 n 
-0000816166 00000 n 
-0000816277 00000 n 
-0000833664 00000 n 
-0000833997 00000 n 
-0000834106 00000 n 
-0000834217 00000 n 
-0000845553 00000 n 
-0000845902 00000 n 
-0000846011 00000 n 
-0000846122 00000 n 
-0000854524 00000 n 
-0000854809 00000 n 
-0000854918 00000 n 
-0000855029 00000 n 
-0000858357 00000 n 
-0000858650 00000 n 
-0000863860 00000 n 
-0000863969 00000 n 
-0000864078 00000 n 
-0000864188 00000 n 
-0000864299 00000 n 
-0000864410 00000 n 
-0000864522 00000 n 
-0000864601 00000 n 
-0000864894 00000 n 
-0000879513 00000 n 
-0000879622 00000 n 
-0000879733 00000 n 
-0000880026 00000 n 
-0000891054 00000 n 
-0000891163 00000 n 
-0000891274 00000 n 
-0000891567 00000 n 
-0000915226 00000 n 
-0000915335 00000 n 
-0000915446 00000 n 
-0000915739 00000 n 
-0000933153 00000 n 
-0000933262 00000 n 
-0000933373 00000 n 
-0000933666 00000 n 
-0000943868 00000 n 
-0000943977 00000 n 
-0000944088 00000 n 
-0000944446 00000 n 
-0000944934 00000 n 
-0000945043 00000 n 
-0000945154 00000 n 
-0003419769 00000 n 
-0003437248 00000 n 
-0003437541 00000 n 
-0003454298 00000 n 
-0003454407 00000 n 
-0003454518 00000 n 
-0003454811 00000 n 
-0003466785 00000 n 
-0003466894 00000 n 
-0003467005 00000 n 
-0003467363 00000 n 
-0003469362 00000 n 
-0003469471 00000 n 
-0003469582 00000 n 
-0003702708 00000 n 
-0003704806 00000 n 
-0003705099 00000 n 
-0003719924 00000 n 
-0003720033 00000 n 
-0003720144 00000 n 
-0003720437 00000 n 
-0003730112 00000 n 
-0003730221 00000 n 
-0003730332 00000 n 
-0003730625 00000 n 
-0003732872 00000 n 
-0003732981 00000 n 
-0003733092 00000 n 
-0003733450 00000 n 
-0003738080 00000 n 
-0003738189 00000 n 
-0003738300 00000 n 
-0004154610 00000 n 
-0004154903 00000 n 
-0004171750 00000 n 
-0004171859 00000 n 
-0004171970 00000 n 
-0004172263 00000 n 
-0004175455 00000 n 
-0004175564 00000 n 
-0004175675 00000 n 
-0004175968 00000 n 
-0004183876 00000 n 
-0004183985 00000 n 
-0004184096 00000 n 
-0004184389 00000 n 
-0004189491 00000 n 
-0004189600 00000 n 
-0004189711 00000 n 
-0004190004 00000 n 
-0004192087 00000 n 
-0004192196 00000 n 
-0004192307 00000 n 
-0004192600 00000 n 
-0004195330 00000 n 
-0004195439 00000 n 
-0004195550 00000 n 
-0004195843 00000 n 
-0004198587 00000 n 
-0004198696 00000 n 
-0004198807 00000 n 
-0004199100 00000 n 
-0004201708 00000 n 
-0004201817 00000 n 
-0004201928 00000 n 
-0004202221 00000 n 
-0004204588 00000 n 
-0004204697 00000 n 
-0004204808 00000 n 
-0004205101 00000 n 
-0004207819 00000 n 
-0004207928 00000 n 
-0004208039 00000 n 
-0004208332 00000 n 
-0004211299 00000 n 
-0004211408 00000 n 
-0004211519 00000 n 
-0004211812 00000 n 
-0004214931 00000 n 
-0004215040 00000 n 
-0004215151 00000 n 
-0004215444 00000 n 
-0004218378 00000 n 
-0004218487 00000 n 
-0004218598 00000 n 
-0004218891 00000 n 
-0004221945 00000 n 
-0004222054 00000 n 
-0004222165 00000 n 
-0004222458 00000 n 
-0004223994 00000 n 
-0004224103 00000 n 
+0000000778 00000 n 
+0000000827 00000 n 
+0000001159 00000 n 
+0000001215 00000 n 
+0000001271 00000 n 
+0000001453 00000 n 
+0000001704 00000 n 
+0000002297 00000 n 
+0000002405 00000 n 
+0000002595 00000 n 
+0000002852 00000 n 
+0000003189 00000 n 
+0000003299 00000 n 
+0000005569 00000 n 
+0000005913 00000 n 
+0000006021 00000 n 
+0000006131 00000 n 
+0000006323 00000 n 
+0000006586 00000 n 
+0000006878 00000 n 
+0000014534 00000 n 
+0000014876 00000 n 
+0000014984 00000 n 
+0000015094 00000 n 
+0000015237 00000 n 
+0000015264 00000 n 
+0000015437 00000 n 
+0000015512 00000 n 
+0000015782 00000 n 
+0000129027 00000 n 
+0000129493 00000 n 
+0000129961 00000 n 
+0000139045 00000 n 
+0000139387 00000 n 
+0000139495 00000 n 
+0000139605 00000 n 
+0000147881 00000 n 
+0000148212 00000 n 
+0000148320 00000 n 
+0000148430 00000 n 
+0000157047 00000 n 
+0000157389 00000 n 
+0000157497 00000 n 
+0000157607 00000 n 
+0000166348 00000 n 
+0000166690 00000 n 
+0000166798 00000 n 
+0000166908 00000 n 
+0000175149 00000 n 
+0000175454 00000 n 
+0000175562 00000 n 
+0000175672 00000 n 
+0000183847 00000 n 
+0000184178 00000 n 
+0000184286 00000 n 
+0000184396 00000 n 
+0000193866 00000 n 
+0000194219 00000 n 
+0000194327 00000 n 
+0000194437 00000 n 
+0000194611 00000 n 
+0000194853 00000 n 
+0000194905 00000 n 
+0000204267 00000 n 
+0000204622 00000 n 
+0000204730 00000 n 
+0000204840 00000 n 
+0000204974 00000 n 
+0000205001 00000 n 
+0000205165 00000 n 
+0000205240 00000 n 
+0000205487 00000 n 
+0000218639 00000 n 
+0000218681 00000 n 
+0000218979 00000 n 
+0000226363 00000 n 
+0000226718 00000 n 
+0000226826 00000 n 
+0000226936 00000 n 
+0000235720 00000 n 
+0000236051 00000 n 
+0000236159 00000 n 
+0000236269 00000 n 
+0000245483 00000 n 
+0000245803 00000 n 
+0000245911 00000 n 
+0000246021 00000 n 
+0000254744 00000 n 
+0000255038 00000 n 
+0000255146 00000 n 
+0000255256 00000 n 
+0000262270 00000 n 
+0000262603 00000 n 
+0000262711 00000 n 
+0000262821 00000 n 
+0000270901 00000 n 
+0000271197 00000 n 
+0000271305 00000 n 
+0000271416 00000 n 
+0000279106 00000 n 
+0000279443 00000 n 
+0000279552 00000 n 
+0000279663 00000 n 
+0000287799 00000 n 
+0000288108 00000 n 
+0000288217 00000 n 
+0000288328 00000 n 
+0000296904 00000 n 
+0000297241 00000 n 
+0000297350 00000 n 
+0000297461 00000 n 
+0000305114 00000 n 
+0000305455 00000 n 
+0000305564 00000 n 
+0000305675 00000 n 
+0000368085 00000 n 
+0000372956 00000 n 
+0000373304 00000 n 
+0000373413 00000 n 
+0000373524 00000 n 
+0000381894 00000 n 
+0000382218 00000 n 
+0000382327 00000 n 
+0000382438 00000 n 
+0000390658 00000 n 
+0000390956 00000 n 
+0000391065 00000 n 
+0000391176 00000 n 
+0000399342 00000 n 
+0000399679 00000 n 
+0000399788 00000 n 
+0000399899 00000 n 
+0000407566 00000 n 
+0000407903 00000 n 
+0000408012 00000 n 
+0000408123 00000 n 
+0000417332 00000 n 
+0000417669 00000 n 
+0000417778 00000 n 
+0000417889 00000 n 
+0000425893 00000 n 
+0000426217 00000 n 
+0000426326 00000 n 
+0000426437 00000 n 
+0000434777 00000 n 
+0000435125 00000 n 
+0000435234 00000 n 
+0000435345 00000 n 
+0000443297 00000 n 
+0000443634 00000 n 
+0000443743 00000 n 
+0000443854 00000 n 
+0000451664 00000 n 
+0000452001 00000 n 
+0000452110 00000 n 
+0000452221 00000 n 
+0000458430 00000 n 
+0000458767 00000 n 
+0000458876 00000 n 
+0000458987 00000 n 
+0000466293 00000 n 
+0000466603 00000 n 
+0000466712 00000 n 
+0000466823 00000 n 
+0000466970 00000 n 
+0000466999 00000 n 
+0000467177 00000 n 
+0000467253 00000 n 
+0000467515 00000 n 
+0000617734 00000 n 
+0000619039 00000 n 
+0000619987 00000 n 
+0000627253 00000 n 
+0000627584 00000 n 
+0000627693 00000 n 
+0000627804 00000 n 
+0000627992 00000 n 
+0000628254 00000 n 
+0000628279 00000 n 
+0000641669 00000 n 
+0000642002 00000 n 
+0000642111 00000 n 
+0000642222 00000 n 
+0000653887 00000 n 
+0000654209 00000 n 
+0000654318 00000 n 
+0000654429 00000 n 
+0000666859 00000 n 
+0000667203 00000 n 
+0000667312 00000 n 
+0000667423 00000 n 
+0000676344 00000 n 
+0000676688 00000 n 
+0000676797 00000 n 
+0000676908 00000 n 
+0000686898 00000 n 
+0000687242 00000 n 
+0000687351 00000 n 
+0000687462 00000 n 
+0000695592 00000 n 
+0000695914 00000 n 
+0000696023 00000 n 
+0000696134 00000 n 
+0000707646 00000 n 
+0000707990 00000 n 
+0000708099 00000 n 
+0000708210 00000 n 
+0000717356 00000 n 
+0000717665 00000 n 
+0000717774 00000 n 
+0000717885 00000 n 
+0000725816 00000 n 
+0000726136 00000 n 
+0000726245 00000 n 
+0000726356 00000 n 
+0000734231 00000 n 
+0000734563 00000 n 
+0000734672 00000 n 
+0000734783 00000 n 
+0000741239 00000 n 
+0000741571 00000 n 
+0000741680 00000 n 
+0000741791 00000 n 
+0000749425 00000 n 
+0000749757 00000 n 
+0000749866 00000 n 
+0000749977 00000 n 
+0000758630 00000 n 
+0000759012 00000 n 
+0000759121 00000 n 
+0000759232 00000 n 
+0000772272 00000 n 
+0000772592 00000 n 
+0000772701 00000 n 
+0000772812 00000 n 
+0000792446 00000 n 
+0000792766 00000 n 
+0000792875 00000 n 
+0000792986 00000 n 
+0000816003 00000 n 
+0000816311 00000 n 
+0000816420 00000 n 
+0000816531 00000 n 
+0000833918 00000 n 
+0000834251 00000 n 
+0000834360 00000 n 
+0000834471 00000 n 
+0000845807 00000 n 
+0000846128 00000 n 
+0000846237 00000 n 
+0000846348 00000 n 
+0000854741 00000 n 
+0000855026 00000 n 
+0000855135 00000 n 
+0000855246 00000 n 
+0000858574 00000 n 
+0000858867 00000 n 
+0000864077 00000 n 
+0000864186 00000 n 
+0000864295 00000 n 
+0000864405 00000 n 
+0000864516 00000 n 
+0000864627 00000 n 
+0000864739 00000 n 
+0000864818 00000 n 
+0000865111 00000 n 
+0000879730 00000 n 
+0000879839 00000 n 
+0000879950 00000 n 
+0000880243 00000 n 
+0000891271 00000 n 
+0000891380 00000 n 
+0000891491 00000 n 
+0000891784 00000 n 
+0000915443 00000 n 
+0000915552 00000 n 
+0000915663 00000 n 
+0000915956 00000 n 
+0000933370 00000 n 
+0000933479 00000 n 
+0000933590 00000 n 
+0000933883 00000 n 
+0000944085 00000 n 
+0000944194 00000 n 
+0000944305 00000 n 
+0000944663 00000 n 
+0000945151 00000 n 
+0000945260 00000 n 
+0000945371 00000 n 
+0003419986 00000 n 
+0003437465 00000 n 
+0003437758 00000 n 
+0003454515 00000 n 
+0003454624 00000 n 
+0003454735 00000 n 
+0003455028 00000 n 
+0003467002 00000 n 
+0003467111 00000 n 
+0003467222 00000 n 
+0003467580 00000 n 
+0003469579 00000 n 
+0003469688 00000 n 
+0003469799 00000 n 
+0003702925 00000 n 
+0003705023 00000 n 
+0003705316 00000 n 
+0003720141 00000 n 
+0003720250 00000 n 
+0003720361 00000 n 
+0003720654 00000 n 
+0003730329 00000 n 
+0003730438 00000 n 
+0003730549 00000 n 
+0003730842 00000 n 
+0003733089 00000 n 
+0003733198 00000 n 
+0003733309 00000 n 
+0003733667 00000 n 
+0003738297 00000 n 
+0003738406 00000 n 
+0003738517 00000 n 
+0004154827 00000 n 
+0004155120 00000 n 
+0004171967 00000 n 
+0004172076 00000 n 
+0004172187 00000 n 
+0004172480 00000 n 
+0004175672 00000 n 
+0004175781 00000 n 
+0004175892 00000 n 
+0004176185 00000 n 
+0004184093 00000 n 
+0004184202 00000 n 
+0004184313 00000 n 
+0004184606 00000 n 
+0004189708 00000 n 
+0004189817 00000 n 
+0004189928 00000 n 
+0004190221 00000 n 
+0004192304 00000 n 
+0004192413 00000 n 
+0004192524 00000 n 
+0004192817 00000 n 
+0004195547 00000 n 
+0004195656 00000 n 
+0004195767 00000 n 
+0004196060 00000 n 
+0004198804 00000 n 
+0004198913 00000 n 
+0004199024 00000 n 
+0004199317 00000 n 
+0004201925 00000 n 
+0004202034 00000 n 
+0004202145 00000 n 
+0004202438 00000 n 
+0004204805 00000 n 
+0004204914 00000 n 
+0004205025 00000 n 
+0004205318 00000 n 
+0004208025 00000 n 
+0004208134 00000 n 
+0004208245 00000 n 
+0004208538 00000 n 
+0004211565 00000 n 
+0004211674 00000 n 
+0004211785 00000 n 
+0004212078 00000 n 
+0004214850 00000 n 
+0004214959 00000 n 
+0004215070 00000 n 
+0004215363 00000 n 
+0004218478 00000 n 
+0004218587 00000 n 
+0004218698 00000 n 
+0004218991 00000 n 
+0004221793 00000 n 
+0004221902 00000 n 
+0004222013 00000 n 
+0004222306 00000 n 
+0004225281 00000 n 
+0004225390 00000 n 
+0004225501 00000 n 
+0004225794 00000 n 
+0004228735 00000 n 
+0004228844 00000 n 
+0004228955 00000 n 
+0004229248 00000 n 
+0004232246 00000 n 
+0004232355 00000 n 
+0004232466 00000 n 
+0004232759 00000 n 
+0004235733 00000 n 
+0004235842 00000 n 
+0004235953 00000 n 
+0004236246 00000 n 
+0004238708 00000 n 
+0004238817 00000 n 
 trailer
 <<
-/Size 384
+/Size 400
 /Root 3 0 R
 /Info 1 0 R
 >>
 startxref
-4224214
+4238928
 %%EOF
