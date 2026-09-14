@@ -6,16 +6,8 @@ from docx import Document
 from docx.shared import Inches, Pt, RGBColor
 from docx.enum.text import WD_ALIGN_PARAGRAPH
 from docx.enum.table import WD_TABLE_ALIGNMENT
-from docx.oxml import OxmlElement
+from docx.oxml import OxmlElement, parse_xml
 from docx.oxml.ns import qn
-
-def set_cell_background(cell, hex_color):
-    tcPr = cell._element.get_or_add_tcPr()
-    shd = OxmlElement('w:shd')
-    shd.set(qn('w:val'), 'clear')
-    shd.set(qn('w:color'), 'auto')
-    shd.set(qn('w:fill'), hex_color)
-    tcPr.append(shd)
 
 def add_styled_paragraph(doc, text, style_type='body', space_before=0, space_after=0):
     p = doc.add_paragraph()
@@ -30,10 +22,17 @@ def add_styled_paragraph(doc, text, style_type='body', space_before=0, space_aft
         run.font.size = Pt(12)
         run.font.color.rgb = RGBColor(0, 0, 0)
     elif style_type == 'chapter_header':
-        p.alignment = WD_ALIGN_PARAGRAPH.LEFT
+        p.alignment = WD_ALIGN_PARAGRAPH.CENTER
         run = p.add_run(text)
         run.font.name = 'Times New Roman'
         run.font.size = Pt(14)
+        run.font.bold = True
+        run.font.color.rgb = RGBColor(0, 0, 0)
+    elif style_type == 'chapter_title_centered':
+        p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+        run = p.add_run(text)
+        run.font.name = 'Times New Roman'
+        run.font.size = Pt(12)
         run.font.bold = True
         run.font.color.rgb = RGBColor(0, 0, 0)
     elif style_type == 'section_title':
@@ -43,15 +42,21 @@ def add_styled_paragraph(doc, text, style_type='body', space_before=0, space_aft
         run.font.size = Pt(12)
         run.font.bold = True
         run.font.color.rgb = RGBColor(0, 0, 0)
-    elif style_type == 'bullet':
-        p.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
-        p.paragraph_format.left_indent = Inches(0.25)
+    elif style_type == 'table_title':
+        p.alignment = WD_ALIGN_PARAGRAPH.LEFT
+        p.paragraph_format.line_spacing = 1.15
+        p.paragraph_format.space_before = Pt(space_before or 8)
+        p.paragraph_format.space_after = Pt(space_after or 2)
         run = p.add_run(text)
         run.font.name = 'Times New Roman'
-        run.font.size = Pt(12)
+        run.font.size = Pt(11)
+        run.font.bold = True
         run.font.color.rgb = RGBColor(0, 0, 0)
     elif style_type == 'caption':
         p.alignment = WD_ALIGN_PARAGRAPH.LEFT
+        p.paragraph_format.line_spacing = 1.15
+        p.paragraph_format.space_before = Pt(space_before or 2)
+        p.paragraph_format.space_after = Pt(space_after or 8)
         run = p.add_run(text)
         run.font.name = 'Times New Roman'
         run.font.size = Pt(10)
@@ -72,37 +77,66 @@ def add_table_to_docx(doc, headers, data):
     table.alignment = WD_TABLE_ALIGNMENT.CENTER
     table.style = 'Table Grid'
     
-    # Header Row
+    # Crisp black borders and zero cell padding
+    tblPr = table._tbl.tblPr
+    borders = parse_xml(
+        '<w:tblBorders xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main">'
+        '<w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>'
+        '<w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>'
+        '<w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>'
+        '<w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>'
+        '<w:insideH w:val="single" w:sz="4" w:space="0" w:color="000000"/>'
+        '<w:insideV w:val="single" w:sz="4" w:space="0" w:color="000000"/>'
+        '</w:tblBorders>'
+    )
+    tblPr.append(borders)
+    
+    tblCellMar = parse_xml(
+        '<w:tblCellMar xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main">'
+        '<w:top w:w="20" w:type="dxa"/>'
+        '<w:bottom w:w="20" w:type="dxa"/>'
+        '<w:left w:w="30" w:type="dxa"/>'
+        '<w:right w:w="30" w:type="dxa"/>'
+        '</w:tblCellMar>'
+    )
+    tblPr.append(tblCellMar)
+    
+    # Header Row - pure black, NO gray shading
     hdr_cells = table.rows[0].cells
     for i, title in enumerate(headers):
         hdr_cells[i].text = title
-        set_cell_background(hdr_cells[i], 'F2F2F2')
         p = hdr_cells[i].paragraphs[0]
         p.alignment = WD_ALIGN_PARAGRAPH.CENTER
-        p.paragraph_format.line_spacing = 1.15
-        p.paragraph_format.space_before = Pt(2)
-        p.paragraph_format.space_after = Pt(2)
+        p.paragraph_format.line_spacing = 1.0
+        p.paragraph_format.space_before = Pt(0)
+        p.paragraph_format.space_after = Pt(0)
         for run in p.runs:
             run.font.name = 'Times New Roman'
             run.font.size = Pt(9.5)
             run.font.bold = True
             run.font.color.rgb = RGBColor(0, 0, 0)
             
-    # Data Rows
+    # Data Rows - pure black, zero paragraph spacing
     for r_idx, row_data in enumerate(data):
         row_cells = table.rows[r_idx + 1].cells
         for c_idx, val in enumerate(row_data):
             row_cells[c_idx].text = str(val)
             p = row_cells[c_idx].paragraphs[0]
             p.alignment = WD_ALIGN_PARAGRAPH.CENTER
-            p.paragraph_format.line_spacing = 1.15
-            p.paragraph_format.space_before = Pt(2)
-            p.paragraph_format.space_after = Pt(2)
+            p.paragraph_format.line_spacing = 1.0
+            p.paragraph_format.space_before = Pt(0)
+            p.paragraph_format.space_after = Pt(0)
             for run in p.runs:
                 run.font.name = 'Times New Roman'
                 run.font.size = Pt(9)
                 run.font.color.rgb = RGBColor(0, 0, 0)
-    doc.add_paragraph().paragraph_format.space_after = Pt(6)
+
+    # Prevent row split across pages and repeat header
+    for idx, row in enumerate(table.rows):
+        trPr = row._tr.get_or_add_trPr()
+        trPr.append(parse_xml('<w:cantSplit xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"/>'))
+        if idx == 0:
+            trPr.append(parse_xml('<w:tblHeader xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"/>'))
 
 def generate_complete_thesis_docx(output_path="Abdulameen_Complete_Thesis_Chapters_1_5.docx"):
     print("Loading base 'Abdulameen Chapter 1 -3.docx'...")
@@ -121,12 +155,12 @@ def generate_complete_thesis_docx(output_path="Abdulameen_Complete_Thesis_Chapte
     # CHAPTER 4: DATA ANALYSIS, PRESENTATION AND DISCUSSION OF FINDINGS
     # =========================================================================
     add_styled_paragraph(doc, "CHAPTER FOUR", 'chapter_header')
-    add_styled_paragraph(doc, "DATA ANALYSIS, PRESENTATION AND DISCUSSION OF FINDINGS", 'section_title')
+    add_styled_paragraph(doc, "DATA ANALYSIS, PRESENTATION AND DISCUSSION OF FINDINGS", 'chapter_title_centered')
     add_styled_paragraph(doc, "4.1 Empirical Results", 'section_title')
     add_styled_paragraph(
         doc,
         "This chapter presents the empirical findings of the study on equity return forecasting and tail-risk-aware portfolio optimization "
-        "on the Nigerian Exchange Group (NGX). The analysis evaluates 28 liquid equities spanning a 15-year historical period from January 2010 through "
+        "on the Nigerian Exchange Group (NGX). The analysis evaluates 28 liquid equities spanning a 16-year historical period from January 2010 through "
         "December 2025 (835 weekly observations per asset). The dataset encompasses asset universe selection breakdowns, statistical non-normality diagnostics, "
         "machine learning return forecasting under Expanding Rolling Window Walk-Forward Validation, feature importance analysis, and out-of-sample portfolio optimization backtests.",
         'body'
@@ -138,53 +172,53 @@ def generate_complete_thesis_docx(output_path="Abdulameen_Complete_Thesis_Chapte
         doc,
         "To establish a robust quantitative asset allocation model free from temporal distortion and survivorship bias, "
         "the constituent equities of the NGX Pension Index were evaluated for sample inclusion. A total of 38 equities were audited. "
-        "To guarantee a complete 15-year historical dataset (835 weekly observations from 2010 to 2025) required for training machine learning algorithms (2010-2020) "
+        "To guarantee a complete 16-year historical dataset (835 weekly observations from 2010 to 2025) required for training machine learning algorithms (2010-2020) "
         "and backtesting out-of-sample portfolio performance (2021-2025), 28 equities with continuous price history were selected. "
         "Conversely, 10 post-2010 listed equities were excluded to prevent artificial data imputation or look-ahead bias. Table 4.0 provides the comprehensive universe breakdown.",
         'body'
     )
     
-    add_styled_paragraph(doc, "Table 4.0: NGX Pension Index Asset Universe Breakdown & Exclusion Rationale", 'section_title')
+    add_styled_paragraph(doc, "Table 4.0: NGX Pension Index Asset Universe Breakdown & Exclusion Rationale", 'table_title')
     universe_headers = ["Ticker", "Company Name", "Sector", "Status", "Inclusion / Exclusion Rationale"]
     universe_records = [
-        ["CONOIL", "Conoil Plc", "Oil & Gas", "Included", "Complete 15-yr history (2010-2025)"],
-        ["CUSTODIAN", "Custodian Investment Plc", "Financial Services", "Included", "Complete 15-yr history (2010-2025)"],
-        ["DANGCEM", "Dangote Cement Plc", "Industrial Goods", "Included", "Complete 15-yr history (2010-2025)"],
-        ["DANGSUGAR", "Dangote Sugar Refinery Plc", "Consumer Goods", "Included", "Complete 15-yr history (2010-2025)"],
-        ["ETI", "Ecobank Transnational Inc.", "Financial Services", "Included", "Complete 15-yr history (2010-2025)"],
-        ["FCMB", "FCMB Group Plc", "Financial Services", "Included", "Complete 15-yr history (2010-2025)"],
-        ["FIDELITYBK", "Fidelity Bank Plc", "Financial Services", "Included", "Complete 15-yr history (2010-2025)"],
-        ["FIDSON", "Fidson Healthcare Plc", "Healthcare", "Included", "Complete 15-yr history (2010-2025)"],
-        ["FBNH", "First HoldCo Plc", "Financial Services", "Included", "Complete 15-yr history (2010-2025)"],
-        ["GTCO", "Guaranty Trust Holding Co", "Financial Services", "Included", "Complete 15-yr history (2010-2025)"],
-        ["GUINNESS", "Guinness Nigeria Plc", "Consumer Goods", "Included", "Complete 15-yr history (2010-2025)"],
-        ["JBERGER", "Julius Berger Nigeria Plc", "Construction", "Included", "Complete 15-yr history (2010-2025)"],
-        ["WAPCO", "Lafarge Africa Plc", "Industrial Goods", "Included", "Complete 15-yr history (2010-2025)"],
-        ["MANSARD", "AXA Mansard Insurance Plc", "Financial Services", "Included", "Complete 15-yr history (2010-2025)"],
-        ["NAHCO", "Nigerian Aviation Handling", "Services", "Included", "Complete 15-yr history (2010-2025)"],
-        ["NASCON", "Nascon Allied Industries", "Consumer Goods", "Included", "Complete 15-yr history (2010-2025)"],
-        ["NESTLE", "Nestle Nigeria Plc", "Consumer Goods", "Included", "Complete 15-yr history (2010-2025)"],
-        ["NB", "Nigerian Breweries Plc", "Consumer Goods", "Included", "Complete 15-yr history (2010-2025)"],
-        ["OKOMUOIL", "Okomu Oil Palm Plc", "Agriculture", "Included", "Complete 15-yr history (2010-2025)"],
-        ["PRESCO", "Presco Plc", "Agriculture", "Included", "Complete 15-yr history (2010-2025)"],
-        ["STANBIC", "Stanbic IBTC Holdings", "Financial Services", "Included", "Complete 15-yr history (2010-2025)"],
-        ["STERLINGNG", "Sterling Financial Holdings", "Financial Services", "Included", "Complete 15-yr history (2010-2025)"],
-        ["TRANSCORP", "Transnational Corp Plc", "Conglomerates", "Included", "Complete 15-yr history (2010-2025)"],
-        ["UACN", "UAC of Nigeria Plc", "Conglomerates", "Included", "Complete 15-yr history (2010-2025)"],
-        ["UBA", "United Bank for Africa Plc", "Financial Services", "Included", "Complete 15-yr history (2010-2025)"],
-        ["UNILEVER", "Unilever Nigeria Plc", "Consumer Goods", "Included", "Complete 15-yr history (2010-2025)"],
-        ["WEMABANK", "Wema Bank Plc", "Financial Services", "Included", "Complete 15-yr history (2010-2025)"],
-        ["ZENITHBANK", "Zenith Bank Plc", "Financial Services", "Included", "Complete 15-yr history (2010-2025)"],
+        ["CONOIL", "Conoil Plc", "Oil & Gas", "Included", "Complete 16-yr history (2010-2025)"],
+        ["CUSTODIAN", "Custodian Investment Plc", "Financial Services", "Included", "Complete 16-yr history (2010-2025)"],
+        ["DANGCEM", "Dangote Cement Plc", "Industrial Goods", "Included", "Complete 16-yr history (2010-2025)"],
+        ["DANGSUGAR", "Dangote Sugar Refinery Plc", "Consumer Goods", "Included", "Complete 16-yr history (2010-2025)"],
+        ["ETI", "Ecobank Transnational Inc.", "Financial Services", "Included", "Complete 16-yr history (2010-2025)"],
+        ["FCMB", "FCMB Group Plc", "Financial Services", "Included", "Complete 16-yr history (2010-2025)"],
+        ["FIDELITYBK", "Fidelity Bank Plc", "Financial Services", "Included", "Complete 16-yr history (2010-2025)"],
+        ["FIDSON", "Fidson Healthcare Plc", "Healthcare", "Included", "Complete 16-yr history (2010-2025)"],
+        ["FBNH", "First HoldCo Plc", "Financial Services", "Included", "Complete 16-yr history (2010-2025)"],
+        ["GTCO", "Guaranty Trust Holding Co", "Financial Services", "Included", "Complete 16-yr history (2010-2025)"],
+        ["GUINNESS", "Guinness Nigeria Plc", "Consumer Goods", "Included", "Complete 16-yr history (2010-2025)"],
+        ["JBERGER", "Julius Berger Nigeria Plc", "Construction", "Included", "Complete 16-yr history (2010-2025)"],
+        ["WAPCO", "Lafarge Africa Plc", "Industrial Goods", "Included", "Complete 16-yr history (2010-2025)"],
+        ["MANSARD", "AXA Mansard Insurance Plc", "Financial Services", "Included", "Complete 16-yr history (2010-2025)"],
+        ["NAHCO", "Nigerian Aviation Handling", "Services", "Included", "Complete 16-yr history (2010-2025)"],
+        ["NASCON", "Nascon Allied Industries", "Consumer Goods", "Included", "Complete 16-yr history (2010-2025)"],
+        ["NESTLE", "Nestle Nigeria Plc", "Consumer Goods", "Included", "Complete 16-yr history (2010-2025)"],
+        ["NB", "Nigerian Breweries Plc", "Consumer Goods", "Included", "Complete 16-yr history (2010-2025)"],
+        ["OKOMUOIL", "Okomu Oil Palm Plc", "Agriculture", "Included", "Complete 16-yr history (2010-2025)"],
+        ["PRESCO", "Presco Plc", "Agriculture", "Included", "Complete 16-yr history (2010-2025)"],
+        ["STANBIC", "Stanbic IBTC Holdings", "Financial Services", "Included", "Complete 16-yr history (2010-2025)"],
+        ["STERLINGNG", "Sterling Financial Holdings", "Financial Services", "Included", "Complete 16-yr history (2010-2025)"],
+        ["TRANSCORP", "Transnational Corp Plc", "Conglomerates", "Included", "Complete 16-yr history (2010-2025)"],
+        ["UACN", "UAC of Nigeria Plc", "Conglomerates", "Included", "Complete 16-yr history (2010-2025)"],
+        ["UBA", "United Bank for Africa Plc", "Financial Services", "Included", "Complete 16-yr history (2010-2025)"],
+        ["UNILEVER", "Unilever Nigeria Plc", "Consumer Goods", "Included", "Complete 16-yr history (2010-2025)"],
+        ["WEMABANK", "Wema Bank Plc", "Financial Services", "Included", "Complete 16-yr history (2010-2025)"],
+        ["ZENITHBANK", "Zenith Bank Plc", "Financial Services", "Included", "Complete 16-yr history (2010-2025)"],
         ["ACCESSCORP", "Access Holdings Plc", "Financial Services", "Excluded", "Post-2010 restructuring"],
-        ["AIRTELAFRI", "Airtel Africa Plc", "Telecoms", "Excluded", "Listed June 2019 (< 15-yr history)"],
-        ["ARADEL", "Aradel Holdings Plc", "Oil & Gas", "Excluded", "Listed October 2024 (< 15-yr history)"],
-        ["BUAFOODS", "BUA Foods Plc", "Consumer Goods", "Excluded", "Listed January 2022 (< 15-yr history)"],
-        ["GEREGU", "Geregu Power Plc", "Utilities / Power", "Excluded", "Listed October 2022 (< 15-yr history)"],
-        ["MTNN", "MTN Nigeria Comms Plc", "Telecoms", "Excluded", "Listed May 2019 (< 15-yr history)"],
-        ["SEPLAT", "Seplat Energy Plc", "Oil & Gas", "Excluded", "Listed April 2014 (< 15-yr history)"],
-        ["TRANSCOHOT", "Transcorp Hotels Plc", "Services", "Excluded", "Listed January 2015 (< 15-yr history)"],
-        ["TRANSPOWER", "Transcorp Power Plc", "Utilities / Power", "Excluded", "Listed March 2024 (< 15-yr history)"],
-        ["UCAP", "United Capital Plc", "Financial Services", "Excluded", "Listed January 2013 (< 15-yr history)"]
+        ["AIRTELAFRI", "Airtel Africa Plc", "Telecoms", "Excluded", "Listed June 2019 (< 16-yr history)"],
+        ["ARADEL", "Aradel Holdings Plc", "Oil & Gas", "Excluded", "Listed October 2024 (< 16-yr history)"],
+        ["BUAFOODS", "BUA Foods Plc", "Consumer Goods", "Excluded", "Listed January 2022 (< 16-yr history)"],
+        ["GEREGU", "Geregu Power Plc", "Utilities / Power", "Excluded", "Listed October 2022 (< 16-yr history)"],
+        ["MTNN", "MTN Nigeria Comms Plc", "Telecoms", "Excluded", "Listed May 2019 (< 16-yr history)"],
+        ["SEPLAT", "Seplat Energy Plc", "Oil & Gas", "Excluded", "Listed April 2014 (< 16-yr history)"],
+        ["TRANSCOHOT", "Transcorp Hotels Plc", "Services", "Excluded", "Listed January 2015 (< 16-yr history)"],
+        ["TRANSPOWER", "Transcorp Power Plc", "Utilities / Power", "Excluded", "Listed March 2024 (< 16-yr history)"],
+        ["UCAP", "United Capital Plc", "Financial Services", "Excluded", "Listed January 2013 (< 16-yr history)"]
     ]
     add_table_to_docx(doc, universe_headers, universe_records)
     add_styled_paragraph(doc, "Source: Author's classification based on NGX listing records (2026).", 'caption')
@@ -200,7 +234,7 @@ def generate_complete_thesis_docx(output_path="Abdulameen_Complete_Thesis_Chapte
     )
     
     desc_df = pd.read_csv('output/tables/descriptive_and_diagnostic_stats.csv')
-    add_styled_paragraph(doc, "Table 4.1: Descriptive Statistics of 28 NGX Equity Log Returns (2010-2025)", 'section_title')
+    add_styled_paragraph(doc, "Table 4.1: Descriptive Statistics of 28 NGX Equity Log Returns (2010-2025)", 'table_title')
     t1_headers = ["Ticker", "Mean (%)", "Std Dev (%)", "Min (%)", "Max (%)", "Skewness", "Kurtosis"]
     t1_rows = []
     for _, row in desc_df.iterrows():
@@ -226,7 +260,7 @@ def generate_complete_thesis_docx(output_path="Abdulameen_Complete_Thesis_Chapte
         'body'
     )
     
-    add_styled_paragraph(doc, "Table 4.2: Empirical Non-Normality (JB, SW) and Stationarity (ADF) Diagnostic Tests (All 28 Equities)", 'section_title')
+    add_styled_paragraph(doc, "Table 4.2: Empirical Non-Normality (JB, SW) and Stationarity (ADF) Diagnostic Tests (All 28 Equities)", 'table_title')
     t2_headers = ["Ticker", "JB Stat", "JB p-val", "SW Stat", "ADF Stat", "ADF p-val", "Stationary"]
     t2_rows = []
     for _, row in desc_df.iterrows():
@@ -271,7 +305,7 @@ def generate_complete_thesis_docx(output_path="Abdulameen_Complete_Thesis_Chapte
     )
     
     ml_perf_df = pd.read_csv('output/tables/ml_forecasting_performance.csv')
-    add_styled_paragraph(doc, "Table 4.3: Out-of-Sample Predictive Performance Metrics across All 28 NGX Equities (2021-2025 Walk-Forward)", 'section_title')
+    add_styled_paragraph(doc, "Table 4.3: Out-of-Sample Predictive Performance Metrics across All 28 NGX Equities (2021-2025 Walk-Forward)", 'table_title')
     t3_headers = ["Ticker", "Base RMSE", "RF RMSE", "XGB RMSE", "Base DA (%)", "RF DA (%)", "XGB DA (%)"]
     t3_rows = []
     for _, row in ml_perf_df.iterrows():
@@ -303,22 +337,22 @@ def generate_complete_thesis_docx(output_path="Abdulameen_Complete_Thesis_Chapte
         "compared to 0.0608 for XGBoost and 0.0627 for Random Forest. Similarly, binary directional accuracy (DA) hovers around 37.8% to 38.1% across assets. On a surface level, this might lead to "
         "the erroneous conclusion that machine learning models fail to outperform historical baselines. However, when evaluated in downstream portfolio optimization (Section 4.7), XGBoost-integrated "
         "Mean-CVaR achieves a gross Sharpe ratio of 1.52 (42.00% annualized return) compared to 0.91 for passive indexing and 0.76 for Markowitz MVO. Resolving this apparent discrepancy requires "
-        "a rigorous econometric evaluation of the mathematical mechanics of RMSE versus portfolio selection utility.",
+        "a rigorous econometric evaluation of the mathematical mechanics of RMSE versus portfolio selection utility across the following four points:",
         'body'
     )
     add_styled_paragraph(
         doc,
-        "First, the apparent superiority of the Historical Mean in raw RMSE stems from the statistical properties of financial return noise under an L2 quadratic loss function. "
-        "The Root Mean Squared Error penalizes prediction errors quadratically: RMSE = sqrt((1/N) * sum((y_hat_t - y_t)^2)). At weekly sampling horizons, equity return series are dominated "
+        "1. Quadratic Loss Penalization and Noise Dominance: The apparent superiority of the flat Historical Mean in raw RMSE stems from the statistical properties of financial return noise under an L2 quadratic loss function. "
+        "The Root Mean Squared Error penalizes prediction errors quadratically: RMSE = √((1/n) Σ (ŷ_t - y_t)²). At weekly sampling horizons, equity return series are dominated "
         "by high-frequency, zero-mean unobserved news noise. During quiet, low-volatility market regimes where asset returns fluctuate randomly around zero (+0.4%, -0.2%, +0.1%), a static forecast "
-        "equal to the historical sample mean (y_hat_t = 0.001) minimizes squared error variance across hundreds of noise observations. Conversely, non-linear ML models generate dynamic, non-zero "
+        "equal to the historical sample mean (ŷ_t = 0.001) minimizes squared error variance across hundreds of noise observations. Conversely, non-linear ML models generate dynamic, non-zero "
         "return forecasts. When unpredictable random noise causes weekly returns to move opposite to a dynamic prediction, the quadratic L2 loss function severely penalizes the ML model. "
         "Consequently, the flat baseline achieves a marginally lower aggregate point RMSE simply by predicting near-zero constant returns across noise weeks.",
         'body'
     )
     add_styled_paragraph(
         doc,
-        "Second, classical point-forecasting metrics such as RMSE and binary Directional Accuracy evaluate asset returns in isolation along a single temporal axis. In contrast, multi-asset "
+        "2. Cross-Sectional Ranking vs. Point Prediction: Classical point-forecasting metrics such as RMSE and binary Directional Accuracy evaluate asset returns in isolation along a single temporal axis. In contrast, multi-asset "
         "portfolio optimization (Markowitz, 1952; Rockafellar & Uryasev, 2000) does not operate on isolated point accuracy; rather, it depends fundamentally on cross-sectional magnitude "
         "discrimination across the asset universe at each rebalancing time step t. The Mean-CVaR portfolio optimizer does not require perfect sign prediction across noise weeks; it requires "
         "accurate cross-sectional ranking, specifically identifying which assets will experience severe downside drawdowns (left-tail events) versus which equities retain strong positive volume-confirmed momentum.",
@@ -326,15 +360,15 @@ def generate_complete_thesis_docx(output_path="Abdulameen_Complete_Thesis_Chapte
     )
     add_styled_paragraph(
         doc,
-        "Third, tree-based machine learning ensembles (Random Forest and XGBoost) successfully extract non-linear cross-sectional signals by leveraging technical indicators. Feature importance analysis "
+        "3. Non-Linear Feature Signal Extraction: Tree-based machine learning ensembles (Random Forest and XGBoost) successfully extract non-linear cross-sectional signals by leveraging technical indicators. Feature importance analysis "
         "(Section 4.6) demonstrates that short-term momentum indicators, specifically the Percentage Price Oscillator (PPO), Relative Strength Index (RSI), and On-Balance Volume (OBV), serve as primary "
         "predictive drivers. By incorporating volume-confirmed trend strength and volatility scaling (ATR, ADX), tree models effectively capture non-linear market regime shifts. Even if an ML model overpredicts "
-        "return magnitude during a noise week (incurring a small RMSE penalty), its predicted expected return vector (mu_hat_t) correctly ranks top-performing equities relative to high-risk equities across the 28 NGX assets.",
+        "return magnitude during a noise week (incurring a small RMSE penalty), its predicted expected return vector (μ̂_t) correctly ranks top-performing equities relative to high-risk equities across the 28 NGX assets.",
         'body'
     )
     add_styled_paragraph(
         doc,
-        "Fourth, when these dynamic expected return vectors (mu_hat_t) are passed into the convex Mean-CVaR linear program, the optimizer re-allocates capital toward high-ranked momentum equities while "
+        "4. Tail-Risk Mitigation and Convex Optimization: When these dynamic expected return vectors (μ̂_t) are passed into the convex Mean-CVaR linear program, the optimizer re-allocates capital toward high-ranked momentum equities while "
         "penalizing assets exposed to left-tail drawdowns. Under zero fee friction (Table 4.5), XGB-CVaR achieves a gross Sharpe ratio of 1.52 (+42.00% annualized return, -22.09% max drawdown), "
         "yielding a statistically significant Sharpe outperformance over passive indexing (Ledoit-Wolf circular block bootstrap p = 0.015 < 0.05) and positive welfare gains (+819 bps Certainty Equivalent Return gain).",
         'body'
@@ -375,7 +409,7 @@ def generate_complete_thesis_docx(output_path="Abdulameen_Complete_Thesis_Chapte
     )
     
     port_perf_df = pd.read_csv('output/tables/portfolio_performance_summary.csv')
-    add_styled_paragraph(doc, "Table 4.4: Out-of-Sample Portfolio Performance with 1.50% Retail Transaction Fees & Market Slippage", 'section_title')
+    add_styled_paragraph(doc, "Table 4.4: Out-of-Sample Portfolio Performance with 1.50% Retail Transaction Fees & Market Slippage", 'table_title')
     t4_headers = ["Strategy", "Ann. Ret (%)", "Ann. Vol (%)", "Sharpe", "Sortino", "VaR 95%", "CVaR 95%", "Max DD (%)"]
     t4_rows = []
     for _, row in port_perf_df.iterrows():
@@ -393,7 +427,7 @@ def generate_complete_thesis_docx(output_path="Abdulameen_Complete_Thesis_Chapte
     add_styled_paragraph(doc, "Source: Author's computation (2026). Backtested under 1.50% retail transaction fee and 0.319% weekly Rf rate.", 'caption')
     
     port_zero_df = pd.read_csv('output/tables/portfolio_performance_zero_cost.csv')
-    add_styled_paragraph(doc, "Table 4.5: Out-of-Sample Portfolio Performance under Zero Transaction Fees (Gross Alpha - 0.00%)", 'section_title')
+    add_styled_paragraph(doc, "Table 4.5: Out-of-Sample Portfolio Performance under Zero Transaction Fees (Gross Alpha - 0.00%)", 'table_title')
     t5_rows = []
     for _, row in port_zero_df.iterrows():
         t5_rows.append([
@@ -410,7 +444,7 @@ def generate_complete_thesis_docx(output_path="Abdulameen_Complete_Thesis_Chapte
     add_styled_paragraph(doc, "Source: Author's computation (2026). Gross performance under zero transaction fee friction.", 'caption')
     
     inst_df = pd.read_csv('output/tables/portfolio_performance_institutional.csv')
-    add_styled_paragraph(doc, "Table 4.5b: Out-of-Sample Portfolio Performance under 0.75% Institutional PFA Transaction Fees", 'section_title')
+    add_styled_paragraph(doc, "Table 4.5b: Out-of-Sample Portfolio Performance under 0.75% Institutional PFA Transaction Fees", 'table_title')
     t5b_headers = ["Strategy", "Ann. Return (%)", "Ann. Vol (%)", "Sharpe", "Sortino", "VaR 95%", "CVaR 95%", "Max DD (%)", "Wk Turnover (%)"]
     t5b_rows = []
     for _, row in inst_df.iterrows():
@@ -446,7 +480,7 @@ def generate_complete_thesis_docx(output_path="Abdulameen_Complete_Thesis_Chapte
     )
     
     sig_df = pd.read_csv('output/tables/portfolio_significance_tests.csv')
-    add_styled_paragraph(doc, "Table 4.6: Multi-Tier Pairwise Hypothesis Testing of Sharpe & Sortino Equality across Fee Regimes", 'section_title')
+    add_styled_paragraph(doc, "Table 4.6: Multi-Tier Pairwise Hypothesis Testing of Sharpe & Sortino Equality across Fee Regimes", 'table_title')
     t6_headers = ["Fee Regime", "Strategy", "Benchmark", "Sharpe Diff", "Jobson-Korkie p", "LW Sharpe p", "LW Sortino p", "Wilcoxon p"]
     t6_rows = []
     for _, row in sig_df.iterrows():
@@ -478,8 +512,8 @@ def generate_complete_thesis_docx(output_path="Abdulameen_Complete_Thesis_Chapte
         doc,
         "Firstly, regarding the evaluation of statistical non-normality and tail-risk exposure across NGX equities, the empirical diagnostic tests presented in Section 4.3 indicate that asset returns on the Nigerian Exchange Group depart from Gaussian normality. "
         "Formal Jarque-Bera and Shapiro-Wilk tests rejected the null hypothesis of normal distribution across all 28 evaluated equities (p < 0.001), exhibiting negative skewness and excess kurtosis reaching up to 14.46. Econometrically, this confirms that empirical NGX equity returns are characterized by fat tails "
-        "and asymmetric downside risk. These results support the theoretical arguments of Mozumder et al. (2024) and Adegboyo & Sarwar (2025), who emphasize that emerging frontier stock markets experience "
-        "price jumps, policy shifts, and liquidity shocks. Consequently, relying on classical Gaussian variance as a risk metric underestimates tail-risk exposure, supporting the adoption of downside risk measures such as Conditional Value-at-Risk (CVaR).",
+        "and asymmetric downside risk. These results strongly support the theoretical arguments and empirical evidence of Mozumder et al. (2024), Adegboyo & Sarwar (2025), Uzoaga et al. (2025), and Alim et al. (2024), who emphasize that emerging frontier stock markets experience "
+        "pronounced price jumps, policy shifts, and macroeconomic shocks that invalidate Gaussian assumptions. Conversely, these findings contrast with the theoretical premise of classical dispersion models (Bali et al., 2007; Samaniego Alcántar, 2023), which argue that standard variance can serve as an adequate proxy for portfolio risk when higher-order moments exhibit finite-sample instability. On the NGX, relying strictly on standard variance underestimates tail-risk exposure during market downturns, supporting the adoption of downside risk measures such as Conditional Value-at-Risk (CVaR).",
         'body'
     )
     
@@ -489,8 +523,8 @@ def generate_complete_thesis_docx(output_path="Abdulameen_Complete_Thesis_Chapte
         "Secondly, regarding the performance of non-linear Machine Learning models in forecasting weekly NGX equity returns under Expanding Rolling Window Walk-Forward Validation, the empirical results in Section 4.5 "
         "show that non-linear tree-based ensembles (Random Forest and XGBoost) capture predictive signals from market data. While raw point forecasting metrics (RMSE) hover close to historical baselines due to weekly noise variance, "
         "XGBoost achieved an average out-of-sample directional accuracy of 38.1% across liquid NGX equities (with individual assets reaching up to 50.8%), compared to 37.8% for historical baselines. Feature importance analysis (Section 4.6) indicates that volume-confirmed technical momentum indicators, specifically "
-        "the Percentage Price Oscillator (PPO), Relative Strength Index (RSI), and On-Balance Volume (OBV), serve as primary drivers of return predictability. This aligns with empirical asset pricing literature (Gu, Kelly, & Xiu, 2020; Chao, 2024; Ojo & Okafor, 2024; Ajiga et al., 2024), "
-        "demonstrating that machine learning algorithms capture non-linear market dynamics in emerging economies.",
+        "the Percentage Price Oscillator (PPO), Relative Strength Index (RSI), and On-Balance Volume (OBV), serve as primary drivers of return predictability. This aligns with empirical asset pricing literature (Gu, Kelly, & Xiu, 2020; Chao, 2024; Ojo & Okafor, 2024; Ajiga et al., 2024; Ferrari et al., 2024), "
+        "demonstrating that machine learning algorithms capture non-linear market interactions and trend-persistence dynamics in emerging economies. However, this finding also engages with contrasting perspectives: it partially challenges the strict semi-strong form of the Efficient Market Hypothesis (Fama, 1970) by identifying exploitable technical momentum anomalies, while simultaneously contextualizing the cautionary findings of Moyoweshumba & Seitshiro (2025), who observe that in thin African stock markets, microstructural noise and regime shifts can constrain the point forecasting accuracy of complex algorithmic models.",
         'body'
     )
     
@@ -500,8 +534,7 @@ def generate_complete_thesis_docx(output_path="Abdulameen_Complete_Thesis_Chapte
         "Thirdly, regarding the performance of integrated ML-CVaR portfolio strategies compared against classical Markowitz Mean-Variance Optimization and 1/N benchmarks, the backtest results in Section 4.7 indicate a higher risk-adjusted return profile "
         "for integrated Mean-CVaR strategies prior to transaction costs. Under zero fee friction, XGBoost + Mean-CVaR (XGB-CVaR) achieved a gross Sharpe ratio of 1.52 (42.00% annualized return, -22.09% max drawdown), compared to 0.91 for the passive NGX Index Buy-and-Hold benchmark "
         "and 0.76 for Markowitz MVO. Inferential hypothesis testing (Section 4.7.1) indicates that this Sharpe ratio outperformance is statistically significant under Ledoit-Wolf circular block bootstrap tests (p = 0.015 < 0.05). Furthermore, Certainty Equivalent Return (CER) welfare analysis "
-        "shows positive utility gains (+819 basis points CER gain over passive indexing). These findings align with portfolio selection theory (Markowitz, 1952; Rockafellar & Uryasev, 2000; Bodnar et al., 2022; Hsiao, 2025), "
-        "showing that combining return estimates with convex tail-risk constraints improves risk-adjusted outcomes.",
+        "shows positive utility gains (+819 basis points CER gain over passive indexing). These results corroborate established portfolio selection theory (Markowitz, 1952; Rockafellar & Uryasev, 2000; Bodnar et al., 2022; Hsiao, 2025), showing that combining forward-looking return estimates with convex tail-risk constraints improves risk-adjusted outcomes. Nevertheless, these findings provide a nuanced contrast to the empirical work of San (2025) and the classic estimation-error critique of naive diversification, which assert that simple 1/N equal weighting consistently outperforms or equals optimized portfolios out-of-sample due to parameter uncertainty. While 1/N achieves a robust gross Sharpe of 1.25 on the NGX, disciplined CVaR tail-loss minimization achieves superior downside protection (-22.09% max drawdown versus -30.01% for 1/N), demonstrating that tail-risk optimization delivers distinct economic value.",
         'body'
     )
     
@@ -509,41 +542,42 @@ def generate_complete_thesis_docx(output_path="Abdulameen_Complete_Thesis_Chapte
     add_styled_paragraph(
         doc,
         "Fourthly, regarding portfolio robustness under market stress and transaction cost frictions, the empirical evaluation in Section 4.7 highlights execution dynamics across market participant regimes. Under 1.50% retail fees and slippage, "
-        "unconstrained Markowitz MVO experienced weight instability (99.28% average weekly turnover), resulting in a maximum drawdown of -86.38% and negative economic welfare (CER = -64.09%). This supports Michaud's (1989) finding regarding the sensitivity of unconstrained MVO "
+        "unconstrained Markowitz MVO experienced severe weight instability (99.28% average weekly turnover), resulting in a maximum drawdown of -86.38% and negative economic welfare (CER = -64.09%). This strongly supports Michaud's (1989) finding regarding the sensitivity of unconstrained MVO "
         "to estimation error in high-friction environments. Conversely, low-turnover Historical-CVaR (0.38% turnover) displayed resilience, retaining net Sharpe ratios of 1.48 (retail) and 1.49 (institutional). "
         "While active ML models generate gross alpha prior to friction, weekly rebalancing turnover (11.00%) incurs an annual fee drag (~3.6% to ~7.2%) that offsets marginal predictive gains post-fees. This finding aligns with transaction cost literature (Job, 2022; Alotaibi et al., 2022; Kevin & Yugopuspito, 2025), "
-        "indicating that structural tail-risk architecture (CVaR) plays a central role in frictional emerging markets.",
+        "indicating that structural tail-risk architecture (CVaR) plays a central role in frictional emerging markets. It also qualifies the assertions of high-frequency quantitative models that advocate unconstrained algorithmic rebalancing, demonstrating that without explicit turnover penalties or execution smoothing bands, transaction friction rapidly neutralizes statistical predictive edges on frontier exchanges.",
         'body'
     )
     
     # =========================================================================
     # CHAPTER 5: SUMMARY, CONCLUSION, AND RECOMMENDATIONS
     # =========================================================================
+    doc.add_page_break()
     add_styled_paragraph(doc, "CHAPTER FIVE", 'chapter_header')
-    add_styled_paragraph(doc, "SUMMARY, CONCLUSION AND RECOMMENDATIONS", 'section_title')
+    add_styled_paragraph(doc, "SUMMARY, CONCLUSION AND RECOMMENDATIONS", 'chapter_title_centered')
     
     add_styled_paragraph(doc, "5.1 Summary of Findings", 'section_title')
     add_styled_paragraph(
         doc,
-        "Formal statistical diagnostic tests (Jarque-Bera and Shapiro-Wilk) rejected Gaussian normality across all 28 evaluated NGX equities (p < 0.001). "
+        "1. Statistical Non-Normality and Tail-Risk Exposure: Formal statistical diagnostic tests (Jarque-Bera and Shapiro-Wilk) rejected Gaussian normality across all 28 evaluated NGX equities (p < 0.001). "
         "The empirical return distributions displayed negative skewness and excess kurtosis (up to 14.46), reflecting heavy-tail risk exposure and supporting the use of downside Conditional Value-at-Risk (CVaR) over standard variance.",
         'body'
     )
     add_styled_paragraph(
         doc,
-        "Non-linear machine learning ensembles (Random Forest and XGBoost) evaluated under Expanding Rolling Window Walk-Forward Validation captured time-varying market dynamics. "
+        "2. Machine Learning Return Forecasting Dynamics: Non-linear machine learning ensembles (Random Forest and XGBoost) evaluated under Expanding Rolling Window Walk-Forward Validation captured time-varying market dynamics. "
         "XGBoost achieved an average out-of-sample directional accuracy of 38.1% across liquid NGX equities (with individual assets reaching up to 50.8%), driven primarily by volume-confirmed momentum features (Percentage Price Oscillator, Relative Strength Index, and On-Balance Volume).",
         'body'
     )
     add_styled_paragraph(
         doc,
-        "Integrating machine learning return forecasts into a convex Mean-CVaR optimization framework generated risk-adjusted returns under zero fee friction. "
+        "3. Out-of-Sample Portfolio Optimization Performance: Integrating machine learning return forecasts into a convex Mean-CVaR optimization framework generated risk-adjusted returns under zero fee friction. "
         "XGBoost + Mean-CVaR achieved a gross Sharpe ratio of 1.52 (42.00% annualized return, -22.09% maximum drawdown) compared to 0.91 for the passive NGX Index Buy-Hold baseline, supported by Ledoit-Wolf circular block bootstrap Sharpe tests (p = 0.015 < 0.05) and Certainty Equivalent Return utility gains (+819 bps CER gain).",
         'body'
     )
     add_styled_paragraph(
         doc,
-        "Evaluating portfolio performance under market stress and multi-tier transaction cost friction demonstrated that unconstrained Markowitz Mean-Variance Optimization experiences performance degradation (-86.38% drawdown, -64.09% CER utility) due to high turnover (99.28% weekly turnover). "
+        "4. Transaction Cost Dynamics and Turnover Friction: Evaluating portfolio performance under market stress and multi-tier transaction cost friction demonstrated that unconstrained Markowitz Mean-Variance Optimization experiences severe performance degradation (-86.38% drawdown, -64.09% CER utility) due to high turnover (99.28% weekly turnover). "
         "Under institutional (0.75%) and retail (1.50%) brokerage fees, active ML rebalancing turnover (11.00%) creates an annual fee drag (~3.6% to ~7.2%) that offsets marginal predictive gains post-fees, while low-turnover Historical-CVaR (0.38% turnover) maintains stable post-fee performance (net Sharpe 1.48 to 1.49, pairwise p = 0.000).",
         'body'
     )
@@ -551,8 +585,12 @@ def generate_complete_thesis_docx(output_path="Abdulameen_Complete_Thesis_Chapte
     add_styled_paragraph(doc, "5.2 Conclusion", 'section_title')
     add_styled_paragraph(
         doc,
-        "This study investigated equity return forecasting and tail-risk-aware portfolio optimization across 28 liquid equities on the Nigerian Exchange Group (NGX) spanning a 15-year period (2010-2025). "
-        "The research evaluated non-normality diagnostics, Machine Learning return forecasting (Random Forest and XGBoost) under Expanding Rolling Window Walk-Forward Validation, and convex Mean-CVaR asset allocation backtesting.\n\n"
+        "This study investigated equity return forecasting and tail-risk-aware portfolio optimization across 28 liquid equities on the Nigerian Exchange Group (NGX) spanning a 16-year period (2010-2025). "
+        "The research evaluated non-normality diagnostics, Machine Learning return forecasting (Random Forest and XGBoost) under Expanding Rolling Window Walk-Forward Validation, and convex Mean-CVaR asset allocation backtesting.",
+        'body'
+    )
+    add_styled_paragraph(
+        doc,
         "The overall conclusion of this research is that while Machine Learning models extract gross predictive alpha on the NGX, market transaction friction and rebalancing turnover neutralize these marginal predictive gains post-fees. "
         "Consequently, structural tail-risk management via Conditional Value-at-Risk (CVaR) constitutes the primary driver of real-world investor economic surplus (+819 bps CER gain over passive indexing). "
         "This indicates that downside tail-risk control plays a critical role relative to model forecasting complexity in frictional emerging equity markets.",
@@ -564,42 +602,79 @@ def generate_complete_thesis_docx(output_path="Abdulameen_Complete_Thesis_Chapte
     add_styled_paragraph(doc, "5.3.1 Regulatory and Macroeconomic Policy Recommendations", 'section_title')
     add_styled_paragraph(
         doc,
-        "1. PENCOM Investment Guidelines Update: The National Pension Commission (PENCOM) should update its Investment Guidelines for Fund I, Fund II, and Fund III equity portfolios to mandate downside tail-risk metrics, specifically Conditional Value-at-Risk (CVaR_0.95), alongside traditional variance. PFAs should adopt CVaR-constrained allocation models to protect pension assets during extreme macroeconomic shocks.\n\n"
-        "2. SEC & NGX Regulatory Data Transparency: The Securities and Exchange Commission (SEC) and NGX Regulation should establish open-access, low-latency API data infrastructure for market participants to support quantitative risk management. Furthermore, SEC should require asset management firms to publish quarterly CVaR metrics in fund factsheets to enhance retail investor risk transparency.",
+        "1. PENCOM Investment Guidelines Update: The National Pension Commission (PENCOM) should update its Investment Guidelines for Fund I, Fund II, and Fund III equity portfolios to mandate downside tail-risk metrics, specifically Conditional Value-at-Risk (CVaR_0.95), alongside traditional variance. Pension Fund Administrators (PFAs) should adopt CVaR-constrained allocation models to protect pension assets during extreme macroeconomic shocks.",
+        'body'
+    )
+    add_styled_paragraph(
+        doc,
+        "2. SEC & NGX Regulatory Data Transparency: The Securities and Exchange Commission (SEC) and NGX Regulation should establish open-access, low-latency API data infrastructure for market participants to support quantitative risk management. Furthermore, the SEC should require asset management firms to publish quarterly CVaR metrics in fund factsheets to enhance retail investor risk transparency.",
         'body'
     )
     
     add_styled_paragraph(doc, "5.3.2 Institutional Asset Allocation Recommendations", 'section_title')
     add_styled_paragraph(
         doc,
-        "1. Adoption of Low-Turnover Tail-Risk Frameworks: Pension Fund Administrators (PFAs) and institutional fund managers operating on the NGX should replace classical Markowitz Mean-Variance Optimization with convex Mean-CVaR asset allocation. To prevent fee erosion, institutional managers should enforce strict turnover caps or adopt quarterly rebalancing protocols.\n\n"
-        "2. Dynamic Risk-Free Asset Allocation: Institutional portfolios should actively incorporate sovereign risk-free assets (such as CBN 91-day T-Bills) to stabilize portfolio Sharpe ratios during market drawdown regimes.",
+        "1. Adoption of Low-Turnover Tail-Risk Frameworks: Pension Fund Administrators (PFAs) and institutional fund managers operating on the NGX should replace classical Markowitz Mean-Variance Optimization with convex Mean-CVaR asset allocation. To prevent fee erosion, institutional managers should enforce strict turnover caps, employ turnover-penalized objective functions, or adopt quarterly rebalancing protocols.",
+        'body'
+    )
+    add_styled_paragraph(
+        doc,
+        "2. Dynamic Risk-Free Asset Allocation: Institutional portfolios should actively incorporate sovereign risk-free assets (such as Central Bank of Nigeria 91-day Treasury Bills) to stabilize portfolio Sharpe ratios during market drawdown regimes.",
         'body'
     )
     
     add_styled_paragraph(doc, "5.3.3 Quantitative Risk Management Recommendations", 'section_title')
     add_styled_paragraph(
         doc,
-        "1. Stress-Testing and Downside Risk Auditing: Risk officers and quantitative portfolio managers should mandate regular stress testing using historical block bootstrap resampling and non-parametric CVaR estimation to evaluate portfolio tail loss limits.\n\n"
-        "2. Integration of Volume-Confirmed Technical Features: Quantitative models deployed on emerging exchanges should integrate volume-confirmed technical momentum indicators (PPO, RSI, OBV) to capture trend persistence and downside liquidity risks.",
+        "1. Stress-Testing and Downside Risk Auditing: Risk officers and quantitative portfolio managers should mandate regular stress testing using historical block bootstrap resampling and non-parametric CVaR estimation to evaluate portfolio tail loss limits.",
+        'body'
+    )
+    add_styled_paragraph(
+        doc,
+        "2. Integration of Volume-Confirmed Technical Signals: Quantitative models deployed on emerging exchanges should integrate volume-confirmed technical momentum indicators (Percentage Price Oscillator, Relative Strength Index, On-Balance Volume) to capture trend persistence and downside liquidity risks.",
         'body'
     )
     
     add_styled_paragraph(doc, "5.4 Limitations of the Study", 'section_title')
     add_styled_paragraph(
         doc,
-        "While this study provides empirical insights, several limitations are acknowledged:\n"
-        "1. Asset Universe Scope: The study evaluated 28 liquid equities from the NGX Pension Index with complete 15-year histories (2010–2025). Recently listed high-capitalization assets (e.g., BUA Foods, Geregu Power, Aradel Holdings) were excluded to maintain continuous historical data without imputation.\n"
-        "2. Data Frequency: Analysis was conducted using weekly log returns. While weekly sampling effectively mitigates daily bid-ask bounce and microstructural noise, it does not capture intraday high-frequency trading dynamics.\n"
-        "3. Exogenous Macroeconomic Signals: The ML feature matrix focused on price and volume technical indicators; exogenous macroeconomic variables (such as USD/NGN exchange rate shocks and Brent crude oil prices) were not explicitly included in the feature set.",
+        "While this study provides empirical insights into quantitative asset management on the Nigerian equity market, several methodological limitations are acknowledged:",
+        'body'
+    )
+    add_styled_paragraph(
+        doc,
+        "1. Asset Universe Scope: The study evaluated 28 liquid equities from the NGX Pension Index with complete 16-year histories (2010–2025). Recently listed high-capitalization assets (e.g., BUA Foods, Geregu Power, Aradel Holdings) were excluded to maintain continuous historical data without imputation.",
+        'body'
+    )
+    add_styled_paragraph(
+        doc,
+        "2. Data Frequency: Analysis was conducted using weekly log returns. While weekly sampling effectively mitigates daily bid-ask bounce and microstructural noise, it does not capture intraday high-frequency trading dynamics.",
+        'body'
+    )
+    add_styled_paragraph(
+        doc,
+        "3. Exogenous Macroeconomic Signals: The machine learning feature matrix focused on price and volume technical indicators; exogenous macroeconomic variables (such as USD/NGN exchange rate shocks and Brent crude oil prices) were not explicitly included in the feature set.",
         'body'
     )
     
     add_styled_paragraph(doc, "5.5 Suggestions for Further Research", 'section_title')
     add_styled_paragraph(
         doc,
-        "1. Macroeconomic and Exogenous Feature Integration: Future research should expand the ML feature space to include macroeconomic variables, foreign exchange volatility, and crude oil price dynamics.\n"
-        "2. Deep Learning and High-Frequency Architectures: Extending forecasting models to Transformer-based temporal models and Long Short-Term Memory (LSTM) networks on daily or intraday NGX trading data.\n"
+        "Based on the empirical findings and limitations of this research, the following directions for future investigation are suggested:",
+        'body'
+    )
+    add_styled_paragraph(
+        doc,
+        "1. Macroeconomic and Exogenous Feature Integration: Future research should expand the machine learning feature space to include macroeconomic variables, foreign exchange volatility, and crude oil price dynamics.",
+        'body'
+    )
+    add_styled_paragraph(
+        doc,
+        "2. Deep Learning and High-Frequency Architectures: Extending forecasting models to Transformer-based temporal models and Long Short-Term Memory (LSTM) networks on daily or intraday NGX trading data.",
+        'body'
+    )
+    add_styled_paragraph(
+        doc,
         "3. Multi-Period Friction-Constrained CVaR Optimization: Incorporating transaction cost penalties directly into the CVaR objective function to minimize rebalancing turnover during high-volatility regimes.",
         'body'
     )
@@ -607,9 +682,21 @@ def generate_complete_thesis_docx(output_path="Abdulameen_Complete_Thesis_Chapte
     add_styled_paragraph(doc, "5.6 Contribution to Knowledge", 'section_title')
     add_styled_paragraph(
         doc,
-        "This research contributes to quantitative finance literature in the following ways:\n"
-        "1. Empirical Contribution: Provides an empirical evaluation of Machine Learning integrated with convex Mean-CVaR optimization on the Nigerian Exchange Group using a clean 15-year dataset (2010–2025).\n"
-        "2. Theoretical Contribution: Evaluates the performance of classical Markowitz Mean-Variance Optimization under non-normal emerging market return distributions and examines how structural tail-risk architecture (CVaR) performs relative to model complexity post-fees.\n"
+        "This research contributes to quantitative finance literature in the following ways:",
+        'body'
+    )
+    add_styled_paragraph(
+        doc,
+        "1. Empirical Contribution: Provides an empirical evaluation of Machine Learning integrated with convex Mean-CVaR optimization on the Nigerian Exchange Group using a clean 16-year dataset (2010–2025).",
+        'body'
+    )
+    add_styled_paragraph(
+        doc,
+        "2. Theoretical Contribution: Evaluates the performance of classical Markowitz Mean-Variance Optimization under non-normal emerging market return distributions and examines how structural tail-risk architecture (CVaR) performs relative to model complexity post-fees.",
+        'body'
+    )
+    add_styled_paragraph(
+        doc,
         "3. Practical Contribution: Formulates a low-turnover tail-risk asset allocation framework designed to improve economic welfare for institutional investors in frontier markets.",
         'body'
     )
@@ -620,7 +707,11 @@ def generate_complete_thesis_docx(output_path="Abdulameen_Complete_Thesis_Chapte
         "To guarantee complete computational reproducibility and scientific transparency, the entire quantitative finance pipeline, encompassing "
         "data cleaning scripts, non-normality diagnostic tests, technical feature extraction (with Welles Wilder's Parabolic SAR), expanding walk-forward machine learning models "
         "(Random Forest and XGBoost with TimeSeriesSplit cross-validation tuning), convex Mean-CVaR linear programming portfolio optimization backtests, and ReportLab PDF synthesis, is "
-        "open-source and publicly hosted on GitHub at:\n\n"
+        "open-source and publicly hosted on GitHub at:",
+        'body'
+    )
+    add_styled_paragraph(
+        doc,
         "Repository URL: https://github.com/abdulameen962/equity-optimization",
         'body'
     )
@@ -629,7 +720,7 @@ def generate_complete_thesis_docx(output_path="Abdulameen_Complete_Thesis_Chapte
     # FULL APA 7TH EDITION REFERENCES SECTION (42 REFERENCES)
     # =========================================================================
     doc.add_page_break()
-    add_styled_paragraph(doc, "References", 'section_title')
+    add_styled_paragraph(doc, "REFERENCES", 'chapter_header')
     
     references_list = [
         'Adegboyo, O. S., & Sarwar, K. (2025). Modelling and forecasting of Nigeria stock market volatility. Future Business Journal, 11(1), Article 124. https://doi.org/10.1186/s43093-025-00536-4',
