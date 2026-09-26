@@ -50,12 +50,12 @@ def int_to_roman(n):
         i += 1
     return roman_num
 
-def add_page_number_overlay(pdf_path, front_matter_pages=12):
+def add_page_number_overlay(pdf_path, front_matter_pages=11):
     """
     Stamps bottom-centered page numbers:
     - Page 1 (Title page): No page number.
-    - Pages 2 to 12 (Front Matter): Lowercase Roman numerals (ii through xii).
-    - Pages 13 onwards (Chapter 1 onwards): Arabic numerals starting at 1 (1, 2, 3...).
+    - Pages 2 to 11 (Front Matter): Lowercase Roman numerals (ii through xi).
+    - Pages 12 onwards (Chapter 1 onwards): Arabic numerals starting at 1 (1, 2, 3...).
     """
     reader = PdfReader(pdf_path)
     writer = PdfWriter()

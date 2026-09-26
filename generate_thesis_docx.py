@@ -190,7 +190,7 @@ def generate_complete_thesis_docx(output_path="Abdulameen_Complete_Thesis_Chapte
     add_styled_paragraph(doc, "4.1.1 Asset Universe Breakdown and Selection Rationale", 'section_title')
     add_styled_paragraph(
         doc,
-        "To construct a balanced historical panel free from artificial imputation and temporal distortion, "
+        "To construct a balanced historical panel without imputing missing price histories, "
         "the constituent equities of the NGX Pension Index were evaluated for sample inclusion. A total of 38 equities were audited. "
         "To guarantee a complete 16-year historical dataset (835 weekly observations from 2010 to 2025) required for training machine learning algorithms (2010-2020) "
         "and backtesting out-of-sample portfolio performance (2021-2025), 28 equities with continuous price history were selected. "
@@ -372,8 +372,11 @@ def generate_complete_thesis_docx(output_path="Abdulameen_Complete_Thesis_Chapte
         doc,
         "A critical empirical observation in Table 4.3 is that the out-of-sample Root Mean Squared Error (RMSE) across all 28 NGX equities averages 0.0602 for the flat Historical Mean baseline, "
         "compared to 0.0608 for XGBoost and 0.0627 for Random Forest. Crucially, the formal Diebold–Mariano (1995) test reveals that for 25 out of the 28 equities (89.3%), the forecast accuracy "
-        "differential between XGBoost and the Historical Mean baseline is statistically indistinguishable from zero (p > 0.05). Similarly, binary directional accuracy (DA) averages 38.4% across "
-        "the cross-section, peaking at 50.8% on liquid large-caps. For illiquid equities such as CONOIL (DA = 13.8%) and NESTLE (17.3%), this below-50% accuracy reflects weeks with zero or near-zero returns: when the actual return is exactly zero, any non-zero forecast is counted as a directional miss, depressing the measured accuracy below the 50% random-walk threshold. "
+        "differential between XGBoost and the Historical Mean baseline is statistically indistinguishable from zero (p > 0.05). In the three assets where equal accuracy is formally rejected "
+        "(FIDSON, JBERGER, and NESTLE), the negative DM test statistic indicates that XGBoost exhibited significantly larger squared forecast errors (inferior accuracy) than the historical baseline. "
+        "Furthermore, Random Forest was not evaluated under the Diebold–Mariano test despite exhibiting a higher overall RMSE (0.0627). Similarly, binary directional accuracy (DA) averages 38.1% for Random Forest "
+        "and 37.8% for XGBoost vs 37.9% for the flat Historical Mean baseline across all 28 assets (peaking at 50.8% on liquid large-caps). For illiquid equities such as CONOIL (DA = 13.8%) and NESTLE (17.3%), "
+        "this below-50% accuracy reflects weeks with zero or near-zero returns: when the actual return is exactly zero, any non-zero forecast is counted as a directional miss, depressing the measured accuracy below the 50% random-walk threshold. "
         "Evaluating the relationship between statistical point prediction accuracy and downstream portfolio performance requires a rigorous econometric examination across the following four points:",
         'body'
     )
@@ -608,10 +611,10 @@ def generate_complete_thesis_docx(output_path="Abdulameen_Complete_Thesis_Chapte
     )
     add_styled_paragraph(
         doc,
-        "3. Non-Linear Feature Signal Extraction: Tree-based machine learning ensembles (Random Forest and XGBoost) successfully extract non-linear cross-sectional signals by leveraging technical indicators. Feature importance analysis "
+        "3. Technical Indicator Dynamics and Parity with Historical Means: Tree-based machine learning ensembles (Random Forest and XGBoost) extract non-linear cross-sectional signals from technical indicators. Feature importance analysis "
         "(Section 4.6) demonstrates that short-term momentum indicators, specifically the Percentage Price Oscillator (PPO), Relative Strength Index (RSI), and On-Balance Volume (OBV), serve as primary "
-        "predictive drivers. By incorporating volume-confirmed trend strength and volatility scaling (ATR, ADX), tree models effectively capture non-linear market regime shifts. Even if an ML model overpredicts "
-        "return magnitude during a noise week (incurring a small RMSE penalty), its predicted expected return vector correctly ranks top-performing equities relative to high-risk equities across the 28 NGX assets.",
+        "predictive drivers. However, contrary to the hypothesis that dynamic return rankings would generate a superior portfolio edge, downstream optimization reveals that this technical signal does not significantly improve portfolio outcomes over static historical means: "
+        "XGB-CVaR and Historical-CVaR achieve statistically indistinguishable gross Sharpe ratios (difference +0.02, q = 0.591).",
         'body'
     )
     add_styled_paragraph(
@@ -778,7 +781,7 @@ def generate_complete_thesis_docx(output_path="Abdulameen_Complete_Thesis_Chapte
         "show that non-linear tree-based ensembles (Random Forest and XGBoost) capture predictive signals from market data. While raw point forecasting metrics (RMSE) hover close to historical baselines due to weekly noise variance, "
         "Random Forest achieved an average out-of-sample directional accuracy of 38.1% across liquid NGX equities (with individual assets reaching up to 50.8%), compared to 37.9% for historical baselines and 37.8% for XGBoost. Feature importance analysis (Section 4.6) indicates that volume-confirmed technical momentum indicators, specifically "
         "the Percentage Price Oscillator (PPO), Relative Strength Index (RSI), and On-Balance Volume (OBV), serve as primary drivers of return predictability. This aligns with empirical asset pricing literature (Gu et al., 2020; Chao, 2024; Ojo & Okafor, 2024; Ajiga et al., 2024; Ferrari et al., 2024), "
-        "demonstrating that machine learning algorithms capture non-linear market interactions and trend-persistence dynamics in emerging economies. However, this finding also engages with contrasting perspectives: it partially challenges the strict semi-strong form of the Efficient Market Hypothesis (Fama, 1970) by identifying exploitable technical momentum anomalies, while simultaneously contextualizing the cautionary findings of Moyoweshumba & Seitshiro (2025), who observe that in thin African stock markets, microstructural noise and regime shifts can constrain the point forecasting accuracy of complex algorithmic models.",
+        "demonstrating that machine learning algorithms capture non-linear market interactions and trend-persistence dynamics in emerging economies. However, this finding also engages with contrasting perspectives: it engages with the weak-form Efficient Market Hypothesis (Fama, 1970) by testing whether past technical price and volume patterns yield economic value, while contrasting with the findings of Moyoweshumba & Seitshiro (2025) on the Johannesburg Stock Exchange. Whereas Moyoweshumba and Seitshiro found that machine learning return forecasts delivered dramatic gains over traditional Markowitz allocation on the JSE, on the NGX machine learning return forecasts added no statistically significant edge over historical sample means (gross Sharpe difference +0.02, q = 0.591).",
         'body'
     )
     
@@ -789,7 +792,7 @@ def generate_complete_thesis_docx(output_path="Abdulameen_Complete_Thesis_Chapte
         "for integrated Mean-CVaR strategies prior to transaction costs. Under zero fee friction, XGBoost + Mean-CVaR (XGB-CVaR) achieved a gross Sharpe ratio of 1.52 (42.00% annualized return, -22.09% max drawdown), compared to 0.91 for the passive NGX Index Buy-and-Hold benchmark "
         "and 0.76 for Markowitz MVO. Inferential hypothesis testing (Section 4.7.1) indicates that this Sharpe ratio outperformance is statistically significant at the unadjusted level under Ledoit-Wolf circular block bootstrap tests (p = 0.015), but is marginal after Benjamini–Hochberg False Discovery Rate correction for 18 simultaneous comparisons (q = 0.056). "
         "Crucially, the honestly significant finding that survives rigorous multiple testing correction is that the CVaR risk architecture decisively protects capital under transaction frictions: unconstrained MVO collapses against 1/N equal weighting under retail fees (FDR q = 0.009), while static low-turnover Historical-CVaR significantly outperforms high-turnover XGB-CVaR under institutional fees (Sharpe diff -0.25, FDR q = 0.000). Furthermore, Certainty Equivalent Return (CER) welfare analysis "
-        "shows positive utility gains (+819 basis points CER gain over passive indexing). These results corroborate established portfolio selection theory (Markowitz, 1952; Rockafellar & Uryasev, 2000; Bodnar et al., 2022; Hsiao, 2025), showing that combining forward-looking return estimates with convex tail-risk constraints improves risk-adjusted outcomes. Nevertheless, these findings provide a nuanced contrast to the empirical work of San (2025) and the classic estimation-error critique of naive diversification, which assert that simple 1/N equal weighting consistently outperforms or equals optimized portfolios out-of-sample due to parameter uncertainty. While 1/N achieves a robust gross Sharpe of 1.25 on the NGX, disciplined CVaR tail-loss minimization achieves superior downside protection (-22.09% max drawdown versus -30.01% for 1/N), demonstrating that tail-risk optimization delivers distinct economic value.",
+        "shows positive utility gains (+819 basis points CER gain over passive indexing). These results corroborate established portfolio selection theory (Markowitz, 1952; Rockafellar & Uryasev, 2000; Bodnar et al., 2022; Hsiao, 2025), showing that convex tail-risk constraints improve risk-adjusted outcomes regardless of whether forward-looking ML return forecasts or historical sample means are employed. Nevertheless, these findings provide a nuanced contrast to the empirical work of San (2025) and the classic estimation-error critique of naive diversification, which assert that simple 1/N equal weighting consistently outperforms or equals optimized portfolios out-of-sample due to parameter uncertainty. While 1/N achieves a robust gross Sharpe of 1.07 on the NGX (Table 4.5), disciplined CVaR tail-loss minimization achieves superior downside protection (-22.09% max drawdown versus -23.95% for 1/N), demonstrating that tail-risk optimization delivers distinct economic value.",
         'body'
     )
     
@@ -799,7 +802,7 @@ def generate_complete_thesis_docx(output_path="Abdulameen_Complete_Thesis_Chapte
         "Fourthly, regarding portfolio robustness under market stress and transaction cost frictions, the empirical evaluation in Section 4.7 highlights execution dynamics across market participant regimes. Under 1.50% retail fees and slippage, "
         "unconstrained Markowitz MVO experienced severe weight instability (99.28% average weekly turnover), resulting in a maximum drawdown of -86.38% and negative economic welfare (CER = -64.09%). This strongly supports Michaud's (1989) finding regarding the sensitivity of unconstrained MVO "
         "to estimation error in high-friction environments. Conversely, low-turnover Historical-CVaR (0.38% turnover) displayed resilience, retaining net Sharpe ratios of 1.48 (retail) and 1.49 (institutional). "
-        "While active ML models generate gross risk-adjusted outperformance prior to friction over the index, comparable to Historical-CVaR, weekly rebalancing turnover (11.00%) incurs an annual fee drag (~3.6% to ~7.2%) that offsets marginal predictive gains post-fees. This finding aligns with transaction cost literature (Job, 2022; Alotaibi et al., 2022; Kevin & Yugopuspito, 2025), "
+        "While active ML models generate gross risk-adjusted outperformance prior to friction over the index, comparable to Historical-CVaR, weekly rebalancing turnover (11.00%) incurs an annual fee drag (~3.6% to ~7.2%) that erodes gross returns after fees. This finding aligns with transaction cost literature (Job, 2022; Alotaibi et al., 2022; Kevin & Yugopuspito, 2025), "
         "indicating that structural tail-risk architecture (CVaR) plays a central role in frictional emerging markets. It also qualifies the assertions of high-frequency quantitative models that advocate unconstrained algorithmic rebalancing, demonstrating that without explicit turnover penalties or execution smoothing bands, transaction friction rapidly neutralizes statistical predictive edges on frontier exchanges.",
         'body'
     )
@@ -825,15 +828,15 @@ def generate_complete_thesis_docx(output_path="Abdulameen_Complete_Thesis_Chapte
     )
     add_styled_paragraph(
         doc,
-        "3. Out-of-Sample Portfolio Optimization Performance: Integrating machine learning return forecasts into a convex Mean-CVaR optimization framework generated higher risk-adjusted returns under zero fee friction. "
-        "XGBoost + Mean-CVaR achieved a gross Sharpe ratio of 1.52 (42.00% annualized return, -22.09% maximum drawdown) compared to 0.91 for the passive NGX Index Buy-Hold baseline. This gross outperformance is statistically significant at the unadjusted level (Ledoit-Wolf circular block bootstrap p = 0.015), but marginal after Benjamini–Hochberg False Discovery Rate correction for 18 simultaneous comparisons (q = 0.056), while delivering Certainty Equivalent Return utility gains (+819 bps CER gain). "
-        "Under transaction friction, the robust result surviving FDR correction is that CVaR structure dominates: low-turnover Historical-CVaR significantly outperforms active XGB-CVaR under institutional fees (q = 0.000), and unconstrained MVO collapses against 1/N equal weighting under retail friction (q = 0.009).",
+        "3. Out-of-Sample Portfolio Optimization Performance: Integrating machine learning return forecasts into a convex Mean-CVaR optimization framework generated higher risk-adjusted returns under zero fee friction relative to the market index. "
+        "XGBoost + Mean-CVaR achieved a gross Sharpe ratio of 1.52 (42.00% annualized return, -22.09% maximum drawdown) compared to 0.91 for the passive NGX Index Buy-Hold baseline. This gross outperformance over the index is statistically significant at the unadjusted level (Ledoit-Wolf circular block bootstrap p = 0.015), but marginal after Benjamini–Hochberg False Discovery Rate correction for 18 simultaneous comparisons (q = 0.056), while delivering Certainty Equivalent Return utility gains (+819 bps CER gain). "
+        "Crucially, XGB-CVaR and Historical-CVaR achieved statistically indistinguishable gross Sharpe ratios (1.52 vs 1.50, difference +0.02, FDR q = 0.591), confirming that outperformance over the market index stems from the convex CVaR risk architecture rather than machine learning return forecasts. Under transaction friction, low-turnover Historical-CVaR significantly outperforms active XGB-CVaR under institutional fees (q = 0.000), and unconstrained MVO collapses against 1/N equal weighting under retail friction (q = 0.009).",
         'body'
     )
     add_styled_paragraph(
         doc,
         "4. Transaction Cost Dynamics and Turnover Friction: Evaluating portfolio performance under market stress and multi-tier transaction cost friction demonstrated that unconstrained Markowitz Mean-Variance Optimization experiences severe performance degradation (-86.38% drawdown, -64.09% CER utility) due to high turnover (99.28% weekly turnover). "
-        "Under institutional (0.75%) and retail (1.50%) brokerage fees, active ML rebalancing turnover (11.00%) creates an annual fee drag (~3.6% to ~7.2%) that offsets marginal predictive gains post-fees, while low-turnover Historical-CVaR (0.38% turnover) maintains stable post-fee performance (net Sharpe 1.48 to 1.49, pairwise Ledoit-Wolf p = 0.000, FDR q = 0.000 vs XGB-CVaR).",
+        "Under institutional (0.75%) and retail (1.50%) brokerage fees, active ML rebalancing turnover (11.00%) creates an annual fee drag (~3.6% to ~7.2%) that erodes gross returns after fees, while low-turnover Historical-CVaR (0.38% turnover) maintains stable post-fee performance (net Sharpe 1.48 to 1.49, pairwise Ledoit-Wolf p = 0.000, FDR q = 0.000 vs XGB-CVaR).",
         'body'
     )
     
@@ -846,9 +849,9 @@ def generate_complete_thesis_docx(output_path="Abdulameen_Complete_Thesis_Chapte
     )
     add_styled_paragraph(
         doc,
-        "The overall conclusion of this research is that while Machine Learning models generate gross risk-adjusted outperformance on the NGX, market transaction friction and rebalancing turnover neutralize these marginal predictive gains post-fees. "
-        "Consequently, structural tail-risk management via Conditional Value-at-Risk (CVaR) appears to be a significant contributor to real-world investor economic surplus in the NGX context studied (+819 bps CER gain over passive indexing). "
-        "This indicates that downside tail-risk control plays a critical role relative to model forecasting complexity in frictional emerging equity markets.",
+        "The overall conclusion of this research is that while tail-risk-aware CVaR optimization delivers substantial risk-adjusted outperformance and downside protection on the NGX (+819 bps CER gain over passive indexing), machine learning return forecasts provide no statistically significant enhancement over simple historical sample means, and high-turnover rebalancing incurs severe transaction fee drag. "
+        "Consequently, structural tail-risk management via Conditional Value-at-Risk (CVaR) appears to be the primary contributor to real-world investor economic surplus in the NGX context studied. "
+        "This indicates that downside tail-risk architecture plays a far more critical role than model forecasting complexity in frictional emerging equity markets.",
         'body'
     )
     
@@ -886,7 +889,7 @@ def generate_complete_thesis_docx(output_path="Abdulameen_Complete_Thesis_Chapte
     )
     add_styled_paragraph(
         doc,
-        "2. Integration of Volume-Confirmed Technical Signals: Quantitative models deployed on emerging exchanges should integrate volume-confirmed technical momentum indicators (Percentage Price Oscillator, Relative Strength Index, On-Balance Volume) to capture trend persistence and downside liquidity risks.",
+        "2. Turnover-Constrained Rebalancing and Fee Auditing: Quantitative portfolio managers on frontier exchanges must implement turnover constraints (such as rebalancing bands, penalty terms, or quarterly re-allocation schedules) to prevent aggressive portfolio turnover from eroding gross risk-adjusted performance across institutional and retail transaction fee tiers.",
         'body'
     )
     
@@ -975,7 +978,7 @@ def generate_complete_thesis_docx(output_path="Abdulameen_Complete_Thesis_Chapte
         doc,
         "To guarantee complete computational reproducibility and scientific transparency, the entire quantitative finance pipeline, encompassing "
         "data cleaning scripts, non-normality diagnostic tests, technical feature extraction (with Welles Wilder's Parabolic SAR), expanding walk-forward machine learning models "
-        "(Random Forest and XGBoost with TimeSeriesSplit cross-validation tuning), convex Mean-CVaR linear programming portfolio optimization backtests, and ReportLab PDF synthesis, is "
+        "(Random Forest and XGBoost with TimeSeriesSplit cross-validation tuning), convex Mean-CVaR linear programming portfolio optimization backtests, is "
         "open-source and publicly hosted on GitHub at:",
         'body'
     )
@@ -1042,6 +1045,7 @@ def generate_complete_thesis_docx(output_path="Abdulameen_Complete_Thesis_Chapte
         'Mozumder, S., Hasan, M. K., & Kabir, M. H. (2024). An evaluation of the adequacy of Lévy and extreme value tail risk estimates. Financial Innovation, 10(1), Article 100. https://doi.org/10.1186/s40854-024-00614-6',
         'Naeem, M., Jassim, H. S., & Korsah, D. (2024). The application of machine learning techniques to predict stock market crises in Africa. Journal of Risk and Financial Management, 17(12), Article 554. https://doi.org/10.3390/jrfm17120554',
         'Nahari, F. (2025). Portfolio optimization in practice: A comparative analysis of the Markowitz and Index models. In M. M. Husin (Ed.), Proceedings of the 2025 International Conference on Financial Risk and Investment Management (ICFRIM 2025), Advances in Economics, Business and Management Research (Vol. 333, pp. 367–375). Atlantis Press.',
+        'Nigerian Exchange Group. (2024). Market report and listed securities directory. NGX Group. https://ngxgroup.com',
         'Ojo, A. K., & Okafor, I. J. (2024). Forecasting Nigerian Equity Stock Returns Using Long Short-Term Memory Technique. Journal of Advances in Mathematics and Computer Science, 39(7), 45–54. https://doi.org/10.9734/jamcs/2024/v39i71911',
         'Okafor, C., & Robertson, A. (2023). Maximizing returns: Portfolio optimization in the Nigerian Stock Exchange. International Journal of Advances in Applied Mathematics and Computer Science, 10(2), 14–28. https://americaserial.com/journals/ijaamcs/article/518',
         'Rigamonti, A., & Lučivjanská, K. (2024). Mean-semivariance portfolio optimization using minimum average partial. Annals of Operations Research, 334, 185–203. https://doi.org/10.1007/s10479-022-04736-x',

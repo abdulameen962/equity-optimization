@@ -200,7 +200,7 @@ def generate_chapters_pdf(pdf_filename='output/pdf/Chapters_4_and_5.pdf'):
     # 4.1.1 Asset Universe Breakdown and Selection Rationale
     story.append(Paragraph("4.1.1 Asset Universe Breakdown and Selection Rationale", subsection_title_style))
     story.append(Paragraph(
-        "To construct a balanced historical panel free from artificial imputation and temporal distortion, "
+        "To construct a balanced historical panel without imputing missing price histories, "
         "the constituent equities of the NGX Pension Index were evaluated for sample inclusion. A total of 38 equities were audited. "
         "To guarantee a complete 16-year historical dataset (835 weekly observations from 2010 to 2025) required for training machine learning algorithms (2010-2020) "
         "and backtesting out-of-sample portfolio performance (2021-2025), 28 equities with continuous price history were selected. "
@@ -770,7 +770,7 @@ def generate_chapters_pdf(pdf_filename='output/pdf/Chapters_4_and_5.pdf'):
         "Feature importance analysis (Section 4.6) reveals that volume-confirmed technical momentum indicators, specifically the Percentage Price Oscillator (PPO), Relative Strength Index (RSI), and On-Balance Volume (OBV), serve as primary drivers of return predictability. "
         "These findings strongly corroborate the empirical asset pricing literature (Gu, Kelly, &amp; Xiu, 2020; Chao, 2024; Ojo &amp; Okafor, 2024; Ajiga et al., 2024; Ferrari et al., 2024), demonstrating that non-linear ensemble algorithms effectively capture complex trend persistence anomalies in emerging economies. "
         "Furthermore, this predictive capability is econometrically supported by the non-normality diagnostics in Section 4.3 (Adegboyo &amp; Sarwar, 2025; Mozumder et al., 2024), where formal Jarque-Bera and Shapiro-Wilk tests rejected normality across all 28 equities (p &lt; 0.001, excess kurtosis across all 28 assets ranging from 2.20 to 14.47 among assets unaffected by corporate actions), "
-        "justifying the departure from linear econometric estimators. Conversely, this evidence challenges the strict semi-strong form of the Efficient Market Hypothesis (Fama, 1970), which posits that past price and volume signals cannot generate directional edges. "
+        "justifying the departure from linear econometric estimators. Conversely, this evidence engages with the weak-form Efficient Market Hypothesis (Fama, 1970), which posits that past price and volume signals cannot generate directional edges. "
         "Simultaneously, these outcomes contextualize and qualify the cautionary arguments of Moyoweshumba &amp; Seitshiro (2025) and Alim et al. (2024), who assert that microstructural noise in African equity markets completely obscures algorithmic signals: "
         "on the NGX, while weekly noise variance restricts point forecasting RMSE to near-baseline levels (the RMSE paradox), statistical directional predictability remains identifiable.",
         body_style
@@ -875,7 +875,7 @@ def generate_chapters_pdf(pdf_filename='output/pdf/Chapters_4_and_5.pdf'):
         list_item_style
     ))
     story.append(Paragraph(
-        "2. <b>Integration of Volume-Confirmed Technical Features:</b> Quantitative models deployed on emerging exchanges should integrate volume-confirmed technical momentum indicators (PPO, RSI, OBV) to capture trend persistence and downside liquidity risks.",
+        "2. <b>Turnover-Constrained Rebalancing and Fee Auditing:</b> Quantitative portfolio managers on frontier exchanges must implement turnover constraints (such as rebalancing bands, penalty terms, or quarterly re-allocation schedules) to prevent aggressive portfolio turnover from eroding gross risk-adjusted performance across institutional and retail transaction fee tiers.",
         list_item_style
     ))
     story.append(Spacer(1, 10))
@@ -947,7 +947,7 @@ def generate_chapters_pdf(pdf_filename='output/pdf/Chapters_4_and_5.pdf'):
     story.append(Paragraph(
         "To guarantee complete computational reproducibility and scientific transparency, the entire quantitative finance pipeline, encompassing "
         "data cleaning scripts, non-normality diagnostic tests, technical feature extraction (with Welles Wilder's Parabolic SAR), expanding walk-forward machine learning models "
-        "(Random Forest and XGBoost with TimeSeriesSplit cross-validation tuning), convex Mean-CVaR linear programming portfolio optimization backtests, and ReportLab PDF synthesis, is "
+        "(Random Forest and XGBoost with TimeSeriesSplit cross-validation tuning), convex Mean-CVaR linear programming portfolio optimization backtests, is "
         "open-source and publicly hosted on GitHub at:<br/><br/>"
         "<b>Repository URL:</b> <font color='#1A5276'><u>https://github.com/abdulameen962/equity-optimization</u></font>",
         body_style
