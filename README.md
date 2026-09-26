@@ -4,7 +4,7 @@
 [![Managed with uv](https://img.shields.io/badge/managed_with-uv-purple.svg)](https://github.com/astral-sh/uv)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-An end-to-end empirical quantitative finance pipeline implementing Machine Learning (Random Forest & XGBoost) return forecasting under **Expanding Rolling Window Walk-Forward Validation** and **Convex Tail-Risk (Mean-CVaR at $\alpha=0.95$)** portfolio optimization across 28 liquid equities on the Nigerian Exchange Group (NGX) spanning 15 years of weekly data (2010-2025).
+An end-to-end empirical quantitative finance pipeline implementing Machine Learning (Random Forest & XGBoost) return forecasting under **Expanding Rolling Window Walk-Forward Validation** and **Convex Tail-Risk (Mean-CVaR at $\alpha=0.95$)** portfolio optimization across 28 liquid equities on the Nigerian Exchange Group (NGX) spanning a clean 16-year historical panel of weekly data from 2010 to 2025 (835 weekly observations per asset).
 
 ---
 
@@ -40,7 +40,7 @@ To ensure **100% reproducibility** and layout integrity across Microsoft Word an
 3. **Master PDF Synthesis (`generate_thesis_pdf.py`)**:
    - Merges `Abdulameen Chapter 1 -3.pdf` (Chapters 1–3) + `output/pdf/Chapters_4_and_5.pdf` (Chapters 4–5 & References).
    - Dynamically stamps centered bottom page numbers across the entire document.
-   - Outputs the final complete document: **`Abdulameen_Complete_Thesis_Chapters_1_5.pdf`** (82 total pages).
+   - Outputs the final complete document: **`Abdulameen_Complete_Thesis_Chapters_1_5.pdf`** (100+ total pages).
 
 To re-compile the complete thesis PDF at any time:
 
@@ -57,11 +57,11 @@ python export_and_compile_thesis.py
 ## 📌 Methodological Hardening & Statistical Significance Suite
 
 1. **Reconciled Benchmark Drift**: Differentiated "1/N Equal Weight" (weekly rebalancing) from "NGX Index Buy-Hold" (passive weight drift $w_{t+1, i} \propto w_{t, i}(1+R_{t+1, i})$ with 0.00% turnover post-entry).
-2. **Ledoit-Wolf Circular Block Bootstrap**: Evaluated two-sided Sharpe and Sortino ratio equality using overlapping blocks ($b=5$ weeks, $B=2,000$ resamples) to preserve time-series autocorrelation and conditional heteroskedasticity (GARCH effects).
-3. **Jobson-Korkie Test (Memmel 2007 Correction)**: Parametric Z-test for Sharpe ratio equality under correlated portfolio return series.
-4. **Non-Parametric Wilcoxon & Paired t-Tests**: Inferential test on weekly return differential series ($\Delta R_t = R_{A,t} - R_{B,t}$).
-5. **Diebold-Mariano Test**: Loss differential test evaluating out-of-sample forecast RMSE accuracy against the historical mean baseline.
-6. **Zero Data Leakage**: Feature scaling (`MinMaxScaler`) fit strictly inside the expanding training window loop in `src/ml_models.py`.
+2. **Ledoit-Wolf Circular Block Bootstrap**: Evaluated two-sided Sharpe and Sortino ratio equality using overlapping blocks ($b=5$ weeks, $B=2,000$ resamples) to preserve time-series autocorrelation and conditional heteroskedasticity (GARCH effects) (Ledoit & Wolf, 2008).
+3. **Jobson-Korkie Test (Memmel 2003 Correction)**: Parametric Z-test for Sharpe ratio equality under correlated portfolio return series (Jobson & Korkie, 1981; Memmel, 2003).
+4. **Non-Parametric Wilcoxon Signed-Rank Test**: Inferential non-parametric rank test on weekly return differential series ($\Delta R_t = R_{A,t} - R_{B,t}$) (Wilcoxon, 1945).
+5. **Diebold-Mariano Test (Diebold & Mariano, 1995)**: Quadratic loss differential test with Newey–West HAC standard errors evaluating out-of-sample forecast accuracy of XGBoost versus the flat historical mean baseline across all 28 assets (confirming statistical parity on point predictions across 89.3% of equities, $p > 0.05$).
+6. **Benjamini-Hochberg False Discovery Rate (FDR) Procedure (Benjamini & Hochberg, 1995)**: Multiple testing correction applied across all 18 simultaneous pairwise portfolio comparisons to control the family-wise false discovery rate ($\\alpha = 0.05$), confirming that low-turnover Historical-CVaR significantly outperforms active XGB-CVaR under market friction ( = 0.000$) and retail MVO significantly collapses against 1/N ( = 0.009$).\n7. **Zero Data Leakage**: Feature scaling (`MinMaxScaler`) fit strictly inside the expanding training window loop in `src/ml_models.py`.
 
 ---
 
@@ -108,20 +108,10 @@ python export_and_compile_thesis.py
 
 ### Table 4.6: Multi-Tier Pairwise Statistical Significance Testing (Sharpe & Sortino Equality)
 
-| Fee Regime | Target Strategy | Benchmark | Sharpe Diff | Jobson-Korkie p-val | Ledoit-Wolf Sharpe p-val | Ledoit-Wolf Sortino p-val | Wilcoxon p-val |
+| Fee Regime | Target Strategy | Benchmark | Sharpe Diff | Jobson-Korkie p-val | Ledoit-Wolf Sharpe p-val | Benjamini-Hochberg (FDR q-val) | Wilcoxon p-val |
 | :--- | :--- | :--- | :---: | :---: | :---: | :---: | :---: |
-| **Gross (0.00%)** | **XGB-CVaR** | **NGX Index Buy-Hold** | **+0.61** | 0.224 | **0.015** * | **0.021** * | 0.594 |
-| **Gross (0.00%)** | **RF-CVaR** | **NGX Index Buy-Hold** | **+0.54** | 0.262 | **0.034** * | **0.054** | 0.677 |
-| **Gross (0.00%)** | **Historical-CVaR** | **NGX Index Buy-Hold** | **+0.61** | 0.223 | **0.022** * | **0.032** * | 0.544 |
-| **Inst. (0.75%)** | **Historical-CVaR** | **NGX Index Buy-Hold** | **+0.60** | 0.223 | **0.022** * | **0.033** * | 0.544 |
-| **Inst. (0.75%)** | XGB-CVaR | NGX Index Buy-Hold | +0.36 | 0.423 | 0.181 | 0.183 | 0.852 |
-| **Retail (1.50%)** | **Historical-CVaR** | **NGX Index Buy-Hold** | **+0.60** | 0.223 | **0.023** * | **0.033** * | 0.544 |
-| **Retail (1.50%)** | XGB-CVaR | NGX Index Buy-Hold | +0.08 | 0.838 | 0.770 | 0.670 | 0.318 |
-| **Retail (1.50%)** | **Historical-CVaR** | XGB-CVaR | **+0.52** | **0.008** * | **0.000** * | **0.001** * | **0.000** * |
-| **All Regimes** | **Markowitz (MVO)** | **1/N Equal Weight** | -1.82 | **0.004** * | **0.002** * | **0.008** * | **0.000** * |
-
+| **Gross (0.00%)** | **XGB-CVaR** | **NGX Index Buy-Hold** | **+0.61** | 0.203 | **0.015** * | 0.056 | 0.519 |\n| **Gross (0.00%)** | **RF-CVaR** | **NGX Index Buy-Hold** | **+0.54** | 0.245 | **0.033** * | 0.066 | 0.632 |\n| **Gross (0.00%)** | **Historical-CVaR** | **NGX Index Buy-Hold** | **+0.59** | 0.223 | **0.022** * | 0.056 | 0.544 |\n| **Inst. (0.75%)** | **Historical-CVaR** | **NGX Index Buy-Hold** | **+0.59** | 0.223 | **0.022** * | 0.056 | 0.544 |\n| **Inst. (0.75%)** | XGB-CVaR | NGX Index Buy-Hold | +0.34 | 0.423 | 0.181 | 0.233 | 0.852 |\n| **Retail (1.50%)** | **Historical-CVaR** | **NGX Index Buy-Hold** | **+0.59** | 0.223 | **0.022** * | 0.056 | 0.544 |\n| **Retail (1.50%)** | XGB-CVaR | NGX Index Buy-Hold | +0.07 | 0.838 | 0.770 | 0.769 | 0.318 |\n| **Retail (1.50%)** | **Historical-CVaR** | XGB-CVaR | **+0.52** | **0.008** * | **0.000** * | **0.000** * | **0.000** * |\n| **Retail (1.50%)** | **Markowitz (MVO)** | **1/N Equal Weight** | -1.77 | **0.004** * | **0.002** * | **0.009** * | **0.000** * |\n
 *\* Bold p-values denote statistical significance at $\alpha = 0.05$ (Ledoit-Wolf 2,000 block resamples).*
-
 ---
 
 ### Table 4.7: Investor Economic Welfare Utility and Certainty Equivalent Return (CER) Analysis ($\gamma = 3$)
@@ -160,7 +150,7 @@ equity-optimization/
 ├── generate_thesis_pdf.py                     # Fast thesis PDF compilation script (Default input: Abdulameen Chapter 1 -3.pdf)
 ├── Abdulameen Chapter 1 -3.docx               # Master Word source document for Chapters 1-3
 ├── Abdulameen Chapter 1 -3.pdf                # Word-exported vector PDF for Chapters 1-3 (Default input)
-├── Abdulameen_Complete_Thesis_Chapters_1_5.pdf # Consolidated 82-Page Academic Thesis Document
+├── Abdulameen_Complete_Thesis_Chapters_1_5.pdf # Consolidated 100+ Page Academic Thesis Document
 ├── README.md                                  # Comprehensive project documentation
 ├── data/
 │   ├── valid_from_2010/                       # 28 valid stock CSVs (complete 2010-2025 data)

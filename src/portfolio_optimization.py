@@ -4,6 +4,8 @@ sys.path.insert(0, '.')
 
 import numpy as np
 import pandas as pd
+import matplotlib
+matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from scipy.optimize import linprog, minimize
 
@@ -397,9 +399,9 @@ def run_all_fee_regimes_and_significance():
     
     # Compute Multi-Tier Pairwise Statistical Significance Tests
     regimes = {
-        'Gross (0.00%)': ret_zero,
-        'Institutional (0.75%)': ret_inst,
-        'Retail (1.50%)': ret_retail
+        'Gross (0.00%)': (perf_zero_df, ret_zero),
+        'Institutional (0.75%)': (perf_inst_df, ret_inst),
+        'Retail (1.50%)': (perf_retail_df, ret_retail)
     }
     
     pairwise_pairs = [
@@ -413,7 +415,8 @@ def run_all_fee_regimes_and_significance():
     
     sig_records = []
     
-    for fee_label, ret_dict in regimes.items():
+    for fee_label, (perf_df_reg, ret_dict) in regimes.items():
+        perf_idx = perf_df_reg.set_index('Strategy')
         for strat, bench in pairwise_pairs:
             ret_strat = ret_dict[strat]
             ret_bench = ret_dict[bench]
@@ -423,11 +426,14 @@ def run_all_fee_regimes_and_significance():
             d_sortino, p_lw_sortino = ledoit_wolf_bootstrap_sortino(ret_strat, ret_bench)
             t_stat, p_t, w_stat, p_w = paired_return_tests(ret_strat, ret_bench)
             
+            # Exact difference of published performance table Sharpe ratios
+            table_sharpe_diff = perf_idx.loc[strat, 'Sharpe Ratio'] - perf_idx.loc[bench, 'Sharpe Ratio']
+            
             sig_records.append({
                 'Fee Regime': fee_label,
                 'Strategy': strat,
                 'Benchmark': bench,
-                'Sharpe Diff': s_a - s_b,
+                'Sharpe Diff': table_sharpe_diff,
                 'Jobson-Korkie Z': z_jk,
                 'Jobson-Korkie p-val': p_jk,
                 'Ledoit-Wolf Sharpe p-val': p_lw_sharpe,
@@ -437,6 +443,22 @@ def run_all_fee_regimes_and_significance():
             })
             
     sig_df = pd.DataFrame(sig_records)
+    
+    # Benjamini-Hochberg (1995) False Discovery Rate Procedure
+    def benjamini_hochberg_fdr(p_values):
+        p_vals = np.array(p_values)
+        n = len(p_vals)
+        sorted_indices = np.argsort(p_vals)
+        sorted_p = p_vals[sorted_indices]
+        q_vals = np.zeros(n)
+        q_vals[-1] = sorted_p[-1]
+        for i in range(n - 2, -1, -1):
+            q_vals[i] = min(sorted_p[i] * n / (i + 1), q_vals[i + 1])
+        orig_q = np.zeros(n)
+        orig_q[sorted_indices] = q_vals
+        return orig_q
+
+    sig_df['Benjamini-Hochberg (FDR q-val)'] = benjamini_hochberg_fdr(sig_df['Ledoit-Wolf Sharpe p-val'])
     sig_df.to_csv('output/tables/portfolio_significance_tests.csv', index=False)
     print("\n--- Multi-Tier Pairwise Statistical Significance Tests (Saved to output/tables/portfolio_significance_tests.csv) ---")
     print(sig_df.to_string(index=False))

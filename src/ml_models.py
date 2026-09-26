@@ -4,6 +4,8 @@ sys.path.insert(0, '.')
 
 import numpy as np
 import pandas as pd
+import matplotlib
+matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
@@ -195,23 +197,29 @@ def train_and_evaluate_ml_models_walk_forward(train_initial_end_date='2020-12-31
             'XGB DA (%)': da_xgb
         })
         
-    perf_df = pd.DataFrame(performance_metrics)
-    perf_df.to_csv('output/tables/ml_forecasting_significance.csv', index=False)
-    perf_df.to_csv('output/tables/ml_forecasting_performance.csv', index=False)
-    
-    # Diebold-Mariano Test function
-    def diebold_mariano_test(y_true, y_pred1, y_pred2, h=1):
+    # Diebold-Mariano Test function with Newey-West HAC variance (h=1)
+    def diebold_mariano_test(y_true, y_pred_model, y_pred_base, h=1):
         from scipy.stats import norm
-        e1 = (y_true - y_pred1)**2
-        e2 = (y_true - y_pred2)**2
-        d = e1 - e2
-        mean_d = np.mean(d)
-        var_d = np.var(d, ddof=1)
-        dm_stat = mean_d / np.sqrt(np.maximum(1e-10, var_d / len(d)))
+        e_base = y_true - y_pred_base
+        e_model = y_true - y_pred_model
+        d = e_base**2 - e_model**2
+        d_mean = np.mean(d)
+        T = len(d)
+        gamma0 = np.var(d, ddof=0)
+        gamma = 0
+        for lag in range(1, h):
+            weight = 1 - lag / h
+            cov = np.cov(d[lag:], d[:-lag])[0, 1]
+            gamma += 2 * weight * cov
+        var_d = (gamma0 + gamma) / T
+        if var_d <= 0:
+            return 0.0, 1.0
+        dm_stat = d_mean / np.sqrt(var_d)
         p_val = 2.0 * (1.0 - norm.cdf(np.abs(dm_stat)))
         return dm_stat, p_val
 
     dm_records = []
+    dm_dict = {}
     for ticker in master_feat.keys():
         y_t = actual_returns[ticker].values
         p_rf = rf_predictions[ticker].values
@@ -223,12 +231,26 @@ def train_and_evaluate_ml_models_walk_forward(train_initial_end_date='2020-12-31
         
         dm_records.append({
             'Ticker': ticker,
+            'DM_Stat': dm_xgb_stat,
+            'DM_p_val': dm_xgb_p,
             'RF DM Stat': dm_rf_stat,
-            'RF DM p-val': dm_rf_p,
-            'XGB DM Stat': dm_xgb_stat,
-            'XGB DM p-val': dm_xgb_p
+            'RF DM p-val': dm_rf_p
         })
-    pd.DataFrame(dm_records).to_csv('output/tables/ml_forecasting_significance.csv', index=False)
+        dm_dict[ticker] = (dm_xgb_stat, dm_xgb_p)
+        
+    dm_df = pd.DataFrame(dm_records)
+    dm_df[['Ticker', 'DM_Stat', 'DM_p_val']].to_csv('output/tables/diebold_mariano_tests.csv', index=False)
+    dm_df.to_csv('output/tables/ml_forecasting_significance.csv', index=False)
+
+    # Attach DM Stat and DM p-val to performance metrics
+    for m in performance_metrics:
+        t = m['Ticker']
+        if t in dm_dict:
+            m['DM_Stat'] = dm_dict[t][0]
+            m['DM_p_val'] = dm_dict[t][1]
+
+    perf_df = pd.DataFrame(performance_metrics)
+    perf_df.to_csv('output/tables/ml_forecasting_performance.csv', index=False)
     
     # Save predicted return matrices for walk-forward test period (2021-2025)
     rf_pred_df = pd.DataFrame(rf_predictions)

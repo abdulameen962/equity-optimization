@@ -7,6 +7,8 @@ from reportlab.lib.pagesizes import letter
 from pypdf import PdfWriter, PdfReader
 
 from src.generate_chapters import generate_chapters_pdf
+from generate_thesis_docx import generate_complete_thesis_docx
+from shrink_thesis_pdf import shrink_pdf_formula_safe
 
 def export_docx_to_pdf(docx_path, output_pdf_path):
     """
@@ -18,34 +20,63 @@ def export_docx_to_pdf(docx_path, output_pdf_path):
     os.makedirs(os.path.dirname(pdf_abs), exist_ok=True)
     
     print(f"Opening Microsoft Word COM to export {docx_path} -> PDF...")
-    word = win32com.client.Dispatch("Word.Application")
+    word = win32com.client.DispatchEx("Word.Application")
     word.Visible = False
+    word.DisplayAlerts = 0
     
     try:
-        doc = word.Documents.Open(docx_abs)
-        time.sleep(2)  # Allow Word to fully initialize layout
+        doc = word.Documents.Open(
+            FileName=docx_abs,
+            ConfirmConversions=False,
+            ReadOnly=True,
+            AddToRecentFiles=False
+        )
+        time.sleep(1)  # Allow Word to fully initialize layout
         doc.SaveAs2(pdf_abs, FileFormat=17)  # 17 = wdFormatPDF
         print(f"[OK] Successfully exported DOCX to PDF: {pdf_abs}")
         doc.Close(False)
     finally:
         word.Quit()
 
-def add_page_number_overlay(pdf_path):
+def int_to_roman(n):
+    val = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1]
+    syb = ["m", "cm", "d", "cd", "c", "xc", "l", "xl", "x", "ix", "v", "iv", "i"]
+    roman_num = ""
+    i = 0
+    while n > 0:
+        for _ in range(n // val[i]):
+            roman_num += syb[i]
+            n -= val[i]
+        i += 1
+    return roman_num
+
+def add_page_number_overlay(pdf_path, front_matter_pages=12):
     """
-    Stamps centered page numbers at the bottom middle of every single page.
+    Stamps bottom-centered page numbers:
+    - Page 1 (Title page): No page number.
+    - Pages 2 to 12 (Front Matter): Lowercase Roman numerals (ii through xii).
+    - Pages 13 onwards (Chapter 1 onwards): Arabic numerals starting at 1 (1, 2, 3...).
     """
     reader = PdfReader(pdf_path)
     writer = PdfWriter()
     total_pages = len(reader.pages)
     
     for i, page in enumerate(reader.pages):
-        page_num = i + 1
+        if i == 0:
+            # Title page: no number
+            writer.add_page(page)
+            continue
+            
+        if 1 <= i < front_matter_pages:
+            page_str = int_to_roman(i + 1)
+        else:
+            page_str = str(i - front_matter_pages + 1)
         
         # Create transparent canvas with centered page number
         packet = io.BytesIO()
         can = canvas.Canvas(packet, pagesize=letter)
         can.setFont('Times-Roman', 10)
-        can.drawCentredString(306, 36, str(page_num))
+        can.drawCentredString(306, 36, page_str)
         can.save()
         packet.seek(0)
         
@@ -56,53 +87,59 @@ def add_page_number_overlay(pdf_path):
         
     with open(pdf_path, 'wb') as f_out:
         writer.write(f_out)
-    print(f"[OK] Successfully stamped centered page numbers on all {total_pages} pages.")
+    print(f"[OK] Successfully stamped academic page numbers on all {total_pages} pages (Roman ii-xii, Arabic 1-{total_pages - front_matter_pages}).")
+
 
 def compile_complete_thesis_from_docx():
     """
-    1. Converts 'Abdulameen Chapter 1 -3.docx' directly to PDF using Word COM.
-    2. Generates Chapters 4 & 5 + References PDF.
-    3. Merges Chapters 1-3 (from Word) + Chapters 4-5.
-    4. Stamps bottom-centered page numbers across all pages.
+    1. Generates unified DOCX with Chapters 1-5 + References.
+    2. Exports the complete unified DOCX directly to PDF using Microsoft Word COM,
+       retaining 100% native Word layout, vector formulas, and clean, succinct tables.
+    3. Stamps bottom-centered academic page numbers (Roman ii-xii, Arabic 13-N).
+    4. Also updates the standalone Chapters 4 & 5 auxiliary PDF.
     """
-    docx_path = "Abdulameen Chapter 1 -3.docx"
-    ch1_3_pdf_path = "output/pdf/Ch1_3_from_word.pdf"
+    full_docx_path = "Abdulameen_Complete_Thesis_Chapters_1_5.docx"
     ch4_5_pdf_path = "output/pdf/Chapters_4_and_5.pdf"
     output_pdf_path = "Abdulameen_Complete_Thesis_Chapters_1_5.pdf"
-    
-    if not os.path.exists(docx_path):
-        raise FileNotFoundError(f"Source file not found: {docx_path}")
 
-    # 1. Export Word DOCX to PDF
-    export_docx_to_pdf(docx_path, ch1_3_pdf_path)
-    
-    # 2. Generate Chapters 4 & 5 PDF
-    generate_chapters_pdf(ch4_5_pdf_path)
-    
-    # 3. Merge Chapters 1-3 (Word export) + Chapters 4-5
-    writer = PdfWriter()
-    
-    reader_ch1_3 = PdfReader(ch1_3_pdf_path)
-    print(f"Loading Word-exported Chapters 1-3 ({len(reader_ch1_3.pages)} pages)...")
-    for page in reader_ch1_3.pages:
-        writer.add_page(page)
+    # 1. Update full DOCX with latest content & formatting
+    print("--- 1/3: Building complete unified DOCX ---")
+    generate_complete_thesis_docx(full_docx_path)
+
+    # 2. Export complete unified DOCX directly to PDF via Word COM
+    print("--- 2/3: Exporting complete thesis from Word COM ---")
+    export_docx_to_pdf(full_docx_path, output_pdf_path)
         
-    reader_ch4_5 = PdfReader(ch4_5_pdf_path)
-    print(f"Loading Chapters 4-5 ({len(reader_ch4_5.pages)} pages)...")
-    for page in reader_ch4_5.pages:
-        writer.add_page(page)
-        
-    with open(output_pdf_path, "wb") as f_out:
-        writer.write(f_out)
-        
-    # 4. Stamp centered page numbers across all pages
+    # 3. Stamp centered page numbers across all pages
+    print("--- 3/3: Stamping academic page numbers ---")
     add_page_number_overlay(output_pdf_path)
     
+    # Also update standalone Chapters 4 & 5 PDF
+    try:
+        generate_chapters_pdf(ch4_5_pdf_path)
+    except Exception as e:
+        print(f"Note: auxiliary Chapters 4-5 PDF generation: {e}")
+    
+    # 4. Generate Formula-Safe Compressed PDF (< 600 KB)
+    print("--- 4/4: Generating Formula-Safe Compressed PDF Edition (< 600 KB) ---")
+    shrink_output_pdf = "Abdulameen_Complete_Thesis_Chapters_1_5_under_600kb.pdf"
+    try:
+        shrink_pdf_formula_safe(
+            input_pdf_path=output_pdf_path,
+            output_pdf_path=shrink_output_pdf
+        )
+    except Exception as e:
+        print(f"Note: PDF compression: {e}")
+
+    reader = PdfReader(output_pdf_path)
+    total_pages = len(reader.pages)
     print(f"\n========================================================")
     print(f"SUCCESS: Complete Thesis PDF compiled from Word DOCX!")
-    print(f"Final Document: {output_pdf_path}")
-    print(f"Total Pages: {len(writer.pages)}")
+    print(f"Full Document     : {output_pdf_path}")
+    print(f"Compressed Edition: {shrink_output_pdf}")
+    print(f"Total Pages       : {total_pages}")
     print(f"========================================================")
 
 if __name__ == '__main__':
     compile_complete_thesis_from_docx()
+

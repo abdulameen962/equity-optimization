@@ -99,8 +99,8 @@ def generate_clean_ch3_intro_pdf(output_path="output/pdf/clean_ch3_intro.pdf"):
         body_style
     ))
     story.append(Paragraph(
-        "Consequently, this methodology adopts advanced ensemble machine learning algorithms—specifically "
-        "Random Forest and eXtreme Gradient Boosting (XGBoost)—to effectively operationalize statistical learning, "
+        "Consequently, this methodology adopts advanced ensemble machine learning algorithms, specifically "
+        "Random Forest and eXtreme Gradient Boosting (XGBoost), to effectively operationalize statistical learning, "
         "thereby capturing the complex, non-stationary market patterns that traditional models and the EMH fail to identify "
         "(Manogna &amp; Kulkarni, 2025; Ashrafzadeh et al., 2025).",
         body_style

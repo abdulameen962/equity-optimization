@@ -15,6 +15,9 @@ import sys
 import os
 import time
 
+import matplotlib
+matplotlib.use('Agg')
+
 def run_pipeline():
     start_time = time.time()
     print("==================================================================")
@@ -40,10 +43,10 @@ def run_pipeline():
     print("[OK] Step 3 Complete: RF & XGBoost models trained with zero test leakage.\n")
     
     # 4. Portfolio Optimization & Backtesting
-    print("--- [STEP 4/6] Running Mean-CVaR Portfolio Backtesting (Retail & Gross) ---")
-    from src.portfolio_optimization import run_portfolio_backtests
-    run_portfolio_backtests()
-    print("[OK] Step 4 Complete: Portfolio optimization backtests executed across fee regimes.\n")
+    print("--- [STEP 4/6] Running Mean-CVaR Portfolio Backtesting (Retail, Institutional, Gross & Significance) ---")
+    from src.portfolio_optimization import run_all_fee_regimes_and_significance
+    run_all_fee_regimes_and_significance()
+    print("[OK] Step 4 Complete: Portfolio optimization backtests and statistical significance tests executed.\n")
     
     # 5. Academic Chapters 4 & 5 Generation
     print("--- [STEP 5/6] Generating Academic Chapters 4 & 5 PDF ---")
@@ -51,16 +54,24 @@ def run_pipeline():
     generate_chapters_pdf()
     print("[OK] Step 5 Complete: Standalone Chapters 4 & 5 PDF generated.\n")
     
-    # 6. Consolidated PDF Merger
-    print("--- [STEP 6/6] Merging Chapters 1-3 with Chapters 4 & 5 ---")
-    from generate_thesis_pdf import compile_complete_thesis_pdf
-    compile_complete_thesis_pdf()
+    # 6. Consolidated Document & PDF Compilation
+    print("--- [STEP 6/6] Compiling Complete Thesis Document (Word COM & PDF) ---")
+    try:
+        from export_and_compile_thesis import compile_complete_thesis_from_docx
+        compile_complete_thesis_from_docx()
+    except Exception as e:
+        print(f"[Word COM Fallback] Compiling PDF directly: {e}")
+        from generate_thesis_pdf import compile_complete_thesis_pdf
+        compile_complete_thesis_pdf()
+        
     print("[OK] Step 6 Complete: Consolidated Thesis PDF generated successfully.\n")
     
     elapsed = time.time() - start_time
     print("==================================================================")
     print(f" SUCCESS: Complete Pipeline Execution Finished in {elapsed/60:.2f} minutes!")
-    print(" Final Thesis Output: Abdulameen_Complete_Thesis_Chapters_1_5.pdf")
+    print(" Final Thesis DOCX   : Abdulameen_Complete_Thesis_Chapters_1_5.docx")
+    print(" Final Thesis PDF    : Abdulameen_Complete_Thesis_Chapters_1_5.pdf")
+    print(" Compressed (<600KB) : Abdulameen_Complete_Thesis_Chapters_1_5_under_600kb.pdf")
     print("==================================================================")
 
 if __name__ == '__main__':

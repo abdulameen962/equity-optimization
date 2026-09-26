@@ -42,6 +42,20 @@ Desktop.ini
 
 # Intermediate / Temp Files
 extracted_paper_text.txt
+scratch_*.txt
+scratch_*.py
+*.backup*
 *.tmp
 *.log
 .pytest_cache/
+scratch/
+~$*.docx
+*.swp
+test_*.pdf
+output/compare/
+output/extracted_media/
+output/pdf/*.png
+output/pdf/orig_backup.pdf
+output/pdf/Word_Direct_Export.pdf
+*_backup.docx
+project/
