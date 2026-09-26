@@ -2,7 +2,7 @@ import os
 import re
 
 # -----------------------------------------------------------------------------
-# MASTER APA 7TH EDITION GROUNDED REFERENCES (80 ENTRIES)
+# MASTER APA 7TH EDITION GROUNDED REFERENCES (81 ENTRIES)
 # -----------------------------------------------------------------------------
 
 REFERENCES_PLAIN = [   'Adegboyo, O. S., & Sarwar, K. (2025). Modelling and forecasting of Nigeria stock market volatility. Future '
@@ -51,9 +51,12 @@ REFERENCES_PLAIN = [   'Adegboyo, O. S., & Sarwar, K. (2025). Modelling and fore
     'Comparative Study of GARCH Models and Deep Learning Techniques. Journal of Risk and Financial Management, 18(9), '
     'Article 494. https://doi.org/10.3390/jrfm18090494',
     'Dickey, D. A., & Fuller, W. A. (1979). Distribution of the estimators for autoregressive time series with a unit '
-    'root. Journal of the American Statistical Association, 74(366), 427–431. https://doi.org/10.2307/2286348',
+    'root. Journal of the American Statistical Association, 74(366), 427\u2013431. https://doi.org/10.2307/2286348',
+    'DeMiguel, V., Garlappi, L., & Uppal, R. (2009). Optimal versus naive diversification: How inefficient is the '
+    '1/N portfolio strategy? The Review of Financial Studies, 22(5), 1915\u20131953. https://doi.org/10.1093/rfs/hhm075',
     'Diebold, F. X., & Mariano, R. S. (1995). Comparing predictive accuracy. Journal of Business & Economic '
-    'Statistics, 13(3), 253–263. https://doi.org/10.1080/07350015.1995.10524599',
+    'Statistics, 13(3), 253\u2013263. https://doi.org/10.1080/07350015.1995.10524599',
+
     'Espiga-Fernández, F., García-Sánchez, Á., & Ordieres-Meré, J. (2024). A Systematic Approach to Portfolio '
     'Optimization: A Comparative Study of Reinforcement Learning Agents, Market Signals, and Investment Horizons. '
     'Algorithms, 17(12), Article 570. https://doi.org/10.3390/a17120570',

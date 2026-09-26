@@ -255,10 +255,10 @@ def generate_clean_chapters_1_3_pdf(output_path="output/pdf/clean_chapters_1_3.p
     ))
     story.append(Paragraph("3.3.2 Model Training and Hyperparameter Tuning", section_title_style))
     story.append(Paragraph(
-        "Out-of-the-box machine learning algorithms rarely capture the complex dynamics of financial time series optimally. Therefore, this study employs a Randomized Search Cross-Validation strategy within the training window to efficiently identify the optimal hyperparameter configurations for both models.",
+        "Hyperparameters were tuned once on the 2010–2020 in-sample period using GridSearchCV with 5-fold TimeSeriesSplit, focusing on parameters that penalize model complexity:",
         body_style
     ))
-    story.append(Paragraph("The tuning process focuses on penalizing model complexity to prevent overfitting:", body_style))
+
     story.append(Paragraph(
         "• <b>Random Forest Parameters:</b> The search optimizes the number of trees in the forest (<i>n_estimators</i>), the maximum depth of each tree (<i>max_depth</i>), and the minimum number of samples required to split an internal node (<i>min_samples_split</i>).",
         bullet_style
@@ -329,7 +329,7 @@ def generate_clean_chapters_1_3_pdf(output_path="output/pdf/clean_chapters_1_3.p
         bullet_style
     ))
     story.append(Paragraph(
-        "• <b>The Buy-and-Hold Market Index Strategy:</b> This is a passive strategy that involves buying and holding the market index itself (in this case, the NGX Pension Index). This serves as a critical baseline to demonstrate whether active portfolio management based on machine learning predictions genuinely provides superior risk-adjusted returns compared to general market movements. Initialized at equal weights <i>w<sub>0,i</sub> = 1/N</i> at <i>t = 0</i>, Buy-and-Hold weights drift passively with asset price returns (<i>w<sub>t+1,i</sub> &prop; w<sub>t,i</sub>(1 + R<sub>t+1,i</sub>)</i>) with zero rebalancing turnover post week 0.",
+        "• <b>The Buy-and-Hold Market Index Strategy:</b> This is a passive strategy that proxies the broad market by buying the 28 sample equities at equal weights at inception and allowing those weights to drift with price returns, without any rebalancing thereafter. It serves as a critical baseline to demonstrate whether active portfolio management based on machine learning predictions genuinely provides superior risk-adjusted returns compared to broad market performance. Note that 'NGX Index Buy-Hold' is a market proxy constructed from the study's sample stocks, not the official NGX Pension Index series. Initialized at equal weights <i>w<sub>0,i</sub> = 1/N</i> at <i>t = 0</i>, Buy-and-Hold weights drift passively with asset price returns (<i>w<sub>t+1,i</sub> &prop; w<sub>t,i</sub>(1 + R<sub>t+1,i</sub>)</i>) with zero rebalancing turnover post week 0.",
         bullet_style
     ))
     

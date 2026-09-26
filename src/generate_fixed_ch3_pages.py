@@ -59,13 +59,11 @@ def generate_clean_pages_43_44_pdf(output_path="output/pdf/clean_pages_43_44.pdf
     # 2. 3.3.2 Model Training and Hyperparameter Tuning
     story.append(Paragraph("3.3.2 Model Training and Hyperparameter Tuning", section_title_style))
     story.append(Paragraph(
-        "Out-of-the-box machine learning algorithms rarely capture the complex dynamics of financial time series optimally. Therefore, this study employs a Randomized Search Cross-Validation strategy within the training window to efficiently identify the optimal hyperparameter configurations for both models.",
+        "Hyperparameters were tuned once on the 2010–2020 in-sample period using GridSearchCV with 5-fold TimeSeriesSplit, focusing on parameters that penalize model complexity:",
         body_style
     ))
-    story.append(Paragraph(
-        "The tuning process focuses on penalizing model complexity to prevent overfitting:",
-        body_style
-    ))
+
+
     story.append(Paragraph(
         "• <b>Random Forest Parameters:</b> The search optimizes the number of trees in the forest (<i>n_estimators</i>), the maximum depth of each tree (<i>max_depth</i>), and the minimum number of samples required to split an internal node (<i>min_samples_split</i>).",
         bullet_style
